@@ -90,7 +90,13 @@ html[lang="dv"] {
 
 /* Figures stay in Latin digits and stay LTR even inside an RTL sentence. */
 .numeral {
-  font-family: var(--font-mono);
+  /* The font variable set by next/font, not the @theme token of the same
+     idea. Tailwind's `@theme inline` substitutes its tokens at definition
+     time, so `var(--font-mono)` resolves to nothing here; font-family then
+     becomes invalid at computed-value time and, being an inherited property,
+     silently falls back to whatever the parent uses. On a Dhivehi page that is
+     the Thaana face, which cost the figures their tabular alignment. */
+  font-family: var(--font-mono-latin), ui-monospace, monospace;
   font-variant-numeric: tabular-nums;
   direction: ltr;
   unicode-bidi: isolate;
