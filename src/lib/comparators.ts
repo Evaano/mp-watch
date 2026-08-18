@@ -65,7 +65,31 @@ export const AASANDHA = {
   sourceUrl: "https://www.aasandha.mv/en/scheme/aasandha-scheme/overview",
 };
 
+/**
+ * The rufiyaa is pegged to the dollar within a 10.28-15.42 band and has sat at
+ * the ceiling since 2011, so 15.42 is the official and bank rate.
+ *
+ * This is deliberately NOT the parallel-market rate. That rate is real and is
+ * what people transacting in dollars actually face, but it is not published by
+ * any authority we can cite, and an unsourced number would undermine the
+ * figures standing next to it. Any use of it belongs in prose, attributed, not
+ * baked into a conversion.
+ */
+export const USD_RATE: Comparator = {
+  value: 15.42,
+  unit: "MVR",
+  sourceTitle: "Exchange rates",
+  sourcePublisher: "Bank of Maldives",
+  sourceUrl: "https://www.bankofmaldives.com.mv/exchange-rates",
+  asOf: "2026-08-18",
+};
+
+export function toUsd(mvr: number): number {
+  return Math.round(mvr / USD_RATE.value);
+}
+
 export const COMPARATOR_SOURCES = [
   MINIMUM_WAGE_MONTHLY,
   CITIZENS,
+  USD_RATE,
 ] as const;

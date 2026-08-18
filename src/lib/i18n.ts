@@ -62,9 +62,9 @@ const dictionaries = {
     scaleMinWage: "Member-years above a full minimum wage",
     scaleMinWageNote: (monthly: number, annual: number) =>
       `One member's policy, for one year, costing more than MVR ${annual.toLocaleString("en-US")} - which is over four covered people at the per-head rate, and a full year at the MVR ${monthly.toLocaleString("en-US")} monthly minimum wage for large employers.`,
-    scalePerCitizen: "Per citizen",
-    scalePerCitizenNote: (citizens: number) =>
-      `Total divided by the ${citizens.toLocaleString("en-US")} resident Maldivian citizens counted in the 2022 census.`,
+    scaleUsd: "The same total in dollars",
+    scaleUsdNote: (rate: number) =>
+      `At the official pegged rate of MVR ${rate} to the US dollar.`,
 
     aasandhaNote:
       "Every Maldivian citizen has been covered by Husnuvaa Aasandha with no annual ceiling since February 2014, which is the whole period this disclosure covers. These premiums were paid over the same years. Source:",
@@ -146,9 +146,9 @@ const dictionaries = {
     scaleMinWage: "އެންމެ ކުޑަ އުޖޫރައަށްވުރެ ބޮޑު މެންބަރު-އަހަރު",
     scaleMinWageNote: (monthly: number, annual: number) =>
       `އެއް ޕޮލިސީއަކަށް އެއް އަހަރު ${annual.toLocaleString("en-US")} ރުފިޔާއަށްވުރެ ބޮޑުކޮށް ދައްކާފައިވާ ފަހަރު. މިއީ ބޮލަކަށް ދައްކާ ރޭޓުން 4 މީހުންނަށްވުރެ ގިނަ. އަދި މަހަކު ${monthly.toLocaleString("en-US")} ރުފިޔާގެ އެންމެ ކުޑަ އުޖޫރައިގެ އެއް އަހަރަށްވުރެ ބޮޑު.`,
-    scalePerCitizen: "ކޮންމެ ރައްޔިތަކަށް",
-    scalePerCitizenNote: (citizens: number) =>
-      `2022 ވަނަ އަހަރުގެ ބޯހިމެނުމުގައި ހިމެނުނު ${citizens.toLocaleString("en-US")} ދިވެހި ރައްޔިތުންނަށް ބަހާލުމުން.`,
+    scaleUsd: "ހަމަ އެ ޖުމްލަ، ޑޮލަރުން",
+    scaleUsdNote: (rate: number) =>
+      `ރަސްމީ ރޭޓް، ޑޮލަރަކަށް ${rate} ރުފިޔާ.`,
 
     aasandhaNote:
       "2014 ވަނަ އަހަރުގެ ފެބްރުއަރީން ފެށިގެން ހުރިހާ ދިވެހި ރައްޔިތުންނަށް ޙުސްނުވާ އާސަންދައިގެ ދަށުން ސީލިންގއެއް ނެތި ބޭސްފަރުވާ ލިބެއެވެ. މި ލިޔުމުގައި ހިމެނޭ މުޅި މުއްދަތަކީ އެއީއެވެ. މަޞްދަރު:",

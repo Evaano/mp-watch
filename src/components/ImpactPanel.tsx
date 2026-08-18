@@ -1,9 +1,11 @@
 import { Numeral } from "./Numeral";
+import { money } from "@/lib/format";
 import {
   AASANDHA,
-  CITIZENS,
   MINIMUM_WAGE_ANNUAL,
   MINIMUM_WAGE_MONTHLY,
+  USD_RATE,
+  toUsd,
 } from "@/lib/comparators";
 import type { Dict } from "@/lib/i18n";
 import { CURRENT_PER_HEAD_RATE } from "@/lib/premium";
@@ -41,6 +43,9 @@ export function ImpactPanel({
         <p className="mt-4 text-3xl font-semibold sm:text-4xl">
           <Numeral value={afterOffice.amount} currency />
         </p>
+        <p className="numeral mt-1 text-lg text-ink-muted">
+          ${money(toUsd(afterOffice.amount))}
+        </p>
         <p className="mt-2 max-w-[62ch] text-ink-muted">
           {dict.afterOfficeBody(
             afterOffice.payments,
@@ -67,9 +72,9 @@ export function ImpactPanel({
           note={dict.scaleMinWageNote(MINIMUM_WAGE_MONTHLY.value, MINIMUM_WAGE_ANNUAL)}
         />
         <Fact
-          label={dict.scalePerCitizen}
-          value={<Numeral value={Math.round(total / CITIZENS.value)} currency />}
-          note={dict.scalePerCitizenNote(CITIZENS.value)}
+          label={dict.scaleUsd}
+          value={<span className="numeral">${money(toUsd(total))}</span>}
+          note={dict.scaleUsdNote(USD_RATE.value)}
         />
       </dl>
 
