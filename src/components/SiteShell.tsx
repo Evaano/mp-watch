@@ -30,7 +30,7 @@ export function SiteShell({
           </Link>
           <nav className="flex items-center gap-1 text-sm">
             <Link
-              href={href(lang)}
+              href={href(lang, "/members")}
               className="flex min-h-11 items-center rounded-card px-3 hover:text-accent-ink"
             >
               {dict.navMembers}

@@ -24,7 +24,6 @@ export function MemberName({
   size?: "base" | "lg";
 }) {
   const primaryClass = size === "lg" ? "text-2xl sm:text-3xl" : "text-base";
-  const secondaryClass = size === "lg" ? "text-base" : "text-sm";
 
   // On a Dhivehi page the document is already lang="dv"; re-declaring it here
   // would apply the Thaana size bump a second time.
@@ -37,18 +36,14 @@ export function MemberName({
     );
   }
 
+  // English mode shows the Latin name only. The Thaana name is the official
+  // spelling and stays the primary form on the Dhivehi side, but repeating it
+  // under every Latin name doubled the height of each card for readers who did
+  // not ask for it.
   return (
-    <span className="block">
-      <span className={`${primaryClass} font-medium capitalize`}>
-        {member.title ? `${member.title} ` : ""}
-        {member.nameLatin}
-      </span>
-      {/* No dir="rtl" here: Thaana is right-to-left under the bidi algorithm
-          already, and setting dir on the block would right-align it away from
-          the Latin name above it. */}
-      <span lang="dv" className={`block ${secondaryClass} text-ink-muted`}>
-        {member.name}
-      </span>
+    <span className={`block ${primaryClass} font-medium capitalize`}>
+      {member.title ? `${member.title} ` : ""}
+      {member.nameLatin}
     </span>
   );
 }

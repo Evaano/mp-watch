@@ -72,7 +72,7 @@ export default async function MemberPage({
     <div className="flex flex-col gap-12">
       <div>
         <Link
-          href={href(lang)}
+          href={href(lang, "/members")}
           className="text-sm text-accent-ink underline underline-offset-4"
         >
           {dict.backToList}

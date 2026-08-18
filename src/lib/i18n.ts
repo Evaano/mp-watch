@@ -92,6 +92,10 @@ const dictionaries = {
     actAfterBody: (payments: number, people: number) =>
       `${payments.toLocaleString("en-US")} payments to ${people.toLocaleString("en-US")} former members, in years the Majlis roster shows they held no seat. Most are exactly MVR 24,000 — one person, one year, at the standard rate.`,
     actFindKicker: "Now look up yours",
+    seeAllMembers: (n: number) => `See all ${n} members`,
+    membersHeading: "Every member on record",
+    membersIntro:
+      "Everyone the disclosures name, across the 18th, 19th and 20th Majlis. Search by name, constituency or party.",
     yearOne: "year",
     yearMany: "years",
 
@@ -190,6 +194,10 @@ const dictionaries = {
     actAfterBody: (payments: number, people: number) =>
       `ކުރީގެ ${people.toLocaleString("en-US")} މެންބަރަކަށް ${payments.toLocaleString("en-US")} ފަހަރު. މިއީ މަޖިލީހުގެ ރެކޯޑުން ދައްކާ ގޮތުގައި އެ ބޭފުޅުން މެންބަރުކަމުގައި ނެތް އަހަރުތަކުގައި. ގިނަ ފަހަރު ސީދާ 24,000 ރުފިޔާ — އެއް މީހެއް، އެއް އަހަރު.`,
     actFindKicker: "ތިޔަބޭފުޅާގެ މެންބަރު ބައްލަވާ",
+    seeAllMembers: (n: number) => `ހުރިހާ ${n} މެންބަރުން ބައްލަވާ`,
+    membersHeading: "ރެކޯޑުގައި ހިމެނޭ ހުރިހާ މެންބަރުން",
+    membersIntro:
+      "18، 19 އަދި 20 ވަނަ މަޖިލީހުގެ ލިޔުންތަކުގައި ހިމެނޭ ހުރިހާ ބޭފުޅުން. ނަން، ދާއިރާ ނުވަތަ ޕާޓީން ހޯއްދަވާ.",
     yearOne: "އަހަރު",
     yearMany: "އަހަރު",
 

@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AnimatedNumber } from "@/components/AnimatedNumber";
-import { MemberSearch } from "@/components/MemberSearch";
+import { MemberCard } from "@/components/MemberCard";
 import { Numeral } from "@/components/Numeral";
 import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
@@ -11,7 +11,7 @@ import {
   USD_RATE,
   toUsd,
 } from "@/lib/comparators";
-import { money } from "@/lib/format";
+import { href, money } from "@/lib/format";
 import { getDict, isLang } from "@/lib/i18n";
 import { CURRENT_PER_HEAD_RATE } from "@/lib/premium";
 import { registry, toSummary } from "@/lib/registry";
@@ -61,7 +61,7 @@ export default async function HomePage({
             {dict.actTotalKicker}
           </p>
           <p className="figure-hero mt-3">
-            <AnimatedNumber value={totals.amount} prefix="MVR " />
+            <Numeral value={totals.amount} currency />
           </p>
           <p className="numeral mt-2 text-xl text-ink-muted">
             ${money(toUsd(totals.amount))}
@@ -101,18 +101,16 @@ export default async function HomePage({
             ariaLabel={dict.perYearHeading}
             emptyLabel={dict.profileNoPayment}
           />
-          <details className="mt-4">
-            <summary className="cursor-pointer text-sm text-accent-ink">
-              {dict.showTable}
-            </summary>
-            <div className="mt-3 max-w-md">
-              <YearTable
-                data={perYear}
-                dict={dict}
-                emptyLabel={dict.profileNoPayment}
-              />
-            </div>
-          </details>
+          {/* Shown, not hidden behind a disclosure. The figures are the
+              evidence for the chart beside them; making a reader ask for them
+              implies they are an optional extra. */}
+          <div className="mt-8 max-w-md">
+            <YearTable
+              data={perYear}
+              dict={dict}
+              emptyLabel={dict.profileNoPayment}
+            />
+          </div>
         </div>
       </section>
 
@@ -121,7 +119,7 @@ export default async function HomePage({
         <div className="reveal">
           <p className="label-eyebrow text-flag">{dict.actAfterKicker}</p>
           <p className="figure-lead mt-3 text-flag">
-            <AnimatedNumber value={afterOffice.amount} prefix="MVR " />
+            <Numeral value={afterOffice.amount} currency />
           </p>
           <p className="numeral mt-1 text-lg text-ink-muted">
             ${money(toUsd(afterOffice.amount))}
@@ -193,27 +191,31 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Act 5 - the reader's own member */}
+      {/* Act 5 - a taste of the directory, with the rest on its own page. */}
       <section>
-        <div className="reveal">
-          <p className="label-eyebrow text-ink-muted">{dict.actFindKicker}</p>
-          <div className="mt-4">
-            <MemberSearch
-              members={ranked.map(toSummary)}
-              lang={lang}
-              labels={{
-                heading: dict.findYourMp,
-                placeholder: dict.searchPlaceholder,
-                empty: dict.searchEmpty,
-                countTemplate: dict.searchCountTemplate,
-                showMore: dict.showMore,
-                showingOf: dict.showingOf,
-                yearOne: dict.yearOne,
-                yearMany: dict.yearMany,
-              }}
-            />
-          </div>
-        </div>
+        <p className="label-eyebrow text-ink-muted">{dict.actFindKicker}</p>
+        <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+          {ranked.slice(0, 8).map((person) => {
+            const summary = toSummary(person);
+            return (
+              <li key={person.id} className="contents">
+                <MemberCard
+                  member={summary}
+                  lang={lang}
+                  yearLabel={
+                    summary.yearsPaid === 1 ? dict.yearOne : dict.yearMany
+                  }
+                />
+              </li>
+            );
+          })}
+        </ul>
+        <Link
+          href={href(lang, "/members")}
+          className="mt-6 inline-block rounded-card border border-line-strong px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent-ink"
+        >
+          {dict.seeAllMembers(totals.people)}
+        </Link>
       </section>
 
       <p className="label-note text-ink-muted">

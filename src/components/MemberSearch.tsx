@@ -1,11 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useDeferredValue, useId, useMemo, useState } from "react";
-import { ConstituencyName, MemberName } from "./MemberName";
-import { Numeral } from "./Numeral";
+import { MemberCard } from "./MemberCard";
 import type { PersonSummary } from "@/lib/registry";
-import { href } from "@/lib/format";
 import type { Lang } from "@/lib/i18n";
 
 /** Only serializable strings cross into the client bundle. */
@@ -90,32 +87,14 @@ export function MemberSearch({
           {labels.empty}
         </p>
       ) : (
-        <ul className="mt-4 divide-y divide-line border-t border-line">
+        <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
           {results.slice(0, visible).map((m) => (
-            <li key={m.id}>
-              <Link
-                href={href(lang, `/mp/${m.id}`)}
-                className="flex items-center justify-between gap-4 py-3 transition-colors hover:bg-surface-sunken focus-visible:bg-surface-sunken focus-visible:outline-2 focus-visible:outline-accent"
-              >
-                <span className="min-w-0">
-                  <MemberName member={m} lang={lang} />
-                  {m.party ? (
-                    <span className="mt-1 me-2 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 label-eyebrow text-ink-muted">
-                      {m.party}
-                    </span>
-                  ) : null}
-                  <span className="mt-0.5 block text-sm text-ink-muted">
-                    <ConstituencyName member={m} lang={lang} />
-                  </span>
-                </span>
-                <span className="shrink-0 text-end">
-                  <Numeral value={m.total} currency className="font-medium" />
-                  <span className="label-note mt-0.5 block text-ink-muted">
-                    <Numeral value={m.yearsPaid} />{" "}
-                    {m.yearsPaid === 1 ? labels.yearOne : labels.yearMany}
-                  </span>
-                </span>
-              </Link>
+            <li key={m.id} className="contents">
+              <MemberCard
+                member={m}
+                lang={lang}
+                yearLabel={m.yearsPaid === 1 ? labels.yearOne : labels.yearMany}
+              />
             </li>
           ))}
         </ul>

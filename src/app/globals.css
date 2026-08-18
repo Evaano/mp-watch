@@ -110,10 +110,19 @@ html[lang="dv"] {
       animation-range: entry 0% entry 45%;
     }
 
+    /* The figures themselves are never animated: a number that counts up is
+       unreadable for the moment that matters most, and is wrong on screen
+       until it finishes. Only the block carrying them moves. */
+    .reveal-slow {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+
     @keyframes reveal-in {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(24px) scale(0.985);
       }
       to {
         opacity: 1;

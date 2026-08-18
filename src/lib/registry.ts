@@ -281,6 +281,8 @@ export interface PersonSummary {
   total: number;
   yearsPaid: number;
   party: string | null;
+  photoUrl: string | null;
+  terms: number[];
 }
 
 export function toSummary(person: Person): PersonSummary {
@@ -295,5 +297,7 @@ export function toSummary(person: Person): PersonSummary {
     total: registry.totalSpent(person.id),
     yearsPaid: registry.yearsPaid(person.id),
     party: registry.party(person.id),
+    photoUrl: person.photoUrl ?? null,
+    terms: registry.termsServed(person.id),
   };
 }
