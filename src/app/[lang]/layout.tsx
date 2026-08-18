@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Noto_Sans_Thaana } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import "../globals.css";
@@ -9,13 +10,25 @@ import { ALLOW_INDEXING } from "@/lib/site";
 
 const latin = Geist({ variable: "--font-latin", subsets: ["latin"] });
 const latinMono = Geist_Mono({ variable: "--font-mono-latin", subsets: ["latin"] });
-// Loaded as a variable font so Thaana can be set heavier than Latin. At a
-// shared weight of 400 its strokes read thin, and thinner still as light text
-// on a dark surface.
-const thaana = Noto_Sans_Thaana({
+// MV Iyyu Normal, self-hosted. It maps real Unicode Thaana rather than the
+// ASCII-codepoint scheme older MV fonts use, so it drops in without touching
+// the data. Converted from the supplied OTF to WOFF2 (20KB -> 14KB).
+const thaana = localFont({
+  src: "../fonts/mv-iyyu-normal.woff2",
   variable: "--font-thaana",
-  subsets: ["thaana"],
-  weight: "variable",
+  display: "swap",
+  // Scoped to the Thaana block plus the U+FDF2 ligature. MV Iyyu also carries
+  // its own ASCII glyphs, and without this restriction it claims the digits
+  // too, so "MVR 10,282,000" inside Dhivehi text renders in the font's slanted
+  // old-style figures while the same number renders upright in English. Every
+  // codepoint outside this range now falls through to the Latin stack.
+  declarations: [{ prop: "unicode-range", value: "U+0780-07BF, U+FDF2" }],
+  // One name spells "Allah" with Arabic letters rather than the U+FDF2
+  // ligature every other record uses. Those three characters fall through to
+  // the system Arabic face, which every modern OS ships. Noto Sans Thaana is
+  // not kept as a fallback because it is Thaana-only and would not cover them
+  // either, so loading it would cost a request and fix nothing.
+  fallback: ["system-ui", "sans-serif"],
 });
 
 export function generateStaticParams() {

@@ -72,27 +72,20 @@ html {
    scales once at the root, and a Dhivehi island inside an English page scales
    once at the island. */
 html[lang="dv"] {
-  font-size: 118%;
-  /* Set on the root so it is inherited, never applied directly: any element
-     carrying a Tailwind font-weight utility still wins. */
-  font-weight: 500;
+  font-size: 116%;
 }
 
 [lang="dv"]:not(html) {
-  font-size: 1.15em;
-  font-weight: 500;
+  font-size: 1.14em;
 }
 
-/* Light text on a dark surface reads thinner than the same weight dark on
-   light, and Thaana's fine strokes show it more than Latin does. */
-@media (prefers-color-scheme: dark) {
-  html[lang="dv"] {
-    font-weight: 550;
-  }
-
-  [lang="dv"]:not(html) {
-    font-weight: 550;
-  }
+/* MV Iyyu ships a single weight. Asking for 500 or 700 would make the browser
+   synthesise a bold by smearing the outline, which on Thaana's fine strokes
+   and stacked fili turns into mush. Turning synthesis off means a heading
+   marked font-semibold simply renders in the one real weight, which is the
+   better of the two outcomes. */
+:lang(dv) {
+  font-synthesis-weight: none;
 }
 
 /* Figures stay in Latin digits and stay LTR even inside an RTL sentence. */

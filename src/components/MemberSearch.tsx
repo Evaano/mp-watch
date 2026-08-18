@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useDeferredValue, useEffect, useId, useMemo, useState } from "react";
+import { useDeferredValue, useId, useMemo, useState } from "react";
 import { ConstituencyName, MemberName } from "./MemberName";
 import { Numeral } from "./Numeral";
 import type { PersonSummary } from "@/lib/registry";
@@ -41,9 +41,15 @@ export function MemberSearch({
   const deferred = useDeferredValue(query);
   const inputId = useId();
 
-  // A new search starts from the top of its own results, not part-way down
-  // the previous one's.
-  useEffect(() => setVisible(PAGE), [deferred]);
+  // A new search starts from the top of its own results, not part-way down the
+  // previous one's. Adjusted during render rather than in an effect: an effect
+  // would render the new results at the old offset first, then immediately
+  // re-render, which is the cascading update React warns about.
+  const [lastQuery, setLastQuery] = useState(deferred);
+  if (lastQuery !== deferred) {
+    setLastQuery(deferred);
+    setVisible(PAGE);
+  }
 
   const results = useMemo(() => {
     const term = deferred.trim();
