@@ -156,6 +156,7 @@ export default async function MemberPage({
           <YearColumns
             data={series}
             ariaLabel={`${dict.profileBreakdown} - ${person.nameLatin}`}
+            emptyLabel={dict.profileNoPayment}
           />
         </div>
         <div className="mt-8 max-w-md">

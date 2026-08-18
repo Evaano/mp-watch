@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useDeferredValue, useId, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useId, useMemo, useState } from "react";
 import { ConstituencyName, MemberName } from "./MemberName";
 import { Numeral } from "./Numeral";
 import type { PersonSummary } from "@/lib/registry";
@@ -14,6 +14,8 @@ export interface SearchLabels {
   placeholder: string;
   empty: string;
   countTemplate: string;
+  showMore: string;
+  showingOf: string;
   /** Dhivehi does not inflect the noun, so both slots may hold one word. */
   yearOne: string;
   yearMany: string;
@@ -33,9 +35,15 @@ export function MemberSearch({
   lang: Lang;
   labels: SearchLabels;
 }) {
+  const PAGE = 25;
   const [query, setQuery] = useState("");
+  const [visible, setVisible] = useState(PAGE);
   const deferred = useDeferredValue(query);
   const inputId = useId();
+
+  // A new search starts from the top of its own results, not part-way down
+  // the previous one's.
+  useEffect(() => setVisible(PAGE), [deferred]);
 
   const results = useMemo(() => {
     const term = deferred.trim();
@@ -77,7 +85,7 @@ export function MemberSearch({
         </p>
       ) : (
         <ul className="mt-4 divide-y divide-line border-t border-line">
-          {results.map((m) => (
+          {results.slice(0, visible).map((m) => (
             <li key={m.id}>
               <Link
                 href={href(lang, `/mp/${m.id}`)}
@@ -106,6 +114,23 @@ export function MemberSearch({
           ))}
         </ul>
       )}
+
+      {results.length > visible ? (
+        <div className="mt-6 flex flex-col items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setVisible((n) => n + PAGE)}
+            className="rounded-card border border-line-strong px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            {labels.showMore}
+          </button>
+          <p className="numeral text-xs text-ink-muted">
+            {labels.showingOf
+              .replace("{shown}", String(Math.min(visible, results.length)))
+              .replace("{total}", String(results.length))}
+          </p>
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BackToTop } from "./BackToTop";
 import type { ReactNode } from "react";
 import { registry } from "@/lib/registry";
 import { href } from "@/lib/format";
@@ -64,6 +65,8 @@ export function SiteShell({
           </a>
         </div>
       </footer>
+
+      <BackToTop label={dict.backToTop} />
     </div>
   );
 }

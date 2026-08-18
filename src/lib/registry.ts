@@ -51,9 +51,17 @@ export const registry = {
     return sourcesById.get(id);
   },
 
-  /** The disclosure the spending figures come from. */
+  /**
+   * The disclosure the spending figures come from. Looked up by kind rather
+   * than by position: once a second ingest was added, sources[0] became the
+   * member roster, which has no period and silently broke every figure
+   * derived from one.
+   */
   primarySource(): Source {
-    return graph.sources[0];
+    return (
+      graph.sources.find((s) => s.kind === "official-disclosure") ??
+      graph.sources[0]
+    );
   },
 
   people(): Person[] {
@@ -180,6 +188,57 @@ export const registry = {
       amount: expenditure.reduce((sum, c) => sum + c.amount, 0),
       byYear,
     };
+  },
+
+  /**
+   * Premiums paid in fiscal years when the roster shows no seat was held.
+   *
+   * This is a floor, not a total. It counts only claims belonging to someone
+   * with at least one *stated* roster position; claims for people we could not
+   * join to a roster are excluded rather than assumed either way, and their
+   * number is reported so the gap is visible.
+   */
+  afterOffice() {
+    const spans = new Map<PersonId, { start: string; end: string }[]>();
+    for (const position of graph.positions) {
+      if (position.kind !== "majlis-member" || position.basis !== "stated") continue;
+      const list = spans.get(position.personId) ?? [];
+      list.push({ start: position.start, end: position.end ?? "9999-12-31" });
+      spans.set(position.personId, list);
+    }
+
+    let payments = 0;
+    let amount = 0;
+    let unknownTerm = 0;
+    const people = new Set<PersonId>();
+
+    for (const claim of graph.claims) {
+      if (!isExpenditure(claim)) continue;
+      const held = spans.get(claim.personId);
+      if (!held) {
+        unknownTerm += 1;
+        continue;
+      }
+      const from = claim.periodStart ?? "";
+      const to = claim.periodEnd ?? "";
+      const serving = held.some((s) => s.start <= to && s.end >= from);
+      if (!serving) {
+        payments += 1;
+        amount += claim.amount;
+        people.add(claim.personId);
+      }
+    }
+
+    return { payments, amount, people: people.size, unknownTerm };
+  },
+
+  /** Days covered by the disclosure, for a per-day restatement. */
+  periodDays(): number {
+    const source = this.primarySource();
+    if (!source.periodStart || !source.periodEnd) return 0;
+    const ms =
+      new Date(source.periodEnd).getTime() - new Date(source.periodStart).getTime();
+    return Math.round(ms / 86_400_000);
   },
 
   /** People ordered by total spent, highest first. */

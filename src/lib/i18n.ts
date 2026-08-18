@@ -51,6 +51,28 @@ const dictionaries = {
     colYears: "Years",
     colTotal: "Total",
     showTable: "Show the figures",
+    afterOfficeHeading: "Premiums kept being paid after members left office",
+    afterOfficeBody: (payments: number, people: number) =>
+      `Across ${payments} payments to ${people} former members, in fiscal years where the Majlis roster shows they held no seat. Most are exactly MVR 24,000 a year, paid every year after they left.`,
+    afterOfficeCaveat: (unknown: number) =>
+      `This is a floor, not a total. It counts only people we could match to a published roster; a further ${unknown} payments belong to people we could not match, and are left out rather than assumed either way.`,
+
+    scalePerDay: "Every day, for 11 years",
+    scalePerDayNote: "Total spend divided by the days the disclosure covers.",
+    scaleMinWage: "Single years above a full minimum wage",
+    scaleMinWageNote: (monthly: number, annual: number) =>
+      `Individual member-years exceeding MVR ${annual.toLocaleString("en-US")}, a full year at the MVR ${monthly.toLocaleString("en-US")} monthly minimum wage for large employers.`,
+    scalePerCitizen: "Per citizen",
+    scalePerCitizenNote: (citizens: number) =>
+      `Total divided by the ${citizens.toLocaleString("en-US")} resident Maldivian citizens counted in the 2022 census.`,
+
+    aasandhaNote:
+      "Every Maldivian citizen has been covered by Husnuvaa Aasandha with no annual ceiling since February 2014, which is the whole period this disclosure covers. These premiums were paid over the same years. Source:",
+    peakNote: "The largest amount paid for a single member in a single year was",
+    scaleSources: "Comparison figures and their sources",
+    showMore: "Show more",
+    showingOf: "Showing {shown} of {total}",
+    backToTop: "Back to top",
     yearOne: "year",
     yearMany: "years",
 
@@ -106,6 +128,28 @@ const dictionaries = {
     colYears: "އަހަރު",
     colTotal: "ޖުމްލަ",
     showTable: "ޢަދަދުތައް ދައްކާ",
+    afterOfficeHeading: "މެންބަރުކަމުން ވަކިވުމަށްފަހުވެސް ޕްރީމިއަމް ދައްކާފައިވޭ",
+    afterOfficeBody: (payments: number, people: number) =>
+      `ކުރީގެ ${people} މެންބަރަކަށް ${payments} ފަހަރު ދައްކާފައިވޭ. މިއީ މަޖިލީހުގެ ރެކޯޑުން ދައްކާ ގޮތުގައި އެ ބޭފުޅުން މެންބަރުކަމުގައި ނެތް އަހަރުތަކުގައެވެ. ގިނަ ފަހަރު އަހަރަކު 24,000 ރުފިޔާ.`,
+    afterOfficeCaveat: (unknown: number) =>
+      `މިއީ އެންމެ ދަށް ޢަދަދު، ޖުމްލަ ޢަދަދެއް ނޫން. ހިމަނާފައިވަނީ ރަސްމީ ލިސްޓާ ދިމާވި ބޭފުޅުން އެކަނި. އިތުރު ${unknown} ފަހަރެއްގެ މަޢުލޫމާތު ދިމާނުވާތީ ނުހިމަނަމެވެ.`,
+
+    scalePerDay: "11 އަހަރު، ކޮންމެ ދުވަހަކު",
+    scalePerDayNote: "ޖުމްލަ ޚަރަދު، ލިޔުމުގައި ހިމެނޭ ދުވަސްތަކުގެ ޢަދަދަށް ބަހާލުމުން.",
+    scaleMinWage: "އެންމެ ކުޑަ އުޖޫރައަށްވުރެ ބޮޑު އަހަރުތައް",
+    scaleMinWageNote: (monthly: number, annual: number) =>
+      `އެއް މެންބަރަކަށް އެއް އަހަރު ${annual.toLocaleString("en-US")} ރުފިޔާއަށްވުރެ ބޮޑުކޮށް ދައްކާފައިވާ ފަހަރު. މަހަކު ${monthly.toLocaleString("en-US")} ރުފިޔާގެ އެންމެ ކުޑަ އުޖޫރައިގެ އެއް އަހަރު.`,
+    scalePerCitizen: "ކޮންމެ ރައްޔިތަކަށް",
+    scalePerCitizenNote: (citizens: number) =>
+      `2022 ވަނަ އަހަރުގެ ބޯހިމެނުމުގައި ހިމެނުނު ${citizens.toLocaleString("en-US")} ދިވެހި ރައްޔިތުންނަށް ބަހާލުމުން.`,
+
+    aasandhaNote:
+      "2014 ވަނަ އަހަރުގެ ފެބްރުއަރީން ފެށިގެން ހުރިހާ ދިވެހި ރައްޔިތުންނަށް ޙުސްނުވާ އާސަންދައިގެ ދަށުން ސީލިންގއެއް ނެތި ބޭސްފަރުވާ ލިބެއެވެ. މި ލިޔުމުގައި ހިމެނޭ މުޅި މުއްދަތަކީ އެއީއެވެ. މަޞްދަރު:",
+    peakNote: "އެއް މެންބަރަކަށް އެއް އަހަރު ދައްކާފައިވާ އެންމެ ބޮޑު ޢަދަދަކީ",
+    scaleSources: "އަޅާކިޔުމަށް ބޭނުންކުރި ޢަދަދުތަކާއި މަޞްދަރު",
+    showMore: "އިތުރަށް ދައްކާ",
+    showingOf: "{total} ން {shown}",
+    backToTop: "މައްޗަށް",
     yearOne: "އަހަރު",
     yearMany: "އަހަރު",
 

@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
+import { ImpactPanel } from "@/components/ImpactPanel";
 import { MemberSearch } from "@/components/MemberSearch";
 import { Numeral } from "@/components/Numeral";
 import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
 import { YearTable } from "@/components/YearTable";
+import { MINIMUM_WAGE_ANNUAL } from "@/lib/comparators";
 import { registry, toSummary } from "@/lib/registry";
 import { getDict, isLang } from "@/lib/i18n";
 
@@ -24,6 +26,14 @@ export default async function HomePage({
     value: totals.byYear[year] ?? 0,
   }));
 
+  const afterOffice = registry.afterOffice();
+  const days = registry.periodDays();
+  const singleYear = registry
+    .people()
+    .flatMap((p) => registry.expenditure(p.id).map((c) => c.amount));
+  const aboveMinimumWage = singleYear.filter((a) => a > MINIMUM_WAGE_ANNUAL).length;
+  const singleYearPeak = Math.max(...singleYear, 0);
+
   return (
     <div className="flex flex-col gap-14">
       <section>
@@ -32,6 +42,15 @@ export default async function HomePage({
         </h1>
         <p className="mt-4 max-w-[62ch] text-ink-muted">{dict.homeIntro}</p>
       </section>
+
+      <ImpactPanel
+        dict={dict}
+        total={totals.amount}
+        perDay={Math.round(totals.amount / Math.max(days, 1))}
+        afterOffice={afterOffice}
+        aboveMinimumWage={aboveMinimumWage}
+        singleYearPeak={singleYearPeak}
+      />
 
       <section>
         <StatRow>
@@ -71,6 +90,7 @@ export default async function HomePage({
           <YearColumns
             data={perYear}
             ariaLabel={dict.perYearHeading}
+            emptyLabel={dict.profileNoPayment}
           />
         </div>
         <details className="mt-4">
@@ -96,6 +116,8 @@ export default async function HomePage({
             placeholder: dict.searchPlaceholder,
             empty: dict.searchEmpty,
             countTemplate: dict.searchCountTemplate,
+            showMore: dict.showMore,
+            showingOf: dict.showingOf,
             yearOne: dict.yearOne,
             yearMany: dict.yearMany,
           }}
