@@ -43,3 +43,6 @@ next-env.d.ts
 # Python ingest
 __pycache__/
 *.pyc
+
+.vercel
+.env*

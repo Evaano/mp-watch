@@ -5,10 +5,18 @@ import type { ReactNode } from "react";
 import "../globals.css";
 import { SiteShell } from "@/components/SiteShell";
 import { dirOf, getDict, isLang, LANGS } from "@/lib/i18n";
+import { ALLOW_INDEXING } from "@/lib/site";
 
 const latin = Geist({ variable: "--font-latin", subsets: ["latin"] });
 const latinMono = Geist_Mono({ variable: "--font-mono-latin", subsets: ["latin"] });
-const thaana = Noto_Sans_Thaana({ variable: "--font-thaana", subsets: ["thaana"] });
+// Loaded as a variable font so Thaana can be set heavier than Latin. At a
+// shared weight of 400 its strokes read thin, and thinner still as light text
+// on a dark surface.
+const thaana = Noto_Sans_Thaana({
+  variable: "--font-thaana",
+  subsets: ["thaana"],
+  weight: "variable",
+});
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));
@@ -34,6 +42,9 @@ export async function generateMetadata({
   return {
     title: { default: dict.siteName, template: `%s | ${dict.siteName}` },
     description: dict.siteTagline,
+    robots: ALLOW_INDEXING
+      ? undefined
+      : { index: false, follow: false, nocache: true },
   };
 }
 

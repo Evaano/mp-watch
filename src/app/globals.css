@@ -60,7 +60,10 @@ html {
    collide with the line above. Applied by language, not by element. */
 :lang(dv) {
   font-family: var(--font-thaana);
-  line-height: 1.85;
+  line-height: 1.9;
+  /* Thaana fili sit above and below the consonant; letter-spacing pulls the
+     marks away from their base, so it stays at zero. */
+  letter-spacing: 0;
 }
 
 /* Thaana sits optically smaller than Latin at an equal font-size, so it gets a
@@ -69,11 +72,27 @@ html {
    scales once at the root, and a Dhivehi island inside an English page scales
    once at the island. */
 html[lang="dv"] {
-  font-size: 112.5%;
+  font-size: 118%;
+  /* Set on the root so it is inherited, never applied directly: any element
+     carrying a Tailwind font-weight utility still wins. */
+  font-weight: 500;
 }
 
 [lang="dv"]:not(html) {
-  font-size: 1.12em;
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
+/* Light text on a dark surface reads thinner than the same weight dark on
+   light, and Thaana's fine strokes show it more than Latin does. */
+@media (prefers-color-scheme: dark) {
+  html[lang="dv"] {
+    font-weight: 550;
+  }
+
+  [lang="dv"]:not(html) {
+    font-weight: 550;
+  }
 }
 
 /* Figures stay in Latin digits and stay LTR even inside an RTL sentence. */
