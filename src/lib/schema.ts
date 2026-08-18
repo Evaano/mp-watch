@@ -58,6 +58,8 @@ export interface Person {
   nameLatin: string;
   /** Honorific printed before the name. Display metadata, not identity. */
   title: string | null;
+  /** Official portrait, served from the Majlis site. */
+  photoUrl?: string | null;
   /**
    * Other person records printed under the same name. Deliberately not
    * merged: separating one redistricted member from two people who share a

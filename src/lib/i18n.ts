@@ -31,7 +31,7 @@ const dictionaries = {
 
     homeHeading: "What the Majlis spent on its own members",
     homeIntro:
-      "Eleven years of health insurance premiums paid for members of the People's Majlis, taken line by line from the Majlis disclosure.",
+      "Eleven years of health insurance premiums paid for members of the People's Majlis and their dependents, taken line by line from the Majlis disclosure. The cover is priced per head, so a member's figure tracks how many people the state is insuring, not how much that member received.",
     findYourMp: "Find your MP",
     searchPlaceholder: "Search by name or constituency",
     searchEmpty: "No member matches that search.",
@@ -40,11 +40,11 @@ const dictionaries = {
     statTotalPaid: "Total paid",
     statMembers: "Member records",
     statYears: "Fiscal years",
-    statHighest: "Highest single record",
+    statHighest: "Largest 11-year total on one policy",
 
     perYearHeading: "Premiums paid each fiscal year",
     perYearNote:
-      "Each fiscal year runs 28 May to 27 May. The rise in 2016-2017 and again in 2024-2025 follows a change in the number of members covered.",
+      "Each fiscal year runs 28 May to 27 May. The 2016-2017 jump is a price rise, not more people: the per-head premium went from MVR 12,500 to MVR 24,000, and that year covered one fewer member than the year before.",
 
     colMember: "Member",
     colConstituency: "Constituency",
@@ -59,25 +59,50 @@ const dictionaries = {
 
     scalePerDay: "Every day, for 11 years",
     scalePerDayNote: "Total spend divided by the days the disclosure covers.",
-    scaleMinWage: "Single years above a full minimum wage",
+    scaleMinWage: "Member-years above a full minimum wage",
     scaleMinWageNote: (monthly: number, annual: number) =>
-      `Individual member-years exceeding MVR ${annual.toLocaleString("en-US")}, a full year at the MVR ${monthly.toLocaleString("en-US")} monthly minimum wage for large employers.`,
-    scalePerCitizen: "Per citizen",
-    scalePerCitizenNote: (citizens: number) =>
-      `Total divided by the ${citizens.toLocaleString("en-US")} resident Maldivian citizens counted in the 2022 census.`,
+      `One member's policy, for one year, costing more than MVR ${annual.toLocaleString("en-US")} - which is over four covered people at the per-head rate, and a full year at the MVR ${monthly.toLocaleString("en-US")} monthly minimum wage for large employers.`,
+    scaleUsd: "The same total in dollars",
+    scaleUsdNote: (rate: number) =>
+      `At the official pegged rate of MVR ${rate} to the US dollar.`,
 
     aasandhaNote:
       "Every Maldivian citizen has been covered by Husnuvaa Aasandha with no annual ceiling since February 2014, which is the whole period this disclosure covers. These premiums were paid over the same years. Source:",
-    peakNote: "The largest amount paid for a single member in a single year was",
+    peakNote:
+      "The most any one policy cost in a single year, covering that member and their dependents, was",
+    peakNoteHeads: (heads: number) =>
+      `, which is ${heads} covered people for that year at the per-head rate.`,
+    perHeadNote:
+      "The premium is set per covered person: MVR 24,000 a year since 2016-2017, and MVR 12,500 before that. Every figure here divides exactly by the rate in force, which is both the check on our extraction and the reason none of it can be read as a payment to a member.",
     scaleSources: "Comparison figures and their sources",
     showMore: "Show more",
     showingOf: "Showing {shown} of {total}",
     backToTop: "Back to top",
+    actTotalKicker: "Since 2014, the state has spent",
+    actTotalOn: "on health insurance for members of the People's Majlis and their families.",
+    actPerHeadKicker: "The cover is priced per person",
+    actPerHeadLead: (rate: number) =>
+      `MVR ${rate.toLocaleString("en-US")} a year, for each person covered.`,
+    actPerHeadBody:
+      "A member's total does not show a bigger benefit. It shows how many people the state is insuring. Seven members in the current Majlis insure only themselves. One insures enough people to cost eleven times that.",
+    actRateKicker: "And the price nearly doubled",
+    actRateBody:
+      "In 2016-2017 the per-person premium went from MVR 12,500 to MVR 24,000. That year covered one fewer member than the year before.",
+    actAfterKicker: "It does not stop when they leave",
+    actAfterBody: (payments: number, people: number) =>
+      `${payments.toLocaleString("en-US")} payments to ${people.toLocaleString("en-US")} former members, in years the Majlis roster shows they held no seat. Most are exactly MVR 24,000 — one person, one year, at the standard rate.`,
+    actFindKicker: "Now look up yours",
+    seeAllMembers: (n: number) => `See all ${n} members`,
+    membersHeading: "Every member on record",
+    membersIntro:
+      "Everyone the disclosures name, across the 18th, 19th and 20th Majlis. Search by name, constituency or party.",
     yearOne: "year",
     yearMany: "years",
 
-    profileTotal: "Total premiums paid",
+    profileTotal: "Total premiums on this policy",
     profileYears: "Fiscal years with a payment",
+    profileCoverNote:
+      "Covers the member and their dependents, priced per covered person.",
     profileTerms: "Majlis terms",
     profileBreakdown: "Payments by fiscal year",
     profileNoPayment: "No payment recorded",
@@ -108,7 +133,7 @@ const dictionaries = {
 
     homeHeading: "މަޖިލީހުން މެންބަރުންނަށް ކުރި ޚަރަދު",
     homeIntro:
-      "ރައްޔިތުންގެ މަޖިލީހުގެ މެންބަރުންނަށް ހެލްތު އިންޝުއަރެންސް ޕްރީމިއަމަށް 11 އަހަރު ދުވަހުގެ ތެރޭގައި ހިނގާފައިވާ ޚަރަދު.",
+      "ރައްޔިތުންގެ މަޖިލީހުގެ މެންބަރުންނާއި އެ ބޭފުޅުންގެ ޑިޕެންޑެންޓުންގެ ހެލްތު އިންޝުއަރެންސް ޕްރީމިއަމަށް 11 އަހަރު ދުވަހުގެ ތެރޭގައި ހިނގާފައިވާ ޚަރަދު. ޕްރީމިއަމް ދައްކަނީ ބޮލަކަށް ކަމުން، މެންބަރެއްގެ ޢަދަދު ބޮޑުވަނީ ކަވަރު ކުރެވޭ މީހުން ގިނަވުމުން.",
     findYourMp: "ތިޔަބޭފުޅާގެ މެންބަރު",
     searchPlaceholder: "ނަން ނުވަތަ ދާއިރާ ލިޔުއްވާ",
     searchEmpty: "އެއްވެސް މެންބަރެއް ނުފެނުނު.",
@@ -117,11 +142,11 @@ const dictionaries = {
     statTotalPaid: "ޖުމްލަ ޚަރަދު",
     statMembers: "މެންބަރުންގެ ރެކޯޑް",
     statYears: "މާލީ އަހަރު",
-    statHighest: "އެންމެ ބޮޑު ރެކޯޑް",
+    statHighest: "އެއް ޕޮލިސީއަކަށް 11 އަހަރުން ދެއްކި އެންމެ ބޮޑު ޖުމްލަ",
 
     perYearHeading: "ކޮންމެ މާލީ އަހަރަކު ކުރި ޚަރަދު",
     perYearNote:
-      "ކޮންމެ މާލީ އަހަރެއް ފެށެނީ މޭ 28 ގައި، ނިމެނީ މޭ 27 ގައި.",
+      "ކޮންމެ މާލީ އަހަރެއް ފެށެނީ މޭ 28 ގައި، ނިމެނީ މޭ 27 ގައި. 2016-2017 ގައި ބޮޑުވީ މީހުން ގިނަވެގެންނެއް ނޫން، ބޮލަކަށް ދައްކާ ޕްރީމިއަމް 12,500 ރުފިޔާއިން 24,000 ރުފިޔާއަށް ބޮޑުވުމުން.",
 
     colMember: "މެންބަރު",
     colConstituency: "ދާއިރާ",
@@ -136,25 +161,50 @@ const dictionaries = {
 
     scalePerDay: "11 އަހަރު، ކޮންމެ ދުވަހަކު",
     scalePerDayNote: "ޖުމްލަ ޚަރަދު، ލިޔުމުގައި ހިމެނޭ ދުވަސްތަކުގެ ޢަދަދަށް ބަހާލުމުން.",
-    scaleMinWage: "އެންމެ ކުޑަ އުޖޫރައަށްވުރެ ބޮޑު އަހަރުތައް",
+    scaleMinWage: "އެންމެ ކުޑަ އުޖޫރައަށްވުރެ ބޮޑު މެންބަރު-އަހަރު",
     scaleMinWageNote: (monthly: number, annual: number) =>
-      `އެއް މެންބަރަކަށް އެއް އަހަރު ${annual.toLocaleString("en-US")} ރުފިޔާއަށްވުރެ ބޮޑުކޮށް ދައްކާފައިވާ ފަހަރު. މަހަކު ${monthly.toLocaleString("en-US")} ރުފިޔާގެ އެންމެ ކުޑަ އުޖޫރައިގެ އެއް އަހަރު.`,
-    scalePerCitizen: "ކޮންމެ ރައްޔިތަކަށް",
-    scalePerCitizenNote: (citizens: number) =>
-      `2022 ވަނަ އަހަރުގެ ބޯހިމެނުމުގައި ހިމެނުނު ${citizens.toLocaleString("en-US")} ދިވެހި ރައްޔިތުންނަށް ބަހާލުމުން.`,
+      `އެއް ޕޮލިސީއަކަށް އެއް އަހަރު ${annual.toLocaleString("en-US")} ރުފިޔާއަށްވުރެ ބޮޑުކޮށް ދައްކާފައިވާ ފަހަރު. މިއީ ބޮލަކަށް ދައްކާ ރޭޓުން 4 މީހުންނަށްވުރެ ގިނަ. އަދި މަހަކު ${monthly.toLocaleString("en-US")} ރުފިޔާގެ އެންމެ ކުޑަ އުޖޫރައިގެ އެއް އަހަރަށްވުރެ ބޮޑު.`,
+    scaleUsd: "ހަމަ އެ ޖުމްލަ، ޑޮލަރުން",
+    scaleUsdNote: (rate: number) =>
+      `ރަސްމީ ރޭޓް، ޑޮލަރަކަށް ${rate} ރުފިޔާ.`,
 
     aasandhaNote:
       "2014 ވަނަ އަހަރުގެ ފެބްރުއަރީން ފެށިގެން ހުރިހާ ދިވެހި ރައްޔިތުންނަށް ޙުސްނުވާ އާސަންދައިގެ ދަށުން ސީލިންގއެއް ނެތި ބޭސްފަރުވާ ލިބެއެވެ. މި ލިޔުމުގައި ހިމެނޭ މުޅި މުއްދަތަކީ އެއީއެވެ. މަޞްދަރު:",
-    peakNote: "އެއް މެންބަރަކަށް އެއް އަހަރު ދައްކާފައިވާ އެންމެ ބޮޑު ޢަދަދަކީ",
+    peakNote:
+      "މެންބަރާއި ޑިޕެންޑެންޓުން ހިމެނޭ އެއް ޕޮލިސީއަކަށް އެއް އަހަރު ދައްކާފައިވާ އެންމެ ބޮޑު ޢަދަދަކީ",
+    peakNoteHeads: (heads: number) =>
+      `. މިއީ ބޮލަކަށް ދައްކާ ރޭޓުން އެ އަހަރު ${heads} މީހެއްގެ ޕްރީމިއަމް.`,
+    perHeadNote:
+      "ޕްރީމިއަމް ދައްކަނީ ކަވަރު ކުރެވޭ ކޮންމެ މީހަކަށް: 2016-2017 ން ފެށިގެން އަހަރަކު 24,000 ރުފިޔާ، އޭގެ ކުރިން 12,500 ރުފިޔާ. ހުރިހާ ޢަދަދެއް މި ރޭޓުން ބެހިގެންދޭ.",
     scaleSources: "އަޅާކިޔުމަށް ބޭނުންކުރި ޢަދަދުތަކާއި މަޞްދަރު",
     showMore: "އިތުރަށް ދައްކާ",
     showingOf: "{total} ން {shown}",
     backToTop: "މައްޗަށް",
+    actTotalKicker: "2014 ން ފެށިގެން ދައުލަތުން ޚަރަދުކޮށްފައިވަނީ",
+    actTotalOn: "ރައްޔިތުންގެ މަޖިލީހުގެ މެންބަރުންނާއި އެ ބޭފުޅުންގެ ޢާއިލާތަކުގެ ހެލްތު އިންޝުއަރެންސަށް.",
+    actPerHeadKicker: "ޕްރީމިއަމް ދައްކަނީ ބޮލަކަށް",
+    actPerHeadLead: (rate: number) =>
+      `ކަވަރު ކުރެވޭ ކޮންމެ މީހަކަށް އަހަރަކު ${rate.toLocaleString("en-US")} ރުފިޔާ.`,
+    actPerHeadBody:
+      "މެންބަރެއްގެ ޢަދަދު ބޮޑުވުމަކީ އެ މެންބަރަށް ބޮޑު ފައިދާއެއް ލިބުމެއް ނޫން. އެއިން ދައްކަނީ ދައުލަތުން ކަވަރު ކުރާ މީހުންގެ ޢަދަދު. މިހާރުގެ މަޖިލީހުގައި 7 މެންބަރަކު ކަވަރު ކުރަނީ ހަމައެކަނި އެ ބޭފުޅުން އަމިއްލައަށް.",
+    actRateKicker: "އަދި އަގު ދެގުނަ ވަރު ބޮޑުވި",
+    actRateBody:
+      "2016-2017 ގައި ބޮލަކަށް ދައްކާ ޕްރީމިއަމް 12,500 ރުފިޔާއިން 24,000 ރުފިޔާއަށް ބޮޑުވި. އެ އަހަރު ކަވަރު ކުރީ އޭގެ ކުރީ އަހަރަށްވުރެ އެއް މެންބަރު މަދުން.",
+    actAfterKicker: "މެންބަރުކަމުން ވަކިވުމުންވެސް ހުއްޓައެއް ނުލާ",
+    actAfterBody: (payments: number, people: number) =>
+      `ކުރީގެ ${people.toLocaleString("en-US")} މެންބަރަކަށް ${payments.toLocaleString("en-US")} ފަހަރު. މިއީ މަޖިލީހުގެ ރެކޯޑުން ދައްކާ ގޮތުގައި އެ ބޭފުޅުން މެންބަރުކަމުގައި ނެތް އަހަރުތަކުގައި. ގިނަ ފަހަރު ސީދާ 24,000 ރުފިޔާ — އެއް މީހެއް، އެއް އަހަރު.`,
+    actFindKicker: "ތިޔަބޭފުޅާގެ މެންބަރު ބައްލަވާ",
+    seeAllMembers: (n: number) => `ހުރިހާ ${n} މެންބަރުން ބައްލަވާ`,
+    membersHeading: "ރެކޯޑުގައި ހިމެނޭ ހުރިހާ މެންބަރުން",
+    membersIntro:
+      "18، 19 އަދި 20 ވަނަ މަޖިލީހުގެ ލިޔުންތަކުގައި ހިމެނޭ ހުރިހާ ބޭފުޅުން. ނަން، ދާއިރާ ނުވަތަ ޕާޓީން ހޯއްދަވާ.",
     yearOne: "އަހަރު",
     yearMany: "އަހަރު",
 
-    profileTotal: "ޖުމްލަ ޕްރީމިއަމް",
+    profileTotal: "މި ޕޮލިސީއަށް ދެއްކި ޖުމްލަ ޕްރީމިއަމް",
     profileYears: "ފައިސާ ދެއްކި މާލީ އަހަރު",
+    profileCoverNote:
+      "މެންބަރާއި ޑިޕެންޑެންޓުން ހިމެނޭ. ދައްކަނީ ބޮލަކަށް.",
     profileTerms: "މަޖިލިސް ދައުރު",
     profileBreakdown: "މާލީ އަހަރުތަކުގެ ތަފްޞީލު",
     profileNoPayment: "ރެކޯޑެއް ނެތް",

@@ -1,0 +1,1982 @@
+{
+  "meta": {
+    "generatedBy": "scripts/ingest/rti_20th_majlis.py"
+  },
+  "sources": [
+    {
+      "id": "rti-20th-majlis-insurance-2024-2026",
+      "title": "20th People's Majlis members' insurance expenditure (member and dependents)",
+      "publisher": "People's Majlis, via the Information Commissioner's Office",
+      "url": "https://icom.sgp1.digitaloceanspaces.com/ID%206732-%20Annex-1_RTI_20th%20Majlis%20till%2027th%20May%202026-1760009635350.pdf",
+      "kind": "official-disclosure",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27"
+    }
+  ],
+  "persons": [],
+  "positions": [],
+  "claims": [
+    {
+      "id": "rti20--alfaazeel-husain-shareefu-hulhumaale-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟީލް ޙުސައިން ޝަރީފު ހުޅުމާލެ އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 336000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 14,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhuullah-shadheem-hulhumaale-medhu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުﷲ ޝަޛީމް ހުޅުމާލެ މެދު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--doktar-ahmadhu-shamheedhu-hulhumaale-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "ޑޮކްޓަރ އަޙްމަދު ޝަމްހީދު ހުޅުމާލެ ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-aifaan-henveyru-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު އައިފާން ހެންވޭރު އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-husain-naasih-medhuhenveyru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙުސައިން ނާޞިޙް މެދުހެންވޭރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-husain-imraan-lateef-henveyru-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙުސައިން އިމްރާން ލަޠީފް ހެންވޭރު ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-alee-ibraaheem-henveyru-hulhangu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަލީ އިބްރާހީމް ހެންވޭރު ހުޅަނގު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-ibraahee-m-galolhu-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު އިބްރާހީ މް ގަލޮޅު އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-meekaaeelu-ahmadhu-naseem-galolhu-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މީކާއީލު އަޙްމަދު ނަސީމް ގަލޮޅު ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-muhama-dhu-machangolhi-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް މުޙައްމަ ދު މައްޗަންގޮޅި އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-zameeru-machangolhi-medhu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ޟަމީރު މައްޗަންގޮޅި މެދު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-mustafaa-husai-n-machangolhi-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޞްޠަފާ ޙުސައި ން މައްޗަންގޮޅި ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-naazim-maafannu-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ނާޡިމް މާފަންނު އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazlaa-asmaa-rasheedhu-maafannu-medhu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟލާ އަސްމާ ރަޝީދު މާފަންނު މެދު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhuullah-rifaau-maafannu-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުﷲ ރިފާޢު މާފަންނު ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 336000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 14,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--muhamadhu-mustafaa-ibraaheem-maafannu-hulhangu--dhaairaa",
+      "personId": null,
+      "personName": "މުޙައްމަދު މުޞްޠަފާ އިބްރާހީމް މާފަންނު ހުޅަނގު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-ismaa-eel-vilimaale--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު އިސްމާ ޢީލް ވިލިމާލެ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 264000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 11,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-alee-moosaa-hoarafushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަލީ މޫސާ ހޯރަފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-naseeru-ihavandhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ނަޞީރު އިހަވަންދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-shujaau-baarashu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ޝުޖާޢު ބާރަށު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 264000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 11,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhulateef-mu-hamadhu-dhidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުއްލަޠީފް މު ޙައްމަދު ދިއްދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhuullah-shareef-kelaa--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުﷲ ޝަރީފް ކެލާ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhulghafooru-moo-saa-hanimaadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުލްޣަފޫރު މޫ ސާ ހަނިމާދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-rashee-dhu-nolhivaram--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ރަޝީ ދު ނޮޅިވަރަމް",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 72000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 3,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-husain-ziyaadhu-vaikaradhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙުސައިން ޒިޔާދު ވައިކަރަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-dhaaoodhu-kulhudhufushi-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ދާއޫދު ކުޅުދުއްފުށި އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-faruhathu-muhamadhu-kulhudhufushi-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ފަރުޙަތު މުޙައްމަދު ކުޅުދުއްފުށި ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-aadham-shafeequ-makunudhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އާދަމް ޝަފީޤު މަކުނުދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ameen-faisal-kanditheemu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަމީން ފައިޞަލް ކަނޑިތީމު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-hasan-mufeedhu-a-bdhulqaadhiru-milandhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙަސަން މުފީދު ޢަ ބްދުލްޤާދިރު މިލަންދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 288000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 12,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-ibraahee-m-komandoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު އިބްރާހީ މް ކޮމަންޑޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-mamdhoo-h-funadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު މަމްދޫ ޙް ފުނަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--muhamadhu-afoo-haamidhu-kendhikulhudhoo--dhaairaa",
+      "personId": null,
+      "personName": "މުޙައްމަދު ޢަފޫ ޙާމިދު ކެނދިކުޅުދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 1
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alusthaadhu-husnee-mubaarik-manadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްއުސްތާޛު ޙުސްނީ މުބާރިކް މަނަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-abaa-s-velidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ޢައްބާ ސް ވެލިދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alusthaadhu-abdhusathaaru-muhamadhu-holhudhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްއުސްތާޛު ޢަބްދުއްސައްތާރު މުޙައްމަދު ހޮޅުދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhulateef-ab-dhurahmaanu-alifushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުއްލަޠީފް ޢަބް ދުއްރަޙްމާނު އަލިފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-shifaaz-ungoofaaru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ޝިފާޒް އުނގޫފާރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-alee-dhuvaafaru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ޢަލީ ދުވާފަރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-falaah-inguraidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ފަލާޙް އިނގުރައިދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-zaahiru-maduvari--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ޒާހިރު މަޑުއްވަރި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 312000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 13,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhulhannaan-aboobakuru-thulhaadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުލްޙަންނާން އަބޫބަކުރު ތުޅާދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-saleem-eydhafushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ސަލީމް އޭދަފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-mauroof-dhaakiru-kendhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މަޢުރޫފް ޛާކިރު ކެންދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-siruhaa-n-hithaadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ސިރުހާ ން ހިތާދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-abdhu-rahmaan-hinnavaru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ޢަބްދުއް ރަޙްމާން ހިންނަވަރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-yaaseen-abdhuullah-naifaru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޔާސީން ޢަބްދުﷲ ނައިފަރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--lfaazil-muhamadhu-shaamin-habeebu-kurendhoo--dhaairaa",
+      "personId": null,
+      "personName": "އލްފާޟިލް މުޙައްމަދު ޝާމިން ޙަބީބު ކުރެންދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-munthazim-ibraahee-m-kaashidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުންތަޡިމް އިބްރާހީ މް ކާށިދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-naseem-thulusdhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ނަސީމް ތުލުސްދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alusthaadhu-husain-ri-zaa-aadham-maafushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްއުސްތާޛު ޙުސައިން ރި ޟާ އާދަމް މާފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--doktar-anaaraa-naeem-huraa--dhaairaa",
+      "personId": null,
+      "personName": "ޑޮކްޓަރ އަނާރާ ނަޢީމް ހުރާ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-hasan-zareeru-mathiveri--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙަސަން ޒަރީރު މަތިވެރި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-husain-sameeru-thodoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙުސައިން ސަމީރު ތޮއްޑޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-qaasim-ibraaheem-maamigili--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޤާސިމް އިބްރާހީމް މާމިގިލި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 528000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 22,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-taariq-mahibadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ޠާރިޤް މަހިބަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhuullah-rasheedhu-dhangethi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުﷲ ރަޝީދު ދަނގެތި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-aadham-zaahiru-felidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އާދަމް ޒާހިރު ފެލިދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-niushaa-dhu-keyodhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ނިއުޝާ ދު ކެޔޮދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-naazim-dhigaru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ނާޒިމް ދިއްގަރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-naufal-mulaku--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ނައުފަލް މުލަކު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-aslam-bilethdhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު އަސްލަމް ބިލެތްދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 120000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 5,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazilaa-faatimathu-saudhaa-nilandhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލާ ފާޠިމަތު ސަޢުދާ ނިލަންދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-siyaam-muhamadhu-meedhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ސިޔާމް މުޙައްމަދު މީދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-husain-hameedhu-kudahuvadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙުސައިން ޙަމީދު ކުޑަހުވަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 2
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-hasan-vaheedhu-vilufushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙަސަން ވަޙީދު ވިލުފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-riyaaz-thimarafushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ރިޔާޟް ތިމަރަފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-alee-ashraq-kinbidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަލީ އަޝްރަޤް ކިނބިދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-hanaan-muhamadhu-rasheedhu-guraidhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ހަނާން މުޙައްމަދު ރަޝީދު ގުރައިދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ismaaeel-shafee-u-isdhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިސްމާޢީލް ޝަފީ ޢު އިސްދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-yoosuf-nasheedhu-gamu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޔޫސުފް ނަޝީދު ގަމު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 288000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 12,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhuraheem-a-bdhuullah-fonadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުއްރަޙީމް ޢަ ބްދުﷲ ފޮނަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-shaakiru-maavashu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު ޝާކިރު މާވަށު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-aazim-abdhulazee-z-vilingili--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢާޒިމް ޢަބްދުލްޢަޒީ ޒް ވިލިނގިލި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-fazeel-dhaandhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ފަޟީލް ދާންދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-asadhuullah-shihaab-gemanafushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަސަދުﷲ ޝިހާބް ގެމަނަފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheemdheedhee-kolamaafushi--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމްދީދީ ކޮލަމާފުށި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-saudhuullah-hilmee-thinadhoo-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ސަޢުދުﷲ ޙިލްމީ ތިނަދޫ އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-al-san-ahmadhu-thinadhoo-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު އަލް ސަން އަޙްމަދު ތިނަދޫ ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 48000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 2,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-shameez-madaveli--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ޝަމީޒް މަޑަވެލި",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 120000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 5,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ashraf-rasheedhu-faresmaathodaa--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޝްރަފް ރަޝީދު ފަރެސްމާތޮޑާ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-alee-gadhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ޢަލީ ގައްދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-hamadhu-abdhuullah-fuvamulaku-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޙަމަދު ޢަބްދުﷲ ފުވައްމުލަކު އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 120000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 5,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-alee-fazaadhu-fuvamulaku-medhu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަލީ ފަޒާދު ފުވައްމުލަކު މެދު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-husai-n-fuvamulaku-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ޙުސައި ން ފުވައްމުލަކު ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 216000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 9,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-shaahidhu-hulhudhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ޝާހިދު ހުޅުދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 240000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 10,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ismaaeel-nizaaru-feydhoo-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިސްމާޢީލް ނިޒާރު ފޭދޫ އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 168000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 7,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheemdheedhee-feydhoo-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމްދީދީ ފޭދޫ ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 120000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 5,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhudheedhee-maradhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދުދީދީ މަރަދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-muhamadhu-sinaan-hithadhoo-uthuru--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް މުޙައްމަދު ސިނާން ހިތަދޫ އުތުރު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ahmadhu-azaan-maruzooqu-hithadhoo-medhu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އަޙްމަދު އަޒާން މަރުޒޫޤު ހިތަދޫ މެދު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 96000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 4,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-ibraaheem-naazil-hithadhoo-dhekunu--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް އިބްރާހީމް ނާޒިލް ހިތަދޫ ދެކުނު",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 192000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 8,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    },
+    {
+      "id": "rti20--alfaazil-abdhurahmaan-adoomeedhoo--dhaairaa",
+      "personId": null,
+      "personName": "އަލްފާޟިލް ޢަބްދުއްރަޙްމާން އައްޑޫމީދޫ",
+      "constituency": "ދާއިރާ",
+      "type": "expenditure",
+      "subtype": "health-insurance-premium",
+      "amount": 144000,
+      "currency": "MVR",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2026-05-27",
+      "personYears": 6,
+      "perHeadPerYear": 24000,
+      "coversDependents": true,
+      "locator": {
+        "page": 3
+      },
+      "sources": [
+        "rti-20th-majlis-insurance-2024-2026"
+      ]
+    }
+  ],
+  "warnings": [],
+  "statedFacts": {
+    "premiumPerHeadPerYear": 24000,
+    "coversDependents": true,
+    "statedTotal": 16608000,
+    "periodStart": "2024-05-28",
+    "periodEnd": "2026-05-27",
+    "yearsCovered": 2
+  }
+}

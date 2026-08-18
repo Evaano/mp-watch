@@ -48,6 +48,7 @@ CARD = re.compile(
 BADGE = re.compile(r'xbadge[^>]*>([^<]{1,24})<')
 CARD_NAME = re.compile(r'<h5[^>]*>(.*?)</h5>', re.S)
 CARD_SEAT = re.compile(r'<h6[^>]*>(.*?)</h6>', re.S)
+CARD_PHOTO = re.compile(r'<img[^>]*src="([^"]+/storage/members/[^"]+)"')
 SPEAKER_BLOCK = re.compile(
     r'member-block.*?<h6[^>]*>(.*?)</h6>.*?'
     r'(\d{1,2} \w{3} \d{4})\s*-\s*(\d{1,2} \w{3} \d{4})', re.S)
@@ -77,6 +78,7 @@ def parse_roster(markup):
         name = CARD_NAME.search(card)
         seat = CARD_SEAT.search(card)
         badge = BADGE.search(card)
+        photo = CARD_PHOTO.search(card)
         if not name:
             continue
         out[member_id] = {
@@ -84,7 +86,9 @@ def parse_roster(markup):
             'constituency': clean(re.sub(r'<[^>]+>', '', seat.group(1))) if seat else '',
             'party': clean(badge.group(1)) if badge else None,
             'seatNo': None,
-            'photo': None,
+            # Taken from the card rather than the seating-chart array, which
+            # only covers currently-charted seats and so misses older terms.
+            'photo': photo.group(1) if photo else None,
         }
 
     match = DATA_ARRAY.search(markup)
@@ -95,7 +99,6 @@ def parse_roster(markup):
             entry = out.get(int(row['id']))
             if entry:
                 entry['seatNo'] = row.get('seat_no')
-                entry['photo'] = row.get('photo')
     return out
 
 
@@ -143,6 +146,7 @@ def main():
                     'name': dv.get('name', ''),
                     'nameLatin': en['name'],
                     'title': None,
+                    'photoUrl': en.get('photo'),
                     'sources': [ROSTER_SOURCE],
                 }
 
@@ -214,6 +218,7 @@ def main():
     print(f'  unique people      {len(persons)}')
     print(f'  seat positions     {len(seats)}')
     print(f'  with a party       {sum(1 for p in seats if p.get("party"))}')
+    print(f'  with a photo       {sum(1 for p in persons.values() if p.get("photoUrl"))}')
     print(f'  speaker positions  {len(speakers)}')
     missing_dv = sum(1 for p in persons.values() if not p['name'])
     if missing_dv:
