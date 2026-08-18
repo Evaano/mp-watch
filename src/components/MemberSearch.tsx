@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useDeferredValue, useId, useMemo, useState } from "react";
 import { ConstituencyName, MemberName } from "./MemberName";
 import { Numeral } from "./Numeral";
-import type { MemberSummary } from "@/lib/allowances";
+import type { PersonSummary } from "@/lib/registry";
 import { href } from "@/lib/format";
 import type { Lang } from "@/lib/i18n";
 
@@ -29,7 +29,7 @@ export function MemberSearch({
   lang,
   labels,
 }: {
-  members: MemberSummary[];
+  members: PersonSummary[];
   lang: Lang;
   labels: SearchLabels;
 }) {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { allowances } from "@/lib/allowances";
+import { registry } from "@/lib/registry";
 import { href } from "@/lib/format";
 import { getDict, LANG_LABEL, otherLang, type Lang } from "@/lib/i18n";
 
@@ -56,7 +56,7 @@ export function SiteShell({
           <p className="mt-2 max-w-[65ch]">{dict.sourceNote}</p>
           <p className="mt-2">{dict.currencyNote}</p>
           <a
-            href={allowances.source.pdfUrl}
+            href={registry.primarySource().url}
             className="mt-3 inline-block text-accent-ink underline underline-offset-4"
             rel="noreferrer"
           >

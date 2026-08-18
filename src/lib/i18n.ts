@@ -63,6 +63,9 @@ const dictionaries = {
     profileSameNameNote:
       "These are separate rows in the source document. We do not merge them, because deciding whether they are one person needs a human check.",
     backToList: "All members",
+    positionsHeading: "Positions held",
+    inferredLabel: "Inferred",
+    stillServing: "present",
 
     termLabel: (n: number) => `${ordinal(n)} Majlis`,
     sourceHeading: "Source",
@@ -113,6 +116,9 @@ const dictionaries = {
     profileSameNameNote:
       "މިއީ އަސްލު ލިޔުމުގައި ވަކި ދެ ސަފުހާ. އެއް ބޭފުޅެއްތޯ ކަށަވަރު ކުރެވެންދެން އެއްކޮށްފައެއް ނުވޭ.",
     backToList: "ހުރިހާ މެންބަރުން",
+    positionsHeading: "ފުރުއްވި މަޤާމުތައް",
+    inferredLabel: "ބެލެވޭ ގޮތުގައި",
+    stillServing: "މިހާރު",
 
     termLabel: (n: number) => `${n} ވަނަ މަޖިލިސް`,
     sourceHeading: "މަޞްދަރު",

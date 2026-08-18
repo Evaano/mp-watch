@@ -22,7 +22,7 @@ from thaana import repair_visual_order, romanise, slugify, split_title  # noqa: 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 PDF = os.path.join(HERE, 'source', 'mps-allowance.pdf')
-OUT = os.path.join(ROOT, 'src', 'data', 'allowances.json')
+OUT = os.path.join(ROOT, 'src', 'data', 'graph.json')
 
 SOURCE = {
     'title': 'Health insurance premiums paid for members of the People\'s Majlis',
@@ -44,7 +44,10 @@ TERMS = [
 
 # "dhaairaa" (constituency) as the PDF stores it -> character-reversed.
 DHAAIRAA = ''.join(map(chr, [0x7A7, 0x783, 0x7A8, 0x787, 0x7A7, 0x78B]))
-AMOUNT = re.compile(r'^[\d,]+$')
+# The disclosure mixes number formats across pages: '12,500', '120000.00'
+# and '-' for nil all appear. Match on shape rather than on a separator,
+# which is safe because Thaana labels never contain ASCII digits.
+AMOUNT = re.compile(r'^(?:[\d,]+(?:\.\d+)?|-)$')
 YEAR = re.compile(r'^20\d\d-20\d\d$')
 ROW_NO = re.compile(r'^\d{1,3}$')
 
@@ -104,7 +107,7 @@ def parse():
                 if not band or not ROW_NO.match(band[0]['text']):
                     continue
                 rest = band[1:]
-                amounts = [w for w in rest if AMOUNT.match(w['text']) and ',' in w['text']]
+                amounts = [w for w in rest if AMOUNT.match(w['text'])]
                 labels = [w['text'] for w in rest if w not in amounts]
                 if DHAAIRAA not in labels:
                     warnings.append(f'page {pno}: row without a constituency marker')
@@ -122,9 +125,15 @@ def parse():
                     if not (col['x0'] - 14 <= centre <= col['x1'] + 14):
                         warnings.append(f'page {pno}: amount {a["text"]} outside the grid')
                         continue
+                    raw = a['text'].replace(',', '')
+                    if raw == '-':
+                        continue          # explicit nil
+                    value = int(round(float(raw)))
+                    if value == 0:
+                        continue          # nothing paid that year
                     if col['text'] in by_year:
                         warnings.append(f'page {pno}: two amounts in {col["text"]}')
-                    by_year[col['text']] = int(a['text'].replace(',', ''))
+                    by_year[col['text']] = value
 
                 title, bare = split_title(name)
                 records.append({
@@ -167,35 +176,129 @@ def assign_ids(records):
     return records
 
 
+
+
+# ---------------------------------------------------------------------------
+# Emit the graph
+# ---------------------------------------------------------------------------
+
+SOURCE_ID = 'majlis-health-insurance-2014-2025'
+
+# Each fiscal year runs 28 May -> 27 May.
+def year_bounds(fiscal_year):
+    start, end = fiscal_year.split('-')
+    return f'{start}-05-28', f'{end}-05-27'
+
+
+def build_graph(records, years, notes):
+    source = {
+        'id': SOURCE_ID,
+        'title': SOURCE['title'],
+        'titleDv': SOURCE['titleDv'],
+        'publisher': SOURCE['publisher'],
+        'url': SOURCE['pdfUrl'],
+        'kind': 'official-disclosure',
+        'periodStart': SOURCE['periodStart'],
+        'periodEnd': SOURCE['periodEnd'],
+    }
+
+    persons, positions, claims = [], [], []
+    unpaid = []
+
+    for r in records:
+        persons.append({
+            'id': r['id'],
+            'name': r['name'],
+            'nameLatin': r['nameLatin'],
+            'title': r['title'],
+            'possiblySameAs': r.get('sameNameAs'),
+            'sources': [SOURCE_ID],
+        })
+
+        paid_years = sorted(r['byYear'])
+        if not paid_years:
+            # A row printed with no amount in any year. We can record that the
+            # person appears in the disclosure, but not a term or a payment.
+            unpaid.append(r['id'])
+            continue
+        first_start, _ = year_bounds(paid_years[0])
+        _, last_end = year_bounds(paid_years[-1])
+
+        positions.append({
+            'id': f'{r["id"]}--majlis',
+            'personId': r['id'],
+            'kind': 'majlis-member',
+            'constituency': r['constituency'],
+            'constituencyLatin': r['constituencyLatin'],
+            'termNumbers': r['terms'],
+            'start': first_start,
+            'end': last_end,
+            # The disclosure records payments, not membership. Payment in a
+            # fiscal year strongly implies the seat was held, but the source
+            # never says so, so the app must not claim it did.
+            'basis': 'inferred',
+            'basisNote': 'Derived from the fiscal years in which a premium was paid; '
+                         'the source discloses payments, not terms of service.',
+            'sources': [SOURCE_ID],
+        })
+
+        for fy in paid_years:
+            p_start, p_end = year_bounds(fy)
+            claims.append({
+                'id': f'{r["id"]}--premium--{fy}',
+                'personId': r['id'],
+                'type': 'expenditure',
+                'subtype': 'health-insurance-premium',
+                'amount': r['byYear'][fy],
+                'currency': 'MVR',
+                'fiscalYear': fy,
+                'periodStart': p_start,
+                'periodEnd': p_end,
+                'locator': {'page': r['sourcePage'], 'row': r['sourceRowNo']},
+                'sources': [SOURCE_ID],
+            })
+
+    for pid in unpaid:
+        notes.append(f'{pid}: listed in the disclosure with no amount in any year')
+
+    return {
+        'meta': {
+            'generatedBy': 'scripts/ingest/extract_allowances.py',
+            'datasets': [SOURCE_ID],
+        },
+        'sources': [source],
+        'persons': persons,
+        'positions': positions,
+        'claims': claims,
+        'fiscalYears': years,
+        'terms': TERMS,
+        'warnings': [],
+    }
+
+
 def main():
     records, years, warnings = parse()
     records = assign_ids(records)
     records.sort(key=lambda r: (-r['total'], r['nameLatin']))
 
-    payload = {
-        'source': SOURCE,
-        'terms': TERMS,
-        'fiscalYears': years,
-        'totals': {
-            'records': len(records),
-            'amount': sum(r['total'] for r in records),
-            'byYear': {y: sum(r['byYear'].get(y, 0) for r in records) for y in years},
-        },
-        'warnings': warnings,
-        'records': records,
-    }
+    notes = []
+    graph = build_graph(records, years, notes)
+    graph['warnings'] = warnings + notes
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with io.open(OUT, 'w', encoding='utf-8') as fh:
-        json.dump(payload, fh, ensure_ascii=False, indent=2)
+        json.dump(graph, fh, ensure_ascii=False, indent=2)
         fh.write('\n')
 
+    total = sum(c['amount'] for c in graph['claims'])
     print(f'wrote {os.path.relpath(OUT, ROOT)}')
-    print(f'  records     {len(records)}')
+    print(f'  persons     {len(graph["persons"])}')
+    print(f'  positions   {len(graph["positions"])}')
+    print(f'  claims      {len(graph["claims"])}')
     print(f'  fiscal yrs  {len(years)} ({years[0]} .. {years[-1]})')
-    print(f'  total MVR   {payload["totals"]["amount"]:,}')
-    print(f'  warnings    {len(warnings)}')
-    for w in warnings[:10]:
+    print(f'  total MVR   {total:,}')
+    print(f'  warnings    {len(graph["warnings"])}')
+    for w in graph['warnings'][:10]:
         print(f'    - {w}')
 
 

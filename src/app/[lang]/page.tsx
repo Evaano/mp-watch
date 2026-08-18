@@ -4,7 +4,7 @@ import { Numeral } from "@/components/Numeral";
 import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
 import { YearTable } from "@/components/YearTable";
-import { allowances, toSummary } from "@/lib/allowances";
+import { registry, toSummary } from "@/lib/registry";
 import { getDict, isLang } from "@/lib/i18n";
 
 export default async function HomePage({
@@ -15,11 +15,13 @@ export default async function HomePage({
   const { lang } = await params;
   if (!isLang(lang)) notFound();
   const dict = getDict(lang);
+  const source = registry.primarySource();
 
-  const ranked = allowances.ranked();
-  const perYear = allowances.fiscalYears.map((year) => ({
+  const ranked = registry.ranked();
+  const totals = registry.totals();
+  const perYear = registry.fiscalYears.map((year) => ({
     year,
-    value: allowances.totals.byYear[year] ?? 0,
+    value: totals.byYear[year] ?? 0,
   }));
 
   return (
@@ -35,24 +37,24 @@ export default async function HomePage({
         <StatRow>
           <StatTile
             label={dict.statTotalPaid}
-            value={<Numeral value={allowances.totals.amount} currency />}
+            value={<Numeral value={totals.amount} currency />}
           />
           <StatTile
             label={dict.statMembers}
-            value={<Numeral value={allowances.totals.records} />}
+            value={<Numeral value={totals.people} />}
           />
           <StatTile
             label={dict.statYears}
-            value={<Numeral value={allowances.fiscalYears.length} />}
+            value={<Numeral value={registry.fiscalYears.length} />}
             note={
               <span className="numeral">
-                {`${allowances.source.periodStart.slice(0, 4)}-${allowances.source.periodEnd.slice(0, 4)}`}
+                {`${source.periodStart?.slice(0, 4)}-${source.periodEnd?.slice(0, 4)}`}
               </span>
             }
           />
           <StatTile
             label={dict.statHighest}
-            value={<Numeral value={ranked[0].total} currency />}
+            value={<Numeral value={registry.totalSpent(ranked[0].id)} currency />}
             note={lang === "dv" ? ranked[0].name : ranked[0].nameLatin}
           />
         </StatRow>
