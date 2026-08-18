@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Tokens. One theme for the whole page, one accent, one radius scale.
+   The accent doubles as the data-mark colour and was validated against both
+   surfaces for lightness band, chroma floor and >=3:1 contrast.
+   --------------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --surface: #fcfcfb;
+  --surface-raised: #ffffff;
+  --surface-sunken: #f3f4f3;
+  --line: #e0e3e2;
+  --line-strong: #c8cecd;
+  --ink: #16201f;
+  --ink-muted: #5b6866;
+  --accent: #0e9488;
+  --accent-ink: #0b6f66;
+  --accent-wash: #e3f2f0;
+  --radius: 8px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --surface: #1a1a19;
+    --surface-raised: #232624;
+    --surface-sunken: #131514;
+    --line: #333734;
+    --line-strong: #4a4f4c;
+    --ink: #e9edec;
+    --ink-muted: #9aa5a3;
+    --accent: #1fa89a;
+    --accent-ink: #4cc4b6;
+    --accent-wash: #16302d;
   }
 }
 
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-wash: var(--accent-wash);
+  --radius-card: var(--radius);
+  --font-sans: var(--font-latin), system-ui, sans-serif;
+  --font-thaana: var(--font-thaana), var(--font-latin), system-ui, sans-serif;
+  --font-mono: var(--font-mono-latin), ui-monospace, monospace;
+}
+
+html {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* Thaana needs more leading than Latin at the same size or the vowel marks
+   collide with the line above. Applied by language, not by element. */
+:lang(dv) {
+  font-family: var(--font-thaana);
+  line-height: 1.85;
+}
+
+/* Thaana sits optically smaller than Latin at an equal font-size, so it gets a
+   bump. The attribute selector only matches elements that carry lang, never
+   their descendants, so the two rules below can never compound: a Dhivehi page
+   scales once at the root, and a Dhivehi island inside an English page scales
+   once at the island. */
+html[lang="dv"] {
+  font-size: 112.5%;
+}
+
+[lang="dv"]:not(html) {
+  font-size: 1.12em;
+}
+
+/* Figures stay in Latin digits and stay LTR even inside an RTL sentence. */
+.numeral {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Native-feeling touch behaviour: no grey flash on tap, no rubber-band on the
+   document, and momentum scrolling kept where it belongs. */
+html {
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Every tappable target clears 44px on touch pointers. */
+@media (pointer: coarse) {
+  a,
+  button,
+  summary,
+  input[type="search"] {
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,0 +1,6795 @@
+{
+  "source": {
+    "title": "Health insurance premiums paid for members of the People's Majlis",
+    "titleDv": "ރައްޔިތުންގެ މަޖިލީހުގެ މެންބަރުންނަށް ހެލްތު އިންޝުއަރެންސް ޕްރީމިއަމަށް ހިނގާފައިވާ ޚަރަދު",
+    "publisher": "People's Majlis",
+    "periodStart": "2014-05-28",
+    "periodEnd": "2025-05-27",
+    "currency": "MVR",
+    "pdfUrl": "https://mvdevsunion.github.io/MPs_allowance/mps-allowance.pdf",
+    "landingUrl": "https://mvdevsunion.github.io/MPs_allowance/"
+  },
+  "terms": [
+    {
+      "number": 18,
+      "start": "2014-05-28",
+      "end": "2019-05-27"
+    },
+    {
+      "number": 19,
+      "start": "2019-05-28",
+      "end": "2024-05-27"
+    },
+    {
+      "number": 20,
+      "start": "2024-05-28",
+      "end": "2025-05-27"
+    }
+  ],
+  "fiscalYears": [
+    "2014-2015",
+    "2015-2016",
+    "2016-2017",
+    "2017-2018",
+    "2018-2019",
+    "2019-2020",
+    "2020-2021",
+    "2021-2022",
+    "2022-2023",
+    "2023-2024",
+    "2024-2025"
+  ],
+  "totals": {
+    "records": 266,
+    "amount": 92235000,
+    "byYear": {
+      "2014-2015": 4500000,
+      "2015-2016": 4575000,
+      "2016-2017": 8520000,
+      "2017-2018": 8760000,
+      "2018-2019": 8400000,
+      "2019-2020": 8592000,
+      "2020-2021": 9240000,
+      "2021-2022": 9216000,
+      "2022-2023": 9360000,
+      "2023-2024": 9096000,
+      "2024-2025": 11976000
+    }
+  },
+  "warnings": [],
+  "records": [
+    {
+      "name": "ޤާސިމް އިބްރާހީމް",
+      "nameLatin": "qaasim ibraaheem",
+      "title": "Alfaazil",
+      "constituency": "މާމިގިލި ދާއިރާ",
+      "constituencyLatin": "maamigili dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 149,
+      "byYear": {
+        "2014-2015": 112500,
+        "2015-2016": 112500,
+        "2016-2017": 216000,
+        "2017-2018": 240000,
+        "2018-2019": 240000,
+        "2019-2020": 240000,
+        "2020-2021": 240000,
+        "2021-2022": 240000,
+        "2022-2023": 240000,
+        "2023-2024": 216000,
+        "2024-2025": 264000
+      },
+      "total": 2361000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "qaasim-ibraaheem-maamigili"
+    },
+    {
+      "name": "ސަޢުދު ޙުސައިން",
+      "nameLatin": "saudhu husain",
+      "title": "Alfaazil",
+      "constituency": "ވިލިނގިލި ދާއިރާ",
+      "constituencyLatin": "vilingili dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 204,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 144000,
+        "2017-2018": 144000,
+        "2018-2019": 144000,
+        "2019-2020": 144000,
+        "2020-2021": 144000,
+        "2021-2022": 144000,
+        "2022-2023": 144000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 1277000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "saudhu-husain-vilingili"
+    },
+    {
+      "name": "އަޙްމަދު ޠާރިޤް",
+      "nameLatin": "ahmadhu taariq",
+      "title": "Alfaazil",
+      "constituency": "މަހިބަދޫ ދާއިރާ",
+      "constituencyLatin": "mahibadhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 151,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 144000,
+        "2023-2024": 144000,
+        "2024-2025": 120000
+      },
+      "total": 1253000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-taariq-mahibadhoo"
+    },
+    {
+      "name": "އިބްރާހީމް ނަޞީރު",
+      "nameLatin": "ibraaheem naseeru",
+      "title": "Alfaazil",
+      "constituency": "މުލަކު ދާއިރާ",
+      "constituencyLatin": "mulaku dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 165,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 144000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 1133000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-naseeru-mulaku"
+    },
+    {
+      "name": "ޢަލީ ޙުސައިން",
+      "nameLatin": "alee husain",
+      "title": "Al-Ustaz",
+      "constituency": "ކެންދޫ ދާއިރާ",
+      "constituencyLatin": "kendhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 120,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 1012000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-husain-kendhoo"
+    },
+    {
+      "name": "މުޙައްމަދު އަސްލަމް",
+      "nameLatin": "muhamadhu aslam",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ އުތުރު ދާއިރާ",
+      "constituencyLatin": "hithadhoo uthuru dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 250,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 120000,
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 964000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-aslam-hithadhoo-uthuru"
+    },
+    {
+      "name": "ޢަބްދުﷲ ރިފާޢު",
+      "nameLatin": "abdhuullah rifaau",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "maafannu dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 34,
+      "byYear": {
+        "2014-2015": 75000,
+        "2015-2016": 87500,
+        "2016-2017": 168000,
+        "2017-2018": 168000,
+        "2018-2019": 168000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 168000
+      },
+      "total": 954500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-rifaau-maafannu-dhekunu"
+    },
+    {
+      "name": "އިބްރާހީމް ޙަސަން",
+      "nameLatin": "ibraaheem hasan",
+      "title": "Alfaazil",
+      "constituency": "ތޮއްޑޫ ދާއިރާ",
+      "constituencyLatin": "thodoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 146,
+      "byYear": {
+        "2014-2015": 112500,
+        "2015-2016": 112500,
+        "2016-2017": 192000,
+        "2017-2018": 192000,
+        "2018-2019": 192000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 945000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-hasan-thodoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަބްދުﷲ",
+      "nameLatin": "muhamadhu abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "އިހަވަންދޫ ދާއިރާ",
+      "constituencyLatin": "ihavandhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 46,
+      "byYear": {
+        "2014-2015": 75000,
+        "2015-2016": 100000,
+        "2016-2017": 192000,
+        "2017-2018": 192000,
+        "2018-2019": 216000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 919000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-abdhuullah-ihavandhoo"
+    },
+    {
+      "name": "ރިޔާޟް ރަޝީދު",
+      "nameLatin": "riyaaz rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ވިލުފުށި ދާއިރާ",
+      "constituencyLatin": "vilufushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 177,
+      "byYear": {
+        "2014-2015": 100000,
+        "2015-2016": 100000,
+        "2016-2017": 192000,
+        "2017-2018": 192000,
+        "2018-2019": 168000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 896000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "riyaaz-rasheedhu-vilufushi"
+    },
+    {
+      "name": "އަޙްމަދު ޝިޔާމް",
+      "nameLatin": "ahmadhu shiyaam",
+      "title": "Alfaazil",
+      "constituency": "ނައިފަރު ދާއިރާ",
+      "constituencyLatin": "naifaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 127,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 892000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-shiyaam-naifaru"
+    },
+    {
+      "name": "މުޙައްމަދު މުސްޠަފާ",
+      "nameLatin": "muhamadhu mustafaa",
+      "title": "Alfaazil",
+      "constituency": "ތިމަރަފުށި ދާއިރާ",
+      "constituencyLatin": "thimarafushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 180,
+      "byYear": {
+        "2014-2015": 87500,
+        "2015-2016": 87500,
+        "2016-2017": 168000,
+        "2017-2018": 192000,
+        "2018-2019": 192000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 871000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-mustafaa-thimarafushi"
+    },
+    {
+      "name": "ޙަސަން މުފީދު ޢަބްދުލްޤާދިރު",
+      "nameLatin": "hasan mufeedhu abdhulqaadhiru",
+      "title": "Alfaazil",
+      "constituency": "މިލަންދޫ ދާއިރާ",
+      "constituencyLatin": "milandhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 78,
+      "byYear": {
+        "2014-2015": 75000,
+        "2015-2016": 75000,
+        "2016-2017": 144000,
+        "2017-2018": 144000,
+        "2018-2019": 144000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 144000
+      },
+      "total": 846000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "hasan-mufeedhu-abdhulqaadhiru-milandhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޝާހިދު",
+      "nameLatin": "muhamadhu shaahidhu",
+      "title": "Alfaazil",
+      "constituency": "ހުޅުދޫ ދާއިރާ",
+      "constituencyLatin": "hulhudhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 242,
+      "byYear": {
+        "2014-2015": 75000,
+        "2015-2016": 75000,
+        "2016-2017": 144000,
+        "2017-2018": 168000,
+        "2018-2019": 144000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 120000
+      },
+      "total": 846000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-shaahidhu-hulhudhoo",
+      "sameNameAs": [
+        "muhamadhu-shaahidhu-funadhoo"
+      ]
+    },
+    {
+      "name": "ޢަބްދުﷲ ޚަލީލް",
+      "nameLatin": "abdhuullah khaleel",
+      "title": "Alfaazil",
+      "constituency": "ނިލަންދޫ ދާއިރާ",
+      "constituencyLatin": "nilandhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 172,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 87500,
+        "2016-2017": 168000,
+        "2017-2018": 168000,
+        "2018-2019": 168000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000
+      },
+      "total": 774000,
+      "yearsPaid": 10,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "abdhuullah-khaleel-nilandhoo"
+    },
+    {
+      "name": "ޢަލީ ޢާޒިމް",
+      "nameLatin": "alee aazim",
+      "title": "Alfaazil",
+      "constituency": "މެދުހެންވޭރު ދާއިރާ",
+      "constituencyLatin": "medhuhenveyru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 9,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 96000,
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 72000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 749000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-aazim-medhuhenveyru"
+    },
+    {
+      "name": "އިސްމާޢީލް އަޙްމަދު",
+      "nameLatin": "ismaaeel ahmadhu",
+      "title": "Alfaazil",
+      "constituency": "ދުވާފަރު ދާއިރާ",
+      "constituencyLatin": "dhuvaafaru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 107,
+      "byYear": {
+        "2019-2020": 144000,
+        "2020-2021": 144000,
+        "2021-2022": 144000,
+        "2022-2023": 144000,
+        "2023-2024": 144000,
+        "2024-2025": 24000
+      },
+      "total": 744000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ismaaeel-ahmadhu-dhuvaafaru"
+    },
+    {
+      "name": "އަޙްމަދު އަސްޢަދު",
+      "nameLatin": "ahmadhu asadhu",
+      "title": "Alfaazil",
+      "constituency": "ދާންދޫ ދާއިރާ",
+      "constituencyLatin": "dhaandhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 207,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 75000,
+        "2016-2017": 120000,
+        "2017-2018": 144000,
+        "2018-2019": 144000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 689500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-asadhu-dhaandhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ފަލާޙް",
+      "nameLatin": "muhamadhu falaah",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު ހުޅަނގު ދާއިރާ",
+      "constituencyLatin": "maafannu hulhangu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 37,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 62500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 688500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-falaah-maafannu-hulhangu"
+    },
+    {
+      "name": "އަޙްމަދު ނާޒިމް",
+      "nameLatin": "ahmadhu naazim",
+      "title": "Alfaazil",
+      "constituency": "ދިއްގަރު ދާއިރާ",
+      "constituencyLatin": "dhigaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 161,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 120000
+      },
+      "total": 677000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-naazim-dhigaru"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަބްދުލްކަރީމް",
+      "nameLatin": "muhamadhu abdhulkareem",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 12,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 144000,
+        "2018-2019": 144000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 677000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-abdhulkareem-henveyru-dhekunu"
+    },
+    {
+      "name": "އަޙްމަދު ސަލީމް",
+      "nameLatin": "ahmadhu saleem",
+      "title": "Alfaazil",
+      "constituency": "އޭދަފުށި ދާއިރާ",
+      "constituencyLatin": "eydhafushi dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 118,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 48000,
+        "2024-2025": 48000
+      },
+      "total": 675000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-saleem-eydhafushi",
+      "sameNameAs": [
+        "ahmadhu-saleem-hoarafushi"
+      ]
+    },
+    {
+      "name": "އީވާ ޢަބްދުﷲ",
+      "nameLatin": "eevaa abdhuullah",
+      "title": "Alfaazilaa",
+      "constituency": "ގަލޮޅު އުތުރު ދާއިރާ",
+      "constituencyLatin": "galolhu uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 17,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 675000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "eevaa-abdhuullah-galolhu-uthuru"
+    },
+    {
+      "name": "އިބްރާހީމް ރިޟާ",
+      "nameLatin": "ibraaheem rizaa",
+      "title": "Al-Ustaz",
+      "constituency": "- ގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "guraidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 139,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 72000,
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000
+      },
+      "total": 664500,
+      "yearsPaid": 9,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "ibraaheem-rizaa-guraidhoo"
+    },
+    {
+      "name": "އަޙްމަދު މުބީން",
+      "nameLatin": "ahmadhu mubeen",
+      "title": "Alfaazil",
+      "constituency": "ބިލެތްދޫ ދާއިރާ",
+      "constituencyLatin": "bilethdhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 168,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 629000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-mubeen-bilethdhoo"
+    },
+    {
+      "name": "ޙުސައިން ޝަހުދީ",
+      "nameLatin": "husain shahudhee",
+      "title": "Alfaazil",
+      "constituency": "ހަނިމާދޫ ދާއިރާ",
+      "constituencyLatin": "hanimaadhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 59,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 629000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "husain-shahudhee-hanimaadhoo"
+    },
+    {
+      "name": "އިލްހާމް އަޙްމަދު",
+      "nameLatin": "ilhaam ahmadhu",
+      "title": "Alfaazil",
+      "constituency": "ދަނގެތި ދާއިރާ",
+      "constituencyLatin": "dhangethi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 152,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 629000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ilhaam-ahmadhu-dhangethi"
+    },
+    {
+      "name": "ޖަމީލް ޢުޘްމާން",
+      "nameLatin": "jameel uthmaan",
+      "title": "Alfaazil",
+      "constituency": "ގެމަނަފުށި ދާއިރާ",
+      "constituencyLatin": "gemanafushi dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 210,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 629000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "jameel-uthmaan-gemanafushi"
+    },
+    {
+      "name": "އިބްރާހީމް ޝުޖާޢު",
+      "nameLatin": "ibraaheem shujaau",
+      "title": "Alfaazil",
+      "constituency": "ބާރަށު ދާއިރާ",
+      "constituencyLatin": "baarashu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 50,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 120000
+      },
+      "total": 628000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-shujaau-baarashu"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަލީ",
+      "nameLatin": "muhamadhu alee",
+      "title": "Alfaazil",
+      "constituency": "ދުވާފަރު ދާއިރާ",
+      "constituencyLatin": "dhuvaafaru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 106,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 120000
+      },
+      "total": 628000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-alee-dhuvaafaru",
+      "sameNameAs": [
+        "muhamadhu-alee-gadhoo"
+      ]
+    },
+    {
+      "name": "އިމްތިޔާޒް ފަހުމީ",
+      "nameLatin": "imthiyaaz fahumee",
+      "title": "Al-Ustaz",
+      "constituency": "މާފަންނު އުތުރު ދާއިރާ",
+      "constituencyLatin": "maafannu uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 30,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 626000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "imthiyaaz-fahumee-maafannu-uthuru"
+    },
+    {
+      "name": "ޢަބްދުﷲ ސަނީފް",
+      "nameLatin": "abdhuullah saneef",
+      "title": "Alfaazil",
+      "constituency": "ތިނަދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "thinadhoo dhekunu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 218,
+      "byYear": {
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 624000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhuullah-saneef-thinadhoo-dhekunu"
+    },
+    {
+      "name": "ޙުސައިން މުޙައްމަދުދީދީ",
+      "nameLatin": "husain muhamadhudheedhee",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު މެދު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku medhu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 237,
+      "byYear": {
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 624000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "husain-muhamadhudheedhee-fuvamulaku-medhu"
+    },
+    {
+      "name": "އިލްޔާސް ލަބީބު",
+      "nameLatin": "ilyaas labeebu",
+      "title": "Alfaazil",
+      "constituency": "ހުޅުދޫ ދާއިރާ",
+      "constituencyLatin": "hulhudhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 241,
+      "byYear": {
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 624000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ilyaas-labeebu-hulhudhoo",
+      "sameNameAs": [
+        "ilyaas-labeebu-hulhumeedhoo"
+      ]
+    },
+    {
+      "name": "ޔަޢުޤޫބު ޢަބްދުﷲ",
+      "nameLatin": "yauqoobu abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ދާންދޫ ދާއިރާ",
+      "constituencyLatin": "dhaandhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 208,
+      "byYear": {
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 624000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "yauqoobu-abdhuullah-dhaandhoo"
+    },
+    {
+      "name": "ފައިޞަލް ނަސީމް",
+      "nameLatin": "faisal naseem",
+      "title": "Alfaazil",
+      "constituency": "ކާށިދޫ ދާއިރާ",
+      "constituencyLatin": "kaashidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 135,
+      "byYear": {
+        "2014-2015": 75000,
+        "2015-2016": 75000,
+        "2016-2017": 144000,
+        "2017-2018": 144000,
+        "2018-2019": 144000,
+        "2024-2025": 24000
+      },
+      "total": 606000,
+      "yearsPaid": 6,
+      "terms": [
+        18,
+        20
+      ],
+      "id": "faisal-naseem-kaashidhoo"
+    },
+    {
+      "name": "އަޙްމަދު މަރުޒޫގު",
+      "nameLatin": "ahmadhu maruzoogu",
+      "title": "Alfaazil",
+      "constituency": "ފެލިދޫ ދާއިރާ",
+      "constituencyLatin": "felidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 155,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 96000,
+        "2017-2018": 120000,
+        "2018-2019": 120000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 605000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-maruzoogu-felidhoo"
+    },
+    {
+      "name": "ޢަލީ ނިޒާރު",
+      "nameLatin": "alee nizaaru",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "hithadhoo dhekunu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 257,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 605000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-nizaaru-hithadhoo-dhekunu"
+    },
+    {
+      "name": "މުޙައްމަދު ވަޙީދު އިބްރާހީމް",
+      "nameLatin": "muhamadhu vaheedhu ibraaheem",
+      "title": "Al-Ustaz",
+      "constituency": "ތުލުސްދޫ ދާއިރާ",
+      "constituencyLatin": "thulusdhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 137,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 605000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-vaheedhu-ibraaheem-thulusdhoo"
+    },
+    {
+      "name": "ނާޒިމް ރަޝާދު",
+      "nameLatin": "naazim rashaadhu",
+      "title": "Alfaazil",
+      "constituency": "ތުޅާދޫ ދާއިރާ",
+      "constituencyLatin": "thulhaadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 115,
+      "byYear": {
+        "2014-2015": 62500,
+        "2015-2016": 62500,
+        "2016-2017": 120000,
+        "2017-2018": 120000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 605000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "naazim-rashaadhu-thulhaadhoo"
+    },
+    {
+      "name": "ރޮޒައިނާ އާދަމް",
+      "nameLatin": "rozainaa aadham",
+      "title": "Alfaazilaa",
+      "constituency": "އައްޑޫމީދޫ ދާއިރާ",
+      "constituencyLatin": "adoomeedhoo dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 259,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 604000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "rozainaa-aadham-adoomeedhoo"
+    },
+    {
+      "name": "ޢަލީ ފަޒާދު",
+      "nameLatin": "alee fazaadhu",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު މެދު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku medhu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 236,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 96000
+      },
+      "total": 591500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-fazaadhu-fuvamulaku-medhu"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޖާބިރު",
+      "nameLatin": "abdhuullah jaabiru",
+      "title": "Alfaazil",
+      "constituency": "ކާށިދޫ ދާއިރާ",
+      "constituencyLatin": "kaashidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 134,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 577000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-jaabiru-kaashidhoo"
+    },
+    {
+      "name": "ޢަބްދުލްމުޣުނީ",
+      "nameLatin": "abdhulmughunee",
+      "title": "Alfaazil",
+      "constituency": "ތިނަދޫ އުތުރު ދާއިރާ",
+      "constituencyLatin": "thinadhoo uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 216,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 120000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 576000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhulmughunee-thinadhoo-uthuru"
+    },
+    {
+      "name": "އަޙްމަދު ޚައިތަމް",
+      "nameLatin": "ahmadhu khaitham",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
+      "constituencyLatin": "machangolhi dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 28,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 72000,
+        "2022-2023": 144000,
+        "2023-2024": 144000,
+        "2024-2025": 24000
+      },
+      "total": 576000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-khaitham-machangolhi-dhekunu"
+    },
+    {
+      "name": "އިބްރާހީމް ނަސީމް",
+      "nameLatin": "ibraaheem naseem",
+      "title": "Alfaazil",
+      "constituency": "ތުލުސްދޫ ދާއިރާ",
+      "constituencyLatin": "thulusdhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 138,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 96000
+      },
+      "total": 576000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ibraaheem-naseem-thulusdhoo"
+    },
+    {
+      "name": "ޢަބްދުލްމުޙުސިން ޙަމީދު",
+      "nameLatin": "abdhulmuhusin hameedhu",
+      "title": "Alfaazil",
+      "constituency": "ނިލަންދޫ ދާއިރާ",
+      "constituencyLatin": "nilandhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 171,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 553000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhulmuhusin-hameedhu-nilandhoo"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޝަހީމް ޢަބްދުލްޙަކީމް",
+      "nameLatin": "abdhuullah shaheem abdhulhakeem",
+      "title": "Alfaazil",
+      "constituency": "ކަނޑިތީމު ދާއިރާ",
+      "constituencyLatin": "kanditheemu dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 75,
+      "byYear": {
+        "2019-2020": 120000,
+        "2020-2021": 120000,
+        "2021-2022": 120000,
+        "2022-2023": 96000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 552000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhuullah-shaheem-abdhulhakeem-kanditheemu"
+    },
+    {
+      "name": "އަޙްމަދު ސަޢީދު",
+      "nameLatin": "ahmadhu saeedhu",
+      "title": "Alfaazil",
+      "constituency": "ގެމަނަފުށި ދާއިރާ",
+      "constituencyLatin": "gemanafushi dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 211,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 144000,
+        "2021-2022": 120000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 552000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-saeedhu-gemanafushi"
+    },
+    {
+      "name": "ޖީހާން މަޙްމޫދު",
+      "nameLatin": "jeehaan mahmoodhu",
+      "title": "Alfaazilaa",
+      "constituency": "ހިންނަވަރު ދާއިރާ",
+      "constituencyLatin": "hinnavaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 124,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 552000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "jeehaan-mahmoodhu-hinnavaru"
+    },
+    {
+      "name": "މުޙައްމަދު ޝިފާޢު",
+      "nameLatin": "muhamadhu shifaau",
+      "title": "Alfaazil",
+      "constituency": "އިހަވަންދޫ ދާއިރާ",
+      "constituencyLatin": "ihavandhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 47,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 552000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-shifaau-ihavandhoo"
+    },
+    {
+      "name": "ޙުސައިން މުޙައްމަދު ލަޠީފް",
+      "nameLatin": "husain muhamadhu lateef",
+      "title": "Alfaazil",
+      "constituency": "ފަރެސްމާތޮޑާ ދާއިރާ",
+      "constituencyLatin": "faresmaathodaa dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 225,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 72000,
+        "2023-2024": 72000
+      },
+      "total": 542500,
+      "yearsPaid": 10,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "husain-muhamadhu-lateef-faresmaathodaa"
+    },
+    {
+      "name": "ޢަބްދުﷲ އަޙްމަދު",
+      "nameLatin": "abdhuullah ahmadhu",
+      "title": "Alfaazil",
+      "constituency": "ތިނަދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "thinadhoo dhekunu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 217,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 532000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-ahmadhu-thinadhoo-dhekunu"
+    },
+    {
+      "name": "މުޙައްމަދު ނާޡިމް",
+      "nameLatin": "muhamadhu naazim",
+      "title": "Alfaazil",
+      "constituency": "ވައިކަރަދޫ ދާއިރާ",
+      "constituencyLatin": "vaikaradhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 65,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 532000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-naazim-vaikaradhoo",
+      "sameNameAs": [
+        "muhamadhu-naazim-dhangethi",
+        "muhamadhu-naazim-maafannu-uthuru"
+      ]
+    },
+    {
+      "name": "އިބްރާހީމް ފަލާޙް",
+      "nameLatin": "ibraaheem falaah",
+      "title": "Alfaazil",
+      "constituency": "އިނގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "inguraidhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 109,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 120000
+      },
+      "total": 531000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-falaah-inguraidhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ރަޝީދު ޙުސައިން",
+      "nameLatin": "muhamadhu rasheedhu husain",
+      "title": "Alfaazil",
+      "constituency": "އަލިފުށި ދާއިރާ",
+      "constituencyLatin": "alifushi dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 99,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 48000,
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 531000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-rasheedhu-husain-alifushi"
+    },
+    {
+      "name": "މުޙައްމަދު އަމީތު އަޙްމަދުމަނިކު",
+      "nameLatin": "muhamadhu ameethu ahmadhumaniku",
+      "title": "Alfaazil",
+      "constituency": "މަޑުއްވަރި ދާއިރާ",
+      "constituencyLatin": "maduvari dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 112,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 519500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-ameethu-ahmadhumaniku-maduvari"
+    },
+    {
+      "name": "އަނާރާ ނަޢީމް",
+      "nameLatin": "anaaraa naeem",
+      "title": "Dr",
+      "constituency": "މަކުނުދޫ ދާއިރާ",
+      "constituencyLatin": "makunudhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 142,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000
+      },
+      "total": 508000,
+      "yearsPaid": 10,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "anaaraa-naeem-makunudhoo",
+      "sameNameAs": [
+        "anaaraa-naeem-huraa"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު އިސްމާޢީލް",
+      "nameLatin": "muhamadhu ismaaeel",
+      "title": "Alfaazil",
+      "constituency": "ހޯރަފުށި ދާއިރާ",
+      "constituencyLatin": "hoarafushi dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 41,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000
+      },
+      "total": 508000,
+      "yearsPaid": 10,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "muhamadhu-ismaaeel-hoarafushi",
+      "sameNameAs": [
+        "muhamadhu-ismaaeel-vilimaale"
+      ]
+    },
+    {
+      "name": "ޢަބްދުލްޣަނީ ޢަބްދުލްޙަކީމް",
+      "nameLatin": "abdhulghanee abdhulhakeem",
+      "title": "Alfaazil",
+      "constituency": "ކުރެންދޫ ދާއިރާ",
+      "constituencyLatin": "kurendhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 131,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhulghanee-abdhulhakeem-kurendhoo"
+    },
+    {
+      "name": "އަޙްމަދު ހާރޫން",
+      "nameLatin": "ahmadhu haaroon",
+      "title": "Alfaazil",
+      "constituency": "މަނަދޫ ދާއިރާ",
+      "constituencyLatin": "manadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 91,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-haaroon-manadhoo"
+    },
+    {
+      "name": "ޢަލީ ޙަމީދު",
+      "nameLatin": "alee hameedhu",
+      "title": "Alfaazil",
+      "constituency": "އިސްދޫ ދާއިރާ",
+      "constituencyLatin": "isdhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 191,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "alee-hameedhu-isdhoo"
+    },
+    {
+      "name": "ޢަލީ ނިޔާޒް",
+      "nameLatin": "alee niyaaz",
+      "title": "Alfaazil",
+      "constituency": "ހުޅުމާލެ ދާއިރާ",
+      "constituencyLatin": "hulhumaale dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 2,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "alee-niyaaz-hulhumaale"
+    },
+    {
+      "name": "ޙަސަން ލަޠީފް",
+      "nameLatin": "hasan lateef",
+      "title": "Al-Ustaz",
+      "constituency": "ހެންވޭރު ހުޅަނގު ދާއިރާ",
+      "constituencyLatin": "henveyru hulhangu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 15,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "hasan-lateef-henveyru-hulhangu",
+      "sameNameAs": [
+        "hasan-lateef-hithadhoo-dhekunu"
+      ]
+    },
+    {
+      "name": "ޙުސައިން ޝަހީމް",
+      "nameLatin": "husain shaheem",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 13,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "husain-shaheem-henveyru-dhekunu"
+    },
+    {
+      "name": "މުޙައްމަދު ރާޢީ",
+      "nameLatin": "muhamadhu raaee",
+      "title": "Alfaazil",
+      "constituency": "މަކުނުދޫ ދާއިރާ",
+      "constituencyLatin": "makunudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 72,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-raaee-makunudhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ރަޝީދު",
+      "nameLatin": "muhamadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 233,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 504000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-rasheedhu-fuvamulaku-uthuru",
+      "sameNameAs": [
+        "muhamadhu-rasheedhu-machangolhi-uthuru",
+        "muhamadhu-rasheedhu-nolhivaram",
+        "muhamadhu-rasheedhu-hithadhoo-medhu"
+      ]
+    },
+    {
+      "name": "ޢަލީ ޢާރިފް",
+      "nameLatin": "alee aarif",
+      "title": "Alfaazil",
+      "constituency": "ކެލާ ދާއިރާ",
+      "constituencyLatin": "kelaa dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 55,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000
+      },
+      "total": 484000,
+      "yearsPaid": 10,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "alee-aarif-kelaa"
+    },
+    {
+      "name": "ޢަލީ ރިޟާ",
+      "nameLatin": "alee rizaa",
+      "title": "Alfaazil",
+      "constituency": "މިލަންދޫ ދާއިރާ",
+      "constituencyLatin": "milandhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 77,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 481000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-rizaa-milandhoo"
+    },
+    {
+      "name": "މުޙައްމަދު މުމްތާޒް",
+      "nameLatin": "muhamadhu mumthaaz",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku dhekunu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 239,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 480000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-mumthaaz-fuvamulaku-dhekunu"
+    },
+    {
+      "name": "މުޙައްމަދު ނިހާދު",
+      "nameLatin": "muhamadhu nihaadhu",
+      "title": "Alfaazil",
+      "constituency": "ފޭދޫ ދާއިރާ",
+      "constituencyLatin": "feydhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 244,
+      "byYear": {
+        "2019-2020": 96000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 480000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-nihaadhu-feydhoo"
+    },
+    {
+      "name": "ޢަލީ ޝާހް",
+      "nameLatin": "alee shaah",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 232,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 460000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-shaah-fuvamulaku-uthuru"
+    },
+    {
+      "name": "އައްޝައިޙް މޫސާ ނިޒާރު އިބްރާހީމް",
+      "nameLatin": "ashaih moosaa nizaaru ibraaheem",
+      "title": null,
+      "constituency": "ކެޔޮދޫ ދާއިރާ",
+      "constituencyLatin": "keyodhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 158,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 460000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ashaih-moosaa-nizaaru-ibraaheem-keyodhoo"
+    },
+    {
+      "name": "ޢަބްދުއްރަޙީމް ޢަބްދުﷲ",
+      "nameLatin": "abdhuraheem abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ފޮނަދޫ ދާއިރާ",
+      "constituencyLatin": "fonadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 197,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 48000
+      },
+      "total": 459000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuraheem-abdhuullah-fonadhoo"
+    },
+    {
+      "name": "އިބްރާހީމް ޝަރީފް",
+      "nameLatin": "ibraaheem shareef",
+      "title": "Alfaazil",
+      "constituency": "މަރަދޫ ދާއިރާ",
+      "constituencyLatin": "maradhoo dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 248,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 458000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-shareef-maradhoo",
+      "sameNameAs": [
+        "ibraaheem-shareef-kelaa"
+      ]
+    },
+    {
+      "name": "ޙަސަން ޝިޔާން",
+      "nameLatin": "hasan shiyaan",
+      "title": "Alfaazil",
+      "constituency": "ތޮއްޑޫ ދާއިރާ",
+      "constituencyLatin": "thodoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 147,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 48000,
+        "2022-2023": 120000,
+        "2023-2024": 120000,
+        "2024-2025": 24000
+      },
+      "total": 456000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "hasan-shiyaan-thodoo"
+    },
+    {
+      "name": "ޙަސަން ޒަރީރު",
+      "nameLatin": "hasan zareeru",
+      "title": "Alfaazil",
+      "constituency": "މަތިވެރި ދާއިރާ",
+      "constituencyLatin": "mathiveri dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 144,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 72000,
+        "2023-2024": 96000,
+        "2024-2025": 72000
+      },
+      "total": 456000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "hasan-zareeru-mathiveri"
+    },
+    {
+      "name": "އިބްރާހީމް ނާޒިލް",
+      "nameLatin": "ibraaheem naazil",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "hithadhoo dhekunu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 258,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 96000
+      },
+      "total": 456000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ibraaheem-naazil-hithadhoo-dhekunu"
+    },
+    {
+      "name": "ޖަޢުފަރު ދާއޫދު",
+      "nameLatin": "jaufaru dhaaoodhu",
+      "title": "Alfaazil",
+      "constituency": "އުނގޫފާރު ދާއިރާ",
+      "constituencyLatin": "ungoofaaru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 102,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 447500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "jaufaru-dhaaoodhu-ungoofaaru"
+    },
+    {
+      "name": "މޫސާ މަނިކު",
+      "nameLatin": "moosaa maniku",
+      "title": "Alfaazil",
+      "constituency": "ހުޅުހެންވޭރު ދާއިރާ",
+      "constituencyLatin": "hulhuhenveyru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 1,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 447500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "moosaa-maniku-hulhuhenveyru"
+    },
+    {
+      "name": "ޢަލީ މަޢުރޫފް",
+      "nameLatin": "alee mauroof",
+      "title": "Alfaazil",
+      "constituency": "ކެނދިކުޅުދޫ ދާއިރާ",
+      "constituencyLatin": "kendhikulhudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 87,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 436000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-mauroof-kendhikulhudhoo"
+    },
+    {
+      "name": "އަޙްމަދު އަޒްހާން ފަހުމީ",
+      "nameLatin": "ahmadhu azhaan fahumee",
+      "title": "Alfaazil",
+      "constituency": "މާވަށު ދާއިރާ",
+      "constituencyLatin": "maavashu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 200,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 435000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-azhaan-fahumee-maavashu"
+    },
+    {
+      "name": "އިބްރާހީމް މުޙައްމަދުދީދީ",
+      "nameLatin": "ibraaheem muhamadhudheedhee",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
+      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 253,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 435000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-muhamadhudheedhee-hithadhoo-medhu"
+    },
+    {
+      "name": "އަޙްމަދު ޢަބްދުﷲ",
+      "nameLatin": "ahmadhu abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ބާރަށު ދާއިރާ",
+      "constituencyLatin": "baarashu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 45,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 432000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-abdhuullah-baarashu",
+      "sameNameAs": [
+        "ahmadhu-abdhuullah-ihavandhoo"
+      ]
+    },
+    {
+      "name": "ޙުސައިން ޒިޔާދު",
+      "nameLatin": "husain ziyaadhu",
+      "title": "Alfaazil",
+      "constituency": "ވައިކަރަދޫ ދާއިރާ",
+      "constituencyLatin": "vaikaradhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 66,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 72000
+      },
+      "total": 432000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "husain-ziyaadhu-vaikaradhoo"
+    },
+    {
+      "name": "އިބްރާހީމް މުޢިއްޒު",
+      "nameLatin": "ibraaheem muizu",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު އުތުރު ދާއިރާ",
+      "constituencyLatin": "henveyru uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 7,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 432000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ibraaheem-muizu-henveyru-uthuru"
+    },
+    {
+      "name": "މުޙައްމަދު ރަޝީދު",
+      "nameLatin": "muhamadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
+      "constituencyLatin": "machangolhi uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 22,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 96000,
+        "2022-2023": 72000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 432000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-rasheedhu-machangolhi-uthuru",
+      "sameNameAs": [
+        "muhamadhu-rasheedhu-nolhivaram",
+        "muhamadhu-rasheedhu-fuvamulaku-uthuru",
+        "muhamadhu-rasheedhu-hithadhoo-medhu"
+      ]
+    },
+    {
+      "name": "ޔާސިރު ޢަބްދުއްލަޠީފް",
+      "nameLatin": "yaasiru abdhulateef",
+      "title": "Alfaazil",
+      "constituency": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
+      "constituencyLatin": "kulhudhufushi uthuru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 67,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000,
+        "2024-2025": 24000
+      },
+      "total": 432000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "yaasiru-abdhulateef-kulhudhufushi-uthuru"
+    },
+    {
+      "name": "މުޢާޒު މުޙައްމަދު ރަޝީދު",
+      "nameLatin": "muaazu muhamadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "މަޑަވެލި ދާއިރާ",
+      "constituencyLatin": "madaveli dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 221,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 410000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muaazu-muhamadhu-rasheedhu-madaveli"
+    },
+    {
+      "name": "އަޙްމަދު އުޝާމް",
+      "nameLatin": "ahmadhu ushaam",
+      "title": "Al-Ustaz",
+      "constituency": "ވިލިމާލެ ދާއިރާ",
+      "constituencyLatin": "vilimaale dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 40,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 96000,
+        "2023-2024": 96000
+      },
+      "total": 408000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "ahmadhu-ushaam-vilimaale"
+    },
+    {
+      "name": "އިބްރާހީމް ފަޟުލް ރަޝީދު",
+      "nameLatin": "ibraaheem fazul rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ފެލިދޫ ދާއިރާ",
+      "constituencyLatin": "felidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 156,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 96000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000
+      },
+      "total": 408000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "ibraaheem-fazul-rasheedhu-felidhoo"
+    },
+    {
+      "name": "ފައްޔާޟް އިސްމާޢީލް",
+      "nameLatin": "fayaaz ismaaeel",
+      "title": "Al-Ustaz",
+      "constituency": "ގަމު ދާއިރާ",
+      "constituencyLatin": "gamu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 194,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 96000,
+        "2024-2025": 24000
+      },
+      "total": 399500,
+      "yearsPaid": 6,
+      "terms": [
+        18,
+        20
+      ],
+      "id": "fayaaz-ismaaeel-gamu"
+    },
+    {
+      "name": "މާރިޔާ އަޙްމަދު ދީދީ",
+      "nameLatin": "maariyaa ahmadhu dheedhee",
+      "title": "Al-Ustaza",
+      "constituency": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
+      "constituencyLatin": "machangolhi uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 21,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 96000,
+        "2017-2018": 96000,
+        "2018-2019": 72000,
+        "2024-2025": 24000
+      },
+      "total": 388000,
+      "yearsPaid": 6,
+      "terms": [
+        18,
+        20
+      ],
+      "id": "maariyaa-ahmadhu-dheedhee-machangolhi-uthuru"
+    },
+    {
+      "name": "ސަޢުދުﷲ ޙިލްމީ",
+      "nameLatin": "saudhuullah hilmee",
+      "title": "Alfaazil",
+      "constituency": "ތިނަދޫ އުތުރު ދާއިރާ",
+      "constituencyLatin": "thinadhoo uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 215,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 48000
+      },
+      "total": 387000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "saudhuullah-hilmee-thinadhoo-uthuru"
+    },
+    {
+      "name": "ޙުސައިންމަނިކު ދޮންމަނިކު",
+      "nameLatin": "husainmaniku dhonmaniku",
+      "title": "Alfaazil",
+      "constituency": "ތ. ގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "th guraidhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 187,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 386000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "husainmaniku-dhonmaniku-th-guraidhoo"
+    },
+    {
+      "name": "އާދަމް ޢަލީ",
+      "nameLatin": "aadham alee",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "maafannu dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 35,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "aadham-alee-maafannu-dhekunu"
+    },
+    {
+      "name": "ޢަބްދުﷲ ވަޙީދު",
+      "nameLatin": "abdhuullah vaheedhu",
+      "title": "Alfaazil",
+      "constituency": "ދިއްދޫ ދާއިރާ",
+      "constituencyLatin": "dhidhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 53,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhuullah-vaheedhu-dhidhoo"
+    },
+    {
+      "name": "އަޙްމަދު ރަޝީދު",
+      "nameLatin": "ahmadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
+      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 254,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-rasheedhu-hithadhoo-medhu",
+      "sameNameAs": [
+        "ahmadhu-rasheedhu-hoarafushi",
+        "ahmadhu-rasheedhu-gadhoo"
+      ]
+    },
+    {
+      "name": "ޙިސާން ޙުސައިން",
+      "nameLatin": "hisaan husain",
+      "title": "Al-Ustaza",
+      "constituency": "ތުޅާދޫ ދާއިރާ",
+      "constituencyLatin": "thulhaadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 116,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "hisaan-husain-thulhaadhoo"
+    },
+    {
+      "name": "އިކްރާމް ޙަސަން",
+      "nameLatin": "ikraam hasan",
+      "title": "Alfaazil",
+      "constituency": "ދިއްގަރު ދާއިރާ",
+      "constituencyLatin": "dhigaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 163,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ikraam-hasan-dhigaru"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަބްދުﷲ ޝަފީޤް",
+      "nameLatin": "muhamadhu abdhuullah shafeeq",
+      "title": "Alfaazil",
+      "constituency": "ވެލިދޫ ދާއިރާ",
+      "constituencyLatin": "velidhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 94,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-abdhuullah-shafeeq-velidhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ނަޝީދު ޢަބްދުﷲ",
+      "nameLatin": "muhamadhu nasheedhu abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
+      "constituencyLatin": "nolhivaram dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 63,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-nasheedhu-abdhuullah-nolhivaram"
+    },
+    {
+      "name": "މުޙައްމަދު ސަޢީދު",
+      "nameLatin": "muhamadhu saeedhu",
+      "title": "Alfaazil",
+      "constituency": "މާވަށު ދާއިރާ",
+      "constituencyLatin": "maavashu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 201,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 72000,
+        "2021-2022": 96000,
+        "2022-2023": 96000,
+        "2023-2024": 96000
+      },
+      "total": 384000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "muhamadhu-saeedhu-maavashu"
+    },
+    {
+      "name": "މުޙައްމަދު ޝާހިދު",
+      "nameLatin": "muhamadhu shaahidhu",
+      "title": "Alfaazil",
+      "constituency": "ފުނަދޫ ދާއިރާ",
+      "constituencyLatin": "funadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 84,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-shaahidhu-funadhoo",
+      "sameNameAs": [
+        "muhamadhu-shaahidhu-hulhudhoo"
+      ]
+    },
+    {
+      "name": "ޔޫނުސް ޢަލީ",
+      "nameLatin": "yoonus alee",
+      "title": "Alfaazil",
+      "constituency": "ހޮޅުދޫ ދާއިރާ",
+      "constituencyLatin": "holhudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 96,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 384000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "yoonus-alee-holhudhoo"
+    },
+    {
+      "name": "ޢަބްދުލްބާރީ ޢަބްދުﷲ",
+      "nameLatin": "abdhulbaaree abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ކުރެންދޫ ދާއިރާ",
+      "constituencyLatin": "kurendhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 130,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 363000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhulbaaree-abdhuullah-kurendhoo"
+    },
+    {
+      "name": "ޢަލީ މުޙައްމަދު",
+      "nameLatin": "alee muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "ހޮޅުދޫ ދާއިރާ",
+      "constituencyLatin": "holhudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 97,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 363000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-muhamadhu-holhudhoo"
+    },
+    {
+      "name": "އަޙްމަދު ޢީސާ",
+      "nameLatin": "ahmadhu eesaa",
+      "title": "Alfaazil",
+      "constituency": "ކެނދިކުޅުދޫ ދާއިރާ",
+      "constituencyLatin": "kendhikulhudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 86,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 361000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-eesaa-kendhikulhudhoo"
+    },
+    {
+      "name": "ޢަބްދުﷲ ރިޔާޟް",
+      "nameLatin": "abdhuullah riyaaz",
+      "title": "Alfaazil",
+      "constituency": "ތިމަރަފުށި ދާއިރާ",
+      "constituencyLatin": "thimarafushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 182,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 360000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhuullah-riyaaz-thimarafushi",
+      "sameNameAs": [
+        "abdhuullah-riyaaz-kinbidhoo"
+      ]
+    },
+    {
+      "name": "ޙުސައިން ޤާސިމް",
+      "nameLatin": "husain qaasim",
+      "title": "Alfaazil",
+      "constituency": "ކެޔޮދޫ ދާއިރާ",
+      "constituencyLatin": "keyodhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 159,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 360000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "husain-qaasim-keyodhoo"
+    },
+    {
+      "name": "އިބްރާހީމް ރަޝީދު",
+      "nameLatin": "ibraaheem rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު މެދު ދާއިރާ",
+      "constituencyLatin": "maafannu medhu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 32,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 360000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ibraaheem-rasheedhu-maafannu-medhu",
+      "sameNameAs": [
+        "ibraaheem-rasheedhu-maafannu-dhekunu"
+      ]
+    },
+    {
+      "name": "އިބްރާހީމް ޝަރީފް",
+      "nameLatin": "ibraaheem shareef",
+      "title": "Alfaazil",
+      "constituency": "ކެލާ ދާއިރާ",
+      "constituencyLatin": "kelaa dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 56,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 48000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 360000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ibraaheem-shareef-kelaa",
+      "sameNameAs": [
+        "ibraaheem-shareef-maradhoo"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ޣައްސާން މައުމޫން",
+      "nameLatin": "muhamadhu ghasaan maumoon",
+      "title": "Alfaazil",
+      "constituency": "ތ. ގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "th guraidhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 188,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000
+      },
+      "total": 360000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "muhamadhu-ghasaan-maumoon-th-guraidhoo"
+    },
+    {
+      "name": "އަޙްމަދު ނާޝިދު",
+      "nameLatin": "ahmadhu naashidhu",
+      "title": "Alfaazil",
+      "constituency": "ކޮމަންޑޫ ދާއިރާ",
+      "constituencyLatin": "komandoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 80,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 350500,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-naashidhu-komandoo"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޝާހިދު",
+      "nameLatin": "abdhuullah shaahidhu",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު އުތުރު ދާއިރާ",
+      "constituencyLatin": "henveyru uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 6,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2024-2025": 24000
+      },
+      "total": 340000,
+      "yearsPaid": 6,
+      "terms": [
+        18,
+        20
+      ],
+      "id": "abdhuullah-shaahidhu-henveyru-uthuru"
+    },
+    {
+      "name": "ޢަބްދުއްލަޠީފް މުޙައްމަދު",
+      "nameLatin": "abdhulateef muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "ދިއްދޫ ދާއިރާ",
+      "constituencyLatin": "dhidhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 52,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhulateef-muhamadhu-dhidhoo"
+    },
+    {
+      "name": "ޢަބްދުﷲ މަސީޙު މުޙައްމަދު",
+      "nameLatin": "abdhuullah maseehu muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku dhekunu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 238,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-maseehu-muhamadhu-fuvamulaku-dhekunu"
+    },
+    {
+      "name": "އަޙްމަދު ރަޝީދު އިބްރާހީމް",
+      "nameLatin": "ahmadhu rasheedhu ibraaheem",
+      "title": "Al-Sheikh",
+      "constituency": "އިސްދޫ ދާއިރާ",
+      "constituencyLatin": "isdhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 190,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-rasheedhu-ibraaheem-isdhoo"
+    },
+    {
+      "name": "ޢަލީ ސަލީމް",
+      "nameLatin": "alee saleem",
+      "title": "Alfaazil",
+      "constituency": "ފުނަދޫ ދާއިރާ",
+      "constituencyLatin": "funadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 83,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-saleem-funadhoo"
+    },
+    {
+      "name": "އަލްފާޟލާ އަސްމާ ރަޝީދު",
+      "nameLatin": "alfaazlaa asmaa rasheedhu",
+      "title": null,
+      "constituency": "މާފަންނު މެދު ދާއިރާ",
+      "constituencyLatin": "maafannu medhu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 33,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alfaazlaa-asmaa-rasheedhu-maafannu-medhu"
+    },
+    {
+      "name": "ޙުސައިން ޢަރީފް",
+      "nameLatin": "husain areef",
+      "title": "Alfaazil",
+      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
+      "constituencyLatin": "nolhivaram dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 62,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "husain-areef-nolhivaram"
+    },
+    {
+      "name": "މުޙައްމަދު ޙުސައިން",
+      "nameLatin": "muhamadhu husain",
+      "title": "Alfaazil",
+      "constituency": "ކަނޑިތީމު ދާއިރާ",
+      "constituencyLatin": "kanditheemu dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 74,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-husain-kanditheemu"
+    },
+    {
+      "name": "ޢުމަރު ޙުސައިން",
+      "nameLatin": "umaru husain",
+      "title": "Alfaazil",
+      "constituency": "މަނަދޫ ދާއިރާ",
+      "constituencyLatin": "manadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 90,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 338000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "umaru-husain-manadhoo"
+    },
+    {
+      "name": "އަޙްމަދު ޙަލީމް",
+      "nameLatin": "ahmadhu haleem",
+      "title": "Alfaazil",
+      "constituency": "ބިލެތްދޫ ދާއިރާ",
+      "constituencyLatin": "bilethdhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 169,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 336000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-haleem-bilethdhoo"
+    },
+    {
+      "name": "އަޙްމަދު ސަލީމް",
+      "nameLatin": "ahmadhu saleem",
+      "title": "Alfaazil",
+      "constituency": "ހޯރަފުށި ދާއިރާ",
+      "constituencyLatin": "hoarafushi dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 43,
+      "byYear": {
+        "2019-2020": 48000,
+        "2020-2021": 72000,
+        "2021-2022": 48000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 336000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-saleem-hoarafushi",
+      "sameNameAs": [
+        "ahmadhu-saleem-eydhafushi"
+      ]
+    },
+    {
+      "name": "އަޙްމަދު ޒާހިރު",
+      "nameLatin": "ahmadhu zaahiru",
+      "title": "Alfaazil",
+      "constituency": "ގައްދޫ ދާއިރާ",
+      "constituencyLatin": "gadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 229,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 336000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-zaahiru-gadhoo",
+      "sameNameAs": [
+        "ahmadhu-zaahiru-maduvari"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ނާޡިމް",
+      "nameLatin": "muhamadhu naazim",
+      "title": "Alfaazil",
+      "constituency": "ދަނގެތި ދާއިރާ",
+      "constituencyLatin": "dhangethi dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 31,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 48000
+      },
+      "total": 336000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "muhamadhu-naazim-dhangethi",
+      "sameNameAs": [
+        "muhamadhu-naazim-maafannu-uthuru",
+        "muhamadhu-naazim-vaikaradhoo"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ވަޙީދު",
+      "nameLatin": "muhamadhu vaheedhu",
+      "title": "Alfaazil",
+      "constituency": "އުނގޫފާރު ދާއިރާ",
+      "constituencyLatin": "ungoofaaru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 103,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 336000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-vaheedhu-ungoofaaru"
+    },
+    {
+      "name": "ޢަބްދުﷲ ރިޔާޟް",
+      "nameLatin": "abdhuullah riyaaz",
+      "title": "Alfaazil",
+      "constituency": "ކިނބިދޫ ދާއިރާ",
+      "constituencyLatin": "kinbidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 182,
+      "byYear": {
+        "2014-2015": 50000,
+        "2015-2016": 50000,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000
+      },
+      "total": 316000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "abdhuullah-riyaaz-kinbidhoo",
+      "sameNameAs": [
+        "abdhuullah-riyaaz-thimarafushi"
+      ]
+    },
+    {
+      "name": "އަޙްމަދު މަޚްލޫފް",
+      "nameLatin": "ahmadhu makhloof",
+      "title": "Alfaazil",
+      "constituency": "ގަލޮޅު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "galolhu dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 19,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 72000,
+        "2018-2019": 72000,
+        "2024-2025": 24000
+      },
+      "total": 315000,
+      "yearsPaid": 6,
+      "terms": [
+        18,
+        20
+      ],
+      "id": "ahmadhu-makhloof-galolhu-dhekunu"
+    },
+    {
+      "name": "އަޙްމަދު ނިހާން ޙުސައިންމަނިކު",
+      "nameLatin": "ahmadhu nihaan husainmaniku",
+      "title": "Alfaazil",
+      "constituency": "ވިލިމާލެ ދާއިރާ",
+      "constituencyLatin": "vilimaale dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 39,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 37500,
+        "2016-2017": 72000,
+        "2017-2018": 96000,
+        "2018-2019": 72000
+      },
+      "total": 315000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "ahmadhu-nihaan-husainmaniku-vilimaale",
+      "sameNameAs": [
+        "ahmadhu-nihaan-husainmaniku-vilimaafannu"
+      ]
+    },
+    {
+      "name": "އިބްރާހީމްދީދީ",
+      "nameLatin": "ibraaheemdheedhee",
+      "title": "Alfaazil",
+      "constituency": "ފޭދޫ ދާއިރާ",
+      "constituencyLatin": "feydhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 246,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000
+      },
+      "total": 314000,
+      "yearsPaid": 10,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "ibraaheemdheedhee-feydhoo",
+      "sameNameAs": [
+        "ibraaheemdheedhee-kolamaafushi",
+        "ibraaheemdheedhee-feydhoo-dhekunu"
+      ]
+    },
+    {
+      "name": "ޙުސައިން ވަޙީދު",
+      "nameLatin": "husain vaheedhu",
+      "title": "Alfaazil",
+      "constituency": "- - ކޮމަންޑޫ ދާއިރާ",
+      "constituencyLatin": "komandoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 79,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 72000
+      },
+      "total": 313000,
+      "yearsPaid": 8,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "husain-vaheedhu-komandoo"
+    },
+    {
+      "name": "އާދަމް ޝަރީފް",
+      "nameLatin": "aadham shareef",
+      "title": "Alfaazil",
+      "constituency": "މަޑުއްވަރި ދާއިރާ",
+      "constituencyLatin": "maduvari dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 113,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 72000,
+        "2021-2022": 72000,
+        "2022-2023": 72000,
+        "2023-2024": 72000
+      },
+      "total": 312000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "aadham-shareef-maduvari"
+    },
+    {
+      "name": "އަޙްމަދު ސިޔާމް މުޙައްމަދު",
+      "nameLatin": "ahmadhu siyaam muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "މީދޫ ދާއިރާ",
+      "constituencyLatin": "meedhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 174,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 72000
+      },
+      "total": 289000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-siyaam-muhamadhu-meedhoo"
+    },
+    {
+      "name": "ޢަބްދުލްޣަފޫރު މޫސާ",
+      "nameLatin": "abdhulghafooru moosaa",
+      "title": "Alfaazil",
+      "constituency": "ހަނިމާދޫ ދާއިރާ",
+      "constituencyLatin": "hanimaadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 60,
+      "byYear": {
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 48000
+      },
+      "total": 288000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "abdhulghafooru-moosaa-hanimaadhoo",
+      "sameNameAs": [
+        "abdhulghafooru-moosaa-kulhudhufushi-uthuru"
+      ]
+    },
+    {
+      "name": "ޙަސަން ޢަފީފު",
+      "nameLatin": "hasan afeefu",
+      "title": "Alfaazil",
+      "constituency": "ވިލުފުށި ދާއިރާ",
+      "constituencyLatin": "vilufushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 178,
+      "byYear": {
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 264000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "hasan-afeefu-vilufushi"
+    },
+    {
+      "name": "ޙަސަން އަޙްމަދު",
+      "nameLatin": "hasan ahmadhu",
+      "title": "Alfaazil",
+      "constituency": "އިނގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "inguraidhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 110,
+      "byYear": {
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 264000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "hasan-ahmadhu-inguraidhoo"
+    },
+    {
+      "name": "ޙުސައިން ފިރުޝާން",
+      "nameLatin": "husain firushaan",
+      "title": "Alfaazil",
+      "constituency": "މަޑަވެލި ދާއިރާ",
+      "constituencyLatin": "madaveli dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 222,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 48000,
+        "2022-2023": 72000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 264000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "husain-firushaan-madaveli"
+    },
+    {
+      "name": "ޖަމްޝީދު މުޙައްމަދު",
+      "nameLatin": "jamsheedhu muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
+      "constituencyLatin": "kulhudhufushi dhekunu dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 70,
+      "byYear": {
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 264000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "jamsheedhu-muhamadhu-kulhudhufushi-dhekunu"
+    },
+    {
+      "name": "މޫސާ ސިރާޖު",
+      "nameLatin": "moosaa siraaju",
+      "title": "Al-Ustaz",
+      "constituency": "ފޮނަދޫ ދާއިރާ",
+      "constituencyLatin": "fonadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 198,
+      "byYear": {
+        "2019-2020": 48000,
+        "2020-2021": 48000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 24000
+      },
+      "total": 264000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "moosaa-siraaju-fonadhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ނަޝީދު",
+      "nameLatin": "muhamadhu nasheedhu",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި މެދު ދާއިރާ",
+      "constituencyLatin": "machangolhi medhu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 24,
+      "byYear": {
+        "2019-2020": 72000,
+        "2020-2021": 72000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 24000
+      },
+      "total": 264000,
+      "yearsPaid": 5,
+      "terms": [
+        19
+      ],
+      "id": "muhamadhu-nasheedhu-machangolhi-medhu",
+      "sameNameAs": [
+        "muhamadhu-nasheedhu-nolhivaram",
+        "muhamadhu-nasheedhu-kulhudhufushi-dhekunu"
+      ]
+    },
+    {
+      "name": "ޢަބްދުލްޢަޒީޒް ޖަމާލް އަބޫބަކުރު",
+      "nameLatin": "abdhulazeez jamaal aboobakuru",
+      "title": "Alfaazil",
+      "constituency": "މާވަށު ދާއިރާ",
+      "constituencyLatin": "maavashu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 199,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhulazeez-jamaal-aboobakuru-maavashu"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޢަބްދުއްރަޙީމް",
+      "nameLatin": "abdhuullah abdhuraheem",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު ހުޅަނގު ދާއިރާ",
+      "constituencyLatin": "maafannu hulhangu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 36,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-abdhuraheem-maafannu-hulhangu"
+    },
+    {
+      "name": "ޢަބްދުﷲ ސިނާން",
+      "nameLatin": "abdhuullah sinaan",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
+      "constituencyLatin": "machangolhi dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 27,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-sinaan-machangolhi-dhekunu"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޔާމިން",
+      "nameLatin": "abdhuullah yaamin",
+      "title": "Alfaazil",
+      "constituency": "ވެލިދޫ ދާއިރާ",
+      "constituencyLatin": "velidhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 93,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-yaamin-velidhoo"
+    },
+    {
+      "name": "އަޙްމަދު ޢާމިރު",
+      "nameLatin": "ahmadhu aamiru",
+      "title": "Alfaazil",
+      "constituency": "ކުޑަހުވަދޫ ދާއިރާ",
+      "constituencyLatin": "kudahuvadhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 175,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-aamiru-kudahuvadhoo"
+    },
+    {
+      "name": "އަޙްމަދު ޙަމްޒާ",
+      "nameLatin": "ahmadhu hamzaa",
+      "title": "Al-Ustaz",
+      "constituency": "ބިލެތްދޫ ދާއިރާ",
+      "constituencyLatin": "bilethdhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 167,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-hamzaa-bilethdhoo"
+    },
+    {
+      "name": "އަޙްމަދު މޫސާ",
+      "nameLatin": "ahmadhu moosaa",
+      "title": "Alfaazil",
+      "constituency": "ކުރެންދޫ ދާއިރާ",
+      "constituencyLatin": "kurendhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 129,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-moosaa-kurendhoo"
+    },
+    {
+      "name": "އަޙްމަދު މުޙައްމަދު",
+      "nameLatin": "ahmadhu muhamadhu",
+      "title": "Al-Ustaz",
+      "constituency": "ނައިފަރު ދާއިރާ",
+      "constituencyLatin": "naifaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 126,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-muhamadhu-naifaru"
+    },
+    {
+      "name": "އަޙްމަދު ރަޝީދު",
+      "nameLatin": "ahmadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ހޯރަފުށި ދާއިރާ",
+      "constituencyLatin": "hoarafushi dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 42,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-rasheedhu-hoarafushi",
+      "sameNameAs": [
+        "ahmadhu-rasheedhu-gadhoo",
+        "ahmadhu-rasheedhu-hithadhoo-medhu"
+      ]
+    },
+    {
+      "name": "އަޙްމަދު ރަޝީދު",
+      "nameLatin": "ahmadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ގައްދޫ ދާއިރާ",
+      "constituencyLatin": "gadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 228,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-rasheedhu-gadhoo",
+      "sameNameAs": [
+        "ahmadhu-rasheedhu-hoarafushi",
+        "ahmadhu-rasheedhu-hithadhoo-medhu"
+      ]
+    },
+    {
+      "name": "އަޙްމަދު ސަމީރު",
+      "nameLatin": "ahmadhu sameeru",
+      "title": "Alfaazil",
+      "constituency": "ދިއްދޫ ދާއިރާ",
+      "constituencyLatin": "dhidhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 51,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-sameeru-dhidhoo"
+    },
+    {
+      "name": "އަޙްމަދު ތަސްމީން ޢަލީ",
+      "nameLatin": "ahmadhu thasmeen alee",
+      "title": "Alfaazil",
+      "constituency": "ކެންދޫ ދާއިރާ",
+      "constituencyLatin": "kendhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 119,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ahmadhu-thasmeen-alee-kendhoo"
+    },
+    {
+      "name": "އަލްޙާން ފަޙުމީ",
+      "nameLatin": "alhaan fahumee",
+      "title": "Alfaazil",
+      "constituency": "ފޭދޫ ދާއިރާ",
+      "constituencyLatin": "feydhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 243,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alhaan-fahumee-feydhoo"
+    },
+    {
+      "name": "ޙާމިދު ޢަބްދުލްޣަފޫރު",
+      "nameLatin": "haamidhu abdhulghafooru",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 11,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "haamidhu-abdhulghafooru-henveyru-dhekunu"
+    },
+    {
+      "name": "ޙަމްދޫން ޢަބްދުﷲ ޙަމީދު",
+      "nameLatin": "hamdhoon abdhuullah hameedhu",
+      "title": "Alfaazil",
+      "constituency": "އިނގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "inguraidhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 108,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "hamdhoon-abdhuullah-hameedhu-inguraidhoo"
+    },
+    {
+      "name": "ޙަސަން އާދިލް",
+      "nameLatin": "hasan aadhil",
+      "title": "Alfaazil",
+      "constituency": "މަރަދޫ ދާއިރާ",
+      "constituencyLatin": "maradhoo dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 247,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "hasan-aadhil-maradhoo"
+    },
+    {
+      "name": "ޙަސަން ލަޠީފް",
+      "nameLatin": "hasan lateef",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "hithadhoo dhekunu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 256,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "hasan-lateef-hithadhoo-dhekunu",
+      "sameNameAs": [
+        "hasan-lateef-henveyru-hulhangu"
+      ]
+    },
+    {
+      "name": "އިބްރާހީމް މުއްޠަލިބް",
+      "nameLatin": "ibraaheem mutalib",
+      "title": "Alfaazil",
+      "constituency": "ފަރެސްމާތޮޑާ ދާއިރާ",
+      "constituencyLatin": "faresmaathodaa dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 224,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ibraaheem-mutalib-faresmaathodaa"
+    },
+    {
+      "name": "އިސްމާޢީލް ޢަބްދުލްޙަމީދު",
+      "nameLatin": "ismaaeel abdhulhameedhu",
+      "title": "Alfaazil",
+      "constituency": "ކާށިދޫ ދާއިރާ",
+      "constituencyLatin": "kaashidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 133,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ismaaeel-abdhulhameedhu-kaashidhoo"
+    },
+    {
+      "name": "މުޙައްމަދު މުޖުތާޒް",
+      "nameLatin": "muhamadhu mujuthaaz",
+      "title": "Al-Ustaz",
+      "constituency": "ހަނިމާދޫ ދާއިރާ",
+      "constituencyLatin": "hanimaadhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 58,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-mujuthaaz-hanimaadhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ނާޒިމް",
+      "nameLatin": "muhamadhu naazim",
+      "title": "Alfaazil",
+      "constituency": "މަޑަވެލި ދާއިރާ",
+      "constituencyLatin": "madaveli dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 220,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-naazim-madaveli"
+    },
+    {
+      "name": "މުޙައްމަދު ނަޝީދު",
+      "nameLatin": "muhamadhu nasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
+      "constituencyLatin": "nolhivaram dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 61,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-nasheedhu-nolhivaram",
+      "sameNameAs": [
+        "muhamadhu-nasheedhu-machangolhi-medhu",
+        "muhamadhu-nasheedhu-kulhudhufushi-dhekunu"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ނަޝީދު",
+      "nameLatin": "muhamadhu nasheedhu",
+      "title": "Al-Ustaz",
+      "constituency": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
+      "constituencyLatin": "kulhudhufushi dhekunu dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 69,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-nasheedhu-kulhudhufushi-dhekunu",
+      "sameNameAs": [
+        "muhamadhu-nasheedhu-machangolhi-medhu",
+        "muhamadhu-nasheedhu-nolhivaram"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ޤަސަމް",
+      "nameLatin": "muhamadhu qasam",
+      "title": "Alfaazil",
+      "constituency": "ތިނަދޫ ދާއިރާ",
+      "constituencyLatin": "thinadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 214,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-qasam-thinadhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ރާމިޒް",
+      "nameLatin": "muhamadhu raamiz",
+      "title": "Alfaazil",
+      "constituency": "ވިލިނގިލި ދާއިރާ",
+      "constituencyLatin": "vilingili dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 203,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-raamiz-vilingili"
+    },
+    {
+      "name": "މުޙައްމަދު ރަފީޤް ޙަސަން",
+      "nameLatin": "muhamadhu rafeeq hasan",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 231,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-rafeeq-hasan-fuvamulaku-uthuru"
+    },
+    {
+      "name": "މުޙައްމަދު ރަޝީދު",
+      "nameLatin": "muhamadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
+      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 252,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-rasheedhu-hithadhoo-medhu",
+      "sameNameAs": [
+        "muhamadhu-rasheedhu-machangolhi-uthuru",
+        "muhamadhu-rasheedhu-nolhivaram",
+        "muhamadhu-rasheedhu-fuvamulaku-uthuru"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ރިޔާޒް",
+      "nameLatin": "muhamadhu riyaaz",
+      "title": "Alfaazil",
+      "constituency": "ދާންދޫ ދާއިރާ",
+      "constituencyLatin": "dhaandhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 206,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-riyaaz-dhaandhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޝިފާޒް",
+      "nameLatin": "muhamadhu shifaaz",
+      "title": "Alfaazil",
+      "constituency": "ބާރަށު ދާއިރާ",
+      "constituencyLatin": "baarashu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 49,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-shifaaz-baarashu"
+    },
+    {
+      "name": "މުޙައްމަދު ޠާރިޤް",
+      "nameLatin": "muhamadhu taariq",
+      "title": "Alfaazil",
+      "constituency": "މަނަދޫ ދާއިރާ",
+      "constituencyLatin": "manadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 89,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-taariq-manadhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޒުބައިރު",
+      "nameLatin": "muhamadhu zubairu",
+      "title": "Alfaazil",
+      "constituency": "ދުވާފަރު ދާއިރާ",
+      "constituencyLatin": "dhuvaafaru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 105,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "muhamadhu-zubairu-dhuvaafaru"
+    },
+    {
+      "name": "ރުޤިއްޔާ މުޙައްމަދު",
+      "nameLatin": "ruqiyaa muhamadhu",
+      "title": "Alfaazilaa",
+      "constituency": "މަހިބަދޫ ދާއިރާ",
+      "constituencyLatin": "mahibadhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 150,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "ruqiyaa-muhamadhu-mahibadhoo"
+    },
+    {
+      "name": "ޝިފާޤް މުފީދު",
+      "nameLatin": "shifaaq mufeedhu",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު މެދު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku medhu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 235,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "shifaaq-mufeedhu-fuvamulaku-medhu"
+    },
+    {
+      "name": "ވިސާމް ޢަލީ",
+      "nameLatin": "visaam alee",
+      "title": "Alfaazilaa",
+      "constituency": "މަޑުއްވަރި ދާއިރާ",
+      "constituencyLatin": "maduvari dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 111,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "visaam-alee-maduvari"
+    },
+    {
+      "name": "ޔޫސުފް ޢަބްދުލްޣަފޫރު",
+      "nameLatin": "yoosuf abdhulghafooru",
+      "title": "Alfaazil",
+      "constituency": "ގަމު ދާއިރާ",
+      "constituencyLatin": "gamu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 193,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "yoosuf-abdhulghafooru-gamu"
+    },
+    {
+      "name": "ޔޫސުފް ނައީމް",
+      "nameLatin": "yoosuf naeem",
+      "title": "Alfaazil",
+      "constituency": "ފެލިދޫ ދާއިރާ",
+      "constituencyLatin": "felidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 154,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 241000,
+      "yearsPaid": 11,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "yoosuf-naeem-felidhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ވިސާމް",
+      "nameLatin": "muhamadhu visaam",
+      "title": "Alfaazil",
+      "constituency": "ގަމު ދާއިރާ",
+      "constituencyLatin": "gamu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 195,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 48000,
+        "2022-2023": 48000,
+        "2023-2024": 72000,
+        "2024-2025": 24000
+      },
+      "total": 240000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-visaam-gamu"
+    },
+    {
+      "name": "މީކާއީލު އަޙްމަދު ނަސީމް",
+      "nameLatin": "meekaaeelu ahmadhu naseem",
+      "title": "Alfaazil",
+      "constituency": "ގަލޮޅު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "galolhu dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 20,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 48000,
+        "2023-2024": 48000,
+        "2024-2025": 48000
+      },
+      "total": 216000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "meekaaeelu-ahmadhu-naseem-galolhu-dhekunu"
+    },
+    {
+      "name": "އިބްރާހީމް މުޙައްމަދު ޞާލިޙް",
+      "nameLatin": "ibraaheem muhamadhu saalih",
+      "title": "Alfaazil",
+      "constituency": "ހިންނަވަރު ދާއިރާ",
+      "constituencyLatin": "hinnavaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 123,
+      "byYear": {
+        "2014-2015": 37500,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000
+      },
+      "total": 206500,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "ibraaheem-muhamadhu-saalih-hinnavaru"
+    },
+    {
+      "name": "ޢަބްދުލްޣަފޫރު މޫސާ",
+      "nameLatin": "abdhulghafooru moosaa",
+      "title": "Alfaazil",
+      "constituency": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
+      "constituencyLatin": "kulhudhufushi uthuru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 60,
+      "byYear": {
+        "2014-2015": 25000,
+        "2015-2016": 25000,
+        "2016-2017": 48000,
+        "2017-2018": 48000,
+        "2018-2019": 48000
+      },
+      "total": 194000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "abdhulghafooru-moosaa-kulhudhufushi-uthuru",
+      "sameNameAs": [
+        "abdhulghafooru-moosaa-hanimaadhoo"
+      ]
+    },
+    {
+      "name": "ޢަލީ ވަޙީދު",
+      "nameLatin": "alee vaheedhu",
+      "title": "Alfaazil",
+      "constituency": "ތޮއްޑޫ ދާއިރާ",
+      "constituencyLatin": "thodoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 145,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 193000,
+      "yearsPaid": 9,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "alee-vaheedhu-thodoo"
+    },
+    {
+      "name": "ޢަބްދުﷲ މަޢުޞޫމް",
+      "nameLatin": "abdhuullah mausoom",
+      "title": "Dr",
+      "constituency": "- - - ކެލާ ދާއިރާ",
+      "constituencyLatin": "kelaa dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 54,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2024-2025": 24000
+      },
+      "total": 169000,
+      "yearsPaid": 8,
+      "terms": [
+        18,
+        19,
+        20
+      ],
+      "id": "abdhuullah-mausoom-kelaa"
+    },
+    {
+      "name": "ޢަބްދުއްސައްތާރު މުޙައްމަދު",
+      "nameLatin": "abdhusathaaru muhamadhu",
+      "title": "Al-Ustaz",
+      "constituency": "ހޮޅުދޫ ދާއިރާ",
+      "constituencyLatin": "holhudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 98,
+      "byYear": {
+        "2024-2025": 168000
+      },
+      "total": 168000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhusathaaru-muhamadhu-holhudhoo"
+    },
+    {
+      "name": "އަޙްމަދު ޒާހިރު",
+      "nameLatin": "ahmadhu zaahiru",
+      "title": "Alfaazil",
+      "constituency": "މަޑުއްވަރި ދާއިރާ",
+      "constituencyLatin": "maduvari dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 114,
+      "byYear": {
+        "2024-2025": 168000
+      },
+      "total": 168000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-zaahiru-maduvari",
+      "sameNameAs": [
+        "ahmadhu-zaahiru-gadhoo"
+      ]
+    },
+    {
+      "name": "އަލްފާޟީލް ޙުސައިން ޝަރީފު",
+      "nameLatin": "alfaazeel husain shareefu",
+      "title": null,
+      "constituency": "ހުޅުމާލެ އުތުރު ދާއިރާ",
+      "constituencyLatin": "hulhumaale uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 3,
+      "byYear": {
+        "2024-2025": 168000
+      },
+      "total": 168000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "alfaazeel-husain-shareefu-hulhumaale-uthuru"
+    },
+    {
+      "name": "ޙުސައިން މުޙައްމަދު",
+      "nameLatin": "husain muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "- - - މަތިވެރި ދާއިރާ",
+      "constituencyLatin": "mathiveri dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 143,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000
+      },
+      "total": 145000,
+      "yearsPaid": 7,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "husain-muhamadhu-mathiveri"
+    },
+    {
+      "name": "މޫސާ ޒަމީރު",
+      "nameLatin": "moosaa zameeru",
+      "title": "Alfaazil",
+      "constituency": "- - - ކިނބިދޫ ދާއިރާ",
+      "constituencyLatin": "kinbidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 184,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000
+      },
+      "total": 145000,
+      "yearsPaid": 7,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "moosaa-zameeru-kinbidhoo"
+    },
+    {
+      "name": "ޒާހިރު އާދަމް",
+      "nameLatin": "zaahiru aadham",
+      "title": "Alfaazil",
+      "constituency": "- - - ގައްދޫ ދާއިރާ",
+      "constituencyLatin": "gadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 227,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000,
+        "2019-2020": 24000,
+        "2020-2021": 24000
+      },
+      "total": 145000,
+      "yearsPaid": 7,
+      "terms": [
+        18,
+        19
+      ],
+      "id": "zaahiru-aadham-gadhoo"
+    },
+    {
+      "name": "އަޙްމަދު ނިހާން ޙުސައިންމަނިކު",
+      "nameLatin": "ahmadhu nihaan husainmaniku",
+      "title": "Alfaazil",
+      "constituency": "ވިލިމާފަންނު ދާއިރާ",
+      "constituencyLatin": "vilimaafannu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 39,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 144000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "ahmadhu-nihaan-husainmaniku-vilimaafannu",
+      "sameNameAs": [
+        "ahmadhu-nihaan-husainmaniku-vilimaale"
+      ]
+    },
+    {
+      "name": "އަޙްމަދު ޝާކިރު",
+      "nameLatin": "ahmadhu shaakiru",
+      "title": "Alfaazil",
+      "constituency": "މާވަށު ދާއިރާ",
+      "constituencyLatin": "maavashu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 202,
+      "byYear": {
+        "2024-2025": 144000
+      },
+      "total": 144000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-shaakiru-maavashu"
+    },
+    {
+      "name": "ފާޠިމަތު ސަޢުދާ",
+      "nameLatin": "faatimathu saudhaa",
+      "title": "Alfaazilaa",
+      "constituency": "ނިލަންދޫ ދާއިރާ",
+      "constituencyLatin": "nilandhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 173,
+      "byYear": {
+        "2024-2025": 144000
+      },
+      "total": 144000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "faatimathu-saudhaa-nilandhoo"
+    },
+    {
+      "name": "އލްފާޟިލް މުޙައްމަދު ޝާމިން ޙަބީބު",
+      "nameLatin": "lfaazil muhamadhu shaamin habeebu",
+      "title": null,
+      "constituency": "ކުރެންދޫ ދާއިރާ",
+      "constituencyLatin": "kurendhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 132,
+      "byYear": {
+        "2024-2025": 144000
+      },
+      "total": 144000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "lfaazil-muhamadhu-shaamin-habeebu-kurendhoo"
+    },
+    {
+      "name": "މުޙައްމަދު އިސްމާޢީލް",
+      "nameLatin": "muhamadhu ismaaeel",
+      "title": "Alfaazil",
+      "constituency": "ވިލިމާލެ ދާއިރާ",
+      "constituencyLatin": "vilimaale dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 41,
+      "byYear": {
+        "2024-2025": 144000
+      },
+      "total": 144000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-ismaaeel-vilimaale",
+      "sameNameAs": [
+        "muhamadhu-ismaaeel-hoarafushi"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ނާޝިޒް",
+      "nameLatin": "muhamadhu naashiz",
+      "title": "Alfaazil",
+      "constituency": "ކިނބިދޫ ދާއިރާ",
+      "constituencyLatin": "kinbidhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 186,
+      "byYear": {
+        "2019-2020": 24000,
+        "2020-2021": 24000,
+        "2021-2022": 24000,
+        "2022-2023": 24000,
+        "2023-2024": 24000,
+        "2024-2025": 24000
+      },
+      "total": 144000,
+      "yearsPaid": 6,
+      "terms": [
+        19,
+        20
+      ],
+      "id": "muhamadhu-naashiz-kinbidhoo",
+      "sameNameAs": [
+        "muhamadhu-naashiz-alifushi"
+      ]
+    },
+    {
+      "name": "ޔޫސުފް ނަޝީދު",
+      "nameLatin": "yoosuf nasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ގަމު ދާއިރާ",
+      "constituencyLatin": "gamu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 196,
+      "byYear": {
+        "2024-2025": 144000
+      },
+      "total": 144000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "yoosuf-nasheedhu-gamu"
+    },
+    {
+      "name": "ޢާޒިމް ޢަބްދުލްޢަޒީޒް",
+      "nameLatin": "aazim abdhulazeez",
+      "title": "Alfaazil",
+      "constituency": "ވިލިނގިލި ދާއިރާ",
+      "constituencyLatin": "vilingili dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 205,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "aazim-abdhulazeez-vilingili"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޝަޛީމް",
+      "nameLatin": "abdhuullah shadheem",
+      "title": "Alfaazil",
+      "constituency": "ހުޅުމާލެ މެދު ދާއިރާ",
+      "constituencyLatin": "hulhumaale medhu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 4,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhuullah-shadheem-hulhumaale-medhu"
+    },
+    {
+      "name": "ޢަބްދުﷲ ޝަރީފް",
+      "nameLatin": "abdhuullah shareef",
+      "title": "Alfaazil",
+      "constituency": "ކެލާ ދާއިރާ",
+      "constituencyLatin": "kelaa dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 57,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhuullah-shareef-kelaa"
+    },
+    {
+      "name": "އަޙްމަދު ޟަމީރު",
+      "nameLatin": "ahmadhu zameeru",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި މެދު ދާއިރާ",
+      "constituencyLatin": "machangolhi medhu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 25,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-zameeru-machangolhi-medhu"
+    },
+    {
+      "name": "ޙަސަން ވަޙީދު",
+      "nameLatin": "hasan vaheedhu",
+      "title": "Alfaazil",
+      "constituency": "ވިލުފުށި ދާއިރާ",
+      "constituencyLatin": "vilufushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 179,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "hasan-vaheedhu-vilufushi"
+    },
+    {
+      "name": "އިބްރާހީމް ޙުސައިން",
+      "nameLatin": "ibraaheem husain",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku dhekunu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 240,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ibraaheem-husain-fuvamulaku-dhekunu"
+    },
+    {
+      "name": "އިބްރާހީމް ނައުފަލް",
+      "nameLatin": "ibraaheem naufal",
+      "title": "Alfaazil",
+      "constituency": "މުލަކު ދާއިރާ",
+      "constituencyLatin": "mulaku dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 166,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ibraaheem-naufal-mulaku"
+    },
+    {
+      "name": "އިބްރާހީމް ޝިފާޒް",
+      "nameLatin": "ibraaheem shifaaz",
+      "title": "Alfaazil",
+      "constituency": "އުނގޫފާރު ދާއިރާ",
+      "constituencyLatin": "ungoofaaru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 104,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ibraaheem-shifaaz-ungoofaaru"
+    },
+    {
+      "name": "އިބްރާހީމްދީދީ",
+      "nameLatin": "ibraaheemdheedhee",
+      "title": "Alfaazil",
+      "constituency": "ކޮލަމާފުށި ދާއިރާ",
+      "constituencyLatin": "kolamaafushi dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 213,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ibraaheemdheedhee-kolamaafushi",
+      "sameNameAs": [
+        "ibraaheemdheedhee-feydhoo",
+        "ibraaheemdheedhee-feydhoo-dhekunu"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ޢައްބާސް",
+      "nameLatin": "muhamadhu abaas",
+      "title": "Alfaazil",
+      "constituency": "ވެލިދޫ ދާއިރާ",
+      "constituencyLatin": "velidhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 95,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-abaas-velidhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަބްދުއްރަޙްމާން",
+      "nameLatin": "muhamadhu abdhurahmaan",
+      "title": "Alfaazil",
+      "constituency": "ހިންނަވަރު ދާއިރާ",
+      "constituencyLatin": "hinnavaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 125,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-abdhurahmaan-hinnavaru"
+    },
+    {
+      "name": "މުންތަޡިމް އިބްރާހީމް",
+      "nameLatin": "munthazim ibraaheem",
+      "title": "Alfaazil",
+      "constituency": "ކާށިދޫ ދާއިރާ",
+      "constituencyLatin": "kaashidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 136,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "munthazim-ibraaheem-kaashidhoo"
+    },
+    {
+      "name": "ޔާސީން ޢަބްދުﷲ",
+      "nameLatin": "yaaseen abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ނައިފަރު ދާއިރާ",
+      "constituencyLatin": "naifaru dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 128,
+      "byYear": {
+        "2024-2025": 120000
+      },
+      "total": 120000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "yaaseen-abdhuullah-naifaru"
+    },
+    {
+      "name": "އަޙްމަދު ޢަބްދުﷲ",
+      "nameLatin": "ahmadhu abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "އިހަވަންދޫ ދާއިރާ",
+      "constituencyLatin": "ihavandhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 45,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000
+      },
+      "total": 97000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "ahmadhu-abdhuullah-ihavandhoo",
+      "sameNameAs": [
+        "ahmadhu-abdhuullah-baarashu"
+      ]
+    },
+    {
+      "name": "އިބްރާހީމް ރަޝީދު",
+      "nameLatin": "ibraaheem rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "maafannu dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 32,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000
+      },
+      "total": 97000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "ibraaheem-rasheedhu-maafannu-dhekunu",
+      "sameNameAs": [
+        "ibraaheem-rasheedhu-maafannu-medhu"
+      ]
+    },
+    {
+      "name": "އިލްޔާސް ލަބީބު",
+      "nameLatin": "ilyaas labeebu",
+      "title": "Alfaazil",
+      "constituency": "ހުޅުމީދޫ ދާއިރާ",
+      "constituencyLatin": "hulhumeedhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 241,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000
+      },
+      "total": 97000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "ilyaas-labeebu-hulhumeedhoo",
+      "sameNameAs": [
+        "ilyaas-labeebu-hulhudhoo"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ނާޝިޒް",
+      "nameLatin": "muhamadhu naashiz",
+      "title": "Alfaazil",
+      "constituency": "އަލިފުށި ދާއިރާ",
+      "constituencyLatin": "alifushi dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 186,
+      "byYear": {
+        "2014-2015": 12500,
+        "2015-2016": 12500,
+        "2016-2017": 24000,
+        "2017-2018": 24000,
+        "2018-2019": 24000
+      },
+      "total": 97000,
+      "yearsPaid": 5,
+      "terms": [
+        18
+      ],
+      "id": "muhamadhu-naashiz-alifushi",
+      "sameNameAs": [
+        "muhamadhu-naashiz-kinbidhoo"
+      ]
+    },
+    {
+      "name": "އާދަމް ޝަފީޤު",
+      "nameLatin": "aadham shafeequ",
+      "title": "Alfaazil",
+      "constituency": "މަކުނުދޫ ދާއިރާ",
+      "constituencyLatin": "makunudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 73,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "aadham-shafeequ-makunudhoo"
+    },
+    {
+      "name": "ޢަބްދުﷲ ރަޝީދު",
+      "nameLatin": "abdhuullah rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ދަނގެތި ދާއިރާ",
+      "constituencyLatin": "dhangethi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 153,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhuullah-rasheedhu-dhangethi"
+    },
+    {
+      "name": "އަޙްމަދު ޝަމްހީދު",
+      "nameLatin": "ahmadhu shamheedhu",
+      "title": "Dr",
+      "constituency": "ހުޅުމާލެ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "hulhumaale dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 5,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-shamheedhu-hulhumaale-dhekunu"
+    },
+    {
+      "name": "އަޙްމަދުދީދީ",
+      "nameLatin": "ahmadhudheedhee",
+      "title": "Alfaazil",
+      "constituency": "މަރަދޫ ދާއިރާ",
+      "constituencyLatin": "maradhoo dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 249,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhudheedhee-maradhoo"
+    },
+    {
+      "name": "އަމީން ފައިޞަލް",
+      "nameLatin": "ameen faisal",
+      "title": "Alfaazil",
+      "constituency": "ކަނޑިތީމު ދާއިރާ",
+      "constituencyLatin": "kanditheemu dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 76,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ameen-faisal-kanditheemu"
+    },
+    {
+      "name": "އަސަދުﷲ ޝިހާބް",
+      "nameLatin": "asadhuullah shihaab",
+      "title": "Alfaazil",
+      "constituency": "ގެމަނަފުށި ދާއިރާ",
+      "constituencyLatin": "gemanafushi dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 212,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "asadhuullah-shihaab-gemanafushi"
+    },
+    {
+      "name": "އަޝްރަފް ރަޝީދު",
+      "nameLatin": "ashraf rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ފަރެސްމާތޮޑާ ދާއިރާ",
+      "constituencyLatin": "faresmaathodaa dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 226,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ashraf-rasheedhu-faresmaathodaa"
+    },
+    {
+      "name": "ޙުސައިން އިމްރާން ލަޠީފް",
+      "nameLatin": "husain imraan lateef",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
+      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 14,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "husain-imraan-lateef-henveyru-dhekunu"
+    },
+    {
+      "name": "ޙުސައިން ސަމީރު",
+      "nameLatin": "husain sameeru",
+      "title": "Alfaazil",
+      "constituency": "ތޮއްޑޫ ދާއިރާ",
+      "constituencyLatin": "thodoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 148,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "husain-sameeru-thodoo"
+    },
+    {
+      "name": "ޙުސްނީ މުބާރިކް",
+      "nameLatin": "husnee mubaarik",
+      "title": "Al-Ustaz",
+      "constituency": "މަނަދޫ ދާއިރާ",
+      "constituencyLatin": "manadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 92,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "husnee-mubaarik-manadhoo"
+    },
+    {
+      "name": "އިބްރާހީމް ޝާޒު",
+      "nameLatin": "ibraaheem shaazu",
+      "title": "Alfaazil",
+      "constituency": "ގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "guraidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 140,
+      "byYear": {
+        "2023-2024": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        19
+      ],
+      "id": "ibraaheem-shaazu-guraidhoo"
+    },
+    {
+      "name": "އިސްމާޢީލް ނިޒާރު",
+      "nameLatin": "ismaaeel nizaaru",
+      "title": "Alfaazil",
+      "constituency": "ފޭދޫ އުތުރު ދާއިރާ",
+      "constituencyLatin": "feydhoo uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 245,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ismaaeel-nizaaru-feydhoo-uthuru"
+    },
+    {
+      "name": "އިސްމާޢީލް ޝަފީޢު",
+      "nameLatin": "ismaaeel shafeeu",
+      "title": "Alfaazil",
+      "constituency": "އިސްދޫ ދާއިރާ",
+      "constituencyLatin": "isdhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 192,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ismaaeel-shafeeu-isdhoo"
+    },
+    {
+      "name": "މަޢުރޫފް ޛާކިރު",
+      "nameLatin": "mauroof dhaakiru",
+      "title": "Alfaazil",
+      "constituency": "ކެންދޫ ދާއިރާ",
+      "constituencyLatin": "kendhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 121,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "mauroof-dhaakiru-kendhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަފޫ ޙާމިދު",
+      "nameLatin": "muhamadhu afoo haamidhu",
+      "title": null,
+      "constituency": "ކެނދިކުޅުދޫ ދާއިރާ",
+      "constituencyLatin": "kendhikulhudhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 88,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-afoo-haamidhu-kendhikulhudhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ޢަލީ",
+      "nameLatin": "muhamadhu alee",
+      "title": "Alfaazil",
+      "constituency": "ގައްދޫ ދާއިރާ",
+      "constituencyLatin": "gadhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 230,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-alee-gadhoo",
+      "sameNameAs": [
+        "muhamadhu-alee-dhuvaafaru"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ދާއޫދު",
+      "nameLatin": "muhamadhu dhaaoodhu",
+      "title": "Alfaazil",
+      "constituency": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
+      "constituencyLatin": "kulhudhufushi uthuru dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 68,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-dhaaoodhu-kulhudhufushi-uthuru"
+    },
+    {
+      "name": "މުޙައްމަދު ފަޟީލް",
+      "nameLatin": "muhamadhu fazeel",
+      "title": "Alfaazil",
+      "constituency": "ދާންދޫ ދާއިރާ",
+      "constituencyLatin": "dhaandhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 209,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-fazeel-dhaandhoo"
+    },
+    {
+      "name": "މުޙައްމަދު މުޞްޠަފާ އިބްރާހީމް",
+      "nameLatin": "muhamadhu mustafaa ibraaheem",
+      "title": null,
+      "constituency": "މާފަންނު ހުޅަނގު ދާއިރާ",
+      "constituencyLatin": "maafannu hulhangu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 38,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-mustafaa-ibraaheem-maafannu-hulhangu"
+    },
+    {
+      "name": "މުޙައްމަދު ނިއުޝާދު",
+      "nameLatin": "muhamadhu niushaadhu",
+      "title": "Alfaazil",
+      "constituency": "ކެޔޮދޫ ދާއިރާ",
+      "constituencyLatin": "keyodhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 160,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-niushaadhu-keyodhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ސިނާން",
+      "nameLatin": "muhamadhu sinaan",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ އުތުރު ދާއިރާ",
+      "constituencyLatin": "hithadhoo uthuru dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 251,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-sinaan-hithadhoo-uthuru"
+    },
+    {
+      "name": "މުޙައްމަދު ސިރުހާން",
+      "nameLatin": "muhamadhu siruhaan",
+      "title": "Alfaazil",
+      "constituency": "ހިތާދޫ ދާއިރާ",
+      "constituencyLatin": "hithaadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 122,
+      "byYear": {
+        "2024-2025": 96000
+      },
+      "total": 96000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-siruhaan-hithaadhoo"
+    },
+    {
+      "name": "ޢަބްދުއްލަޠީފް ޢަބްދުއްރަޙްމާނު",
+      "nameLatin": "abdhulateef abdhurahmaanu",
+      "title": "Alfaazil",
+      "constituency": "އަލިފުށި ދާއިރާ",
+      "constituencyLatin": "alifushi dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 100,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhulateef-abdhurahmaanu-alifushi"
+    },
+    {
+      "name": "ޢަބްދުއްރަޙްމާން",
+      "nameLatin": "abdhurahmaan",
+      "title": "Alfaazil",
+      "constituency": "އައްޑޫމީދޫ ދާއިރާ",
+      "constituencyLatin": "adoomeedhoo dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 260,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhurahmaan-adoomeedhoo"
+    },
+    {
+      "name": "އަޙްމަދު އައިފާން",
+      "nameLatin": "ahmadhu aifaan",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު އުތުރު ދާއިރާ",
+      "constituencyLatin": "henveyru uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 8,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-aifaan-henveyru-uthuru"
+    },
+    {
+      "name": "އަޙްމަދު ނަޞީރު",
+      "nameLatin": "ahmadhu naseeru",
+      "title": "Alfaazil",
+      "constituency": "އިހަވަންދޫ ދާއިރާ",
+      "constituencyLatin": "ihavandhoo dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 48,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-naseeru-ihavandhoo"
+    },
+    {
+      "name": "ޢަލީ އިބްރާހީމް",
+      "nameLatin": "alee ibraaheem",
+      "title": "Alfaazil",
+      "constituency": "ހެންވޭރު ހުޅަނގު ދާއިރާ",
+      "constituencyLatin": "henveyru hulhangu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 16,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "alee-ibraaheem-henveyru-hulhangu"
+    },
+    {
+      "name": "ޢަލީ މޫސާ",
+      "nameLatin": "alee moosaa",
+      "title": "Alfaazil",
+      "constituency": "ހޯރަފުށި ދާއިރާ",
+      "constituencyLatin": "hoarafushi dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 44,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "alee-moosaa-hoarafushi"
+    },
+    {
+      "name": "ފަރުޙަތު މުޙައްމަދު",
+      "nameLatin": "faruhathu muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
+      "constituencyLatin": "kulhudhufushi dhekunu dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 71,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "faruhathu-muhamadhu-kulhudhufushi-dhekunu"
+    },
+    {
+      "name": "ޙުސައިން ޙަމީދު",
+      "nameLatin": "husain hameedhu",
+      "title": "Alfaazil",
+      "constituency": "ކުޑަހުވަދޫ ދާއިރާ",
+      "constituencyLatin": "kudahuvadhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 176,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "husain-hameedhu-kudahuvadhoo"
+    },
+    {
+      "name": "ޙުސައިން ނާޞިޙް",
+      "nameLatin": "husain naasih",
+      "title": "Alfaazil",
+      "constituency": "މެދުހެންވޭރު ދާއިރާ",
+      "constituencyLatin": "medhuhenveyru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 10,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "husain-naasih-medhuhenveyru"
+    },
+    {
+      "name": "އިބްރާހީމް މުޙައްމަދު",
+      "nameLatin": "ibraaheem muhamadhu",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
+      "constituencyLatin": "machangolhi uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 23,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ibraaheem-muhamadhu-machangolhi-uthuru"
+    },
+    {
+      "name": "މުޙައްމަދު އިބްރާހީމް",
+      "nameLatin": "muhamadhu ibraaheem",
+      "title": "Alfaazil",
+      "constituency": "ގަލޮޅު އުތުރު ދާއިރާ",
+      "constituencyLatin": "galolhu uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 18,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-ibraaheem-galolhu-uthuru",
+      "sameNameAs": [
+        "muhamadhu-ibraaheem-komandoo"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު އިބްރާހީމް",
+      "nameLatin": "muhamadhu ibraaheem",
+      "title": "Alfaazil",
+      "constituency": "ކޮމަންޑޫ ދާއިރާ",
+      "constituencyLatin": "komandoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 82,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-ibraaheem-komandoo",
+      "sameNameAs": [
+        "muhamadhu-ibraaheem-galolhu-uthuru"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ޝަމީޒް",
+      "nameLatin": "muhamadhu shameez",
+      "title": "Alfaazil",
+      "constituency": "މަޑަވެލި ދާއިރާ",
+      "constituencyLatin": "madaveli dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 223,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-shameez-madaveli"
+    },
+    {
+      "name": "މުޞްޠަފާ ޙުސައިން",
+      "nameLatin": "mustafaa husain",
+      "title": "Alfaazil",
+      "constituency": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
+      "constituencyLatin": "machangolhi dhekunu dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 29,
+      "byYear": {
+        "2024-2025": 72000
+      },
+      "total": 72000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "mustafaa-husain-machangolhi-dhekunu"
+    },
+    {
+      "name": "އާދަމް ޒާހިރު",
+      "nameLatin": "aadham zaahiru",
+      "title": "Alfaazil",
+      "constituency": "ފެލިދޫ ދާއިރާ",
+      "constituencyLatin": "felidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 157,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "aadham-zaahiru-felidhoo"
+    },
+    {
+      "name": "ޢަބްދުލްޙަންނާން އަބޫބަކުރު",
+      "nameLatin": "abdhulhannaan aboobakuru",
+      "title": "Alfaazil",
+      "constituency": "ތުޅާދޫ ދާއިރާ",
+      "constituencyLatin": "thulhaadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 117,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "abdhulhannaan-aboobakuru-thulhaadhoo"
+    },
+    {
+      "name": "އަޙްމަދު އަސްލަމް",
+      "nameLatin": "ahmadhu aslam",
+      "title": "Alfaazil",
+      "constituency": "ބިލެތްދޫ ދާއިރާ",
+      "constituencyLatin": "bilethdhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 170,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-aslam-bilethdhoo"
+    },
+    {
+      "name": "އަޙްމަދު އަޒާން މަރުޒޫޤު",
+      "nameLatin": "ahmadhu azaan maruzooqu",
+      "title": "Alfaazil",
+      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
+      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 255,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-azaan-maruzooqu-hithadhoo-medhu"
+    },
+    {
+      "name": "އަޙްމަދު ރިޔާޟް",
+      "nameLatin": "ahmadhu riyaaz",
+      "title": "Alfaazil",
+      "constituency": "ތިމަރަފުށި ދާއިރާ",
+      "constituencyLatin": "thimarafushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 183,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ahmadhu-riyaaz-thimarafushi"
+    },
+    {
+      "name": "ޙަމަދު ޢަބްދުﷲ",
+      "nameLatin": "hamadhu abdhuullah",
+      "title": "Alfaazil",
+      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
+      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 234,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "hamadhu-abdhuullah-fuvamulaku-uthuru"
+    },
+    {
+      "name": "ހަނާން މުޙައްމަދު ރަޝީދު",
+      "nameLatin": "hanaan muhamadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ގުރައިދޫ ދާއިރާ",
+      "constituencyLatin": "guraidhoo dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 189,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "hanaan-muhamadhu-rasheedhu-guraidhoo"
+    },
+    {
+      "name": "އިބްރާހީމްދީދީ",
+      "nameLatin": "ibraaheemdheedhee",
+      "title": "Alfaazil",
+      "constituency": "ފޭދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "feydhoo dhekunu dhaairaa",
+      "sourcePage": 5,
+      "sourceRowNo": 246,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "ibraaheemdheedhee-feydhoo-dhekunu",
+      "sameNameAs": [
+        "ibraaheemdheedhee-kolamaafushi",
+        "ibraaheemdheedhee-feydhoo"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ނާޡިމް",
+      "nameLatin": "muhamadhu naazim",
+      "title": "Alfaazil",
+      "constituency": "މާފަންނު އުތުރު ދާއިރާ",
+      "constituencyLatin": "maafannu uthuru dhaairaa",
+      "sourcePage": 1,
+      "sourceRowNo": 31,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-naazim-maafannu-uthuru",
+      "sameNameAs": [
+        "muhamadhu-naazim-dhangethi",
+        "muhamadhu-naazim-vaikaradhoo"
+      ]
+    },
+    {
+      "name": "މުޙައްމަދު ރަޝީދު",
+      "nameLatin": "muhamadhu rasheedhu",
+      "title": "Alfaazil",
+      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
+      "constituencyLatin": "nolhivaram dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 64,
+      "byYear": {
+        "2024-2025": 48000
+      },
+      "total": 48000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-rasheedhu-nolhivaram",
+      "sameNameAs": [
+        "muhamadhu-rasheedhu-machangolhi-uthuru",
+        "muhamadhu-rasheedhu-fuvamulaku-uthuru",
+        "muhamadhu-rasheedhu-hithadhoo-medhu"
+      ]
+    },
+    {
+      "name": "ޢަލީ އަޝްރަޤް",
+      "nameLatin": "alee ashraq",
+      "title": "Alfaazil",
+      "constituency": "ކިނބިދޫ ދާއިރާ",
+      "constituencyLatin": "kinbidhoo dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 185,
+      "byYear": {
+        "2024-2025": 24000
+      },
+      "total": 24000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "alee-ashraq-kinbidhoo"
+    },
+    {
+      "name": "އަނާރާ ނަޢީމް",
+      "nameLatin": "anaaraa naeem",
+      "title": "Dr",
+      "constituency": "ހުރާ ދާއިރާ",
+      "constituencyLatin": "huraa dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 142,
+      "byYear": {
+        "2024-2025": 24000
+      },
+      "total": 24000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "anaaraa-naeem-huraa",
+      "sameNameAs": [
+        "anaaraa-naeem-makunudhoo"
+      ]
+    },
+    {
+      "name": "ޙުސައިން ރިޟާ އާދަމް",
+      "nameLatin": "husain rizaa aadham",
+      "title": "Al-Ustaz",
+      "constituency": "މާފުށި ދާއިރާ",
+      "constituencyLatin": "maafushi dhaairaa",
+      "sourcePage": 3,
+      "sourceRowNo": 141,
+      "byYear": {
+        "2024-2025": 24000
+      },
+      "total": 24000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "husain-rizaa-aadham-maafushi"
+    },
+    {
+      "name": "މުޙައްމަދު އަލްސަން އަޙްމަދު",
+      "nameLatin": "muhamadhu alsan ahmadhu",
+      "title": "Alfaazil",
+      "constituency": "ތިނަދޫ ދެކުނު ދާއިރާ",
+      "constituencyLatin": "thinadhoo dhekunu dhaairaa",
+      "sourcePage": 4,
+      "sourceRowNo": 219,
+      "byYear": {
+        "2024-2025": 24000
+      },
+      "total": 24000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-alsan-ahmadhu-thinadhoo-dhekunu"
+    },
+    {
+      "name": "މުޙައްމަދު މަމްދޫޙް",
+      "nameLatin": "muhamadhu mamdhooh",
+      "title": "Alfaazil",
+      "constituency": "ފުނަދޫ ދާއިރާ",
+      "constituencyLatin": "funadhoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 85,
+      "byYear": {
+        "2024-2025": 24000
+      },
+      "total": 24000,
+      "yearsPaid": 1,
+      "terms": [
+        20
+      ],
+      "id": "muhamadhu-mamdhooh-funadhoo"
+    },
+    {
+      "name": "މުޙައްމަދު ރާޝިދު",
+      "nameLatin": "muhamadhu raashidhu",
+      "title": "Alfaazil",
+      "constituency": "00.00069 00.000021 00.0 00.0 00.0 ކޮމަންޑޫ ދާއިރާ",
+      "constituencyLatin": "0000069 00000021 000 000 000 komandoo dhaairaa",
+      "sourcePage": 2,
+      "sourceRowNo": 81,
+      "byYear": {},
+      "total": 0,
+      "yearsPaid": 0,
+      "terms": [],
+      "id": "muhamadhu-raashidhu-0000069-00000021-000-000-000-komandoo"
+    }
+  ]
+}
