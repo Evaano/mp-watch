@@ -63,6 +63,7 @@ export default async function MemberPage({
   const series = registry.spendingSeries(person.id);
   const positions = registry.positions(person.id);
   const terms = registry.termsServed(person.id);
+  const party = registry.party(person.id);
   const seatSource = registry.primarySource();
 
   return (
@@ -81,6 +82,11 @@ export default async function MemberPage({
           </h1>
           <p className="mt-2 text-ink-muted">
             <ConstituencyName member={nameProps(person)} lang={lang} />
+            {party ? (
+              <span className="ms-2 rounded-card bg-surface-sunken px-2 py-0.5 text-sm">
+                {party}
+              </span>
+            ) : null}
           </p>
           {terms.length ? (
             <ul className="mt-4 flex flex-wrap gap-2">

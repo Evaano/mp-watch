@@ -66,6 +66,8 @@ const dictionaries = {
     positionsHeading: "Positions held",
     inferredLabel: "Inferred",
     stillServing: "present",
+    speakerLabel: "Speaker of the Majlis",
+    partyLabel: "Party",
 
     termLabel: (n: number) => `${ordinal(n)} Majlis`,
     sourceHeading: "Source",
@@ -119,6 +121,8 @@ const dictionaries = {
     positionsHeading: "ފުރުއްވި މަޤާމުތައް",
     inferredLabel: "ބެލެވޭ ގޮތުގައި",
     stillServing: "މިހާރު",
+    speakerLabel: "މަޖިލީހުގެ ރައީސް",
+    partyLabel: "ޕާޓީ",
 
     termLabel: (n: number) => `${n} ވަނަ މަޖިލިސް`,
     sourceHeading: "މަޞްދަރު",

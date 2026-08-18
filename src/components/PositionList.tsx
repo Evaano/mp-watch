@@ -27,12 +27,21 @@ export function PositionList({
             className="absolute -start-[21px] top-1.5 size-2.5 rounded-full border-2 border-surface bg-accent"
           />
           <p className="font-medium">
-            {lang === "dv"
-              ? position.constituency
-              : capitalise(
-                  (position.constituencyLatin ?? "").replace(/ dhaairaa$/, ""),
-                )}
+            {position.kind === "speaker"
+              ? dict.speakerLabel
+              : lang === "dv"
+                ? position.constituency
+                : capitalise(
+                    (position.constituencyLatin ?? "")
+                      .replace(/ dhaaira?$/i, "")
+                      .trim(),
+                  )}
           </p>
+          {position.party ? (
+            <span className="mt-1 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 text-[11px] text-ink-muted">
+              {position.party}
+            </span>
+          ) : null}
           <p className="numeral mt-0.5 text-sm text-ink-muted">
             {position.start.slice(0, 4)} - {position.end?.slice(0, 4) ?? ""}
             {position.end === null ? ` ${dict.stillServing}` : ""}

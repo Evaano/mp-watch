@@ -45,6 +45,7 @@ export function MemberSearch({
       (m) =>
         m.nameLatin.toLowerCase().includes(lower) ||
         m.constituencyLatin.toLowerCase().includes(lower) ||
+        (m.party ?? "").toLowerCase() === lower ||
         m.name.includes(term) ||
         m.constituency.includes(term),
     );
@@ -84,6 +85,11 @@ export function MemberSearch({
               >
                 <span className="min-w-0">
                   <MemberName member={m} lang={lang} />
+                  {m.party ? (
+                    <span className="mt-1 me-2 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 text-[11px] text-ink-muted">
+                      {m.party}
+                    </span>
+                  ) : null}
                   <span className="mt-0.5 block text-sm text-ink-muted">
                     <ConstituencyName member={m} lang={lang} />
                   </span>

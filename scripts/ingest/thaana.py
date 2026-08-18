@@ -73,3 +73,44 @@ def split_title(name):
     if parts and parts[0] in TITLES:
         return TITLES[parts[0]], ' '.join(parts[1:])
     return None, name
+
+
+# Thikijehi (Arabic-derived) letters and their plain Thaana counterparts.
+# Maldivian official documents disagree on which to use for the same name:
+# the Majlis roster writes Mahloof with 0x799, the premium disclosure writes it
+# with 0x79A. Folding these is an orthographic equivalence, in the same spirit
+# as case folding, not fuzzy matching.
+FOLD = {
+    0x798: 0x78C,  # thaa   -> thaviyani
+    0x799: 0x780,  # haa    -> haa
+    0x79A: 0x780,  # khaa   -> haa
+    0x79B: 0x78B,  # dhaalu -> dhaalu
+    0x79C: 0x792,  # zaa    -> zaviyani
+    0x79D: 0x781,  # sheenu -> shaviyani
+    0x79E: 0x790,  # saadhu -> seenu
+    0x79F: 0x792,  # daadhu -> zaviyani
+    0x7A0: 0x78C,  # to     -> thaviyani
+    0x7A1: 0x792,  # zo     -> zaviyani
+    0x7A2: 0x787,  # ainu   -> alifu
+    0x7A3: 0x78E,  # ghainu -> gaafu
+    0x7A4: 0x78E,  # qaafu  -> gaafu
+    0x7A5: 0x788,  # waavu  -> vaavu
+}
+
+
+# Fili (vowel marks) also vary between official documents: the roster writes
+# Muaz as 'ZAVIYANI + sukun', the disclosure as 'ZAVIYANI + u'. Dropping fili
+# leaves a consonant skeleton. Measured against the two sources we hold, this
+# gains 8 further matches and adds no new key collisions, so it is safe to use
+# alongside an exact constituency match.
+FILI = re.compile('[ަ-ް]')
+
+
+def fold_for_match(text):
+    """Normalise a name or place for comparison only. Never for display.
+
+    Folds thikijehi letters to their plain counterparts and drops fili, so two
+    government spellings of the same name compare equal.
+    """
+    folded = ''.join(chr(FOLD.get(ord(c), ord(c))) for c in text or '')
+    return re.sub(r'\s+', ' ', FILI.sub('', folded)).strip()

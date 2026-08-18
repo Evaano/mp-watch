@@ -49,6 +49,9 @@ export interface Source {
 
 export interface Person {
   id: PersonId;
+  /** Majlis member ids. One per parliament: the Majlis reissues them. */
+  majlisId?: number;
+  majlisIds?: number[];
   /** Name in Thaana, as printed in the source. */
   name: string;
   /** Approximate Latin transliteration, for slugs and Latin search. */
@@ -70,6 +73,7 @@ export interface Person {
 
 export type PositionKind =
   | "majlis-member"
+  | "speaker"
   | "minister"
   | "council-member"
   | "party-office"
@@ -96,6 +100,13 @@ export interface Position {
    */
   basis: "stated" | "inferred";
   basisNote?: string;
+  /**
+   * Party at the time of this position, not of the person. Six independents
+   * crossed to PNC within four days of the 2024 election, so party only means
+   * anything when it is bounded by dates.
+   */
+  party?: string | null;
+  seatNo?: number | null;
   sources: Cited;
 }
 

@@ -22,7 +22,7 @@ from thaana import repair_visual_order, romanise, slugify, split_title  # noqa: 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 PDF = os.path.join(HERE, 'source', 'mps-allowance.pdf')
-OUT = os.path.join(ROOT, 'src', 'data', 'graph.json')
+OUT = os.path.join(ROOT, 'src', 'data', 'parts', 'allowances.json')
 
 SOURCE = {
     'title': 'Health insurance premiums paid for members of the People\'s Majlis',

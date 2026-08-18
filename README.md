@@ -67,42 +67,82 @@ like this causes real harm.
 
 ```bash
 pip install -r scripts/ingest/requirements.txt
-python scripts/ingest/extract_allowances.py     # -> src/data/graph.json
+python scripts/ingest/extract_allowances.py    # -> src/data/parts/allowances.json
+python scripts/ingest/majlis_members.py        # -> src/data/parts/majlis-members.json
+python scripts/ingest/build_graph.py           # -> src/data/graph.json
 ```
 
-The source PDF is vendored at `scripts/ingest/source/mps-allowance.pdf` so the
-build is reproducible without a network fetch.
+Each ingest writes a partial graph to `src/data/parts/`. `build_graph.py` joins
+them and resolves identities. Fetched pages and the source PDF are cached under
+`scripts/ingest/source/` and committed, so a build reproduces without depending
+on a government site being up or unchanged.
+
+### Sources currently ingested
+
+| Source | Gives us |
+|---|---|
+| Health insurance premium disclosure (PDF) | 11 years of per-member spending |
+| Majlis member rosters, 18th-20th, EN + DV | stated membership, party, official name pair |
+| Majlis previous speakers | dated positions back to 1933 |
+
+`docs/data-sources.md` records 67 further sources that were found and verified,
+ranked into an ingest roadmap.
+
+### Reading the premium PDF
 
 The extractor reads word positions rather than a text dump, because the PDF
 splits values mid-token (`24,000` arrives as `2` + `4,000`) and because a blank
 year is meaningful: mapping an amount to the correct fiscal year needs the
 x-coordinate of its column.
 
-It also matches amounts on **shape, not on a separator**. The disclosure mixes
+It matches amounts on **shape, not on a separator**. The disclosure mixes
 `12,500`, `120000.00` and `-` for nil across its pages; keying on the comma
 silently classified plain-decimal amounts as name text and lost them. This is
-safe to do because Thaana labels never contain ASCII digits.
+safe because Thaana labels never contain ASCII digits.
 
-Thaana runs are stored in the PDF in visual order, character-reversed and with
-cell words running left to right. `scripts/ingest/thaana.py` undoes both and
-provides the transliteration used for slugs and Latin search.
+Thaana runs are stored in that PDF in visual order, character-reversed and with
+cell words running left to right. `scripts/ingest/thaana.py` undoes both.
 
-Current output: **266 people, 266 positions, 1,769 claims, MVR 92,451,000,
-zero parse warnings**, with every row in the source document accounted for.
+### Identity resolution
 
-### Three things the data does not claim
+Joining the disclosure to the roster is the hard part, and three things make it
+harder than it looks:
 
-- **The source's own row numbers are unreliable.** They repeat 11 values and
-  skip 5. Identity is therefore `(name, constituency)`, never the printed row
-  number.
-- **People are never auto-merged.** Some names appear against more than one
-  constituency. Some of those are one person after a redistricting; others are
-  two different people who share a name. Deciding which needs a human, so the
-  records stay separate and each links to the other via `possiblySameAs`.
-- **Positions from this source are inferred, and say so.** The disclosure
-  records payments, not terms of service. A payment in a fiscal year strongly
-  implies the seat was held, but the source never states it, so every position
-  carries `basis: "inferred"` and shows its reasoning in the UI.
+- **The Majlis reissues member ids every parliament** (18th = 1-85, 19th =
+  86-174, 20th = 175-268), so the roster arrives as person-*terms*. They are
+  collapsed into people before anything else joins to them.
+- **The Latin constituency name drifts between terms** ("Hithadhoo Uthuru
+  Dhaaira" becomes "North Hithadhoo") while the Thaana one is stable. The join
+  therefore runs on Thaana.
+- **Two government documents spell the same name differently.** The roster
+  writes Mahloof with `ޙ`, the disclosure with `ޚ`; the roster writes
+  Muaz ending in sukun, the disclosure ending in *u*. `fold_for_match()` folds
+  thikijehi letters to their plain counterparts and drops fili, leaving a
+  consonant skeleton. Measured against the two sources held here, folding gains
+  8 further matches and adds **no** new key collisions.
+
+The join requires a folded name match **and** an exact constituency match, and
+merges only when the result is unique. Everything else is written to
+`docs/identity-review.md` for a human. Fuzzy-matching Maldivian names would
+attach one person's spending, votes or allegations to another, and nothing
+downstream would reveal that it had happened.
+
+Current output: **278 people, 320 positions, 1,769 claims, MVR 92,451,000**,
+zero parse warnings, 217 of 266 disclosure records auto-joined to the roster
+with **zero ambiguous matches**, and 49 left for review.
+
+### Four things the data does not claim
+
+- **The disclosure's row numbers are unreliable.** They repeat 11 values and
+  skip 5, so they are never used as identity.
+- **People are never auto-merged across a name boundary.** Records that share a
+  name link to each other via `possiblySameAs` rather than being combined.
+- **Positions say how they are known.** Roster positions are `basis: "stated"`;
+  positions derived only from payment years are `basis: "inferred"` and show
+  their reasoning in the UI.
+- **Party is a property of a position, not of a person.** Six independents
+  crossed to PNC within four days of the 2024 election, so an undated party
+  label would be wrong.
 
 ## Development
 
@@ -117,7 +157,9 @@ pnpm lint
 
 ```
 scripts/ingest/     PDF -> JSON, plus the Thaana helpers
-src/data/           generated graph, committed so data changes are reviewable
+src/data/parts/     one partial graph per ingest
+src/data/graph.json merged graph, committed so data changes are reviewable
+docs/               data source survey and the identity review queue
 src/lib/            schema, registry (data access), i18n, formatting
 src/components/     shared UI
 src/app/[lang]/     routes

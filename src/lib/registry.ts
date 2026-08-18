@@ -72,9 +72,22 @@ export const registry = {
     return claimsByPerson.get(id) ?? [];
   },
 
-  /** The seat a person is listed against. */
+  /** Every seat held, earliest first. A member may hold several over terms. */
+  seats(id: PersonId): Position[] {
+    return this.positions(id)
+      .filter((p) => p.kind === "majlis-member")
+      .sort((a, b) => a.start.localeCompare(b.start));
+  },
+
+  /** The most recent seat, which is what a profile header should show. */
   seat(id: PersonId): Position | undefined {
-    return this.positions(id).find((p) => p.kind === "majlis-member");
+    const seats = this.seats(id);
+    return seats[seats.length - 1];
+  },
+
+  /** Party at the most recent seat. Never treated as a property of a person. */
+  party(id: PersonId): string | null {
+    return this.seat(id)?.party ?? null;
   },
 
   expenditure(id: PersonId): ExpenditureClaim[] {
@@ -106,8 +119,13 @@ export const registry = {
     ).size;
   },
 
+  /** Majlis terms served, unioned across every seat held. */
   termsServed(id: PersonId): number[] {
-    return this.seat(id)?.termNumbers ?? [];
+    const numbers = new Set<number>();
+    for (const seat of this.seats(id)) {
+      for (const term of seat.termNumbers ?? []) numbers.add(term);
+    }
+    return [...numbers].sort((a, b) => a - b);
   },
 
   /**
@@ -158,6 +176,7 @@ export const registry = {
     }
     return {
       people: graph.persons.length,
+      peopleWithSpending: new Set(expenditure.map((c) => c.personId)).size,
       amount: expenditure.reduce((sum, c) => sum + c.amount, 0),
       byYear,
     };
@@ -202,6 +221,7 @@ export interface PersonSummary {
   constituencyLatin: string;
   total: number;
   yearsPaid: number;
+  party: string | null;
 }
 
 export function toSummary(person: Person): PersonSummary {
@@ -215,5 +235,6 @@ export function toSummary(person: Person): PersonSummary {
     constituencyLatin: seat?.constituencyLatin ?? "",
     total: registry.totalSpent(person.id),
     yearsPaid: registry.yearsPaid(person.id),
+    party: registry.party(person.id),
   };
 }

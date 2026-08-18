@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="/css/public-en.css?id=f4c783c92be81af79b8a">
+                <title>Past Speakers - People's Majlis of Maldives</title>
+
+        <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+
+<style>
+
+.navbar .active {
+    border-bottom: 2px solid white;
+}
+
+.navbar .nav-link{
+    padding-top:0.8rem;
+    padding-bottom:0.8rem;
+    display:inline-block;
+}
+
+.footer{
+        font-size:14px;
+    }
+
+.pagination { justify-content: center; }
+
+.pagination .page-link {
+    border: none;
+}
+
+.maj-downloads .title {
+    width: 100%;
+    border-bottom: 1px solid #c1bfbf;
+    padding: 20px 0 10px 0;
+    color: #0d253f;
+}
+.maj-downloads h4 {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    color: #0d253f;
+}
+.maj-downloads h5 {
+    text-align: left;
+    padding-top: 5px;
+}
+
+.maj-downloads ul {
+    margin: 0;
+    padding: 0;
+}
+.maj-downloads li {
+    margin: 0;
+    padding: 0;
+}
+.maj-downloads .download-link {
+    display: block;
+    margin: 0;
+    padding: 10px;
+            padding-right: 15px;
+        transition: all 200ms;
+}
+.maj-downloads .download-link:hover {
+    background-color: #eceef0;
+        padding-left: 15px;
+    padding-right: 10px;
+    }
+.maj-downloads .more {
+    float: right;
+    display: inline;
+    padding: 5px 0 0 0;
+}
+.maj-downloads .more a {
+    text-decoration: none;
+    color: #0d253f;
+}
+.maj-downloads .more a:hover {
+    color:cornflowerblue;
+}
+.maj-downloads small {
+    padding: 15px;
+}
+
+.maj-link, .maj-linksm {
+    display: block;
+    padding: 8px 5px;
+     
+    padding-right: 15px;
+        border-radius: 5px;
+    animation-direction: alternate;
+    transition: all 500ms;
+    border-bottom: 1px solid #eceef0;
+    color:#6c757d!important;
+}
+
+.maj-linksm {
+    display: block;
+    padding: 2px;
+}
+
+.maj-link h6 {
+    padding: 5px 0 0 0;
+    margin: 0 0 4px 0;
+}
+
+.maj-link p {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size: smaller;
+}
+
+.maj-link img {
+     
+    margin: -4px 4px 0 0;
+    }
+
+.maj-link:hover, .maj-linksm:hover {
+    background-color: #eceef0;
+     
+    padding-left: 15px;
+    padding-right: 5px;
+    }
+
+
+.articlerbox {
+        padding-left:0; 
+        display:inline-block; 
+    vertical-align: top;
+}
+
+
+@media  screen and (max-width: 768px) {
+    .carousel-inner {
+        height: 120px;
+        width:auto;
+        justify-content: center;
+    }
+
+    .carousel-item {
+        justify-content: center;
+    }
+
+    .carousel-item > img {
+        height: 120px;
+        min-width: 100%;
+        width: auto !important;
+    }
+
+    .articlerbox {
+                padding-right:0; 
+            }
+}
+
+/* photo gallery */
+
+.maj-gal .carousel-thumbnails .carousel-indicators img {
+    max-width: 100px;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+
+.maj-gal .carousel-thumbnails .carousel-indicators li {
+    height: auto;
+    max-width: 100px;
+    width: 100px;
+    border: none;
+	box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+	
+	&.active {
+		border-bottom: 4px solid #fff;
+	}
+}
+
+.maj-gal #thumbs .carousel-control-prev-icon, .maj-gal #thumbs .carousel-control-next-icon {
+    color: black;
+    background-color: black;
+    padding: 20px 10px;
+}
+
+.maj-gal .carousel-caption {
+    width: 100%;
+    padding: 0;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0, 1));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0, 1));
+}
+
+.maj-gal .carousel-caption p {
+    padding: 30px 40px 15px 40px;
+}
+ 
+.maj-gal #thumbs {
+    padding: 20px 0;
+} 
+
+.maj-gal #thumbs .carousel-inner {
+    margin:0 auto; width: 82%;
+    justify-content: center;
+}
+.maj-gal #thumbs .carousel-item {
+    justify-content: center;
+    text-align: center;
+}
+
+.maj-gal #thumbs .carousel-item > div {
+    display: inline-block;
+    padding: 0 2px;
+    cursor: pointer;
+}
+.maj-gal #thumbs img {
+    width: 144px;
+    /* width: 20%; */
+    max-height: 95.547px;
+}
+@media  screen and (min-width: 992px) and (max-width: 1200px) {
+    .maj-gal #thumbs img {
+        width: 115px;
+    }
+}
+@media  screen and (min-width: 769px) and (max-width: 991px) {
+    .maj-gal #thumbs img {
+        width: 85px;
+        max-height: 95.547px;
+    }
+    .maj-gal .carousel-inner {
+        height:auto;
+    }
+}
+@media  screen and (min-width: 531px) and (max-width: 768px) {
+    .maj-gal #thumbs img {
+        width: 60px;
+        max-height: 95.547px;
+    }
+    .maj-gal .carousel-inner {
+        height:auto;
+    }
+    .maj-gal #carousel-thumb .carousel-item img {
+        height: auto;
+        width: 100% !important;
+    }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 530px) {
+    .maj-gal #thumbs img {
+        width: 30px;
+        max-height: 95.547px;
+    }
+    .maj-gal .carousel-inner {
+        height:auto;
+    }
+    .maj-gal #carousel-thumb .carousel-item img {
+        height: auto;
+        width: 100% !important;
+    }
+    .maj-gal #thumbs .carousel-control-prev-icon, .maj-gal #thumbs .carousel-control-next-icon {
+        padding: 15px 8px;
+    }
+}
+
+
+
+.maj-progress {
+    margin: 10px 0;
+}
+
+.maj-progress li {
+    display: inline-block;
+    list-style: none;
+    color: #8C98A5;
+    margin: 10px 5px;
+    vertical-align: middle;
+}
+
+.maj-progress i {
+    display: block;
+    background-color: #8C98A5;
+    width: 25px;
+    height: 1px;
+    }
+
+.maj-progress span {
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 25px;
+    width: 22px;
+    height: 22px;
+    background-color: #8C98A5;
+    color:#fff;
+    text-align: center;
+}
+
+
+
+.maj-progress .active {
+    color: #0D222E;
+}
+.maj-progress .active span {
+    background-color: #95E3A2;
+    color: #143256;
+}
+
+
+.footer .heading > span {
+        float: right;
+        display: none;
+    padding-right: 5px;
+    font-weight: normal;
+    font-size:large;
+    visibility:hidden;
+}
+
+.footer a:hover {
+    color:coral!important;
+}
+
+.epetition-btn {
+    background-color: #0769af;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    font-size: medium;
+}
+
+@media  screen and (max-width: 990px) {
+    .footer .heading {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        padding: 0 0 5px 0;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .footer .heading > span {
+        display: block;
+        visibility: visible;
+    }
+
+    .footer-hidden {
+        visibility: hidden;
+        display: none;
+    }
+
+    .footer li:not(.heading) {
+                padding-left: 20px;
+            }
+
+   
+
+}
+
+
+
+</style>
+
+        <style>
+
+</style>
+
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </head>
+    <body>
+    
+        <div class="header bg-template-blue">
+            <div class="container quickmenu">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand text-white" href="https://majlis.gov.mv/en/20-parliament"><img src="/images/majlis-logo.svg" class="d-inline-block align-middle" width="48px">People&#039;s Majlis</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav ml-auto">
+                                                    <!-- <a href="https://majlis.gov.mv/en/jobs" class="btn btn-sm btn-stream" style="align-self: center; padding: 0.25em 1.3em;">Job Center</a>&nbsp;&nbsp; -->
+                            <!-- <a href="https://majlis.gov.mv/en/20-parliament/stream" class="btn btn-sm btn-stream" style="align-self: center; padding: 0.25em 1.3em;">Majlis Web TV</a> -->
+
+                            <li class="nav-item mx-md-1 mx-lg-2">
+                                <!--                                 <a class="nav-link text-white" href="/dv">DV</a>
+                                 -->
+                                                                <a class="nav-link text-white" style="cursor: pointer;" onclick="langBtn(this.id)" id="dv" >DV</a>
+                                                            </li>
+                            
+                            <form class="form-inline my-2 my-lg-0" method="post" enctype="multipart/form-data" action="#" id="quicksearch">
+                                <input type="hidden" name="_token" value="aEuST9CZ9nnemiFru7oCFRdXgAfroRjxVLDFHoIh">                                <input name="q" class="form-control form-control-sm mr-sm-2 searchbox tkbd" type="text" placeholder="Find" >
+                            </form>
+
+                            <!-- EPETITION BUTTON -->
+                                                        <li class="nav-item">
+                                <a class="nav-link" href="https://epetition.majlis.gov.mv">
+                                    <div class="epetition-btn">
+                                                                                    E-Petition
+                                                                            </div>
+                                </a>
+                            </li>
+                                                        
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg py-0">
+                    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item nav-margin">
+                                <a class="nav-link text-white " href="https://majlis.gov.mv/en/20-parliament">Home</a>
+                            </li>
+                            <li class="nav-item nav-margin dropdown">
+                                <a class="nav-link text-white dropdown-toggle active" href="#" id="majlisMajlis" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parliament
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="majlisMajlis">
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/speaker">Speaker</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/deputy-speaker">Deputy Speaker</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/leading-members">Members leading the sessions</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/majority-leaders">Majority Leader</a> 
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/minority-leaders">Minority Leader</a> 
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/speakers-history">Previous Speakers</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/condolences">Condolences</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item nav-margin">
+                                <a class="nav-link text-white " href="https://majlis.gov.mv/en/20-parliament/members">Members</a>
+                            </li>
+
+                            <li class="nav-item nav-margin dropdown">
+                                <a class="nav-link text-white dropdown-toggle " href="" id="majlisMassaiykaih" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Parliament Works
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="majlisMassaiykaih">
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/sittings">Parliament Sittings</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/committees">Committees</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/parliament-works">Parliament Documents</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/media/special_majlis">People&#039;s Special Majlis</a>
+                                    <!-- new items -->
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/majlis-registry">Majlis Registry</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/point-of-order">Point of Order</a>
+
+
+                                </div>
+                            </li>
+                            <li class="nav-item nav-margin dropdown">
+                                <a class="nav-link text-white dropdown-toggle " href="#" id="majlisIdhaara" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Secretariat
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="majlisIdhaara">
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/secretariate/secretariate-general">Secretary General</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/secretariate/secretariate-sergeant_at_arms">Sergeant at Arms</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/secretariate/secretariate-counsel-general">Counsel General</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/secretariate/structure">Senior Staff and Department/Section Heads of the Secretariat</a>
+                                    <a href="https://majlis.gov.mv/en/secretariat/resources" class="dropdown-item">Resources</a>
+
+                                    
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/whistleblow">Whistleblowing</a>
+
+                                </div>
+                            </li>
+                            
+                            
+                            <li class="nav-item nav-margin">
+                                <a class="nav-link text-white" href="https://parlinfo.majlis.gov.mv">Library</a>
+                            </li>
+                            <li class="nav-item nav-margin dropdown">
+                                <a class="nav-link text-white dropdown-toggle " href="#" id="majlisMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Media
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="majlisMedia">
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/stream">Majlis Web TV</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/news-events">News</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/speaker-speeches">Speaker&#039;s Speeches</a>
+                                    
+
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/galleries">Photo Gallery</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/videos">Video Gallery</a>
+
+                                    
+
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/20-parliament/calendar">Parliament Calendar</a>
+                                    <a class="dropdown-item" href="https://majlis.gov.mv/en/media/information-officer">Information Officer</a>
+                                    <a href="https://old.majlis.gov.mv" class="dropdown-item">Archive Website</a>
+                                   
+                                </div>
+                            </li>
+                         
+
+                            <li class="nav-item nav-margin">
+                                <a class="nav-link text-white" href="https://majlis.gov.mv/en/parliamentary-education">Education</a>
+                            </li>
+
+                            <li class="nav-item nav-margin">
+                                <a class="nav-link text-white" href="https://majlis.gov.mv/en/contact-us">Contact</a>
+                            </li>
+
+                            <!-- PES -->
+                            
+                           
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+    <div class="row align-items-center breadcrumb-share">
+        <div class="col text-left">
+            <ul class="list-unstyled  mb-0 breadcrumb-list text-muted">
+                <li class="list-inline-item"><a href="https://majlis.gov.mv/en/20-parliament" class="text-decoration-none">Home</a></li>/
+                <li class="list-inline-item">Parliament</li>
+            </ul>
+        </div>
+        <div class="col text-right">
+                <a href="#" class="share" id="twitter">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_549_15)">
+        <path d="M11.9027 8.46429L19.3482 0H17.5838L11.119 7.34942L5.95547 0H0L7.8082 11.1136L0 19.9897H1.76443L8.59152 12.2285L14.0445 19.9897H20L11.9023 8.46429H11.9027ZM9.48608 11.2115L8.69495 10.1049L2.40018 1.29901H5.11025L10.1902 8.40562L10.9813 9.51229L17.5847 18.7498H14.8746L9.48608 11.212V11.2115Z" fill="#143257"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_549_15">
+        <rect width="20" height="20" fill="white"/>
+        </clipPath>
+        </defs>
+    </svg>
+</a>
+
+<a href="#" class="share mx-4" id="viber">
+    <svg width="23" height="24" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.16619 10.3097C9.16619 10.3097 9.48528 10.3367 9.65647 10.1243L9.99168 9.70134C10.153 9.49254 10.542 9.35934 10.9238 9.57174C11.2098 9.73559 11.4874 9.91371 11.7556 10.1054C12.0084 10.2917 12.5264 10.7264 12.5282 10.7264C12.7756 10.9361 12.833 11.243 12.6644 11.567L12.6627 11.5742C12.4775 11.8966 12.2424 12.1873 11.9662 12.4355L11.96 12.44C11.7203 12.641 11.4846 12.7553 11.2528 12.7829C11.2188 12.7891 11.1842 12.7915 11.1497 12.7901C11.0478 12.7909 10.9463 12.7751 10.8494 12.7433L10.8414 12.7325C10.4846 12.6308 9.88951 12.3779 8.8973 11.8289C8.32347 11.5147 7.77716 11.1522 7.26425 10.7453C7.00699 10.5415 6.7616 10.3231 6.52928 10.091L6.50508 10.0667L6.47999 10.0415L6.45489 10.0172L6.43069 9.99203C6.1996 9.75876 5.98204 9.51235 5.77908 9.25404C5.37396 8.73898 5.01295 8.19043 4.69994 7.61425C4.15319 6.61796 3.90133 6.02126 3.80005 5.66126L3.7893 5.65406C3.7579 5.55671 3.74247 5.45489 3.74359 5.35257C3.74175 5.31794 3.74385 5.28321 3.74986 5.24907C3.77854 5.01687 3.89267 4.77987 4.09225 4.53807L4.09673 4.53177C4.34379 4.25435 4.63335 4.01829 4.95448 3.83248L4.96076 3.83158C5.28343 3.66238 5.58996 3.71998 5.7979 3.96658C5.79969 3.96748 6.23171 4.48857 6.41635 4.74237C6.60731 5.01198 6.7847 5.29103 6.94785 5.57846C7.16028 5.96096 7.02762 6.35246 6.81879 6.51446L6.39753 6.85016C6.1851 7.02295 6.21289 7.34335 6.21289 7.34335C6.21289 7.34335 6.83671 9.71304 9.16619 10.3097ZM8.37924 3.22228C8.34931 3.22193 8.31961 3.22752 8.29185 3.23875C8.26408 3.24998 8.2388 3.26661 8.21747 3.2877C8.19614 3.30878 8.17918 3.33389 8.16756 3.36159C8.15595 3.38929 8.14991 3.41903 8.14979 3.44908C8.14967 3.47898 8.15542 3.50862 8.16671 3.53629C8.178 3.56396 8.1946 3.58912 8.21557 3.61035C8.23655 3.63158 8.26148 3.64845 8.28895 3.66C8.31641 3.67155 8.34588 3.67756 8.37566 3.67768C9.58835 3.68668 10.5752 4.07998 11.3836 4.87107C12.1849 5.65586 12.5945 6.72236 12.6053 8.12095C12.6054 8.15085 12.6114 8.18044 12.6229 8.20802C12.6344 8.2356 12.6512 8.26063 12.6723 8.28169C12.6935 8.30275 12.7185 8.31942 12.7461 8.33076C12.7737 8.34209 12.8032 8.34786 12.833 8.34774C12.8628 8.34763 12.8923 8.34159 12.9199 8.32998C12.9474 8.31837 12.9724 8.30142 12.9934 8.2801C13.0143 8.25878 13.0309 8.2335 13.0422 8.20573C13.0534 8.17795 13.0591 8.14822 13.0588 8.11825C13.0472 6.62966 12.5954 5.42187 11.7 4.54527C10.8127 3.67678 9.69053 3.23128 8.37924 3.22228ZM8.79423 4.40397C8.76451 4.40177 8.73464 4.40546 8.70634 4.41486C8.67804 4.42425 8.65186 4.43915 8.6293 4.45871C8.60674 4.47827 8.58824 4.5021 8.57487 4.52885C8.56149 4.55559 8.55349 4.58472 8.55133 4.61457C8.54913 4.64442 8.55282 4.67441 8.56217 4.70283C8.57152 4.73124 8.58637 4.75753 8.60584 4.78018C8.62532 4.80283 8.64906 4.82141 8.67569 4.83484C8.70233 4.84827 8.73134 4.8563 8.76107 4.85847C9.62689 4.92237 10.2686 5.20677 10.7374 5.71976C11.2071 6.23546 11.4302 6.86276 11.4132 7.64665C11.4126 7.67655 11.4179 7.70628 11.4288 7.73414C11.4396 7.76199 11.4558 7.78743 11.4765 7.80899C11.4971 7.83055 11.5218 7.84782 11.5491 7.85981C11.5763 7.87179 11.6057 7.87826 11.6355 7.87885C11.6953 7.88006 11.7532 7.85746 11.7965 7.81599C11.8399 7.77452 11.8651 7.71753 11.8667 7.65745C11.8856 6.77726 11.6194 6.01316 11.0717 5.41287C10.5187 4.80627 9.7452 4.47327 8.79513 4.40397H8.79423ZM9.13393 5.62526C9.10414 5.62369 9.07433 5.62803 9.04622 5.63804C9.0181 5.64805 8.99223 5.66353 8.97009 5.68359C8.94794 5.70366 8.92995 5.72791 8.91715 5.75497C8.90436 5.78202 8.897 5.81135 8.89551 5.84126C8.89234 5.90152 8.91311 5.96059 8.95328 6.00548C8.99345 6.05036 9.04972 6.07741 9.10973 6.08066C9.50051 6.10136 9.76402 6.21206 9.94328 6.39656C10.1208 6.58196 10.2301 6.86096 10.2507 7.27045C10.2537 7.33054 10.2803 7.38699 10.3247 7.42746C10.369 7.46794 10.4275 7.48914 10.4873 7.48645C10.547 7.48342 10.6031 7.45685 10.6434 7.41253C10.6837 7.36821 10.7049 7.30971 10.7024 7.24975C10.6783 6.76646 10.5411 6.36416 10.2686 6.07976C9.99527 5.79716 9.60269 5.64956 9.13393 5.62526ZM15.0818 1.75529C14.6363 1.3431 12.8356 0.0309057 8.8256 0.0129059C8.8256 0.0129059 4.09762 -0.273292 1.79234 1.84979C0.509738 3.13858 0.058004 5.02407 0.0105002 7.36225C-0.0370037 9.69954 -0.0988482 14.0807 4.10659 15.2687H4.11107L4.10838 17.0822C4.10838 17.0822 4.08149 17.8157 4.5628 17.9651C5.1454 18.1469 5.48599 17.5889 6.0417 16.9877C6.34733 16.6574 6.76859 16.1732 7.08588 15.8024C9.963 16.0454 12.1751 15.4901 12.426 15.4073C13.0068 15.2183 16.2936 14.7953 16.8269 10.415C17.379 5.89976 16.5607 3.04318 15.0818 1.75529ZM15.5694 10.091C15.1176 13.7486 12.452 13.979 11.9609 14.1374C11.752 14.2049 9.80884 14.69 7.36553 14.5298C7.36553 14.5298 5.54515 16.7348 4.976 17.309C4.88726 17.399 4.78329 17.435 4.71338 17.417C4.61479 17.3927 4.5879 17.2766 4.58969 17.1065L4.60493 14.0942C1.04662 13.1024 1.25456 9.37284 1.2949 7.42075C1.33523 5.46777 1.70092 3.86848 2.78634 2.79209C4.73579 1.0191 8.75121 1.2837 8.75121 1.2837C12.1428 1.299 13.7687 2.32499 14.1451 2.66789C15.3964 3.74428 16.0345 6.31826 15.5685 10.0901L15.5694 10.091Z" fill="#143257"/>
+    </svg>
+</a>
+
+<a href="#" class="share" id="telegram">
+    <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9705 13.9705 18 9 18C4.02943 18 0 13.9705 0 9C0 4.02943 4.02943 0 9 0C13.9705 0 18 4.02943 18 9ZM9.32247 6.6442C8.44713 7.0083 6.69759 7.76187 4.07391 8.90496C3.64786 9.07443 3.42468 9.24021 3.40437 9.40221C3.37003 9.67617 3.71303 9.78399 4.18009 9.93087C4.24363 9.95085 4.30946 9.97155 4.37694 9.99342C4.83646 10.1428 5.45461 10.3176 5.77596 10.3245C6.06745 10.3308 6.39279 10.2107 6.75197 9.96399C9.2034 8.30925 10.4688 7.47288 10.5482 7.45479C10.6042 7.4421 10.6819 7.42608 10.7346 7.47288C10.7872 7.51968 10.782 7.60824 10.7764 7.632C10.7425 7.7769 9.39609 9.02862 8.69931 9.67635C8.48214 9.87831 8.32806 10.0215 8.29656 10.0543C8.226 10.1275 8.15409 10.1968 8.08497 10.2634C7.6581 10.675 7.33788 10.9836 8.1027 11.4876C8.47026 11.7298 8.76429 11.93 9.05769 12.1298C9.37809 12.3481 9.69768 12.5657 10.1112 12.8368C10.2165 12.9058 10.3171 12.9776 10.4152 13.0474C10.788 13.3133 11.123 13.5521 11.5369 13.5139C11.7774 13.4919 12.0258 13.2657 12.152 12.5913C12.4501 10.9974 13.0362 7.5438 13.1717 6.12073C13.1836 5.99605 13.1686 5.83648 13.1566 5.76644C13.1446 5.69639 13.1196 5.59658 13.0285 5.5227C12.9207 5.4352 12.7543 5.41675 12.6797 5.418C12.3412 5.42403 11.8219 5.60461 9.32247 6.6442Z" fill="#143257"/>
+    </svg>
+</a>
+
+<a href="#" class="share mx-4" id="whatsapp">
+    <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.378 2.61345C13.7558 0.9988 11.515 0 9.0395 0C4.08918 0 0.0753794 3.9946 0.0753794 8.92257C0.0753794 10.5624 0.519816 12.0984 1.29472 13.419L1.2718 13.377L0 18L4.75132 16.7593C5.98814 17.443 7.46377 17.8451 9.03407 17.8451H9.03769C13.988 17.8433 18 13.8481 18 8.92077C18 6.45798 16.9978 4.22869 15.3774 2.61405L15.378 2.61345ZM9.03769 16.3379H9.03467C7.63624 16.3379 6.32705 15.9538 5.20962 15.2857L5.24339 15.3043L4.97142 15.1441L2.15223 15.8806L2.90422 13.1441L2.72693 12.8637C2.01233 11.7461 1.58779 10.3842 1.58779 8.92317C1.58779 4.82833 4.92318 1.5084 9.03709 1.5084C13.151 1.5084 16.4864 4.82833 16.4864 8.92317C16.4864 13.018 13.1522 16.3379 9.03769 16.3379ZM13.1239 10.7851C12.9001 10.6735 11.799 10.1351 11.594 10.06C11.3883 9.98559 11.2388 9.94898 11.0892 10.1723C10.9409 10.395 10.5115 10.8968 10.3806 11.0456C10.2504 11.1951 10.1189 11.2131 9.8952 11.102C9.20171 10.8223 8.60592 10.4496 8.08791 9.9904L8.09394 9.9958C7.61211 9.55162 7.19904 9.04322 6.86556 8.48259L6.84867 8.45138C6.71842 8.22869 6.8348 8.10804 6.94636 7.997C7.04707 7.89736 7.17069 7.7365 7.28225 7.60684C7.3703 7.4994 7.44568 7.37635 7.50296 7.2443L7.50658 7.23409C7.53251 7.18187 7.54759 7.12125 7.54759 7.05642C7.54759 6.97779 7.52528 6.90456 7.48668 6.84214L7.48789 6.84394C7.4312 6.73229 6.98375 5.63505 6.79741 5.18848C6.6153 4.7539 6.43016 4.81333 6.29328 4.80612C6.16302 4.80012 6.01347 4.79892 5.86391 4.79892C5.62572 4.80492 5.41405 4.91177 5.26812 5.07683L5.26751 5.07803C4.78388 5.53481 4.48357 6.17887 4.48357 6.89256C4.48357 6.90816 4.48357 6.92437 4.48417 6.93998V6.93758C4.56317 7.81813 4.89484 8.60864 5.40501 9.2527L5.39777 9.2437C6.36504 10.6717 7.65433 11.8139 9.16734 12.5834L9.22403 12.6092C9.55449 12.7581 9.97782 12.9172 10.4108 13.0534L10.5007 13.078C10.7672 13.1621 11.0741 13.2107 11.3925 13.2107C11.5753 13.2107 11.755 13.1945 11.9286 13.1639L11.9099 13.1663C12.5546 13.0324 13.0895 12.6453 13.4157 12.1164L13.4212 12.1062C13.5207 11.8866 13.5785 11.6303 13.5785 11.3607C13.5785 11.2497 13.5689 11.1411 13.5502 11.0354L13.552 11.0468C13.4965 10.9538 13.347 10.8986 13.1227 10.7863L13.1239 10.7851Z" fill="#143257"/>
+    </svg>
+</a>
+
+<a href="#" class="share" id="facebook">
+    <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 9.05435C17.9994 4.05374 13.9705 0 9 0C4.02948 0 0 4.05435 0 9.05556C0 13.5574 3.26487 17.2917 7.54161 17.9928L7.59322 18V11.6727H5.30782V9.05435H7.59322V7.06039C7.58182 6.95954 7.57582 6.84239 7.57582 6.72403C7.57582 4.95894 8.9982 3.52778 10.7525 3.52778C10.8371 3.52778 10.9211 3.5314 11.0045 3.53744L10.9937 3.53684C11.7133 3.5471 12.4095 3.61111 13.0889 3.72524L13.0085 3.71377V5.94203H11.873C11.8214 5.93478 11.7619 5.93056 11.7019 5.93056C10.9835 5.93056 10.4008 6.5163 10.4008 7.23973C10.4008 7.2808 10.4026 7.32126 10.4062 7.36171L10.4056 7.35628V9.05435H12.9016L12.5025 11.6727H10.4056V18C14.7345 17.2911 17.9994 13.5562 18 9.05435Z" fill="#143257"/>
+    </svg>
+</a>
+
+        </div>
+    </div>
+</div>
+
+
+
+<section class="container py-4">
+    <div class="row">
+        <div class="col-sm-12 col-md-9">
+            <h3 class="mb-3 page-title">Previous Speakers</h3>
+            <div class="row my-5">
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/yt0aWI32qlo7LoUHMds2KLY4Ceg4xdkLd4xxZ6vf.png" alt="">
+                    <h6>Mohamed Aslam</h6>
+                    <p class="text-muted small">14 Nov 2023 - 28 May 2024</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/C15gGFjbw4qYSMwMOHA2qW7NdkbutSx1yPI30yL0.png" alt="">
+                    <h6>President Mohamed Nasheed</h6>
+                    <p class="text-muted small">28 May 2019 - 13 Nov 2023</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/0ZFPuuOWx4CV6nPUtNOwQbGZ68lrcirmeTld64B9.png" alt="">
+                    <h6>Gasim Ibrahim</h6>
+                    <p class="text-muted small">01 Nov 2018 - 27 May 2019</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/w1gtCZDCzjgQ0FWKAPAPJYpBZIzM0FuwVjUdYIVO.png" alt="">
+                    <h6>Abdulla Maseeh Mohamed</h6>
+                    <p class="text-muted small">27 May 2014 - 01 Nov 2018</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/yIE5vcL7AxDQomBG6g4ggZWLpRPI0XJEAx6wjCPZ.png" alt="">
+                    <h6>Abdulla Shahid</h6>
+                    <p class="text-muted small">28 May 2009 - 28 May 2014</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/eDvqdQTyuP5IwKMocqQWXF5SG2Xjhh8XYMsfsRZl.png" alt="">
+                    <h6>Mohamed Shihab</h6>
+                    <p class="text-muted small">12 Aug 2008 - 28 May 2009</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/6gv4KepRDfqfEGwbREwSqmNibVEW7wEm044QYHER.png" alt="">
+                    <h6>Ahmed Zahir</h6>
+                    <p class="text-muted small">13 Sep 2004 - 06 Aug 2008</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/ZgeZXA4deEsqJVfHOmgt8wSdqhQukKBMYoqqBvTH.png" alt="">
+                    <h6>Utz. Abdulla Hameed</h6>
+                    <p class="text-muted small">11 Nov 1993 - 13 Sep 2004</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/nS4KBqCGeTWlMDoUY0KseOD8C4RqM9LwoeNH7BJn.png" alt="">
+                    <h6>Saahibuh Saadhaa Ahmed Zaki</h6>
+                    <p class="text-muted small">22 Feb 1990 - 11 Nov 1993</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/suHwZqCIJy6AyOe4nNGmaffMr4TVDY50hJFseEK7.png" alt="">
+                    <h6>Utz. Abdulla Hameed</h6>
+                    <p class="text-muted small">14 Feb 1988 - 22 Feb 1990</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/PrBryNMZGBQM9AAnSsXCIhAFqA33EcPSZeVHnfbO.png" alt="">
+                    <h6>Utz. Ibrahim Shihab</h6>
+                    <p class="text-muted small">11 Nov 1982 - 15 Jan 1988</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/P8HBe57jdqeN2Pp7qz3svW7iTitn5uTuLpuKeWUR.png" alt="">
+                    <h6>Sheikh Ahmed Shathir</h6>
+                    <p class="text-muted small">01 Aug 1972 - 11 Nov 1982</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/j9QqAhk2ve02gveCrQyQULMltoj9F34b2NU30P7r.png" alt="">
+                    <h6>Saahibuh Saadhaa Ahmed Zaki</h6>
+                    <p class="text-muted small">03 Oct 1959 - 01 Aug 1972</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/0jd9gXDhjdBnuq3hVP9Ux5QMqFdqJxHT8Kay8I3e.png" alt="">
+                    <h6>Ibrahim Fareed Didi</h6>
+                    <p class="text-muted small">01 Mar 1954 - 03 Oct 1959</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/CxVYgfNG5qo2xvaU4zX7NwRL5FZezxok5XCXLXeo.png" alt="">
+                    <h6>Sheikh Malim Moosa Maafayeh Kaleygefaanu</h6>
+                    <p class="text-muted small">13 Apr 1952 - 21 Oct 1953</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/kKLt3cHTFjPBYSwAlxOtaYnQd4VeAOW9i7MEYES6.png" alt="">
+                    <h6>Sheikh Mohamed Naseer Manik</h6>
+                    <p class="text-muted small">12 Apr 1948 - 12 Apr 1952</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/6HANBHLFZjlXttati7wam6v2R4iUp70Xz0frIMby.png" alt="">
+                    <h6>Al Ameer Ali Kudaran&#039;nabandeyri Kileygefaanu</h6>
+                    <p class="text-muted small">08 Nov 1945 - 03 Mar 1948</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/cbU7UJYv7C3hNr5A1EAM1shCYB0v1amXgKjYS3iD.png" alt="">
+                    <h6>Al Ameer Ibrahim Ali Didi</h6>
+                    <p class="text-muted small">30 Oct 1944 - 07 Nov 1945</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/fGMStcqhFgBFFrzHCqJaxH2av9DJyaoXcJFz4xO6.png" alt="">
+                    <h6>Utz. Ahmed Kaamil Didi</h6>
+                    <p class="text-muted small">27 Jun 1942 - 29 Oct 1944</p>
+                </div>
+                                <div class="col-6 col-md-4 member-block mb-4">
+                    <img class="rounded-circle" style="width:175px;" src="https://majlis.gov.mv/storage/speakers/m293h9EMlPJrS8rSufSv3W4Hx8Opon41zW8lop8V.png" alt="">
+                    <h6>Al Ameer Mohamed Fareed Didi</h6>
+                    <p class="text-muted small">21 Oct 1933 - 25 Jun 1942</p>
+                </div>
+                            </div>
+        </div>
+        <div class="col-md-3">
+            <ul class="list-unstyled filters">
+    <li class="heading"><h6>Select a Parliament</h6></li>
+    <li>
+        <select name="parliament" id="switch-pariament" class="custom-select" style="background-color:#ecf2f5;">
+                        <option value="18" >18th parliament</option>
+                        <option value="19" >19th parliament</option>
+                        <option value="20" selected>20th parliament</option>
+                    </select>
+    </li>
+</ul>
+<ul class="list-unstyled filters">
+    <li class="heading"><h6>Parliament</h6></li>
+    <li><a href="https://majlis.gov.mv/en/20-parliament/speaker" class="text-decoration-none text-secondary maj-link">Speaker</a></li>
+    <li><a href="https://majlis.gov.mv/en/20-parliament/deputy-speaker" class="text-decoration-none text-secondary maj-link">Deputy Speaker</a></li>
+    
+    <li><a href="#" class="text-decoration-none text-secondary maj-link">Majority &amp; Minority Leader</a></li>
+    <li><a href="https://majlis.gov.mv/en/20-parliament/leading-members" class="text-decoration-none text-secondary maj-link">Members leading the sessions</a></li>
+    <li><a href="https://majlis.gov.mv/en/speakers-history" class="text-decoration-none text-secondary maj-link">Previous Speakers</a></li>
+</ul>
+        </div>
+    </div>
+</section>
+
+        <section class="footer bg-template-blue text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled">
+                            <li class="heading" id="1">Parliament Works <span>+</span></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/sittings" class="text-decoration-none text-white">Parliament Sittings</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/committees" class="text-decoration-none text-white">Committees</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/parliament-works" class="text-decoration-none text-white">Parliament Documents</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/media/special_majlis" class="text-decoration-none text-white">People&#039;s Special Majlis</a></li>
+
+                        </ul>                        
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled">
+                            <li class="heading" id="2">Parliament <span>+</span></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/speaker" class="text-decoration-none text-white">Speaker</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/deputy-speaker" class="text-decoration-none text-white">Deputy Speaker</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/leading-members" class="text-decoration-none text-white">Members leading the sessions</a></li>
+                            
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/majority-leaders" class="text-decoration-none text-white">Majority Leader</a></li> 
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/minority-leaders" class="text-decoration-none text-white">Minority Leader</a></li> 
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/speakers-history?20" class="text-decoration-none text-white">Previous Speakers</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/condolences" class="text-decoration-none text-white">Condolences</a></li>
+                        </ul> 
+                        <ul class="list-unstyled">
+                            <li class="heading"><a href="https://parlinfo.majlis.gov.mv" class="text-decoration-none text-white">Library</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="list-unstyled">
+                            <li class="heading" id="3">Secretariat <span>+</span></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariate/secretariate-general" class="text-decoration-none text-white">Secretary General</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariate/secretariate-sergeant_at_arms" class="text-decoration-none text-white">Sergeant at Arms</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariate/secretariate-counsel-general" class="text-decoration-none text-white">Counsel General</a></li>
+                            <li class="footer-hidden" class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariate/structure" class="text-decoration-none text-white">Senior Staff and Department/Section Heads of the Secretariat</a></li>
+
+                              
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariat/resources" class="text-decoration-none text-white">Resources</a></li>
+
+                          
+                            <!-- <li class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariate/downloads" class="text-decoration-none text-white">Resources</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/secretariate/regulations" class="text-decoration-none text-white">Laws &amp; Regulations</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/foreignrelations" class="text-decoration-none text-white">Foreign Relations</a></li> -->
+                            <li class="footer-hidden"> <a class="text-decoration-none text-white" href="https://majlis.gov.mv/en/parliamentary-education">Education</a></li>
+                            <li class="footer-hidden"><a  href="https://majlis.gov.mv/en/whistleblow" class="text-decoration-none text-white">Whistleblowing</a></li>
+                            <li class="footer-hidden"><a href="https://majlis.gov.mv/en/cspn" class="text-decoration-none text-white">Civil Society Parliamentary Network</a></li>
+
+              
+                        </ul> 
+                        <ul class="list-unstyled">
+                            <li class="heading" id="4">Members <span>+</span></li>
+                                                        <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/members" class="text-decoration-none text-white">Member details</a></li>
+                                                        
+                        </ul> 
+                    </div>
+                    <div class="col-lg-3">
+                            <ul class="list-unstyled">
+                                <li class="heading" id="5">Media <span>+</span></li>
+                                <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/stream" class="text-decoration-none text-white">Majlis Web TV</a></li>
+                                <li class="footer-hidden"><a href="https://majlis.gov.mv/en/news-events" class="text-decoration-none text-white">News</a></li>
+                                <li class="footer-hidden"><a href="https://majlis.gov.mv/en/galleries" class="text-decoration-none text-white">Photo Gallery</a></li>
+                                <li class="footer-hidden"><a href="https://majlis.gov.mv/en/videos" class="text-decoration-none text-white">Video Gallery</a></li>
+
+                               
+
+                                <li class="footer-hidden"><a href="https://majlis.gov.mv/en/20-parliament/calendar" class="text-decoration-none text-white">Parliament Calendar</a></li>
+                                <li class="footer-hidden"><a href="https://majlis.gov.mv/en/media/information-officer" class="text-decoration-none text-white">Information Officer</a></li>
+                                <li class="footer-hidden"><a href="https://old.majlis.gov.mv" class="text-decoration-none text-white">Archive Website</a></li>   
+                                                             
+                            </ul> 
+
+                            <ul class="list-unstyled">
+                                <li class="heading" id="6">Contact <span>+</span></li>
+                                <li class="footer-hidden">Phone:<span class="english"> 3319944</span></li>
+                                <li class="footer-hidden">Email:<span class="english"> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="accdc8c1c5c2ecc1cdc6c0c5df82cbc3da82c1da">[email&#160;protected]</a></span></li>
+                            </ul> 
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="goto-top bg-template-blue-darker">
+            <p class="text-center text-white">&copy; 2026 Parliament of Maldives<a class="goto-top-link float-right" href="#">A</a></p>
+        </section>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/public.js?id=5c91465b21153ec92241"></script>
+                <script>
+            $('#switch-pariament').change(function(){
+                number = $("#switch-pariament option:selected").val();
+                host = "https://majlis.gov.mv";
+                window.location.href = host + '/' + "en" + "/" + number + "-parliament";
+            });
+        </script>
+        <script>
+
+</script>
+
+        <script>
+             function langBtn(s){
+                var currentUrl = window.location.toString()
+                if(s == 'en'){
+                    window.location = currentUrl.replace('/dv/','/en/')
+                }else{
+                    window.location = currentUrl.replace('/en/','/dv/')
+                }
+            }
+        </script>
+
+
+        <script>
+            $(function (){
+                
+                $('.footer .heading').on('click', function() {
+                    
+                    // console.log($(this).find('span'));
+
+                    var clicked = $(this);
+                    // console.log(clicked);
+
+                    $('.footer ul').map(function(){
+                        var heading = $(this).find('.heading');
+                        var spn = heading.find('span');
+                        // console.log(spn.text());
+
+                        if (clicked.attr('id') == heading.attr('id')) {
+                            if (spn.text().trim() == "+") {
+                                $(this).find('li:not(.heading)').removeClass('footer-hidden');
+                                spn.html('- ');
+                            } else {
+                                $(this).find('li:not(.heading)').addClass('footer-hidden');
+                                spn.html('+');
+                            }
+                        } else {
+                            spn.html('+');
+                            $(this).find('li:not(.heading)').addClass('footer-hidden')
+                        }
+                    });
+                });
+
+                $('.share').on('click', function(){
+                    event.preventDefault();
+                    var shareurl = '';
+                    var sharetitle = '';
+                    var encurl = encodeURIComponent(window.location.href);
+                    if ($(this).attr('id') == 'facebook') {
+                        sharetitle = 'Facebook';
+                        shareurl = 'https://www.facebook.com/sharer/sharer.php?u=' + encurl;
+                    } else if ($(this).attr('id') == 'twitter') {
+                        sharetitle = 'Twitter';
+                        shareurl = 'https://twitter.com/share?url=' + encurl;
+                    } else if ($(this).attr('id') == 'viber') {
+                        sharetitle = 'Viber';
+                        shareurl = 'viber://forward?text=' + encodeURIComponent('Check this out ' + window.location.href);
+                    } else if ($(this).attr('id') == 'whatsapp') {
+                        sharetitle = 'Whatsapp';
+                        shareurl = 'https://api.whatsapp.com/send?text=' + encurl;
+                    } else if ($(this).attr('id') == 'telegram') {
+                        shareurl = 'https://telegram.me/share/url?url='+ encurl +'&text=Check this out'
+                    }
+                    
+                    if (shareurl != '') {
+                        console.log(shareurl);
+                        window.open(shareurl, sharetitle,'width=600,height=500');
+                    }
+
+                });
+
+            
+                $('#einquiry #send').on('click', function() {
+                    var p = $("#einquiry form").serialize();
+                    $.post($("#einquiry form").attr('action'), p, function(result){
+                        $('#einquiry').modal('hide');
+                        $('.successful').modal('show');
+                        setTimeout(() => {
+                            $('.successful').modal('hide');
+                            $('#einquiry').modal('hide');
+                        }, 1000);
+                    });
+                });
+
+                $('#quicksearch').on('submit', function(){
+                    event.preventDefault();
+                    var t = $(this).find('input[name=_token]').val();
+                    var q = encodeURIComponent($(this).find('input[name=q]').val());
+                    var u = 'https://majlis.gov.mv/en/search/query/token';
+                    window.location = u.replace('query',q).replace('token',t);
+                });
+
+            });
+        </script>
+
+
+        <script>
+        window.op=window.op||function(){var n=[];return new Proxy(function(){arguments.length&&n.push([].slice.call(arguments))},{get:function(t,r){return"q"===r?n:function(){n.push([r].concat([].slice.call(arguments)))}} ,has:function(t,r){return"q"===r}}) }();
+        window.op('init', {
+            apiUrl: 'https://openpanel.majlis.gov.mv/api',
+            clientId: '76dc9e85-e49d-4862-b546-bce4fd793d56',
+            trackScreenViews: true,
+            trackOutgoingLinks: true,
+            trackAttributes: true,
+            // sessionReplay: {
+            //   enabled: true,
+            // },
+        });
+        </script>
+        <script src="https://openpanel.dev/op1.js" defer async></script>
+        
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2d0d16ec9a51196',t:'MTc4NzA1NTA1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"bb2e30d8403f4f80ac9ed6f8a81a3fa3","r":1}' crossorigin="anonymous"></script>
+</body>
+</html>
