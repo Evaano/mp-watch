@@ -94,7 +94,8 @@ export default async function HomePage({
             placeholder: dict.searchPlaceholder,
             empty: dict.searchEmpty,
             countTemplate: dict.searchCountTemplate,
-            years: dict.colYears,
+            yearOne: dict.yearOne,
+            yearMany: dict.yearMany,
           }}
         />
       </section>

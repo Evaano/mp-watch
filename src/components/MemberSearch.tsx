@@ -14,7 +14,9 @@ export interface SearchLabels {
   placeholder: string;
   empty: string;
   countTemplate: string;
-  years: string;
+  /** Dhivehi does not inflect the noun, so both slots may hold one word. */
+  yearOne: string;
+  yearMany: string;
 }
 
 /**
@@ -89,7 +91,8 @@ export function MemberSearch({
                 <span className="shrink-0 text-end">
                   <Numeral value={m.total} currency className="font-medium" />
                   <span className="mt-0.5 block text-xs text-ink-muted">
-                    <Numeral value={m.yearsPaid} /> {labels.years}
+                    <Numeral value={m.yearsPaid} />{" "}
+                    {m.yearsPaid === 1 ? labels.yearOne : labels.yearMany}
                   </span>
                 </span>
               </Link>

@@ -51,6 +51,8 @@ const dictionaries = {
     colYears: "Years",
     colTotal: "Total",
     showTable: "Show the figures",
+    yearOne: "year",
+    yearMany: "years",
 
     profileTotal: "Total premiums paid",
     profileYears: "Fiscal years with a payment",
@@ -99,6 +101,8 @@ const dictionaries = {
     colYears: "އަހަރު",
     colTotal: "ޖުމްލަ",
     showTable: "ޢަދަދުތައް ދައްކާ",
+    yearOne: "އަހަރު",
+    yearMany: "އަހަރު",
 
     profileTotal: "ޖުމްލަ ޕްރީމިއަމް",
     profileYears: "ފައިސާ ދެއްކި މާލީ އަހަރު",
