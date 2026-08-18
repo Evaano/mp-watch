@@ -6,6 +6,7 @@ import {
   MINIMUM_WAGE_MONTHLY,
 } from "@/lib/comparators";
 import type { Dict } from "@/lib/i18n";
+import { CURRENT_PER_HEAD_RATE } from "@/lib/premium";
 
 /**
  * Gives the totals a sense of scale.
@@ -86,8 +87,10 @@ export function ImpactPanel({
         <span className="numeral font-medium text-ink">
           MVR {singleYearPeak.toLocaleString("en-US")}
         </span>
-        {"."}
+        {dict.peakNoteHeads(Math.round(singleYearPeak / CURRENT_PER_HEAD_RATE))}
       </p>
+
+      <p className="max-w-[70ch] text-sm text-ink-muted">{dict.perHeadNote}</p>
     </section>
   );
 }

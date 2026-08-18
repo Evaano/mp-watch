@@ -5,7 +5,9 @@ pledges, achievements, controversies and documented spending, with every claim
 traceable to a source.
 
 The first dataset is the People's Majlis disclosure of health insurance
-premiums paid for its members between 28 May 2014 and 27 May 2025.
+premiums paid on behalf of its members **and their dependents**, 28 May 2014 to
+27 May 2025. The premium is priced per covered person, so a member's total
+tracks how many people the state insures, not a larger benefit to that member.
 
 ## Stack
 
@@ -69,6 +71,7 @@ like this causes real harm.
 pip install -r scripts/ingest/requirements.txt
 python scripts/ingest/extract_allowances.py    # -> src/data/parts/allowances.json
 python scripts/ingest/majlis_members.py        # -> src/data/parts/majlis-members.json
+python scripts/ingest/rti_20th_majlis.py       # -> src/data/parts/rti-20th-majlis.json
 python scripts/ingest/build_graph.py           # -> src/data/graph.json
 ```
 
@@ -81,7 +84,8 @@ on a government site being up or unchanged.
 
 | Source | Gives us |
 |---|---|
-| Health insurance premium disclosure (PDF) | 11 years of per-member spending |
+| Health insurance premium disclosure (PDF) | 11 years of premium cost per member's policy (member + dependents) |
+| RTI disclosure, 20th Majlis 2024-2026 (PDF) | the stated per-head rate and that cover includes dependents |
 | Majlis member rosters, 18th-20th, EN + DV | stated membership, party, official name pair |
 | Majlis previous speakers | dated positions back to 1933 |
 
@@ -131,7 +135,25 @@ Current output: **278 people, 320 positions, 1,769 claims, MVR 92,451,000**,
 zero parse warnings, 217 of 266 disclosure records auto-joined to the roster
 with **zero ambiguous matches**, and 49 left for review.
 
-### Four things the data does not claim
+### What the money actually is
+
+**A larger figure is not a larger benefit.** The RTI disclosure states the
+premium as MVR 24,000 per head for 12 months, covering the member *and their
+dependents*. Every row in both disclosures divides exactly by the per-head rate
+in force for its year - MVR 12,500 for 2014-2016, MVR 24,000 after - with zero
+exceptions across 1,769 rows. So a member's total is heads x years x rate, and
+the variation between members is the number of people covered.
+
+That divisibility is also the cheapest available check on the extraction: if a
+parsed amount stops dividing by the rate in force, the parse has drifted.
+
+**Report person-years, never a head count for a named person.** Across the
+two-year RTI period, 22 of 93 rows are an *odd* number of units, which a
+household held steady over both years cannot produce. Cover changes within a
+period, so no whole number of dependents is recoverable for an individual.
+Decomposing an aggregate is sound; "this member covers N dependents" is not.
+
+### Five things the data does not claim
 
 - **The disclosure's row numbers are unreliable.** They repeat 11 values and
   skip 5, so they are never used as identity.

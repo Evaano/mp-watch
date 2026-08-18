@@ -41,9 +41,11 @@ export async function generateMetadata({
   const seat = registry.seat(id);
   return {
     title: lang === "dv" ? person.name : person.nameLatin,
+    // Travels into search snippets and link previews with no page context to
+    // correct it, so it must not read as a payment to the member.
     description: `${person.nameLatin} (${seat?.constituencyLatin ?? ""}) - MVR ${registry
       .totalSpent(id)
-      .toLocaleString("en-US")}`,
+      .toLocaleString("en-US")} in health insurance premiums covering this member and their dependents, 2014-2025.`,
   };
 }
 
@@ -108,9 +110,12 @@ export default async function MemberPage({
           label={dict.profileTotal}
           value={<Numeral value={registry.totalSpent(person.id)} currency />}
           note={
-            <span className="numeral">
-              #{rank} / {totals.people}
-            </span>
+            <>
+              <span className="numeral">
+                #{rank} / {totals.people}
+              </span>
+              <span className="mt-1 block">{dict.profileCoverNote}</span>
+            </>
           }
         />
         <StatTile
