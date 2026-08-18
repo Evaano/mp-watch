@@ -106,11 +106,11 @@ function Fact({
 }) {
   return (
     <div className="bg-surface-raised px-5 py-5">
-      <dt className="text-[11px] uppercase tracking-wide text-ink-muted">
+      <dt className="label-eyebrow text-ink-muted">
         {label}
       </dt>
       <dd className="mt-1.5 text-2xl font-semibold">{value}</dd>
-      <p className="mt-1 text-xs text-ink-muted">{note}</p>
+      <p className="label-note mt-1 text-ink-muted">{note}</p>
     </div>
   );
 }

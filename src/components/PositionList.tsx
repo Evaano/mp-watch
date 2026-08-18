@@ -38,7 +38,7 @@ export function PositionList({
                   )}
           </p>
           {position.party ? (
-            <span className="mt-1 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 text-[11px] text-ink-muted">
+            <span className="mt-1 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 label-eyebrow text-ink-muted">
               {position.party}
             </span>
           ) : null}
@@ -47,7 +47,7 @@ export function PositionList({
             {position.end === null ? ` ${dict.stillServing}` : ""}
           </p>
           {position.basis === "inferred" ? (
-            <p className="mt-1.5 max-w-[58ch] text-xs text-ink-muted">
+            <p className="label-note mt-1.5 max-w-[58ch] text-ink-muted">
               <span className="rounded-card bg-surface-sunken px-1.5 py-0.5">
                 {dict.inferredLabel}
               </span>{" "}

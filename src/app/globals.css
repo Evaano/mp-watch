@@ -88,6 +88,59 @@ html[lang="dv"] {
   font-synthesis-weight: none;
 }
 
+/* Small supporting text: eyebrow labels and the notes under a figure.
+   Two reasons these need their own classes rather than raw utilities.
+
+   First, they were set in absolute px, which the Thaana size bump cannot touch
+   because that bump is relative. Second, Thaana needs more height than Latin at
+   the same nominal size: the fili sit above *and* below the consonant, so a
+   size that is merely small in Latin becomes unreadable in Thaana. A multiplier
+   cannot fix that on its own, so Dhivehi gets a floor instead.
+
+   Uppercase and letter-spacing are dropped for Thaana as well: the script has
+   no case, and tracking pulls the fili away from the letter they belong to. */
+.label-eyebrow {
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.label-eyebrow:lang(dv) {
+  font-size: 16px;
+  line-height: 1.7;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.label-note {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.label-note:lang(dv) {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+@media (min-width: 640px) {
+  .label-eyebrow {
+    font-size: 12px;
+  }
+
+  .label-note {
+    font-size: 0.875rem;
+  }
+
+  .label-eyebrow:lang(dv) {
+    font-size: 17px;
+  }
+
+  .label-note:lang(dv) {
+    font-size: 17px;
+  }
+}
+
 /* Figures stay in Latin digits and stay LTR even inside an RTL sentence. */
 .numeral {
   /* The font variable set by next/font, not the @theme token of the same

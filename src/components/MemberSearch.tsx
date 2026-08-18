@@ -100,7 +100,7 @@ export function MemberSearch({
                 <span className="min-w-0">
                   <MemberName member={m} lang={lang} />
                   {m.party ? (
-                    <span className="mt-1 me-2 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 text-[11px] text-ink-muted">
+                    <span className="mt-1 me-2 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 label-eyebrow text-ink-muted">
                       {m.party}
                     </span>
                   ) : null}
@@ -110,7 +110,7 @@ export function MemberSearch({
                 </span>
                 <span className="shrink-0 text-end">
                   <Numeral value={m.total} currency className="font-medium" />
-                  <span className="mt-0.5 block text-xs text-ink-muted">
+                  <span className="label-note mt-0.5 block text-ink-muted">
                     <Numeral value={m.yearsPaid} />{" "}
                     {m.yearsPaid === 1 ? labels.yearOne : labels.yearMany}
                   </span>

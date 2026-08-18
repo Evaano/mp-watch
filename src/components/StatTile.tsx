@@ -16,7 +16,7 @@ export function StatTile({
 }) {
   return (
     <div className="px-4 py-4 sm:px-6 sm:py-6">
-      <dt className="text-[11px] uppercase tracking-wide text-ink-muted sm:text-xs">
+      <dt className="label-eyebrow text-ink-muted">
         {label}
       </dt>
       {/* Figures wrap rather than overflow on a narrow tile. */}
@@ -24,7 +24,7 @@ export function StatTile({
         {value}
       </dd>
       {note ? (
-        <p className="mt-1 text-xs text-ink-muted sm:text-sm">{note}</p>
+        <p className="label-note mt-1 text-ink-muted">{note}</p>
       ) : null}
     </div>
   );
