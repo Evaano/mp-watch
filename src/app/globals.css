@@ -16,6 +16,11 @@
   --accent: #0e9488;
   --accent-ink: #0b6f66;
   --accent-wash: #e3f2f0;
+  /* Emphasis, used only for the section about money paid after members left
+     office. One extra hue, one job. Both values clear WCAG AA for body text
+     against their own surface (5.04 light, 5.47 dark). */
+  --flag: #c2410c;
+  --flag-wash: #fdece4;
   --radius: 8px;
 }
 
@@ -31,6 +36,8 @@
     --accent: #1fa89a;
     --accent-ink: #4cc4b6;
     --accent-wash: #16302d;
+    --flag: #d17b33;
+    --flag-wash: #2e1d11;
   }
 }
 
@@ -45,6 +52,8 @@
   --color-accent: var(--accent);
   --color-accent-ink: var(--accent-ink);
   --color-accent-wash: var(--accent-wash);
+  --color-flag: var(--flag);
+  --color-flag-wash: var(--flag-wash);
   --radius-card: var(--radius);
   --font-sans: var(--font-latin), system-ui, sans-serif;
   --font-thaana: var(--font-thaana), var(--font-latin), system-ui, sans-serif;
@@ -86,6 +95,48 @@ html[lang="dv"] {
    better of the two outcomes. */
 :lang(dv) {
   font-synthesis-weight: none;
+}
+
+/* Scroll reveal, done in CSS rather than JavaScript.
+   A scroll-driven animation needs no observer, no state, no hydration dance,
+   and cannot trap content behind JavaScript: where the browser does not
+   support animation-timeline, or the reader prefers reduced motion, the
+   content simply renders. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+
+    @keyframes reveal-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  }
+}
+
+/* Display figures. The scale is the point, so it is set once here rather than
+   assembled from utilities at each call site. */
+.figure-hero {
+  font-size: clamp(2.6rem, 11vw, 5.5rem);
+  line-height: 1.02;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.figure-lead {
+  font-size: clamp(1.9rem, 7vw, 3.25rem);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 /* Small supporting text: eyebrow labels and the notes under a figure.

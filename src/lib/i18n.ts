@@ -78,6 +78,20 @@ const dictionaries = {
     showMore: "Show more",
     showingOf: "Showing {shown} of {total}",
     backToTop: "Back to top",
+    actTotalKicker: "Since 2014, the state has spent",
+    actTotalOn: "on health insurance for members of the People's Majlis and their families.",
+    actPerHeadKicker: "The cover is priced per person",
+    actPerHeadLead: (rate: number) =>
+      `MVR ${rate.toLocaleString("en-US")} a year, for each person covered.`,
+    actPerHeadBody:
+      "A member's total does not show a bigger benefit. It shows how many people the state is insuring. Seven members in the current Majlis insure only themselves. One insures enough people to cost eleven times that.",
+    actRateKicker: "And the price nearly doubled",
+    actRateBody:
+      "In 2016-2017 the per-person premium went from MVR 12,500 to MVR 24,000. That year covered one fewer member than the year before.",
+    actAfterKicker: "It does not stop when they leave",
+    actAfterBody: (payments: number, people: number) =>
+      `${payments.toLocaleString("en-US")} payments to ${people.toLocaleString("en-US")} former members, in years the Majlis roster shows they held no seat. Most are exactly MVR 24,000 — one person, one year, at the standard rate.`,
+    actFindKicker: "Now look up yours",
     yearOne: "year",
     yearMany: "years",
 
@@ -162,6 +176,20 @@ const dictionaries = {
     showMore: "އިތުރަށް ދައްކާ",
     showingOf: "{total} ން {shown}",
     backToTop: "މައްޗަށް",
+    actTotalKicker: "2014 ން ފެށިގެން ދައުލަތުން ޚަރަދުކޮށްފައިވަނީ",
+    actTotalOn: "ރައްޔިތުންގެ މަޖިލީހުގެ މެންބަރުންނާއި އެ ބޭފުޅުންގެ ޢާއިލާތަކުގެ ހެލްތު އިންޝުއަރެންސަށް.",
+    actPerHeadKicker: "ޕްރީމިއަމް ދައްކަނީ ބޮލަކަށް",
+    actPerHeadLead: (rate: number) =>
+      `ކަވަރު ކުރެވޭ ކޮންމެ މީހަކަށް އަހަރަކު ${rate.toLocaleString("en-US")} ރުފިޔާ.`,
+    actPerHeadBody:
+      "މެންބަރެއްގެ ޢަދަދު ބޮޑުވުމަކީ އެ މެންބަރަށް ބޮޑު ފައިދާއެއް ލިބުމެއް ނޫން. އެއިން ދައްކަނީ ދައުލަތުން ކަވަރު ކުރާ މީހުންގެ ޢަދަދު. މިހާރުގެ މަޖިލީހުގައި 7 މެންބަރަކު ކަވަރު ކުރަނީ ހަމައެކަނި އެ ބޭފުޅުން އަމިއްލައަށް.",
+    actRateKicker: "އަދި އަގު ދެގުނަ ވަރު ބޮޑުވި",
+    actRateBody:
+      "2016-2017 ގައި ބޮލަކަށް ދައްކާ ޕްރީމިއަމް 12,500 ރުފިޔާއިން 24,000 ރުފިޔާއަށް ބޮޑުވި. އެ އަހަރު ކަވަރު ކުރީ އޭގެ ކުރީ އަހަރަށްވުރެ އެއް މެންބަރު މަދުން.",
+    actAfterKicker: "މެންބަރުކަމުން ވަކިވުމުންވެސް ހުއްޓައެއް ނުލާ",
+    actAfterBody: (payments: number, people: number) =>
+      `ކުރީގެ ${people.toLocaleString("en-US")} މެންބަރަކަށް ${payments.toLocaleString("en-US")} ފަހަރު. މިއީ މަޖިލީހުގެ ރެކޯޑުން ދައްކާ ގޮތުގައި އެ ބޭފުޅުން މެންބަރުކަމުގައި ނެތް އަހަރުތަކުގައި. ގިނަ ފަހަރު ސީދާ 24,000 ރުފިޔާ — އެއް މީހެއް، އެއް އަހަރު.`,
+    actFindKicker: "ތިޔަބޭފުޅާގެ މެންބަރު ބައްލަވާ",
     yearOne: "އަހަރު",
     yearMany: "އަހަރު",
 
