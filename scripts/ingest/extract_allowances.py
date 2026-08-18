@@ -135,11 +135,12 @@ def parse():
                         warnings.append(f'page {pno}: two amounts in {col["text"]}')
                     by_year[col['text']] = value
 
-                title, bare = split_title(name)
+                title, title_dv, bare = split_title(name)
                 records.append({
                     'name': bare,
                     'nameLatin': romanise(bare),
                     'title': title,
+                    'titleDv': title_dv,
                     'constituency': constituency,
                     'constituencyLatin': romanise(constituency),
                     'sourcePage': pno,
@@ -211,6 +212,7 @@ def build_graph(records, years, notes):
             'name': r['name'],
             'nameLatin': r['nameLatin'],
             'title': r['title'],
+            'titleDv': r.get('titleDv'),
             'possiblySameAs': r.get('sameNameAs'),
             'sources': [SOURCE_ID],
         })

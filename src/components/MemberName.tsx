@@ -4,6 +4,7 @@ interface NameLike {
   name: string;
   nameLatin: string;
   title: string | null;
+  titleDv?: string | null;
   constituency: string;
   constituencyLatin: string;
 }
@@ -30,7 +31,9 @@ export function MemberName({
   if (lang === "dv") {
     return (
       <span className={`block ${primaryClass} font-medium`}>
-        {member.title ? `${member.title} ` : ""}
+        {/* The Thaana honorific, never the Latin label: transliterating it back
+            would print "Alfaazil" in the middle of a Thaana name. */}
+        {member.titleDv ? `${member.titleDv} ` : ""}
         {member.name}
       </span>
     );

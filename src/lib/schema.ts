@@ -58,6 +58,8 @@ export interface Person {
   nameLatin: string;
   /** Honorific printed before the name. Display metadata, not identity. */
   title: string | null;
+  /** The same honorific in Thaana, for the Dhivehi side. */
+  titleDv?: string | null;
   /** Official portrait, served from the Majlis site. */
   photoUrl?: string | null;
   /**
