@@ -1,3 +1,4 @@
+import photoManifest from "@/data/photo-manifest.json";
 import rawGraph from "@/data/graph.json";
 import type {
   Claim,
@@ -303,6 +304,17 @@ function describe(claim: Claim): string {
   }
 }
 
+/**
+ * The mirrored portrait for a person, or null to fall back to the initial.
+ *
+ * Never person.photoUrl: that points at the Majlis site, whose Cloudflare
+ * answers 403 to Vercel's image optimiser. The URL stays in the graph as
+ * provenance; scripts/ingest/mirror_photos.py turns it into a local file.
+ */
+export function photo(id: PersonId): string | null {
+  return (photoManifest as Record<string, string>)[id] ?? null;
+}
+
 /** Trimmed payload for the client-side search index. */
 export interface PersonSummary {
   id: string;
@@ -315,7 +327,7 @@ export interface PersonSummary {
   total: number;
   yearsPaid: number;
   party: string | null;
-  photoUrl: string | null;
+  photo: string | null;
   terms: number[];
 }
 
@@ -332,7 +344,7 @@ export function toSummary(person: Person): PersonSummary {
     total: registry.totalSpent(person.id),
     yearsPaid: registry.yearsPaid(person.id),
     party: registry.party(person.id),
-    photoUrl: person.photoUrl ?? null,
+    photo: photo(person.id),
     terms: registry.termsServed(person.id),
   };
 }

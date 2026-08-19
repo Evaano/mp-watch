@@ -12,7 +12,7 @@ import { toUsd } from "@/lib/comparators";
 import { href, money } from "@/lib/format";
 import { getDict, isLang, LANGS } from "@/lib/i18n";
 import { CURRENT_PER_HEAD_RATE } from "@/lib/premium";
-import { registry } from "@/lib/registry";
+import { photo, registry } from "@/lib/registry";
 import type { Person } from "@/lib/schema";
 
 /** MemberName and ConstituencyName take a person plus their seat. */
@@ -82,6 +82,7 @@ export default async function MemberPage({
   const serving = registry.isServing(person.id);
   const total = registry.totalSpent(person.id);
   const sources = registry.sourcesFor(person.id);
+  const portrait = photo(person.id);
 
   return (
     <div className="flex flex-col gap-14">
@@ -97,9 +98,9 @@ export default async function MemberPage({
           {/* alt is empty on purpose: the name follows immediately as an h1, so
               a described portrait would just repeat it to a screen reader. */}
           <div className="relative aspect-square w-28 shrink-0 overflow-hidden rounded-card border border-line bg-surface-sunken sm:w-36">
-            {person.photoUrl ? (
+            {portrait ? (
               <Image
-                src={person.photoUrl}
+                src={portrait}
                 alt=""
                 fill
                 sizes="144px"
