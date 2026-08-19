@@ -28,9 +28,9 @@ export function MemberCard({
       className="group flex flex-col rounded-card border border-line bg-surface-raised p-3 transition-colors hover:border-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:p-4"
     >
       <div className="relative mx-auto aspect-square w-20 overflow-hidden rounded-full border border-line bg-surface-sunken sm:w-24">
-        {member.photoUrl ? (
+        {member.photo ? (
           <Image
-            src={member.photoUrl}
+            src={member.photo}
             alt=""
             fill
             sizes="96px"

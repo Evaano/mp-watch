@@ -31,6 +31,7 @@ pip install -r scripts/ingest/requirements.txt
 python scripts/ingest/extract_allowances.py     # -> src/data/parts/allowances.json
 python scripts/ingest/majlis_members.py         # -> src/data/parts/majlis-members.json
 python scripts/ingest/build_graph.py            # -> src/data/graph.json + docs/identity-review.md
+python scripts/ingest/mirror_photos.py          # -> public/members/*.webp + src/data/photo-manifest.json
 ```
 
 Ingests write a *partial graph* to `src/data/parts/`. `build_graph.py` merges
@@ -130,6 +131,21 @@ Each of these cost real debugging. Do not rediscover them.
   silently classified plain-decimal amounts as name text and lost MVR 216,000.
 - **The disclosure's own row numbers are unreliable** — 11 repeat, 5 are
   skipped. Never use them as identity.
+
+### Portraits
+
+`person.photoUrl` points at `majlis.gov.mv`. Do **not** render it. Their
+Cloudflare serves browsers but answers 403 to Vercel's image optimiser, so
+production showed a full grid of grey squares while localhost looked perfect —
+the optimiser only runs on Vercel. `mirror_photos.py` copies each portrait into
+`public/members/<personId>.webp` (320px square, ~1.8 MB for 229 people) and
+writes a manifest; `photo(id)` in `registry.ts` is the only reader. There is
+deliberately no `images.remotePatterns` entry in `next.config.ts` — adding one
+brings the bug back. A person the mirror could not fetch falls back to the
+initial-letter placeholder rather than to the remote URL, so the failure is
+visible at ingest time instead of in production.
+
+Re-run the mirror after any roster ingest, or new members render as initials.
 
 ### Deployment
 
