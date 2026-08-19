@@ -127,6 +127,39 @@ export const registry = {
     ).size;
   },
 
+  /**
+   * Whether the most recent seat is still open. `end: null` means serving.
+   * Roster positions carry the term's own bounds, so a member who left
+   * mid-term still reads as having served to the end of it - which is what the
+   * source says, and no more.
+   */
+  isServing(id: PersonId): boolean {
+    return this.seat(id)?.end === null;
+  },
+
+  /** Whole years between the first seat starting and the last one ending. */
+  yearsInOffice(id: PersonId): number {
+    const seats = this.seats(id);
+    if (!seats.length) return 0;
+    let total = 0;
+    for (const seat of seats) {
+      const from = new Date(seat.start).getTime();
+      const to = new Date(seat.end ?? new Date().toISOString()).getTime();
+      total += Math.max(to - from, 0);
+    }
+    return Math.round(total / (365.25 * 86_400_000));
+  },
+
+  /** Every source backing anything we hold about this person. */
+  sourcesFor(id: PersonId): Source[] {
+    const ids = new Set<string>();
+    const person = this.person(id);
+    for (const s of person?.sources ?? []) ids.add(s);
+    for (const p of this.positions(id)) for (const s of p.sources) ids.add(s);
+    for (const c of this.claims(id)) for (const s of c.sources) ids.add(s);
+    return [...ids].map((s) => sourcesById.get(s)).filter(Boolean) as Source[];
+  },
+
   /** Majlis terms served, unioned across every seat held. */
   termsServed(id: PersonId): number[] {
     const numbers = new Set<number>();
@@ -276,6 +309,7 @@ export interface PersonSummary {
   name: string;
   nameLatin: string;
   title: string | null;
+  titleDv: string | null;
   constituency: string;
   constituencyLatin: string;
   total: number;
@@ -292,6 +326,7 @@ export function toSummary(person: Person): PersonSummary {
     name: person.name,
     nameLatin: person.nameLatin,
     title: person.title,
+    titleDv: person.titleDv ?? null,
     constituency: seat?.constituency ?? "",
     constituencyLatin: seat?.constituencyLatin ?? "",
     total: registry.totalSpent(person.id),

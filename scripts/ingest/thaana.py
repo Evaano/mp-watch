@@ -68,11 +68,16 @@ def slugify(text):
 
 
 def split_title(name):
-    """Return (title, bare_name). Titles are display metadata, not identity."""
+    """Return (latin_title, thaana_title, bare_name).
+
+    Both forms are kept. The Latin label is for English display; the original
+    Thaana honorific is what a Dhivehi page must show, since transliterating it
+    back would print "Alfaazil" in the middle of a Thaana name.
+    """
     parts = name.split()
     if parts and parts[0] in TITLES:
-        return TITLES[parts[0]], ' '.join(parts[1:])
-    return None, name
+        return TITLES[parts[0]], parts[0], ' '.join(parts[1:])
+    return None, None, name
 
 
 # Thikijehi (Arabic-derived) letters and their plain Thaana counterparts.

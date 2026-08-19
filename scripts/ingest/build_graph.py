@@ -170,9 +170,11 @@ def main():
             remap[person['id']] = target
             merged.append((person, target))
             roster = persons_by_id[target]
-            # The disclosure prints an honorific the roster omits; keep it.
+            # The disclosure prints an honorific the roster omits; keep both
+            # the Latin label and the original Thaana form.
             if person.get('title') and not roster.get('title'):
                 roster['title'] = person['title']
+                roster['titleDv'] = person.get('titleDv')
         elif len(matches) > 1:
             ambiguous.append((person, sorted(matches)))
         else:

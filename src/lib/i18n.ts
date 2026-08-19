@@ -110,6 +110,19 @@ const dictionaries = {
     profileSameNameNote:
       "These are separate rows in the source document. We do not merge them, because deciding whether they are one person needs a human check.",
     backToList: "All members",
+    profileServing: "Currently serving",
+    profileFormer: "Former member",
+    profileGlance: "At a glance",
+    profileYearsInOffice: "Years in office",
+    profileParty: "Party",
+    profileCareerHeading: "Career",
+    profileCoverHeading: "Health insurance cover",
+    profileTotalOver: (years: number) => `over ${years} fiscal years`,
+    profilePeakYear: (heads: number) =>
+      `In its most expensive year this policy covered ${heads} people at the per-head rate.`,
+    profileSourcesHeading: "Sources for this page",
+    profileSourcesNote:
+      "Everything on this page comes from these documents. Nothing here is inferred from anything else.",
     positionsHeading: "Positions held",
     inferredLabel: "Inferred",
     stillServing: "present",
@@ -212,6 +225,19 @@ const dictionaries = {
     profileSameNameNote:
       "މިއީ އަސްލު ލިޔުމުގައި ވަކި ދެ ސަފުހާ. އެއް ބޭފުޅެއްތޯ ކަށަވަރު ކުރެވެންދެން އެއްކޮށްފައެއް ނުވޭ.",
     backToList: "ހުރިހާ މެންބަރުން",
+    profileServing: "މިހާރު މެންބަރުކަމުގައި",
+    profileFormer: "ކުރީގެ މެންބަރު",
+    profileGlance: "ކުރު ޚުލާޞާ",
+    profileYearsInOffice: "މެންބަރުކަމުގައި އަހަރު",
+    profileParty: "ޕާޓީ",
+    profileCareerHeading: "ސިޔާސީ ޙަޔާތް",
+    profileCoverHeading: "ހެލްތު އިންޝުއަރެންސް",
+    profileTotalOver: (years: number) => `${years} މާލީ އަހަރުން`,
+    profilePeakYear: (heads: number) =>
+      `އެންމެ ބޮޑު ޚަރަދު ދިޔަ އަހަރު މި ޕޮލިސީން ކަވަރު ކުރީ ${heads} މީހުން.`,
+    profileSourcesHeading: "މި ޞަފްޙާގެ މަޞްދަރުތައް",
+    profileSourcesNote:
+      "މި ޞަފްޙާގައި ހުރި ހުރިހާ މަޢުލޫމާތެއް ނަގާފައިވަނީ މި ލިޔުންތަކުން.",
     positionsHeading: "ފުރުއްވި މަޤާމުތައް",
     inferredLabel: "ބެލެވޭ ގޮތުގައި",
     stillServing: "މިހާރު",
