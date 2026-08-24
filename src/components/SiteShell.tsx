@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BackToTop } from "./BackToTop";
+import { NavMenu } from "./NavMenu";
 import type { ReactNode } from "react";
 import { registry } from "@/lib/registry";
 import { href } from "@/lib/format";
@@ -21,29 +22,24 @@ export function SiteShell({
       {/* Sticky so the language switch and the way back stay reachable while
           scrolling a long member list on a phone. */}
       <header className="sticky top-0 z-10 border-b border-line bg-surface/90 backdrop-blur-sm">
-        <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-4 px-4 sm:h-16">
+        <div className="relative mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-4 px-4 sm:h-16">
           <Link
             href={href(lang)}
-            className="text-base font-semibold tracking-tight sm:text-lg"
+            // Centres its own text: the touch-target rule in globals.css gives every
+            // link a 44px min-height on coarse pointers, and a non-flex link
+            // renders its text at the top of that box, sitting high in the bar.
+            className="flex shrink-0 items-center text-base font-semibold tracking-tight whitespace-nowrap sm:text-lg"
           >
             {dict.siteName}
           </Link>
-          <nav className="flex items-center gap-1 text-sm">
-            <Link
-              href={href(lang, "/members")}
-              className="flex min-h-11 items-center rounded-card px-3 hover:text-accent-ink"
-            >
-              {dict.navMembers}
-            </Link>
-            <Link
-              href={`/${alt}`}
-              lang={alt}
-              hrefLang={alt}
-              className="flex min-h-11 items-center rounded-card border border-line-strong px-3 hover:border-accent hover:text-accent-ink"
-            >
-              {LANG_LABEL[alt]}
-            </Link>
-          </nav>
+          <NavMenu
+            links={[
+              { href: href(lang, "/members"), label: dict.navMembers },
+              { href: href(lang, "/parties"), label: dict.navParties },
+            ]}
+            language={{ href: `/${alt}`, label: LANG_LABEL[alt], lang: alt }}
+            menuLabel={dict.navMenu}
+          />
         </div>
       </header>
 

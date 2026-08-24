@@ -149,6 +149,32 @@ export default async function MemberPage({
                 </li>
               ))}
             </ul>
+
+            {/* The figure sits with the identity rather than further down the
+                page: a phone screenshot of this header is how the page travels,
+                and the qualifier has to travel with the number or it reads as
+                money the member was paid. */}
+            <div className="mt-6 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+              {/* Held on one line: at this size a wrap after "MVR" reads as
+                  two separate figures. The narrow stat tiles need the opposite
+                  and are left to wrap. */}
+              <p className="figure-lead whitespace-nowrap">
+                <Numeral value={total} currency />
+              </p>
+              <p className="numeral text-lg text-ink-muted">
+                ${money(toUsd(total))}
+              </p>
+              <p className="label-note text-ink-muted">
+                {dict.profileTotalOver(registry.yearsPaid(person.id))}
+              </p>
+            </div>
+            <p className="label-note mt-1 max-w-[52ch] text-ink-muted">
+              <span className="numeral">
+                #{rank} / {totals.people}
+              </span>
+              {" · "}
+              {dict.profileCoverNote}
+            </p>
           </div>
         </header>
       </div>
@@ -157,7 +183,9 @@ export default async function MemberPage({
         <h2 className="label-eyebrow mb-3 text-ink-muted">
           {dict.profileGlance}
         </h2>
-        <StatRow>
+        {/* Party is not a tile: it is already the second chip in the header,
+            and the total now leads the header. */}
+        <StatRow cols={2}>
           <StatTile
             label={dict.profileTerms}
             value={<Numeral value={terms.length} />}
@@ -166,22 +194,6 @@ export default async function MemberPage({
           <StatTile
             label={dict.profileYearsInOffice}
             value={<Numeral value={registry.yearsInOffice(person.id)} />}
-          />
-          <StatTile
-            label={dict.profileParty}
-            value={<span className="text-2xl">{party ?? "-"}</span>}
-          />
-          <StatTile
-            label={dict.profileTotal}
-            value={<Numeral value={total} currency />}
-            note={
-              <>
-                <span className="numeral">
-                  #{rank} / {totals.people}
-                </span>
-                <span className="mt-1 block">{dict.profileCoverNote}</span>
-              </>
-            }
           />
         </StatRow>
       </section>
@@ -203,18 +215,9 @@ export default async function MemberPage({
           {dict.perHeadNote}
         </p>
 
-        <div className="mt-6 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-          <p className="figure-lead">
-            <Numeral value={total} currency />
-          </p>
-          <p className="numeral text-lg text-ink-muted">${money(toUsd(total))}</p>
-          <p className="label-note text-ink-muted">
-            {dict.profileTotalOver(registry.yearsPaid(person.id))}
-          </p>
-        </div>
         {/* The head count belongs to the peak year, not to the multi-year
             total, and saying so avoids implying the total bought 11 people. */}
-        <p className="label-note mt-2 text-ink-muted">
+        <p className="label-note mt-4 text-ink-muted">
           {dict.profilePeakYear(
             Math.round(
               Math.max(...series.map((s) => s.value), 0) / CURRENT_PER_HEAD_RATE,

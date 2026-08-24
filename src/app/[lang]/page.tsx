@@ -51,6 +51,8 @@ export default async function HomePage({
     (a) => a > MINIMUM_WAGE_ANNUAL,
   ).length;
   const singleYearPeak = Math.max(...memberYears, 0);
+  // partyTotals() returns parties largest first.
+  const topParty = registry.partyTotals().parties[0];
 
   return (
     <div className="flex flex-col gap-24 sm:gap-32">
@@ -134,6 +136,32 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* Act 5 - whose seats. The figure is one party's share, not a league
+          table: the full breakdown, and the money no party can be charged
+          with, are on their own page. */}
+      {topParty ? (
+        <section>
+          <div className="reveal">
+            <p className="label-eyebrow text-ink-muted">{dict.actPartyKicker}</p>
+            <p className="figure-lead mt-3">
+              <Numeral value={topParty.amount} currency />
+            </p>
+            <p className="label-note mt-2 text-ink-muted">
+              {dict.actPartyLead(topParty.party)}
+            </p>
+            <p className="mt-5 max-w-[58ch] text-lg leading-relaxed text-ink-muted">
+              {dict.actPartyBody}
+            </p>
+            <Link
+              href={href(lang, "/parties")}
+              className="mt-6 inline-block rounded-card border border-line-strong px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent-ink"
+            >
+              {dict.seeParties}
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
       {/* Supporting figures */}
       <section>
         <div className="reveal">
@@ -191,7 +219,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Act 5 - a taste of the directory, with the rest on its own page. */}
+      {/* Act 6 - a taste of the directory, with the rest on its own page. */}
       <section>
         <p className="label-eyebrow text-ink-muted">{dict.actFindKicker}</p>
         <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">

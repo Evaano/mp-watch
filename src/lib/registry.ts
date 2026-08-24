@@ -266,6 +266,134 @@ export const registry = {
     return { payments, amount, people: people.size, unknownTerm };
   },
 
+  /**
+   * Premiums grouped by the party of the seat that was held while they were
+   * paid - never by the member's current party.
+   *
+   * Party belongs to a position, not to a person: six independents crossed to
+   * PNC within four days of the 2024 election, so a member's eleven-year total
+   * does not belong to whichever party they sit for now. A member who crossed
+   * contributes to both parties, each year to the seat in force.
+   *
+   * Nothing is apportioned. A payment that cannot be placed against exactly one
+   * party is reported unattributed, with the reason, rather than guessed:
+   *   - afterOffice: no seat was held in that period at all.
+   *   - crossed:     the period spans seats sat for different parties, and no
+   *                  source states how to split a year between them.
+   *   - noParty:     a seat was held but the roster records no party for it.
+   *                  This is not the same thing as Independent, and is never
+   *                  merged into it.
+   * Every party total plus the unattributed amount equals totals().amount.
+   */
+  partyTotals() {
+    const seatsByPerson = new Map<PersonId, Position[]>();
+    for (const position of graph.positions) {
+      if (position.kind !== "majlis-member") continue;
+      const list = seatsByPerson.get(position.personId) ?? [];
+      list.push(position);
+      seatsByPerson.set(position.personId, list);
+    }
+
+    const buckets = new Map<
+      string,
+      { amount: number; memberYears: number; members: Set<PersonId> }
+    >();
+    const unattributed = {
+      amount: 0,
+      payments: 0,
+      afterOffice: 0,
+      crossed: 0,
+      noParty: 0,
+    };
+
+    for (const claim of graph.claims) {
+      if (!isExpenditure(claim)) continue;
+      const from = claim.periodStart ?? "";
+      const to = claim.periodEnd ?? "";
+      const overlapping = (seatsByPerson.get(claim.personId) ?? []).filter(
+        (seat) => seat.start <= to && (seat.end ?? "9999-12-31") >= from,
+      );
+      const parties = new Set(overlapping.map((seat) => seat.party ?? ""));
+
+      let reason: keyof typeof unattributed | null = null;
+      if (!overlapping.length) reason = "afterOffice";
+      else if (parties.size > 1) reason = "crossed";
+      else if (parties.has("")) reason = "noParty";
+
+      if (reason) {
+        unattributed.amount += claim.amount;
+        unattributed.payments += 1;
+        unattributed[reason] += 1;
+        continue;
+      }
+
+      const party = [...parties][0];
+      const bucket = buckets.get(party) ?? {
+        amount: 0,
+        memberYears: 0,
+        members: new Set<PersonId>(),
+      };
+      bucket.amount += claim.amount;
+      // Each expenditure claim is one member's premium for one fiscal year, so
+      // counting claims counts member-years.
+      bucket.memberYears += 1;
+      bucket.members.add(claim.personId);
+      buckets.set(party, bucket);
+    }
+
+    const parties = [...buckets.entries()]
+      .map(([party, b]) => ({
+        party,
+        amount: b.amount,
+        members: b.members.size,
+        memberYears: b.memberYears,
+        perMemberYear: b.memberYears ? Math.round(b.amount / b.memberYears) : 0,
+      }))
+      .sort((a, b) => b.amount - a.amount || a.party.localeCompare(b.party));
+
+    return { parties, unattributed };
+  },
+
+  /**
+   * What a member costs by how long they served, in Majlis terms.
+   *
+   * The totals are not comparable on their own: the disclosure covers a fixed
+   * window (2014-2025), so a one-term member's total is capped by the window
+   * rather than by their cover. perMemberYear is the figure that compares.
+   * People with no roster seat are left out; there is no tenure to bucket them
+   * by.
+   */
+  tenureCohorts() {
+    const byTerms = new Map<
+      number,
+      { members: number; amount: number; memberYears: number }
+    >();
+
+    for (const person of graph.persons) {
+      const terms = this.termsServed(person.id).length;
+      if (!terms) continue;
+      const bucket = byTerms.get(terms) ?? {
+        members: 0,
+        amount: 0,
+        memberYears: 0,
+      };
+      bucket.members += 1;
+      bucket.amount += this.totalSpent(person.id);
+      bucket.memberYears += this.yearsPaid(person.id);
+      byTerms.set(terms, bucket);
+    }
+
+    return [...byTerms.entries()]
+      .map(([terms, b]) => ({
+        terms,
+        members: b.members,
+        amount: b.amount,
+        perMember: b.members ? Math.round(b.amount / b.members) : 0,
+        perMemberYear: b.memberYears ? Math.round(b.amount / b.memberYears) : 0,
+      }))
+      .sort((a, b) => a.terms - b.terms);
+  },
+
   /** Days covered by the disclosure, for a per-day restatement. */
   periodDays(): number {
     const source = this.primarySource();
