@@ -87,10 +87,27 @@ export default async function MemberPage({
   return (
     <div className="flex flex-col gap-14">
       <div>
+        {/* The way back is a control, not a sentence, and it names where it
+            goes: someone arriving from a shared link has no history for a
+            generic "back" to use. It sits at the inline start, so Dhivehi puts
+            it on the right without a second rule - the chevron has to be
+            rotated, though, because the glyph itself does not mirror. */}
         <Link
           href={href(lang, "/members")}
-          className="text-sm text-accent-ink underline underline-offset-4"
+          className="inline-flex items-center gap-1.5 rounded-card border border-line-strong px-3 py-2 text-sm font-medium hover:border-accent hover:text-accent-ink"
         >
+          <svg
+            aria-hidden
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-4 w-4 rtl:rotate-180"
+          >
+            <path d="M15 6l-6 6 6 6" />
+          </svg>
           {dict.backToList}
         </Link>
 
