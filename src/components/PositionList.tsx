@@ -27,11 +27,13 @@ export function PositionList({
           <p className="font-medium">
             {position.kind === "speaker"
               ? dict.speakerLabel
-              : capitalise(
-                  (position.constituency ?? "")
-                    .replace(/ dhaaira?$/i, "")
-                    .trim(),
-                )}
+              : position.constituency
+                ? capitalise(
+                    position.constituency.replace(/ dhaaira?$/i, "").trim(),
+                  )
+                : // An appointed post names an organisation where an elected
+                  // seat names a constituency.
+                  (position.organisation ?? "")}
           </p>
           {position.party ? (
             <span className="mt-1 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 label-eyebrow text-ink-muted">

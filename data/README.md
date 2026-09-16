@@ -22,6 +22,23 @@ and how you know.
 | `majlis-speakers.csv` | 20 speaker spells. | `majlis_members.py` |
 | `premium-payments.csv` | 266 members × 11 fiscal years of health insurance premiums. | `extract_allowances.py` |
 | `rti-20th-majlis.csv` | 93 members, one two-year total each, from the RTI disclosure that states the per-head rate. | `rti_20th_majlis.py` |
+| `political-posts-foreign-affairs.csv` | 268 posts, whole ministry, as at 31 Dec 2025. | `political_posts.py` |
+| `political-posts-health.csv` | 81 posts, as at 31 Mar 2026. | `political_posts.py` |
+| `political-posts-finance.csv` | 34 posts, the only document that names anybody. | `political_posts.py` |
+| `political-posts-education.csv` | 46 posts, transcribed by eye from a scan. | by hand |
+| `political-posts-aggregate.csv` | Bodies that gave counts and rates rather than rows. | by hand |
+| `political-posts-coverage.csv` | What each body actually answered, and what it left out. | by hand |
+
+The political-post tables record pay **entitlements**, not payments. Two rules
+follow. A `-` in a source becomes `0`, a printed nil, and a blank cell stays
+blank, meaning the document says nothing — never merge them. And `posts` is
+never multiplied by a rate: that would produce a spending figure no document
+states.
+
+`political-posts-education.csv` comes from a rotated Thaana scan with no text
+layer. The pay figures and dates are transcribed by hand; `designation_dv` is
+deliberately empty, and `rank` is read off the pay ladder rather than off the
+page. Transcribing those Thaana columns is open work.
 
 `rti-20th-majlis.csv` is **not yet built into claims**, deliberately. Its
 window (28 May 2024 – 27 May 2026) overlaps the premium disclosure's last

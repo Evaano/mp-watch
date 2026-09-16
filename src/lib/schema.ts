@@ -220,6 +220,132 @@ export type ClaimType = Claim["type"];
 // The graph
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Political posts
+//
+// These are pay ENTITLEMENTS attached to posts. They are the mirror image of
+// an ExpenditureClaim, which records money actually paid to a named person,
+// and the two must never be added, compared, or presented as one figure.
+//
+// They are deliberately NOT a Claim variant. A Claim is a claim about a person
+// and is keyed on a personId; all but 34 of these rows name nobody, and a
+// vacant post still carries an entitlement. Minting a personId to fit the
+// uniform shape would assert a link no source states, which is the exact
+// failure the uniform shape exists to prevent. So this is the one place the
+// "everything is the same shape" rule stops, and it stops for the reason the
+// rule exists.
+// ---------------------------------------------------------------------------
+
+/** The ladder, as far as the documents state it. */
+export type PostRank =
+  | "minister"
+  | "state-minister"
+  | "deputy-minister"
+  | "senior-political-director"
+  | "political-director";
+
+/**
+ * One pay component, carrying the source's own column heading.
+ *
+ * The heading stays verbatim rather than mapped to a canonical name because
+ * the bodies disagree: Foreign Affairs, Finance and Education print "Living
+ * Allowance" where Health prints "Housing". Reading those as one slot is an
+ * inference, and it is made in exactly one place - registry.rankLadder() -
+ * where the page can label it as one.
+ */
+export interface PayComponent {
+  label: string;
+  amount: number;
+  period: "monthly" | "yearly";
+}
+
+export interface PoliticalPost {
+  id: string;
+  /** Vocabulary defined by the coverage table, not by a union: a union would
+   *  be a second place to edit. The ingest validator enforces membership. */
+  bodyId: string;
+  /**
+   * Always "entitlement". Present so that no value of this type can be read as
+   * money received: an ExpenditureClaim has `type: "expenditure"` and an
+   * amount that was disbursed; this has a rate attached to a post.
+   */
+  measure: "entitlement";
+  /** The office as the row labels it, which can differ from the responding
+   *  body. Health's rows still read "Ministry of Social and Family
+   *  Development", the pre-merger name. Printed as-is, never corrected. */
+  office: string;
+  /** The designation exactly as printed, typos included. */
+  designation: string;
+  /** The designation placed on the ladder, for grouping only. `null` where the
+   *  designation sits outside it, as every diplomatic rank does. */
+  rank: PostRank | null;
+  /** Foreign Affairs splits its list into "Political" and "Foreign Service".
+   *  Only the first are political appointments. */
+  jobType?: string;
+  /**
+   * How many posts this row describes: 1 for a per-post row, the stated count
+   * for an aggregate one. Never inferred, and never multiplied by a rate.
+   */
+  posts: number;
+  /** Monthly basic salary. Hoisted out of `components` because every body
+   *  prints it under that name and the ladder is stated in basic terms. */
+  basic?: number;
+  /** Every other component the source prints, in the source's own order. A
+   *  component printed as nil is 0; one the source does not print is absent.
+   *  Those are different facts and are never merged. */
+  components: PayComponent[];
+  /**
+   * The total the source prints for itself. Never recomputed: Foreign Affairs
+   * prints components rounded to whole rufiyaa and a total carrying unrounded
+   * cents, so a recomputed total disagrees with the document by up to a
+   * rufiyaa - and the document is the record.
+   */
+  statedTotal?: number;
+  /** A pay band, where the source states a range instead of components. Never
+   *  averaged, and never compared with a `basic`: these are whole packages. */
+  statedTotalRange?: { min: number; max: number };
+  /** The named holder, where the source names one. Finance is the only body
+   *  that does. */
+  holderName?: string;
+  /**
+   * The person minted from this same sheet, where it names one.
+   *
+   * Never a roster person. These rows carry no constituency, so the "folded
+   * name plus exact constituency, unique match" rule cannot be satisfied and
+   * nothing looser is permitted. Rows are collapsed into a person within one
+   * document only, on an exact name match, because one ministry listing its
+   * own staff is one authority. An appointee whose name also appears on the
+   * Majlis roster is written to docs/identity-review.md and left unmerged.
+   */
+  personId?: PersonId;
+  /** Dates the source states for the holder, not for the post. */
+  occupiedFrom?: string;
+  terminatedOn?: string;
+  rejoinedOn?: string;
+  /** The 10 per cent deduction Finance applies to serving appointees until
+   *  31 December 2026, as the sheet prints it. */
+  basicAfterDeduction?: number;
+  locator?: { page?: number; row?: number; section?: string };
+  note?: string;
+  sources: Cited;
+}
+
+/** What each body actually answered, published so the gaps are as visible as
+ *  the figures. */
+export interface PostCoverage {
+  bodyId: string;
+  bodyName: string;
+  /** ISO date the response says it is accurate as at, where it says one. */
+  asOf?: string;
+  answerKind: "per-post" | "aggregate" | "unreadable";
+  /** Posts the response says exist. */
+  postsStated?: number;
+  /** Posts it actually itemises. Homeland states 57 and itemises 27. */
+  postsItemised: number;
+  note?: string;
+  sources: Cited;
+}
+
 export interface Graph {
   /** Which ingest produced this file, and when. */
   meta: {
@@ -230,6 +356,8 @@ export interface Graph {
   persons: Person[];
   positions: Position[];
   claims: Claim[];
+  politicalPosts: PoliticalPost[];
+  politicalPostCoverage: PostCoverage[];
   /** Anything the ingest could not parse cleanly. Should stay empty. */
   warnings: string[];
 }

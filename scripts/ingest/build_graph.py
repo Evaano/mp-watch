@@ -45,6 +45,259 @@ def norm(text):
     return re.sub(r'\s+', ' ', (text or '')).strip()
 
 
+# ---------------------------------------------------------------------------
+# Political posts
+#
+# One CSV per document, because each mirrors its own document's columns and
+# that is what makes a figure checkable against the page it came from. The
+# unification into one shape happens here, where the differences between the
+# bodies can be named rather than flattened.
+#
+# `posts` is never multiplied by a rate, here or downstream. posts x basic x 12
+# would be a fabricated expenditure figure: it ignores vacancies, part-months,
+# the 10 per cent deduction, and the four bodies that did not answer per post.
+# ---------------------------------------------------------------------------
+
+# (csv column, label the source prints, period). The label is carried verbatim
+# rather than canonicalised, because the bodies disagree: Foreign Affairs,
+# Finance and Education print "Living Allowance" where Health prints "Housing".
+POST_COMPONENTS = {
+    'political-posts-foreign-affairs.csv': [
+        ('foreign_service_allowance', 'Foreign Service Allowance', 'monthly'),
+        ('living_allowance', 'Living Allowance', 'monthly'),
+        ('executive_allowance', 'Executive Allowance', 'monthly'),
+        ('service_allowance', 'Service Allowance', 'monthly'),
+        ('supporting_co_allowance', 'Supporting Co Allowance', 'monthly'),
+        ('technical_co_allowance', 'Technical Co Allowance', 'monthly'),
+        ('phone_allowance', 'Phone Allowance', 'monthly'),
+        ('minimum_wage_allowance', 'Minimum Wage Allowance', 'monthly'),
+        ('petrol_allowance', 'Petrol Allowance', 'monthly'),
+        ('dress_allowance_yearly', 'Dress Allowance', 'yearly'),
+    ],
+    'political-posts-health.csv': [
+        ('housing', 'Housing', 'monthly'),
+        ('transport', 'Transport', 'monthly'),
+        ('phone', 'Phone', 'monthly'),
+        ('other', 'Other', 'monthly'),
+    ],
+    'political-posts-finance.csv': [
+        ('living_allowance', 'Living Allowance', 'monthly'),
+        ('phone_allowance', 'Phone allowance', 'monthly'),
+        ('car_allowance', 'Car Allowance', 'monthly'),
+    ],
+    'political-posts-education.csv': [
+        ('living_allowance', 'Living Allowance', 'monthly'),
+        ('phone_allowance', 'Phone Allowance', 'monthly'),
+        ('petrol_allowance', 'Petrol Allowance', 'monthly'),
+    ],
+    'political-posts-aggregate.csv': [
+        ('living_allowance', 'Living Allowance', 'monthly'),
+        ('phone_allowance', 'Phone Allowance', 'monthly'),
+    ],
+}
+
+POST_BODIES = {
+    'political-posts-foreign-affairs.csv': 'foreign-affairs',
+    'political-posts-health.csv': 'health-family-welfare',
+    'political-posts-finance.csv': 'finance',
+    'political-posts-education.csv': 'education-higher-education',
+}
+
+EDUCATION_STATUS = {
+    'left': 'This post appears in the second section of the table: staff who '
+            'have left.',
+    'moved-to-political-director': 'This post appears in the second section of '
+                                   'the table: the holder moved to a political '
+                                   'director post.',
+}
+
+
+def components_for(name, row):
+    """Every component the source prints, in the source's own column order.
+
+    A printed nil is 0 and is kept: "this post gets no car allowance" is a
+    fact. A blank cell is absent, because the document says nothing about it.
+    """
+    out = []
+    for column, label, period in POST_COMPONENTS[name]:
+        if row.get(column) == '':
+            continue
+        out.append({'label': label, 'amount': int(row[column]), 'period': period})
+    return out
+
+
+def post_base(name, row, office, designation):
+    post = {
+        'id': row['row_id'],
+        'bodyId': row.get('body_id') or POST_BODIES[name],
+        'measure': 'entitlement',
+        'office': office,
+        'designation': designation,
+        'rank': row['rank'] or None,
+        'posts': int(row.get('posts') or 1),
+        'components': components_for(name, row),
+        'sources': [row['source_id']],
+    }
+    if row.get('basic_salary'):
+        post['basic'] = int(row['basic_salary'])
+    locator = {}
+    if row.get('source_page'):
+        locator['page'] = int(row['source_page'])
+    if row.get('source_row'):
+        locator['row'] = int(row['source_row'])
+    if locator:
+        post['locator'] = locator
+    return post
+
+
+def load_political_posts(person_of_row):
+    """The six documents, as one list of posts plus the coverage table."""
+    posts = []
+
+    name = 'political-posts-foreign-affairs.csv'
+    for row in csvio.read(name)[1]:
+        post = post_base(name, row, 'Ministry of Foreign Affairs',
+                         row['designation'])
+        post['jobType'] = row['job_type']
+        if row['stated_total']:
+            post['statedTotal'] = float(row['stated_total'])
+        posts.append(post)
+
+    name = 'political-posts-health.csv'
+    for row in csvio.read(name)[1]:
+        post = post_base(name, row, row['office'], row['designation'])
+        if row['employed_date']:
+            post['occupiedFrom'] = row['employed_date']
+        posts.append(post)
+
+    name = 'political-posts-finance.csv'
+    for row in csvio.read(name)[1]:
+        post = post_base(name, row, row['office'], row['designation'])
+        post['holderName'] = row['name']
+        # Minted by load_appointees() from this same sheet. Never a roster
+        # person: see the note there.
+        if person_of_row.get(row['row_id']):
+            post['personId'] = person_of_row[row['row_id']]
+        for column, field in (('occupied_date', 'occupiedFrom'),
+                              ('termination_date', 'terminatedOn'),
+                              ('rejoined_date', 'rejoinedOn')):
+            if row[column]:
+                post[field] = row[column]
+        if row['basic_after_10pct_deduction']:
+            post['basicAfterDeduction'] = int(row['basic_after_10pct_deduction'])
+        posts.append(post)
+
+    name = 'political-posts-education.csv'
+    for row in csvio.read(name)[1]:
+        # The scan's designation column is Thaana and was not transcribed. The
+        # rank is read off the pay ladder instead, so the designation shown is
+        # the rank's own label rather than the document's words.
+        post = post_base(name, row, 'Ministry of Education and Higher Education',
+                         RANK_LABELS.get(row['rank'], ''))
+        if row['occupied_date']:
+            post['occupiedFrom'] = row['occupied_date']
+        if row['status']:
+            post['note'] = EDUCATION_STATUS[row['status']]
+        posts.append(post)
+
+    name = 'political-posts-aggregate.csv'
+    for row in csvio.read(name)[1]:
+        post = post_base(name, row, row['office'], row['designation'])
+        if row['stated_total_min']:
+            post['statedTotalRange'] = {'min': int(row['stated_total_min']),
+                                        'max': int(row['stated_total_max'])}
+        if row['note']:
+            post['note'] = row['note']
+        posts.append(post)
+
+    coverage = []
+    for row in csvio.read('political-posts-coverage.csv')[1]:
+        entry = {
+            'bodyId': row['body_id'],
+            'bodyName': row['body_name'],
+            'answerKind': row['answer_kind'],
+            'postsItemised': int(row['posts_itemised']),
+            'sources': [row['source_id']],
+        }
+        if row['as_of']:
+            entry['asOf'] = row['as_of']
+        if row['posts_stated']:
+            entry['postsStated'] = int(row['posts_stated'])
+        if row['note']:
+            entry['note'] = row['note']
+        coverage.append(entry)
+
+    return posts, coverage
+
+
+def latin_slug(text):
+    return re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', (text or '').lower())).strip('-')
+
+
+def load_appointees():
+    """Person and Position records for the 34 named political appointees.
+
+    Finance is the only one of the six documents that names anybody, so it is
+    the only one that can produce people. They are real Person records rather
+    than strings on a row: the site is a record of public figures, and a
+    minister named in an official pay disclosure is one.
+
+    Two identity rules, and neither is negotiable:
+
+    - Rows are collapsed within THIS document only, on an exact name match.
+      One ministry listing its own staff is one authority, and two rows with
+      the same name are that authority saying "this person, twice" - Mohamed
+      Anas moves from deputy minister to president of the PCB on the day the
+      first post ends. Nothing is collapsed across documents.
+    - Nothing is EVER joined to the Majlis roster. These rows carry no
+      constituency, so the folded-name-plus-exact-constituency rule cannot be
+      satisfied, and anything looser attaches one person's record to another
+      with nothing downstream to reveal it. Names that also appear on the
+      roster are written to the review file for a human, and that is all.
+    """
+    persons, positions, person_of_row = {}, [], {}
+    for row in csvio.read('political-posts-finance.csv')[1]:
+        name = row['name'].strip()
+        if not name:
+            continue
+        pid = f'appointee-{latin_slug(name)}'
+        if pid not in persons:
+            persons[pid] = {
+                'id': pid,
+                'name': name,
+                # The sheet is Latin only. nameDv is absent rather than empty:
+                # this is a person no source has printed in Thaana, and so one
+                # who can never be roster-joined.
+                'title': None,
+                'sources': [row['source_id']],
+            }
+        positions.append({
+            'id': f'{pid}--{row["row_id"]}',
+            'personId': pid,
+            'kind': 'minister' if row['rank'] in ('minister', 'state-minister')
+                    else 'other',
+            'organisation': row['office'],
+            'start': row['occupied_date'],
+            'end': row['termination_date'] or None,
+            'basis': 'stated',
+            'basisNote': 'Stated by the ministry\'s own list of political '
+                         'appointees, which gives the post and the date it was '
+                         'taken up.',
+            'sources': [row['source_id']],
+        })
+        person_of_row[row['row_id']] = pid
+    return list(persons.values()), positions, person_of_row
+
+
+RANK_LABELS = {
+    'minister': 'Minister',
+    'state-minister': 'Minister of State',
+    'deputy-minister': 'Deputy Minister',
+    'senior-political-director': 'Senior Political Director',
+    'political-director': 'Political Director',
+}
+
+
 def load_sources():
     """sources.csv -> Source records, in file order.
 
@@ -303,6 +556,10 @@ def main():
         load_premiums(terms))
     persons += premium_persons
     positions += premium_positions
+    appointee_persons, appointee_positions, person_of_row = load_appointees()
+    persons += appointee_persons
+    positions += appointee_positions
+    political_posts, post_coverage = load_political_posts(person_of_row)
 
     # The Majlis assigns a NEW member id in every parliament (18th = 1-85,
     # 19th = 86-174, 20th = 175-268), so the roster arrives as person-terms
@@ -318,6 +575,11 @@ def main():
 
     for person in persons:
         if person['id'] in roster_ids:
+            continue
+        if person['id'].startswith('appointee-'):
+            # Named in a ministry's own pay sheet, which prints no Thaana and
+            # no constituency. There is no key to join on, so they are never
+            # candidates here; check_appointee_names() flags the collisions.
             continue
         name = fold_for_match(person.get('nameDv'))
         # An unmerged person's constituency lives on their own position.
@@ -419,6 +681,8 @@ def main():
         'persons': kept_persons,
         'positions': final_positions,
         'claims': claims,
+        'politicalPosts': political_posts,
+        'politicalPostCoverage': post_coverage,
         'fiscalYears': fiscal_years,
         'terms': terms,
         'warnings': warnings,
@@ -428,13 +692,16 @@ def main():
         json.dump(graph, fh, ensure_ascii=False, indent=2)
         fh.write('\n')
 
-    write_review(ambiguous, unmatched, speakers_unresolved)
+    write_review(ambiguous, unmatched, speakers_unresolved,
+                 appointee_collisions(kept_persons))
 
     orphan_claims = sum(
         1 for c in claims if c['personId'] not in {p['id'] for p in kept_persons})
 
     print(f'wrote {os.path.relpath(OUT, ROOT)}')
     print(f'  persons            {len(kept_persons)}')
+    print(f'  political posts    {len(political_posts)} '
+          f'across {len(post_coverage)} bodies')
     print(f'  positions          {len(final_positions)}')
     print(f'  claims             {len(claims)}')
     print(f'  roster terms merged{roster_merges:>4}')
@@ -447,7 +714,28 @@ def main():
     print(f'  review queue       {os.path.relpath(REVIEW, ROOT)}')
 
 
-def write_review(ambiguous, unmatched, speakers_unresolved):
+def appointee_collisions(persons):
+    """Appointee names that also appear on the Majlis roster.
+
+    Reported, never merged. A former MP taking a ministry post is common and
+    interesting, but a shared name is not evidence of it: these rows carry no
+    constituency, which is the half of the key that makes a match safe.
+    """
+    roster = {}
+    for person in persons:
+        if person.get('majlisId') is not None:
+            roster.setdefault(norm(person['name']).lower(), []).append(person['id'])
+    out = []
+    for person in persons:
+        if not person['id'].startswith('appointee-'):
+            continue
+        hits = roster.get(norm(person['name']).lower())
+        if hits:
+            out.append((person, sorted(hits)))
+    return out
+
+
+def write_review(ambiguous, unmatched, speakers_unresolved, appointees=()):
     lines = [
         '# Identity review queue',
         '',
@@ -493,6 +781,23 @@ def write_review(ambiguous, unmatched, speakers_unresolved):
             lines.append(f'- **{position.get("personNameLatin")}** '
                          f'{position["start"]} to {position["end"]} '
                          f'- _{position.get("reviewReason", "")}_')
+    else:
+        lines.append('_None._')
+
+    lines += [
+        '',
+        '## Political appointees whose name also appears on the roster',
+        '',
+        'A former member taking a ministry post is common, and these are the',
+        'candidates. Nothing here is merged: the pay sheets carry no',
+        'constituency, which is the half of the key that makes a match safe.',
+        'Confirming one is a human decision and needs a second source.',
+        '',
+    ]
+    if appointees:
+        for person, hits in sorted(appointees, key=lambda pair: pair[0]['name']):
+            lines.append(f'- **{person["name"]}** `{person["id"]}` -> '
+                         + ', '.join(f'`{h}`' for h in hits))
     else:
         lines.append('_None._')
 

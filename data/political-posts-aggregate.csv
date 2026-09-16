@@ -1,0 +1,5 @@
+﻿row_id,body_id,office,designation,rank,posts,basic_salary,living_allowance,phone_allowance,stated_total_min,stated_total_max,source_page,note,source_id
+hom--deputy-minister,homeland-security-technology,Ministry of Homeland Security and Technology,Deputy Minister,deputy-minister,19,18000,12500,1000,,,2,,rti-homeland-security-technology-political-2025
+hom--political-director,homeland-security-technology,Ministry of Homeland Security and Technology,Political Director,political-director,8,11000,9000,500,,,2,,rti-homeland-security-technology-political-2025
+hea--deputy-minister,health,Ministry of Health,Deputy Ministers,deputy-minister,7,,,,31000,31500,1,"The response states a pay range for the whole package, not components.",rti-health-political-appointees-2025
+hea--political-director,health,Ministry of Health,Political Directors,political-director,6,,,,20000,20500,1,"The response states a pay range for the whole package, not components.",rti-health-political-appointees-2025

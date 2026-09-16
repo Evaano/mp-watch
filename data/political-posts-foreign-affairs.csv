@@ -1,0 +1,269 @@
+﻿row_id,source_page,source_row,designation,rank,job_type,basic_salary,foreign_service_allowance,living_allowance,executive_allowance,service_allowance,supporting_co_allowance,technical_co_allowance,phone_allowance,minimum_wage_allowance,petrol_allowance,dress_allowance_yearly,stated_total,source_id
+fa--001,1,1,Minister of Foreign Affairs,minister,Political,42500,0,15000,0,0,0,0,1000,0,7500,0,66000.00,rti-foreign-affairs-salary-structure-2025
+fa--002,1,2,Ambassador-at-Large,,Political,42500,0,15000,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--003,1,3,Ambassador-at-Large,,Political,42500,0,15000,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--004,1,4,Ambassador-at-Large,,Political,42500,0,15000,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--005,1,5,Ambassador,,Political,42500,0,0,0,0,0,0,0,0,0,0,42500.00,rti-foreign-affairs-salary-structure-2025
+fa--006,1,6,Ambassador,,Political,42500,0,0,0,0,0,0,0,0,0,0,42500.00,rti-foreign-affairs-salary-structure-2025
+fa--007,1,7,Ambassador,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--008,1,8,Ambassador,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--009,1,9,Permanent Representative,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--010,1,10,High Commissioner,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--011,1,11,Ambassador,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--012,1,12,High Commissioner,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--013,1,13,High Commissioner,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--014,1,14,Ambassador,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--015,1,15,Permanent Representative,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--016,1,16,High Commissioner,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--017,1,17,Ambassador,,Political,29500,0,0,0,0,0,0,0,0,0,0,29500.00,rti-foreign-affairs-salary-structure-2025
+fa--018,1,18,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--019,1,19,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--020,1,20,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--021,1,21,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--022,1,22,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--023,1,23,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--024,1,24,Minister of State for Foreign Affairs,state-minister,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--025,1,25,Ambassador-at-Large,,Political,29500,0,12500,0,0,0,0,1500,0,0,0,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--026,1,26,Ambassador-at-Large,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--027,1,27,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--028,1,28,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--029,1,29,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--030,1,30,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--031,1,31,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--032,1,32,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--033,1,33,Deputy Minister,deputy-minister,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--034,1,34,Deputy Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--035,1,35,Deputy Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--036,1,36,Deputy High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--037,1,37,Deputy High Commissioner,,Political,29500,0,12500,0,0,0,0,0,0,0,0,42000.00,rti-foreign-affairs-salary-structure-2025
+fa--038,1,38,Deputy High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--039,1,39,Deputy High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--040,1,40,Deputy High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--041,1,41,Deputy Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--042,1,42,Deputy High Commissioner,,Political,18000,0,10000,0,0,0,0,0,0,0,0,28000.00,rti-foreign-affairs-salary-structure-2025
+fa--043,1,43,Additional Secretary,,Political,18000,0,12500,0,0,0,0,1000,0,0,0,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--044,1,44,Trade Representative,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--045,2,45,Trade Representative,,Political,0,0,0,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--046,2,46,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--047,2,47,Special Counsel to the Ambassador,,Political,18000,0,10000,0,0,0,0,0,0,0,0,28000.00,rti-foreign-affairs-salary-structure-2025
+fa--048,2,48,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--049,2,49,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--050,2,50,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--051,2,51,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--052,2,52,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--053,2,53,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--054,2,54,Special Counsel to the Ambassador,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--055,2,55,Special Counsel to the Ambassador,,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--056,2,56,Special Counsel to the Ambassador,,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--057,2,57,Special Counsel to the High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--058,2,58,Special Counsel to the High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--059,2,59,Special Counsel to the High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--060,2,60,Special Counsel to the High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--061,2,61,Special Counsel to the High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--062,2,62,Special Counsel to the High Commissioner,,Political,18000,0,0,0,0,0,0,0,0,0,0,18000.00,rti-foreign-affairs-salary-structure-2025
+fa--063,2,63,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--064,2,64,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--065,2,65,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--066,2,66,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--067,2,67,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--068,2,68,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--069,3,69,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--070,3,70,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--071,3,71,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,500,0,0,0,25500.00,rti-foreign-affairs-salary-structure-2025
+fa--072,3,72,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--073,3,73,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--074,3,74,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,0,0,0,0,25000.00,rti-foreign-affairs-salary-structure-2025
+fa--075,3,75,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--076,3,76,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,0,0,0,0,25000.00,rti-foreign-affairs-salary-structure-2025
+fa--077,3,77,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,0,0,0,0,25000.00,rti-foreign-affairs-salary-structure-2025
+fa--078,3,78,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--079,3,79,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,0,0,0,0,25000.00,rti-foreign-affairs-salary-structure-2025
+fa--080,3,80,Senior Political Director,senior-political-director,Political,15000,0,10000,0,0,0,0,0,0,0,0,25000.00,rti-foreign-affairs-salary-structure-2025
+fa--081,3,81,Senior Executive Director,,Political,0,0,0,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--082,3,82,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--083,3,83,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--084,3,84,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--085,3,85,Senior Executive Director,,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--086,3,86,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--087,3,87,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--088,3,88,Senior Executive Director,,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--089,3,89,Senior Executive Director,,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--090,3,90,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--091,3,91,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--092,3,92,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--093,3,93,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--094,3,94,Senior Executive Director,,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--095,3,95,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--096,3,96,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--097,3,97,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--098,3,98,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--099,3,99,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--100,3,100,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--101,3,101,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--102,3,102,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--103,3,103,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--104,3,104,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--105,3,105,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--106,3,106,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--107,3,107,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--108,3,108,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--109,3,109,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--110,3,110,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--111,3,111,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--112,3,112,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--113,3,113,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--114,4,114,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--115,4,115,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--116,4,116,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--117,4,117,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--118,4,118,Senior Political Director,senior-political-director,Political,15000,0,0,0,0,0,0,0,0,0,0,15000.00,rti-foreign-affairs-salary-structure-2025
+fa--119,4,119,Second Secretary,,Political,8000,0,0,0,0,0,0,0,0,0,0,8000.00,rti-foreign-affairs-salary-structure-2025
+fa--120,4,120,Third Secretary,,Political,7930,0,0,0,0,0,0,0,0,0,0,7930.00,rti-foreign-affairs-salary-structure-2025
+fa--121,4,121,Political Director,political-director,Political,11000,0,9000,0,0,0,0,500,0,0,0,20500.00,rti-foreign-affairs-salary-structure-2025
+fa--122,4,122,Political Director,political-director,Political,11000,0,9000,0,0,0,0,500,0,0,0,20500.00,rti-foreign-affairs-salary-structure-2025
+fa--123,4,123,Political Director,political-director,Political,11000,0,9000,0,0,0,0,500,0,0,0,20500.00,rti-foreign-affairs-salary-structure-2025
+fa--124,4,124,Political Director,political-director,Political,11000,0,9000,0,0,0,0,500,0,0,0,20500.00,rti-foreign-affairs-salary-structure-2025
+fa--125,4,125,Political Director,political-director,Political,0,0,0,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--126,4,126,Secretary,,Foreign Service,29500,0,0,12500,0,0,0,1500,0,0,3000,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--127,4,127,Secretary,,Foreign Service,29500,0,0,12500,0,0,0,1500,0,0,3000,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--128,4,128,Secretary,,Foreign Service,29500,0,0,12500,0,0,0,0,0,0,0,42000.00,rti-foreign-affairs-salary-structure-2025
+fa--129,4,129,Secretary,,Foreign Service,29500,0,0,12500,0,0,0,1500,0,0,3000,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--130,4,130,Secretary,,Foreign Service,29500,0,0,12500,0,0,0,1500,0,0,3000,43500.00,rti-foreign-affairs-salary-structure-2025
+fa--131,4,131,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,1000,0,0,3000,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--132,4,132,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,0,0,0,0,30500.00,rti-foreign-affairs-salary-structure-2025
+fa--133,4,133,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,1000,0,0,3000,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--134,4,134,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,1000,0,0,3000,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--135,4,135,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,0,0,0,0,30500.00,rti-foreign-affairs-salary-structure-2025
+fa--136,4,136,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,0,0,0,0,30500.00,rti-foreign-affairs-salary-structure-2025
+fa--137,4,137,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,1000,0,0,3000,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--138,4,138,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,1000,0,0,3000,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--139,4,139,Additional Secretary,,Foreign Service,18000,0,0,12500,0,0,0,1000,0,0,3000,31500.00,rti-foreign-affairs-salary-structure-2025
+fa--140,4,140,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--141,4,141,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--142,4,142,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,0,0,0,0,28000.00,rti-foreign-affairs-salary-structure-2025
+fa--143,4,143,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--144,4,144,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--145,4,145,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,0,0,0,0,28000.00,rti-foreign-affairs-salary-structure-2025
+fa--146,4,146,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--147,4,147,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--148,4,148,Joint Secretary,,Foreign Service,18000,0,0,10000,0,0,0,800,0,0,3000,28800.00,rti-foreign-affairs-salary-structure-2025
+fa--149,4,149,Senior Under Secretary,,Foreign Service,11000,0,0,7000,0,0,0,500,0,0,3000,18500.00,rti-foreign-affairs-salary-structure-2025
+fa--150,4,150,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,500,0,0,3000,25140.70,rti-foreign-affairs-salary-structure-2025
+fa--151,4,151,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,500,0,0,3000,25140.70,rti-foreign-affairs-salary-structure-2025
+fa--152,4,152,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,0,0,0,0,24640.70,rti-foreign-affairs-salary-structure-2025
+fa--153,4,153,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,500,0,0,3000,25140.70,rti-foreign-affairs-salary-structure-2025
+fa--154,4,154,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,500,0,0,3000,25140.70,rti-foreign-affairs-salary-structure-2025
+fa--155,4,155,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,500,0,0,3000,25140.70,rti-foreign-affairs-salary-structure-2025
+fa--156,4,156,Director General,,Foreign Service,13890,4862,0,0,2000,0,3889,500,0,0,0,25140.70,rti-foreign-affairs-salary-structure-2025
+fa--157,4,157,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,500,0,0,3000,16901.05,rti-foreign-affairs-salary-structure-2025
+fa--158,4,158,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--159,4,159,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--160,5,160,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--161,5,161,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--162,5,162,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--163,5,163,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--164,5,164,Director,,Foreign Service,0,0,0,0,0,0,0,0,0,0,0,,rti-foreign-affairs-salary-structure-2025
+fa--165,5,165,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--166,5,166,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,500,0,0,3000,16901.05,rti-foreign-affairs-salary-structure-2025
+fa--167,5,167,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,0,0,0,0,16401.05,rti-foreign-affairs-salary-structure-2025
+fa--168,5,168,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,500,0,0,3000,16901.05,rti-foreign-affairs-salary-structure-2025
+fa--169,5,169,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,500,0,0,3000,16901.05,rti-foreign-affairs-salary-structure-2025
+fa--170,5,170,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,500,0,0,3000,16901.05,rti-foreign-affairs-salary-structure-2025
+fa--171,5,171,Director,,Foreign Service,8835,3092,0,0,2000,0,2474,500,0,0,3000,16901.05,rti-foreign-affairs-salary-structure-2025
+fa--172,5,172,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--173,5,173,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--174,5,174,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--175,5,175,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--176,5,176,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--177,5,177,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--178,5,178,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--179,5,179,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--180,5,180,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--181,5,181,Assistant Director,,Foreign Service,7895,2763,0,0,2000,900,0,350,0,0,3000,13908.25,rti-foreign-affairs-salary-structure-2025
+fa--182,5,182,Assistant Director,,Foreign Service,7895,2763,0,0,2000,900,0,350,0,0,3000,13908.25,rti-foreign-affairs-salary-structure-2025
+fa--183,5,183,Assistant Director,,Foreign Service,7895,2763,0,0,2000,900,0,0,0,0,0,13558.25,rti-foreign-affairs-salary-structure-2025
+fa--184,5,184,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,350,0,0,3000,12747.25,rti-foreign-affairs-salary-structure-2025
+fa--185,5,185,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,350,0,0,3000,12747.25,rti-foreign-affairs-salary-structure-2025
+fa--186,5,186,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--187,5,187,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,250,0,0,3000,12647.25,rti-foreign-affairs-salary-structure-2025
+fa--188,5,188,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,250,0,0,3000,12647.25,rti-foreign-affairs-salary-structure-2025
+fa--189,5,189,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--190,5,190,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--191,5,191,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,250,0,0,3000,12647.25,rti-foreign-affairs-salary-structure-2025
+fa--192,5,192,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,350,0,0,3000,12747.25,rti-foreign-affairs-salary-structure-2025
+fa--193,5,193,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,250,0,0,3000,12647.25,rti-foreign-affairs-salary-structure-2025
+fa--194,5,194,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--195,5,195,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,0,0,0,0,12397.25,rti-foreign-affairs-salary-structure-2025
+fa--196,5,196,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,250,0,0,3000,13717.05,rti-foreign-affairs-salary-structure-2025
+fa--197,5,197,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,250,0,0,3000,13717.05,rti-foreign-affairs-salary-structure-2025
+fa--198,5,198,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,0,0,0,0,12397.25,rti-foreign-affairs-salary-structure-2025
+fa--199,5,199,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--200,5,200,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,250,0,0,3000,13717.05,rti-foreign-affairs-salary-structure-2025
+fa--201,5,201,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--202,5,202,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--203,5,203,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--204,5,204,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--205,5,205,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--206,6,206,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--207,6,207,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--208,6,208,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--209,6,209,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--210,6,210,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--211,6,211,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,250,0,0,3000,13717.05,rti-foreign-affairs-salary-structure-2025
+fa--212,6,212,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,250,0,0,3000,13717.05,rti-foreign-affairs-salary-structure-2025
+fa--213,6,213,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--214,6,214,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--215,6,215,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,0,0,0,0,12397.25,rti-foreign-affairs-salary-structure-2025
+fa--216,6,216,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--217,6,217,Assistant Director,,Foreign Service,7035,2462,0,0,2000,900,0,0,0,0,0,12397.25,rti-foreign-affairs-salary-structure-2025
+fa--218,6,218,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--219,6,219,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--220,6,220,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--221,6,221,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--222,6,222,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--223,6,223,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,350,0,0,3000,13817.05,rti-foreign-affairs-salary-structure-2025
+fa--224,6,224,Assistant Director,,Foreign Service,7035,2462,0,0,2000,0,1970,0,0,0,0,13467.05,rti-foreign-affairs-salary-structure-2025
+fa--225,6,225,Chief General Services Officer,,Foreign Service,6295,2203,0,0,2000,0,1763,350,0,0,3000,12610.85,rti-foreign-affairs-salary-structure-2025
+fa--226,6,226,Chief General Services Officer,,Foreign Service,6295,2203,0,0,2000,900,0,250,0,0,3000,11648.25,rti-foreign-affairs-salary-structure-2025
+fa--227,6,227,Chief General Services Officer,,Foreign Service,6295,2203,0,0,2000,900,0,250,0,0,3000,11648.25,rti-foreign-affairs-salary-structure-2025
+fa--228,6,228,Chief General Services Officer,,Foreign Service,6295,2203,0,0,2000,0,1763,350,0,0,3000,12610.85,rti-foreign-affairs-salary-structure-2025
+fa--229,6,229,Chief General Services Officer,,Foreign Service,6295,2203,0,0,2000,0,1763,350,0,0,3000,12610.85,rti-foreign-affairs-salary-structure-2025
+fa--230,6,230,Chief General Services Officer,,Foreign Service,6295,2203,0,0,2000,0,1763,350,0,0,3000,12610.85,rti-foreign-affairs-salary-structure-2025
+fa--231,6,231,Chief Desk Officer,,Foreign Service,6295,2203,0,0,2000,0,1763,350,0,0,3000,12610.85,rti-foreign-affairs-salary-structure-2025
+fa--232,6,232,Chief Desk Officer,,Foreign Service,6295,2203,0,0,2000,0,1763,350,0,0,3000,12610.85,rti-foreign-affairs-salary-structure-2025
+fa--233,6,233,Senior Desk Officer,,Foreign Service,5610,1964,0,0,2000,0,1571,350,0,0,3000,11494.30,rti-foreign-affairs-salary-structure-2025
+fa--234,6,234,Senior Desk Officer,,Foreign Service,5610,1964,0,0,2000,0,1571,0,0,0,0,11144.30,rti-foreign-affairs-salary-structure-2025
+fa--235,6,235,Senior Desk Officer,,Foreign Service,5610,1964,0,0,2000,0,1571,350,0,0,3000,11494.30,rti-foreign-affairs-salary-structure-2025
+fa--236,6,236,Desk Officer,,Foreign Service,5020,1757,0,0,1500,0,0,0,0,0,0,8277.00,rti-foreign-affairs-salary-structure-2025
+fa--237,6,237,Desk Officer,,Foreign Service,5020,1757,0,0,1500,700,0,250,0,0,3000,9227.00,rti-foreign-affairs-salary-structure-2025
+fa--238,6,238,Desk Officer,,Foreign Service,5020,1757,0,0,1500,700,0,250,0,0,3000,9227.00,rti-foreign-affairs-salary-structure-2025
+fa--239,6,239,Desk Officer,,Foreign Service,5020,1757,0,0,1500,700,0,250,0,0,3000,9227.00,rti-foreign-affairs-salary-structure-2025
+fa--240,6,240,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,0,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--241,6,241,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--242,6,242,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,0,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--243,6,243,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--244,6,244,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--245,6,245,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,0,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--246,6,246,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--247,6,247,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--248,6,248,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--249,6,249,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--250,6,250,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--251,6,251,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--252,7,252,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--253,7,253,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--254,7,254,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--255,7,255,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--256,7,256,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--257,7,257,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--258,7,258,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--259,7,259,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--260,7,260,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--261,7,261,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--262,7,262,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--263,7,263,Deputy Desk Officer,,Foreign Service,4465,1563,0,0,1500,700,0,250,0,0,3000,8477.75,rti-foreign-affairs-salary-structure-2025
+fa--264,7,264,Masakkathu,,Foreign Service,4470,1565,0,0,1000,1200,0,250,613,0,0,9097.40,rti-foreign-affairs-salary-structure-2025
+fa--265,7,265,Masakkathu,,Foreign Service,3470,1215,0,0,1000,1200,0,250,613,0,0,7747.40,rti-foreign-affairs-salary-structure-2025
+fa--266,7,266,Masakkathu,,Foreign Service,3471,1215,0,0,1000,1200,0,250,0,0,0,7135.85,rti-foreign-affairs-salary-structure-2025
+fa--267,7,267,Maintenance OffIcer (Wage),,Foreign Service,6295,0,0,0,2000,0,0,350,0,0,3000,8645.00,rti-foreign-affairs-salary-structure-2025
+fa--268,7,268,Driver (Wage),,Foreign Service,7035,2462,0,0,2000,900,0,350,0,0,3000,12747.25,rti-foreign-affairs-salary-structure-2025

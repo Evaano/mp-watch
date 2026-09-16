@@ -32,6 +32,7 @@ python scripts/ingest/validate.py               # checks data/*.csv; build_graph
 python scripts/ingest/extract_allowances.py     # -> data/premium-payments.csv
 python scripts/ingest/majlis_members.py         # -> data/majlis-roster.csv + majlis-speakers.csv
 python scripts/ingest/rti_20th_majlis.py        # -> data/rti-20th-majlis.csv
+python scripts/ingest/political_posts.py        # -> data/political-posts-*.csv
 python scripts/ingest/build_graph.py            # -> src/data/graph.json + docs/identity-review.md
 python scripts/ingest/mirror_photos.py          # -> public/members/*.webp + src/data/photo-manifest.json
 ```
@@ -88,6 +89,12 @@ The premium is priced **per covered head** and the policy covers the member
    No remembered figures, no round numbers chosen because they read well.
 4. **Party belongs to a Position, never to a Person.** Six independents crossed
    to PNC within four days of the 2024 election; an undated party label is wrong.
+5. **A political post's pay is an entitlement, never a payment.** `PoliticalPost`
+   carries `measure: "entitlement"`, sits in its own top-level array, and has no
+   `amount` or `currency`. It never passes through `claims()`, `expenditure()`
+   or `totals()`. Do not multiply `posts` by a rate anywhere: that produces an
+   expenditure figure no document states, ignoring vacancies, part-months, the
+   Finance deduction and the ministries that never answered post by post.
 
 ## Traps this codebase has already paid for
 

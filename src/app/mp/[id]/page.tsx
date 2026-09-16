@@ -38,11 +38,15 @@ export async function generateMetadata({
   const person = registry.person(id);
   if (!person) return {};
   const seat = registry.seat(id);
+  if (!seat) {
+    // A political appointee: no seat, and no premium figure to describe.
+    return { title: person.name, description: dict.profileAppointeeNote };
+  }
   return {
     title: person.name,
     // Travels into search snippets and link previews with no page context to
     // correct it, so it must not read as a payment to the member.
-    description: `${person.name} (${seat?.constituency ?? ""}) - MVR ${registry
+    description: `${person.name} (${seat.constituency ?? ""}) - MVR ${registry
       .totalSpent(id)
       .toLocaleString("en-US")} in health insurance premiums covering this member and their dependents, 2014-2025.`,
   };
@@ -76,6 +80,14 @@ export default async function MemberPage({
   const total = registry.totalSpent(person.id);
   const sources = registry.sourcesFor(person.id);
   const portrait = photo(person.id);
+  // A political appointee named in a ministry pay sheet is a person on this
+  // site, but never sat in the Majlis: no seat, no premium, no rank among
+  // members. Rendering the member furniture for them would print "MVR 0" as
+  // a headline figure and a rank out of 278 they were never in.
+  const isMember = registry.seats(person.id).length > 0;
+  const posts = registry
+    .politicalPosts()
+    .filter((post) => post.personId === person.id);
 
   return (
     <div className="flex flex-col gap-14">
@@ -129,9 +141,15 @@ export default async function MemberPage({
             <h1>
               <MemberName member={nameProps(person)} size="lg" />
             </h1>
-            <p className="mt-2 text-lg text-ink-muted">
-              <ConstituencyName member={nameProps(person)} />
-            </p>
+            {isMember ? (
+              <p className="mt-2 text-lg text-ink-muted">
+                <ConstituencyName member={nameProps(person)} />
+              </p>
+            ) : (
+              <p className="mt-2 text-lg text-ink-muted">
+                {posts[0]?.office ?? ""}
+              </p>
+            )}
 
             <ul className="mt-4 flex flex-wrap items-center gap-2">
               <li
@@ -141,7 +159,11 @@ export default async function MemberPage({
                     : "bg-surface-sunken text-ink-muted"
                 }`}
               >
-                {serving ? dict.profileServing : dict.profileFormer}
+                {isMember
+                  ? serving
+                    ? dict.profileServing
+                    : dict.profileFormer
+                  : dict.profileAppointee}
               </li>
               {party ? (
                 <li className="label-eyebrow rounded-card bg-surface-sunken px-2.5 py-1 text-ink-muted">
@@ -162,6 +184,8 @@ export default async function MemberPage({
                 page: a phone screenshot of this header is how the page travels,
                 and the qualifier has to travel with the number or it reads as
                 money the member was paid. */}
+            {isMember ? (
+              <>
             <div className="mt-6 flex flex-wrap items-baseline gap-x-4 gap-y-1">
               {/* Held on one line: at this size a wrap after "MVR" reads as
                   two separate figures. The narrow stat tiles need the opposite
@@ -183,10 +207,17 @@ export default async function MemberPage({
               {" · "}
               {dict.profileCoverNote}
             </p>
+              </>
+            ) : (
+              <p className="label-note mt-6 max-w-[52ch] text-ink-muted">
+                {dict.profileAppointeeNote}
+              </p>
+            )}
           </div>
         </header>
       </div>
 
+      {isMember ? (
       <section>
         <h2 className="label-eyebrow mb-3 text-ink-muted">
           {dict.profileGlance}
@@ -205,6 +236,7 @@ export default async function MemberPage({
           />
         </StatRow>
       </section>
+      ) : null}
 
       <section>
         <h2 className="text-xl font-semibold tracking-tight">
@@ -215,6 +247,50 @@ export default async function MemberPage({
         </div>
       </section>
 
+      {!isMember && posts.length ? (
+        <section>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {dict.profilePayHeading}
+          </h2>
+          <p className="mt-3 max-w-[62ch] text-sm text-ink-muted">
+            {dict.profilePayNote}
+          </p>
+          <dl className="mt-5 flex flex-col gap-5">
+            {posts.map((post) => (
+              <div key={post.id} className="border-s-2 border-line-strong ps-4">
+                <dt className="font-medium">{post.designation}</dt>
+                <dd className="mt-1 text-sm text-ink-muted">
+                  <span className="numeral">
+                    {post.occupiedFrom ?? ""}
+                    {post.terminatedOn ? ` - ${post.terminatedOn}` : ""}
+                  </span>
+                </dd>
+                <dd className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm">
+                  {post.basic !== undefined ? (
+                    <span>
+                      {dict.colBasic}{" "}
+                      <Numeral value={post.basic} currency />
+                    </span>
+                  ) : null}
+                  {post.components.map((component) => (
+                    <span key={component.label}>
+                      {component.label}{" "}
+                      <Numeral value={component.amount} currency />
+                    </span>
+                  ))}
+                </dd>
+                {post.basicAfterDeduction !== undefined ? (
+                  <dd className="label-note mt-1 text-ink-muted">
+                    {dict.profilePayDeduction(post.basicAfterDeduction)}
+                  </dd>
+                ) : null}
+              </div>
+            ))}
+          </dl>
+        </section>
+      ) : null}
+
+      {isMember ? (
       <section>
         <h2 className="text-xl font-semibold tracking-tight">
           {dict.profileCoverHeading}
@@ -248,6 +324,7 @@ export default async function MemberPage({
           />
         </div>
       </section>
+      ) : null}
 
       {person.possiblySameAs?.length ? (
         <section className="border-s-2 border-line-strong ps-4">

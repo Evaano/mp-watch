@@ -26,7 +26,10 @@ from thaana import fold_for_match  # noqa: E402
 DHAAIRAA = 'ދާއިރާ'
 THAANA = re.compile(r'[ހ-ޱ]')
 AMOUNT = re.compile(r'^(|0|[1-9][0-9]*)$')
-FORMATTED = re.compile(r'^\d{1,3}(,\d{3})+$|^\d+\.\d+$')
+# Columns whose document prints cents. Everywhere else a decimal point is the
+# formatted-value error below.
+DECIMAL_AMOUNT = re.compile(r'^$|^(0|[1-9][0-9]*)\.\d{2}$')
+FORMATTED = re.compile(r'^\d{1,3}(,\d{3})+')
 FISCAL_YEAR = re.compile(r'^(20\d\d)-(20\d\d)$')
 ISO_DATE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
@@ -60,6 +63,33 @@ HEADERS = {
     'rti-20th-majlis.csv': ['row_id', 'name', 'name_dv', 'constituency',
                             'constituency_dv', 'amount', 'source_page',
                             'source_row', 'source_id'],
+    'political-posts-foreign-affairs.csv': [
+        'row_id', 'source_page', 'source_row', 'designation', 'rank', 'job_type',
+        'basic_salary', 'foreign_service_allowance', 'living_allowance',
+        'executive_allowance', 'service_allowance', 'supporting_co_allowance',
+        'technical_co_allowance', 'phone_allowance', 'minimum_wage_allowance',
+        'petrol_allowance', 'dress_allowance_yearly', 'stated_total', 'source_id'],
+    'political-posts-health.csv': [
+        'row_id', 'source_page', 'source_row', 'rcn', 'office', 'designation',
+        'rank', 'employed_date', 'appraisal_marks_2025', 'department',
+        'basic_salary', 'housing', 'transport', 'phone', 'other', 'source_id'],
+    'political-posts-finance.csv': [
+        'row_id', 'source_row', 'name', 'office', 'designation', 'rank',
+        'occupied_date', 'termination_date', 'rejoined_date', 'no_pay_leave',
+        'basic_salary', 'basic_after_10pct_deduction', 'living_allowance',
+        'phone_allowance', 'car_allowance', 'source_id'],
+    'political-posts-education.csv': [
+        'row_id', 'source_page', 'source_row', 'designation_dv', 'rank',
+        'basic_salary', 'living_allowance', 'phone_allowance',
+        'petrol_allowance', 'occupied_date', 'status', 'source_id'],
+    'political-posts-aggregate.csv': [
+        'row_id', 'body_id', 'office', 'designation', 'rank', 'posts',
+        'basic_salary', 'living_allowance', 'phone_allowance',
+        'stated_total_min', 'stated_total_max', 'source_page', 'note',
+        'source_id'],
+    'political-posts-coverage.csv': [
+        'body_id', 'body_name', 'as_of', 'answer_kind', 'posts_stated',
+        'posts_itemised', 'note', 'source_id'],
 }
 
 # Files whose header carries a variable tail of fiscal-year columns.
@@ -71,7 +101,33 @@ WIDE_HEADERS = {
     ),
 }
 
-DATE_COLUMNS = {'start', 'end', 'period_start', 'period_end', 'retrieved'}
+DATE_COLUMNS = {'start', 'end', 'period_start', 'period_end', 'retrieved',
+                'as_of', 'employed_date', 'occupied_date', 'termination_date',
+                'rejoined_date', 'no_pay_leave'}
+
+RANKS = {'minister', 'state-minister', 'deputy-minister',
+         'senior-political-director', 'political-director'}
+
+ANSWER_KINDS = {'per-post', 'aggregate', 'unreadable'}
+
+# The four rates three independently-sourced ministries print identically:
+# basic salary, then the living-allowance slot - which Health prints under the
+# heading "Housing". Reading those two headings as one slot is an inference,
+# made here and in registry.rankLadder(), and nowhere else.
+RANK_LADDER = {
+    'state-minister': (29500, 12500),
+    'deputy-minister': (18000, 12500),
+    'senior-political-director': (15000, 10000),
+    'political-director': (11000, 9000),
+}
+
+# Rows each document itemises, as its own coverage row states.
+EXPECTED_ROWS = {
+    'political-posts-foreign-affairs.csv': 268,
+    'political-posts-health.csv': 81,
+    'political-posts-finance.csv': 34,
+    'political-posts-education.csv': 46,
+}
 
 
 class Report:
@@ -168,11 +224,17 @@ def check_fiscal_years(report, name, header):
     return years
 
 
-def check_money(report, name, rows, columns, rates=None):
-    """V10-V12: one canonical integer form, and divisibility where a rate applies."""
+def check_money(report, name, rows, columns, rates=None, decimal=()):
+    """V10-V12: one canonical form, and divisibility where a rate applies."""
     for i, row in enumerate(rows, 1):
         for column in columns:
             value = row[column]
+            if column in decimal:
+                if not DECIMAL_AMOUNT.match(value):
+                    report.error(at(name, i, row, column),
+                                 f'{value!r} is not an amount to two decimal '
+                                 'places, which is how this document prints it')
+                continue
             if FORMATTED.match(value):
                 report.error(
                     at(name, i, row, column),
@@ -303,6 +365,154 @@ def check_roster(report, rows, terms):
                         f'across member ids {sorted(ids)}')
 
 
+def check_posts(report, tables):
+    """V22-V30: the political-appointee tables."""
+    for name, expected in EXPECTED_ROWS.items():
+        if name in tables and len(tables[name][1]) != expected:
+            report.error(at(name),
+                         f'has {len(tables[name][1])} rows, expected {expected}')
+
+    if 'political-posts-foreign-affairs.csv' in tables:
+        rows = tables['political-posts-foreign-affairs.csv'][1]
+        monthly = ['basic_salary', 'foreign_service_allowance', 'living_allowance',
+                   'executive_allowance', 'service_allowance',
+                   'supporting_co_allowance', 'technical_co_allowance',
+                   'phone_allowance', 'minimum_wage_allowance', 'petrol_allowance']
+        check_money(report, 'political-posts-foreign-affairs.csv', rows,
+                    monthly + ['dress_allowance_yearly', 'stated_total'],
+                    decimal=('stated_total',))
+        for i, row in enumerate(rows, 1):
+            if not row['stated_total']:
+                continue          # the document prints none; never compute one
+            total = float(row['stated_total'])
+            components = sum(int(row[c]) for c in monthly if row[c])
+            # The published TOTAL is monthly and excludes the yearly dress
+            # allowance. Components print rounded to whole rufiyaa while the
+            # total carries unrounded cents, so the Foreign Service rows sit
+            # under a rufiyaa out. Compare; never recompute - the document is
+            # the record, and its own figure is what gets published.
+            if abs(total - components) >= 1:
+                report.error(
+                    at('political-posts-foreign-affairs.csv', i, row),
+                    f'stated_total {total:,.2f} is {abs(total - components):,.2f} '
+                    f'away from the sum of its monthly components '
+                    f'({components:,})')
+
+    money_columns = {
+        'political-posts-health.csv':
+            ['basic_salary', 'housing', 'transport', 'phone', 'other'],
+        'political-posts-finance.csv':
+            ['basic_salary', 'basic_after_10pct_deduction', 'living_allowance',
+             'phone_allowance', 'car_allowance'],
+        'political-posts-education.csv':
+            ['basic_salary', 'living_allowance', 'phone_allowance',
+             'petrol_allowance'],
+    }
+    for name, columns in money_columns.items():
+        if name in tables:
+            check_money(report, name, tables[name][1], columns)
+
+    if 'political-posts-finance.csv' in tables:
+        for i, row in enumerate(tables['political-posts-finance.csv'][1], 1):
+            if not row['basic_after_10pct_deduction'] or not row['basic_salary']:
+                continue
+            expected = round(int(row['basic_salary']) * 0.9)
+            if int(row['basic_after_10pct_deduction']) != expected:
+                report.error(at('political-posts-finance.csv', i, row),
+                             f'{row["basic_after_10pct_deduction"]} is not 90% of '
+                             f'{row["basic_salary"]} (expected {expected})')
+
+    bodies = {}
+    if 'political-posts-coverage.csv' in tables:
+        for i, row in enumerate(tables['political-posts-coverage.csv'][1], 1):
+            bodies[row['body_id']] = row
+            if row['answer_kind'] not in ANSWER_KINDS:
+                report.error(at('political-posts-coverage.csv', i, row),
+                             f'answer_kind {row["answer_kind"]!r} is not known')
+            if not row['posts_stated']:
+                continue
+            stated, itemised = int(row['posts_stated']), int(row['posts_itemised'])
+            if itemised > stated:
+                report.error(at('political-posts-coverage.csv', i, row),
+                             f'itemises {itemised} posts but states only {stated}')
+            elif itemised < stated:
+                # Not an error. Homeland states 57 and itemises 27; the gap is
+                # the finding, and the page has to say so rather than imply
+                # that 27 is the whole.
+                report.warn(at('political-posts-coverage.csv', i, row),
+                            f'{row["body_id"]} states {stated} posts and itemises '
+                            f'{itemised}: {stated - itemised} are not described')
+
+    if 'political-posts-aggregate.csv' in tables:
+        rows = tables['political-posts-aggregate.csv'][1]
+        check_money(report, 'political-posts-aggregate.csv', rows,
+                    ['posts', 'basic_salary', 'living_allowance',
+                     'phone_allowance', 'stated_total_min', 'stated_total_max'])
+        for i, row in enumerate(rows, 1):
+            if bodies and row['body_id'] not in bodies:
+                report.error(at('political-posts-aggregate.csv', i, row),
+                             f'body_id {row["body_id"]!r} is not in the coverage file')
+            if int(row['posts'] or 0) < 1:
+                report.error(at('political-posts-aggregate.csv', i, row),
+                             'posts must be at least 1')
+            has_components = bool(row['basic_salary'] or row['living_allowance'])
+            has_range = bool(row['stated_total_min'] or row['stated_total_max'])
+            if has_components == has_range:
+                report.error(
+                    at('political-posts-aggregate.csv', i, row),
+                    'must carry either pay components or a stated range, never '
+                    'both and never neither: a range is a whole package and '
+                    'cannot be compared with a basic salary')
+
+    check_rank_ladder(report, tables)
+
+
+def check_rank_ladder(report, tables):
+    """The cross-ministry rank ladder. A warning, never an error.
+
+    Three independently-sourced ministries print the same four rates, which is
+    what lets them be read as standing rates rather than one ministry's own
+    arrangement. A ministry that pays differently is a FINDING; making that
+    fatal would turn a real discovery into a build break.
+    """
+    living_column = {
+        'political-posts-foreign-affairs.csv': 'living_allowance',
+        'political-posts-health.csv': 'housing',
+        'political-posts-finance.csv': 'living_allowance',
+        'political-posts-education.csv': 'living_allowance',
+        'political-posts-aggregate.csv': 'living_allowance',
+    }
+    divergent = {}
+    for name, living_key in living_column.items():
+        if name not in tables:
+            continue
+        for i, row in enumerate(tables[name][1], 1):
+            rank = row.get('rank', '')
+            if rank and rank not in RANKS:
+                report.error(at(name, i, row),
+                             f'rank {rank!r} is not one of {sorted(RANKS)}')
+                continue
+            if rank not in RANK_LADDER or not row.get('basic_salary'):
+                continue
+            basic, living = RANK_LADDER[rank]
+            seen_basic = int(row['basic_salary'])
+            seen_living = int(row[living_key]) if row.get(living_key) else None
+            if seen_basic != basic or (seen_living is not None
+                                       and seen_living != living):
+                key = (name, rank, seen_basic, seen_living)
+                divergent[key] = divergent.get(key, 0) + 1
+
+    # One line per distinct divergence rather than per row. A ministry paying
+    # a rank differently is one finding however many people it applies to, and
+    # 40 identical lines would bury the rest of the report.
+    for (name, rank, seen_basic, seen_living), count in sorted(divergent.items()):
+        basic, living = RANK_LADDER[rank]
+        report.warn(at(name),
+                    f'{count} {rank} row(s) on basic {seen_basic:,} / living '
+                    f'{seen_living if seen_living is not None else "-"}, where '
+                    f'the other ministries state {basic:,} / {living:,}')
+
+
 def run():
     report = Report()
     tables = {}
@@ -358,6 +568,8 @@ def run():
 
     if 'sources.csv' in tables and checksummed:
         check_checksums(report, tables['sources.csv'][1], checksummed)
+
+    check_posts(report, tables)
 
     return report
 

@@ -125,16 +125,21 @@ def locator(row):
     return ''
 
 
-def amount(text):
+def amount(text, dp=0):
     """Normalise one printed amount to the canonical CSV form.
 
     The disclosure prints `12,500`, `120000.00` and `-` for nil in the same
-    document. All three collapse to a plain integer here, and `-` and an empty
-    cell both become '' - the CSV records what was paid, and nil and
-    not-printed are the same fact for these tables. Keying on the comma is
-    what lost MVR 216,000 once already.
+    document. All three collapse to one form here, and `-` and an empty cell
+    both become ''. Keying on the comma is what lost MVR 216,000 once already.
+
+    `dp` is for a column whose document genuinely prints cents. The Foreign
+    Affairs table states totals to two places while printing the components
+    that make them up rounded to whole rufiyaa, so rounding the total would
+    discard the only exact figure on the row.
     """
     text = (text or '').strip().replace(',', '')
     if text in ('', '-'):
         return ''
+    if dp:
+        return f'{float(text):.{dp}f}'
     return str(int(round(float(text))))

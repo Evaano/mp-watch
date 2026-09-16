@@ -86,3 +86,14 @@ invented as person records.
 - **Al Ameer Ibrahim Ali Didi** 1944-10-30 to 1945-11-07 - _no member of that name in any roster_
 - **Utz. Ahmed Kaamil Didi** 1942-06-27 to 1944-10-29 - _no member of that name in any roster_
 - **Al Ameer Mohamed Fareed Didi** 1933-10-21 to 1942-06-25 - _no member of that name in any roster_
+
+## Political appointees whose name also appears on the roster
+
+A former member taking a ministry post is common, and these are the
+candidates. Nothing here is merged: the pay sheets carry no
+constituency, which is the half of the key that makes a match safe.
+Confirming one is a human decision and needs a second source.
+
+- **Ahmed Naseer** `appointee-ahmed-naseer` -> `majlis-193`
+- **Hussain Mohamed** `appointee-hussain-mohamed` -> `majlis-34`
+- **Mohamed Nihad** `appointee-mohamed-nihad` -> `majlis-167`

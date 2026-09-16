@@ -6,7 +6,10 @@ import type {
   Graph,
   Person,
   PersonId,
+  PoliticalPost,
   Position,
+  PostCoverage,
+  PostRank,
   Source,
   TimelineEntry,
 } from "./schema";
@@ -72,6 +75,19 @@ export const registry = {
 
   people(): Person[] {
     return graph.persons;
+  },
+
+  /**
+   * People who have held a Majlis seat.
+   *
+   * graph.persons also holds the political appointees named in a ministry pay
+   * sheet, who never sat in the Majlis. Every MP-shaped figure on the site -
+   * the directory, the ranking, the party and tenure tables - runs off this
+   * rather than off people(), so an appointee cannot appear in a member count
+   * with a spending total of zero, or silently join a party's row.
+   */
+  members(): Person[] {
+    return graph.persons.filter((p) => this.seats(p.id).length > 0);
   },
 
   person(id: PersonId): Person | undefined {
@@ -222,7 +238,7 @@ export const registry = {
       if (claim.fiscalYear) byYear[claim.fiscalYear] += claim.amount;
     }
     return {
-      people: graph.persons.length,
+      people: this.members().length,
       peopleWithSpending: new Set(expenditure.map((c) => c.personId)).size,
       amount: expenditure.reduce((sum, c) => sum + c.amount, 0),
       byYear,
@@ -374,7 +390,7 @@ export const registry = {
       { members: number; amount: number; memberYears: number }
     >();
 
-    for (const person of graph.persons) {
+    for (const person of this.members()) {
       const terms = this.termsServed(person.id).length;
       if (!terms) continue;
       const bucket = byTerms.get(terms) ?? {
@@ -408,9 +424,9 @@ export const registry = {
     return Math.round(ms / 86_400_000);
   },
 
-  /** People ordered by total spent, highest first. */
+  /** Members ordered by total spent, highest first. */
   ranked(): Person[] {
-    return [...graph.persons].sort(
+    return [...this.members()].sort(
       (a, b) =>
         this.totalSpent(b.id) - this.totalSpent(a.id) ||
         a.name.localeCompare(b.name),
@@ -420,7 +436,147 @@ export const registry = {
   rankOf(id: PersonId): number {
     return this.ranked().findIndex((p) => p.id === id) + 1;
   },
+
+  // -- political posts ----------------------------------------------------
+  //
+  // Entitlements attached to posts, never money anyone received. Kept out of
+  // every accessor above: nothing here passes through claims(), expenditure()
+  // or totals(), so no spending figure on the site can pick it up.
+
+  politicalPosts(): PoliticalPost[] {
+    return graph.politicalPosts;
+  },
+
+  politicalPostCoverage(): PostCoverage[] {
+    return graph.politicalPostCoverage;
+  },
+
+  /** The posts one body disclosed, in the order its document lists them. */
+  postsByBody(bodyId: string): PoliticalPost[] {
+    return graph.politicalPosts.filter((p) => p.bodyId === bodyId);
+  },
+
+  /**
+   * The rates that hold across ministries, rank by rank.
+   *
+   * Each individual rate is stated by a document. Reading them as standing
+   * rates rather than one ministry's arrangement is an inference, and it rests
+   * on three independently-sourced bodies printing the same figures. That is
+   * why `agreeing` and `differing` are both returned: a ministry paying a rank
+   * differently is a finding, not an error, and hiding it would make the
+   * generalisation look stronger than it is.
+   *
+   * `livingLabels` names the headings read as one slot - Health prints
+   * "Housing" where the others print "Living Allowance". That inference is
+   * made here and nowhere else.
+   */
+  rankLadder(): {
+    rank: PostRank;
+    basic: number;
+    living: number;
+    livingLabels: string[];
+    agreeing: string[];
+    differing: { bodyId: string; readings: string[] }[];
+  }[] {
+    // rank -> body -> the distinct "basic|living" readings that body prints.
+    const byRank = new Map<PostRank, Map<string, Map<string, number>>>();
+    const labels = new Map<PostRank, Set<string>>();
+
+    for (const post of graph.politicalPosts) {
+      if (!post.rank) continue;
+      const living = post.components.find((c) => LIVING_LABELS.includes(c.label));
+      if (post.basic === undefined && living === undefined) continue;
+      const bodies = byRank.get(post.rank) ?? new Map();
+      const readings = bodies.get(post.bodyId) ?? new Map<string, number>();
+      const key = `${post.basic ?? ""}|${living?.amount ?? ""}`;
+      readings.set(key, (readings.get(key) ?? 0) + post.posts);
+      bodies.set(post.bodyId, readings);
+      byRank.set(post.rank, bodies);
+      if (living?.label) {
+        labels.set(post.rank, (labels.get(post.rank) ?? new Set()).add(living.label));
+      }
+    }
+
+    return RANK_ORDER.flatMap((rank) => {
+      const bodies = byRank.get(rank);
+      if (!bodies) return [];
+
+      // The ladder rate is the one the most bodies print. A body votes once
+      // however many posts it lists: a ministry with 44 senior political
+      // directors is one ministry stating one rate, not 44 votes for it.
+      const votes = new Map<string, number>();
+      for (const readings of bodies.values()) {
+        for (const key of readings.keys()) {
+          votes.set(key, (votes.get(key) ?? 0) + 1);
+        }
+      }
+      let top = "";
+      let best = 0;
+      for (const [key, n] of votes) {
+        if (n > best) {
+          top = key;
+          best = n;
+        }
+      }
+
+      const [basic, living] = top.split("|");
+      const agreeing: string[] = [];
+      const differing: { bodyId: string; readings: string[] }[] = [];
+      for (const [bodyId, readings] of bodies) {
+        // A body agrees only if every post it lists at this rank carries the
+        // ladder rate. Foreign Affairs pays 37 of its senior political
+        // directors no living allowance at all, and reporting it as agreeing
+        // because one row happens to match would make the generalisation look
+        // firmer than the documents support.
+        const keys = [...readings.keys()];
+        if (keys.length === 1 && keys[0] === top) {
+          agreeing.push(bodyId);
+        } else {
+          differing.push({
+            bodyId,
+            readings: keys
+              .filter((k) => k !== top)
+              .map((k) => {
+                const [b, l] = k.split("|");
+                const basicPart = b
+                  ? `MVR ${Number(b).toLocaleString("en-US")} basic`
+                  : "no basic salary";
+                const livingPart =
+                  l === "0"
+                    ? "no living allowance"
+                    : l
+                      ? `MVR ${Number(l).toLocaleString("en-US")}`
+                      : "none stated";
+                return `${readings.get(k)} on ${basicPart} and ${livingPart}`;
+              }),
+          });
+        }
+      }
+
+      return [
+        {
+          rank,
+          basic: Number(basic),
+          living: Number(living),
+          livingLabels: [...(labels.get(rank) ?? [])],
+          agreeing,
+          differing,
+        },
+      ];
+    });
+  },
 };
+
+/** The headings the bodies use for the same slot. See rankLadder(). */
+const LIVING_LABELS = ["Living Allowance", "Housing"];
+
+const RANK_ORDER: PostRank[] = [
+  "minister",
+  "state-minister",
+  "deputy-minister",
+  "senior-political-director",
+  "political-director",
+];
 
 function describe(claim: Claim): string {
   switch (claim.type) {

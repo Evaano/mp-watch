@@ -26,6 +26,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             links={[
               { href: "/members", label: dict.navMembers },
               { href: "/parties", label: dict.navParties },
+              { href: "/appointees", label: dict.navAppointees },
             ]}
             menuLabel={dict.navMenu}
           />

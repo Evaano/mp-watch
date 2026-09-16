@@ -4,6 +4,7 @@ export const dict = {
   siteTagline: "The public record of Maldivian public figures",
   navMembers: "Members",
   navParties: "Parties",
+  navAppointees: "Appointees",
   navMenu: "Menu",
   navSpending: "Spending",
   navAbout: "About",
@@ -125,6 +126,14 @@ export const dict = {
   backToList: "All members",
   profileServing: "Currently serving",
   profileFormer: "Former member",
+  profileAppointee: "Political appointee",
+  profileAppointeeNote:
+    "Named in a ministry's own list of political appointees. This person has not sat in the Majlis, so there is no premium record and no ranking here.",
+  profilePayHeading: "What the post pays",
+  profilePayNote:
+    "The terms attached to the post, as the ministry states them. Not a record of money received: the same sheet records no-pay leave and end dates.",
+  profilePayDeduction: (after: number) =>
+    `A 10 per cent deduction applies to basic salary until 31 December 2026, bringing it to MVR ${after.toLocaleString("en-US")}.`,
   profileGlance: "At a glance",
   profileYearsInOffice: "Years in office",
   profileParty: "Party",
@@ -141,6 +150,68 @@ export const dict = {
   stillServing: "present",
   speakerLabel: "Speaker of the Majlis",
   partyLabel: "Party",
+
+  appointeesHeading: "What a political appointment pays",
+  appointeesIntro:
+    "These are the terms attached to a post, not money anyone was paid. Six ministries were asked what their political appointees earn; this is what they answered, and what they left out. Every figure is a rate a document states, so nothing here can be read as a sum received - one of these sheets records no-pay leave, another lists posts that are vacant.",
+  appointeesLadderHeading: "The same four rates, in ministry after ministry",
+  appointeesLadderNote:
+    "Each rate here is stated by a document. Reading them as standing rates rather than one ministry's arrangement is our inference, and it rests on separate ministries printing the same figures without reference to each other.",
+  appointeesLadderAgreement: (ranks: number, bodies: number) =>
+    `${ranks} ranks, each stated identically by up to ${bodies} ministries answering separately.`,
+  appointeesLadderExceptions: "Where a ministry pays something else",
+  appointeesLadderException: (
+    body: string,
+    rank: string,
+    readings: string,
+  ) => `${rank}: ${body} lists ${readings}.`,
+  appointeesMinWageNote: (living: number, wage: number) =>
+    `The lowest rank on the ladder draws a living allowance of MVR ${living.toLocaleString("en-US")} a month on top of basic pay. The monthly minimum wage for large employers is MVR ${wage.toLocaleString("en-US")}.`,
+  appointeesNoTotalNote:
+    "There is no total on this page, and that is deliberate. Multiplying posts by a rate would produce a spending figure no document states: it would ignore vacant posts, part-months, the deduction Finance applies, and the ministries that never answered post by post. The count and the rate are shown separately so nothing here has to be taken on trust.",
+
+  appointeesCoverageHeading: "Who answered, and how",
+  appointeesCoverageIntro:
+    "The honest answer to what political appointments pay begins with who told us. Two ministries gave a row per post; two gave counts and rates; one answered in a scanned table that no machine can read; one is a narrative letter. The gaps are listed here rather than left to be inferred from a short table.",
+  colBody: "Ministry",
+  colAsOf: "As at",
+  colAnswer: "Answer",
+  colPostsStated: "Posts stated",
+  colPostsItemised: "Posts itemised",
+  answerPerPost: "Row per post",
+  answerAggregate: "Counts and rates",
+  answerUnreadable: "Scan, not readable",
+  notStated: "Not stated",
+
+  appointeesBodiesHeading: "What each ministry disclosed",
+  appointeesBodyPosts: (n: number) =>
+    n === 1 ? "1 post" : `${n} posts`,
+  colDesignation: "Designation",
+  colPosts: "Posts",
+  colBasic: "Basic salary",
+  colStatedTotal: "Stated total",
+  appointeesNilNote:
+    "A dash is a nil the document prints, and is not the same as a blank, which is a component the document does not mention.",
+  colRange: "Stated range",
+  colHolder: "Named holder",
+  colFrom: "From",
+  colUntil: "Until",
+  appointeesForeignNote:
+    "This table covers the whole ministry. Only the 125 rows marked Political are political appointments; the rest are the career Foreign Service, shown here because the same document sets both and the contrast is the point.",
+  appointeesForeignTotalNote:
+    "The stated total is monthly and excludes the yearly dress allowance. It is printed as the document prints it and is never recomputed: the components are rounded to whole rufiyaa while the total carries the cents, so a recalculated figure would disagree with the source by up to a rufiyaa.",
+  appointeesHealthOfficeNote:
+    "Every row is labelled Ministry of Social and Family Development, the pre-merger name, although the responding body is Health, Family and Welfare. Printed as the document prints it.",
+  appointeesFinanceNote:
+    "The only one of the six documents that names anybody. A 10 per cent deduction applies to basic salary until 31 December 2026, and is shown where the sheet applies it.",
+  appointeesEducationNote:
+    "A rotated Thaana scan with no text layer. The pay figures and dates are transcribed by hand; the names, designations and job scopes are not, so each row is labelled by the rank its pay corresponds to rather than by the words on the page.",
+  appointeesAggregateHeading: "Ministries that answered with counts",
+  appointeesRangeNote:
+    "Where a ministry gave a range rather than components, the range is the whole monthly package and is not comparable with a basic salary on its own.",
+  appointeesSourcesHeading: "The documents behind this page",
+  appointeesReference: "Reference",
+  appointeesViewDocument: "Open the document",
 
   termLabel: (n: number) => `${ordinal(n)} Majlis`,
   sourceHeading: "Source",
