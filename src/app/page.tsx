@@ -36,7 +36,7 @@ export default function HomePage() {
   }));
 
   const memberYears = ranked.flatMap((p) =>
-    registry.expenditure(p.id).map((c) => c.amount),
+    registry.premium(p.id).map((c) => c.amount),
   );
   const aboveMinimumWage = memberYears.filter(
     (a) => a > MINIMUM_WAGE_ANNUAL,

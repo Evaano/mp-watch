@@ -41,8 +41,23 @@ for (const claim of graph.claims) {
   claimsByPerson.set(claim.personId, list);
 }
 
-function isExpenditure(claim: Claim): claim is ExpenditureClaim {
-  return claim.type === "expenditure";
+/**
+ * A health insurance premium, and nothing else.
+ *
+ * This deliberately narrows on `subtype`, not on `type`. Every spending
+ * figure on this site - the home page total, each member's lead figure, the
+ * party and tenure tables - runs through here, and "expenditure" is a family:
+ * the moment a second kind of expenditure claim lands, matching on type alone
+ * would fold it into all of them silently, with no figure looking wrong.
+ */
+function isPremium(claim: Claim): claim is ExpenditureClaim {
+  return (
+    claim.type === "expenditure" && claim.subtype === "health-insurance-premium"
+  );
+}
+
+function isVip(claim: Claim): claim is ExpenditureClaim {
+  return claim.type === "expenditure" && claim.subtype === "airport-vip";
 }
 
 /** Everything the app knows, read through one module. */
@@ -120,18 +135,32 @@ export const registry = {
     return this.seat(id)?.party ?? null;
   },
 
-  expenditure(id: PersonId): ExpenditureClaim[] {
-    return this.claims(id).filter(isExpenditure);
+  premium(id: PersonId): ExpenditureClaim[] {
+    return this.claims(id).filter(isPremium);
   },
 
-  totalSpent(id: PersonId): number {
-    return this.expenditure(id).reduce((sum, c) => sum + c.amount, 0);
+  totalPremium(id: PersonId): number {
+    return this.premium(id).reduce((sum, c) => sum + c.amount, 0);
+  },
+
+  /** Airport VIP charges, one claim per member per Majlis term. */
+  vip(id: PersonId): ExpenditureClaim[] {
+    return this.claims(id).filter(isVip);
+  },
+
+  totalVip(id: PersonId): number {
+    return this.vip(id).reduce((sum, c) => sum + c.amount, 0);
+  },
+
+  /** VIP movements, which is the count the disclosure leads with. */
+  vipMovements(id: PersonId): number {
+    return this.vip(id).reduce((sum, c) => sum + (c.units ?? 0), 0);
   },
 
   /** Amount per fiscal year, zero-filled across the full range. */
   spendingSeries(id: PersonId): { year: string; value: number }[] {
     const byYear = new Map<string, number>();
-    for (const claim of this.expenditure(id)) {
+    for (const claim of this.premium(id)) {
       if (!claim.fiscalYear) continue;
       byYear.set(claim.fiscalYear, (byYear.get(claim.fiscalYear) ?? 0) + claim.amount);
     }
@@ -143,7 +172,7 @@ export const registry = {
 
   yearsPaid(id: PersonId): number {
     return new Set(
-      this.expenditure(id)
+      this.premium(id)
         .map((c) => c.fiscalYear)
         .filter(Boolean),
     ).size;
@@ -231,7 +260,7 @@ export const registry = {
   // -- aggregates ---------------------------------------------------------
 
   totals() {
-    const expenditure = graph.claims.filter(isExpenditure);
+    const expenditure = graph.claims.filter(isPremium);
     const byYear: Record<string, number> = {};
     for (const year of graph.fiscalYears) byYear[year] = 0;
     for (const claim of expenditure) {
@@ -268,7 +297,7 @@ export const registry = {
     const people = new Set<PersonId>();
 
     for (const claim of graph.claims) {
-      if (!isExpenditure(claim)) continue;
+      if (!isPremium(claim)) continue;
       const held = spans.get(claim.personId);
       if (!held) {
         unknownTerm += 1;
@@ -328,7 +357,7 @@ export const registry = {
     };
 
     for (const claim of graph.claims) {
-      if (!isExpenditure(claim)) continue;
+      if (!isPremium(claim)) continue;
       const from = claim.periodStart ?? "";
       const to = claim.periodEnd ?? "";
       const overlapping = (seatsByPerson.get(claim.personId) ?? []).filter(
@@ -399,7 +428,7 @@ export const registry = {
         memberYears: 0,
       };
       bucket.members += 1;
-      bucket.amount += this.totalSpent(person.id);
+      bucket.amount += this.totalPremium(person.id);
       bucket.memberYears += this.yearsPaid(person.id);
       byTerms.set(terms, bucket);
     }
@@ -428,7 +457,7 @@ export const registry = {
   ranked(): Person[] {
     return [...this.members()].sort(
       (a, b) =>
-        this.totalSpent(b.id) - this.totalSpent(a.id) ||
+        this.totalPremium(b.id) - this.totalPremium(a.id) ||
         a.name.localeCompare(b.name),
     );
   },
@@ -440,7 +469,7 @@ export const registry = {
   // -- political posts ----------------------------------------------------
   //
   // Entitlements attached to posts, never money anyone received. Kept out of
-  // every accessor above: nothing here passes through claims(), expenditure()
+  // every accessor above: nothing here passes through claims(), premium()
   // or totals(), so no spending figure on the site can pick it up.
 
   politicalPosts(): PoliticalPost[] {
@@ -634,7 +663,7 @@ export function toSummary(person: Person): PersonSummary {
     title: person.title,
     constituency: seat?.constituency ?? "",
     constituencyDv: seat?.constituencyDv ?? "",
-    total: registry.totalSpent(person.id),
+    total: registry.totalPremium(person.id),
     yearsPaid: registry.yearsPaid(person.id),
     party: registry.party(person.id),
     photo: photo(person.id),

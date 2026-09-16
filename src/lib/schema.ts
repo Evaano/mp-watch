@@ -152,9 +152,21 @@ export interface ClaimBase {
 /** Money spent by the state on, or paid to, this person. */
 export interface ExpenditureClaim extends ClaimBase {
   type: "expenditure";
-  subtype: "health-insurance-premium" | "salary" | "allowance" | "other";
+  subtype:
+    | "health-insurance-premium"
+    | "airport-vip"
+    | "salary"
+    | "allowance"
+    | "other";
   amount: number;
   currency: "MVR" | "USD";
+  /**
+   * What the amount bought, where the source counts it. The VIP disclosures
+   * lead with the number of airport movements and price them at a flat rate,
+   * so the count is the fact and the money follows from it.
+   */
+  units?: number;
+  unitLabel?: string;
 }
 
 /** Money received from outside the public purse. */

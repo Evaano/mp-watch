@@ -47,7 +47,7 @@ export async function generateMetadata({
     // Travels into search snippets and link previews with no page context to
     // correct it, so it must not read as a payment to the member.
     description: `${person.name} (${seat.constituency ?? ""}) - MVR ${registry
-      .totalSpent(id)
+      .totalPremium(id)
       .toLocaleString("en-US")} in health insurance premiums covering this member and their dependents, 2014-2025.`,
   };
 }
@@ -77,7 +77,7 @@ export default async function MemberPage({
   const terms = registry.termsServed(person.id);
   const party = registry.party(person.id);
   const serving = registry.isServing(person.id);
-  const total = registry.totalSpent(person.id);
+  const total = registry.totalPremium(person.id);
   const sources = registry.sourcesFor(person.id);
   const portrait = photo(person.id);
   // A political appointee named in a ministry pay sheet is a person on this
