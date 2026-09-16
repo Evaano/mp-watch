@@ -172,9 +172,9 @@ pnpm lint
 ## Layout
 
 ```
-scripts/ingest/     PDF -> JSON, plus the Thaana helpers
-src/data/parts/     one partial graph per ingest
-src/data/graph.json merged graph, committed so data changes are reviewable
+scripts/ingest/     PDF -> CSV, plus the Thaana helpers
+data/               the CSVs: the data, and the place to correct it
+src/data/graph.json built from data/, committed so data changes are reviewable
 docs/               data source survey and the identity review queue
 src/lib/            schema, registry (data access), i18n, formatting
 src/components/     shared UI

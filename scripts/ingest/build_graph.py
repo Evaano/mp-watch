@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Merge the ingest parts into one graph, resolving identities.
+"""Turn the committed CSVs in data/ into one graph, resolving identities.
 
-Each ingest writes a partial graph to src/data/parts/. This joins them and
-decides which person records refer to the same human.
+The CSVs are the correction surface; this is where they become persons,
+positions and claims, and where the app's only input file is written.
 
 The joining rule is deliberately strict: an exact match on both the Thaana
 name and the Thaana constituency, and only when that match is unique. Anything
@@ -21,17 +21,22 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import csvio  # noqa: E402
+import validate  # noqa: E402
 from thaana import fold_for_match  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
-PARTS = os.path.join(ROOT, 'src', 'data', 'parts')
 OUT = os.path.join(ROOT, 'src', 'data', 'graph.json')
 REVIEW = os.path.join(ROOT, 'docs', 'identity-review.md')
 
-# The roster is the authority on who served, so it is loaded first and other
-# parts resolve onto it.
-PART_ORDER = ['majlis-members.json', 'allowances.json']
+FISCAL_YEAR = re.compile(r'^20\d\d-20\d\d$')
+
+
+# Each fiscal year runs 28 May -> 27 May, as the disclosure's own header says.
+def year_bounds(fiscal_year):
+    start, end = fiscal_year.split('-')
+    return f'{start}-05-28', f'{end}-05-27'
 
 
 def norm(text):
@@ -40,15 +45,173 @@ def norm(text):
     return re.sub(r'\s+', ' ', (text or '')).strip()
 
 
-def load_parts():
-    parts = []
-    for name in PART_ORDER:
-        path = os.path.join(PARTS, name)
-        if not os.path.exists(path):
-            print(f'  skipping missing part {name}')
+def load_sources():
+    """sources.csv -> Source records, in file order.
+
+    Empty cells are dropped rather than emitted as empty strings: an absent
+    optional field and a present but blank one are different claims about the
+    document, and the schema's optionals mean the first.
+    """
+    _, rows = csvio.read('sources.csv')
+    keys = [('title', 'title'), ('title_dv', 'titleDv'), ('publisher', 'publisher'),
+            ('url', 'url'), ('reference', 'reference'), ('kind', 'kind'),
+            ('period_start', 'periodStart'), ('period_end', 'periodEnd'),
+            ('retrieved', 'retrieved')]
+    out = []
+    for row in rows:
+        source = {'id': row['source_id']}
+        for column, field in keys:
+            if row.get(column):
+                source[field] = row[column]
+        if row.get('checksum_total'):
+            source['checksumTotal'] = int(row['checksum_total'])
+        out.append(source)
+    return out
+
+
+def load_terms():
+    _, rows = csvio.read('terms.csv')
+    return [{'number': int(r['term_number']), 'start': r['start'],
+             'end': r['end'] or None} for r in rows]
+
+
+def load_roster(terms):
+    """majlis-roster.csv -> one person per member id, one position per term."""
+    bounds = {t['number']: t for t in terms}
+    _, rows = csvio.read('majlis-roster.csv')
+
+    persons, positions = {}, []
+    for row in rows:
+        member_id = int(row['majlis_id'])
+        term = int(row['term'])
+        key = f'majlis-{member_id}'
+        if key not in persons:
+            persons[key] = {
+                'id': key,
+                'majlisId': member_id,
+                'name': row['name'],
+                'nameDv': row['name_dv'],
+                'title': None,
+                'photoUrl': row['photo_url'] or None,
+                'sources': [row['source_id']],
+            }
+        positions.append({
+            'id': f'{key}--majlis-{term}',
+            'personId': key,
+            'kind': 'majlis-member',
+            'constituency': row['constituency'],
+            'constituencyDv': row['constituency_dv'],
+            'termNumbers': [term],
+            'start': bounds[term]['start'],
+            'end': bounds[term]['end'],
+            'party': row['party'] or None,
+            'seatNo': int(row['seat_no']) if row['seat_no'] != '' else None,
+            'basis': 'stated',
+            'basisNote': 'Membership is stated by the official roster for this '
+                         "parliament. Dates are the term's own bounds, so a "
+                         'member seated mid-term shows the term start.',
+            'sources': [row['source_id']],
+        })
+    return list(persons.values()), positions
+
+
+def load_speakers():
+    _, rows = csvio.read('majlis-speakers.csv')
+    return [{
+        'id': row['row_id'],
+        'personId': None,          # resolved against the roster below
+        'personNameLatin': row['name'],
+        'kind': 'speaker',
+        'organisation': "People's Majlis",
+        'start': row['start'],
+        'end': row['end'] or None,
+        'basis': 'stated',
+        'sources': [row['source_id']],
+    } for row in rows]
+
+
+def term_for(fiscal_year, terms):
+    start = int(fiscal_year.split('-')[0])
+    for term in terms:
+        # A term with no end is the one still sitting, so it has no upper bound.
+        end = int(term['end'][:4]) if term['end'] else 9999
+        if int(term['start'][:4]) <= start < end:
+            return term['number']
+    return terms[-1]['number']
+
+
+def load_premiums(terms):
+    """premium-payments.csv -> persons, inferred positions and claims.
+
+    The fiscal-year column headers are the year vocabulary. There is no
+    separate file for them: a second place to edit is a sync bug waiting to
+    happen, and the disclosure is what defines the years in the first place.
+    """
+    header, rows = csvio.read('premium-payments.csv')
+    years = [c for c in header if FISCAL_YEAR.match(c)]
+
+    # The CSV is in document order so it reads beside the PDF. The graph has
+    # always been ordered by total; nothing downstream depends on that, but
+    # keeping it means a data change shows up in review as a data change.
+    rows = sorted(rows, key=lambda r: (
+        -sum(int(r[y]) for y in years if r[y]), r['name']))
+
+    persons, positions, claims, notes = [], [], [], []
+    for row in rows:
+        pid = row['row_id']
+        persons.append({
+            'id': pid,
+            'name': row['name'],
+            'nameDv': row['name_dv'],
+            'title': row['title'] or None,
+            'titleDv': row['title_dv'] or None,
+            'possiblySameAs': None,
+            'sources': [row['source_id']],
+        })
+
+        paid = [y for y in years if row[y]]
+        if not paid:
+            # A row printed with no amount in any year. We can record that the
+            # person appears in the disclosure, but not a term or a payment.
+            notes.append(f'{pid}: listed in the disclosure with no amount in any year')
             continue
-        parts.append((name, json.load(io.open(path, encoding='utf-8'))))
-    return parts
+
+        positions.append({
+            'id': f'{pid}--majlis',
+            'personId': pid,
+            'kind': 'majlis-member',
+            'constituency': row['constituency'],
+            'constituencyDv': row['constituency_dv'],
+            'termNumbers': sorted({term_for(y, terms) for y in paid}),
+            'start': year_bounds(paid[0])[0],
+            'end': year_bounds(paid[-1])[1],
+            # The disclosure records payments, not membership. Payment in a
+            # fiscal year strongly implies the seat was held, but the source
+            # never says so, so the app must not claim it did.
+            'basis': 'inferred',
+            'basisNote': 'Derived from the fiscal years in which a premium was paid; '
+                         'the source discloses payments, not terms of service.',
+            'sources': [row['source_id']],
+        })
+
+        for fy in paid:
+            period_start, period_end = year_bounds(fy)
+            claims.append({
+                'id': f'{pid}--premium--{fy}',
+                'personId': pid,
+                'type': 'expenditure',
+                'subtype': 'health-insurance-premium',
+                'amount': int(row[fy]),
+                'currency': 'MVR',
+                'fiscalYear': fy,
+                'periodStart': period_start,
+                'periodEnd': period_end,
+                'locator': {'page': int(row['source_page']),
+                            'row': int(row['source_row'])},
+                'sources': [row['source_id']],
+            })
+
+    return persons, positions, claims, years, notes
 
 
 def build_roster_index(positions, persons_by_id, roster_ids):
@@ -124,23 +287,22 @@ def consolidate_roster(persons, positions):
 
 
 def main():
-    parts = load_parts()
+    # Validation runs first and aborts the build. A graph written from a CSV
+    # that failed a check is an artefact nobody can trust, and it would be
+    # committed before anyone looked at it.
+    validate.run_or_exit()
 
-    sources, persons, positions, claims, warnings = [], [], [], [], []
-    seen_sources = set()
-    for name, part in parts:
-        for source in part.get('sources', []):
-            if source['id'] not in seen_sources:
-                seen_sources.add(source['id'])
-                sources.append(source)
-        persons.extend(part.get('persons', []))
-        positions.extend(part.get('positions', []))
-        claims.extend(part.get('claims', []))
-        warnings.extend(part.get('warnings', []))
-        # Carry the fiscal-year vocabulary through from whichever part has it.
-        if part.get('fiscalYears'):
-            fiscal_years = part['fiscalYears']
-            terms = part.get('terms', [])
+    sources = load_sources()
+    terms = load_terms()
+
+    # The roster is the authority on who served, so it loads first and the
+    # disclosure resolves onto it.
+    persons, positions = load_roster(terms)
+    positions += load_speakers()
+    premium_persons, premium_positions, claims, fiscal_years, warnings = (
+        load_premiums(terms))
+    persons += premium_persons
+    positions += premium_positions
 
     # The Majlis assigns a NEW member id in every parliament (18th = 1-85,
     # 19th = 86-174, 20th = 175-268), so the roster arrives as person-terms
@@ -251,7 +413,7 @@ def main():
     graph = {
         'meta': {
             'generatedBy': 'scripts/ingest/build_graph.py',
-            'datasets': sorted(seen_sources),
+            'datasets': sorted(s['id'] for s in sources),
         },
         'sources': sources,
         'persons': kept_persons,

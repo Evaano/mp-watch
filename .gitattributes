@@ -1,0 +1,4 @@
+# The CSVs in data/ are written and compared byte for byte by the ingest.
+# core.autocrlf would rewrite their line endings on checkout, so every
+# extractor re-run would report every row as changed.
+*.csv text eol=lf

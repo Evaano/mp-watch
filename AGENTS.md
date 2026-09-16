@@ -28,16 +28,21 @@ pnpm build                                      # prerenders every page
 pnpm lint
 
 pip install -r scripts/ingest/requirements.txt
-python scripts/ingest/extract_allowances.py     # -> src/data/parts/allowances.json
-python scripts/ingest/majlis_members.py         # -> src/data/parts/majlis-members.json
+python scripts/ingest/validate.py               # checks data/*.csv; build_graph runs it first
+python scripts/ingest/extract_allowances.py     # -> data/premium-payments.csv
+python scripts/ingest/majlis_members.py         # -> data/majlis-roster.csv + majlis-speakers.csv
 python scripts/ingest/build_graph.py            # -> src/data/graph.json + docs/identity-review.md
 python scripts/ingest/mirror_photos.py          # -> public/members/*.webp + src/data/photo-manifest.json
 ```
 
-Ingests write a *partial graph* to `src/data/parts/`. `build_graph.py` merges
-them and resolves identities. Fetched pages and source PDFs are cached under
-`scripts/ingest/source/` and committed, so a build reproduces without depending
-on a government site being up or unchanged.
+**`data/*.csv` is the data.** Extractors write it, `build_graph.py` reads it,
+and a wrong figure is fixed by editing the cell and rebuilding — no Python, no
+re-reading a PDF. Read `data/README.md` before touching one.
+
+An extractor re-run **compares and fails** by default; `--accept` is what
+discards hand corrections, and it prints what it is discarding first. Fetched
+pages and source PDFs are cached under `scripts/ingest/source/` and committed,
+so a build reproduces without depending on a government site being up.
 
 ## The data model
 
