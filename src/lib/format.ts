@@ -1,9 +1,3 @@
-import type { Lang } from "./i18n";
-
-/**
- * Figures stay in Latin digits in both languages. Maldivian official
- * publications, including the source document, print them that way.
- */
 const LOCALE = "en-US";
 
 export function money(amount: number): string {
@@ -25,8 +19,4 @@ export function count(n: number): string {
 export function fiscalYearShort(year: string): string {
   const [from, to] = year.split("-");
   return `${from.slice(2)}/${to.slice(2)}`;
-}
-
-export function href(lang: Lang, path = ""): string {
-  return `/${lang}${path}`;
 }

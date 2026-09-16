@@ -7,23 +7,33 @@ Two things this gives us that the premium disclosure cannot:
   - party, and the Thaana/Latin name pair from the official record rather than
     from our own transliteration
 
-Run:  python scripts/ingest/majlis_members.py
-Out:  src/data/parts/majlis-members.json
+The roster arrives as person-*terms*, one row per member per parliament, and
+the CSV keeps it that way: that is what the source publishes, and collapsing
+it into people is an identity decision that belongs in build_graph.py where
+the review file can see it.
+
+Run:  python scripts/ingest/majlis_members.py [--accept]
+Out:  data/majlis-roster.csv, data/majlis-speakers.csv
 """
 import html
-import io
 import json
 import os
 import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import csvio  # noqa: E402
 from fetch import get  # noqa: E402
 from thaana import slugify  # noqa: E402
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
-OUT = os.path.join(ROOT, 'src', 'data', 'parts', 'majlis-members.json')
+ROSTER_CSV = 'majlis-roster.csv'
+SPEAKERS_CSV = 'majlis-speakers.csv'
+# (majlis_id, term) is an identifier the source itself assigns, so this file
+# needs no row_id. The premium disclosure's row numbers are the opposite case:
+# 11 repeat and 5 are skipped, which is why that CSV carries one.
+ROSTER_COLUMNS = ['majlis_id', 'term', 'name', 'name_dv', 'constituency',
+                  'constituency_dv', 'party', 'seat_no', 'photo_url', 'source_id']
+SPEAKERS_COLUMNS = ['row_id', 'name', 'start', 'end', 'source_id']
 
 BASE = 'https://majlis.gov.mv'
 
@@ -122,9 +132,9 @@ def parse_speakers(markup):
         out.append({'name': name, 'start': iso(start), 'end': iso(end)})
     return out
 
-
 def main():
-    persons, positions = {}, []
+    accept = '--accept' in sys.argv
+    roster, speakers = [], []
     counts = {}
 
     for term in sorted(TERMS):
@@ -137,92 +147,42 @@ def main():
 
         for member_id, en in latin.items():
             dv = thaana.get(member_id, {})
-            key = f'majlis-{member_id}'
-
-            if key not in persons:
-                persons[key] = {
-                    'id': key,
-                    'majlisId': member_id,
-                    'name': dv.get('name', ''),
-                    'nameLatin': en['name'],
-                    'title': None,
-                    'photoUrl': en.get('photo'),
-                    'sources': [ROSTER_SOURCE],
-                }
-
-            positions.append({
-                'id': f'{key}--majlis-{term}',
-                'personId': key,
-                'kind': 'majlis-member',
-                'constituency': dv.get('constituency', ''),
-                'constituencyLatin': en['constituency'],
-                'termNumbers': [term],
-                'start': TERMS[term]['start'],
-                'end': TERMS[term]['end'],
-                'party': en.get('party'),
-                'seatNo': en.get('seatNo'),
-                'basis': 'stated',
-                'basisNote': 'Membership is stated by the official roster for this '
-                             'parliament. Dates are the term\'s own bounds, so a '
-                             'member seated mid-term shows the term start.',
-                'sources': [ROSTER_SOURCE],
+            roster.append({
+                'majlis_id': member_id,
+                'term': term,
+                'name': en['name'],
+                'name_dv': dv.get('name', ''),
+                'constituency': en['constituency'],
+                'constituency_dv': dv.get('constituency', ''),
+                'party': en.get('party') or '',
+                'seat_no': '' if en.get('seatNo') is None else en['seatNo'],
+                'photo_url': en.get('photo') or '',
+                'source_id': ROSTER_SOURCE,
             })
 
-    speakers = parse_speakers(get(f'{BASE}/en/speakers-history'))
-    for entry in speakers:
-        positions.append({
-            'id': f'speaker--{slugify(entry["name"])}--{entry["start"]}',
-            'personId': None,          # resolved against the roster in the build
-            'personNameLatin': entry['name'],
-            'kind': 'speaker',
-            'organisation': "People's Majlis",
+    for entry in parse_speakers(get(f'{BASE}/en/speakers-history')):
+        speakers.append({
+            # Seeded from the id this ingest has always minted, then opaque:
+            # correcting a spelling must not rename the row.
+            'row_id': f'speaker--{slugify(entry["name"])}--{entry["start"]}',
+            'name': entry['name'],
             'start': entry['start'],
             'end': entry['end'],
-            'basis': 'stated',
-            'sources': [SPEAKERS_SOURCE],
+            'source_id': SPEAKERS_SOURCE,
         })
 
-    part = {
-        'meta': {'generatedBy': 'scripts/ingest/majlis_members.py'},
-        'sources': [
-            {
-                'id': ROSTER_SOURCE,
-                'title': "People's Majlis member roster",
-                'publisher': "People's Majlis",
-                'url': f'{BASE}/en/20-parliament/members',
-                'kind': 'official-register',
-            },
-            {
-                'id': SPEAKERS_SOURCE,
-                'title': "People's Majlis previous speakers",
-                'publisher': "People's Majlis",
-                'url': f'{BASE}/en/speakers-history',
-                'kind': 'official-register',
-            },
-        ],
-        'persons': list(persons.values()),
-        'positions': positions,
-        'claims': [],
-        'warnings': [],
-    }
+    csvio.sync(ROSTER_CSV, ROSTER_COLUMNS, roster, accept)
+    csvio.sync(SPEAKERS_CSV, SPEAKERS_COLUMNS, speakers, accept)
 
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with io.open(OUT, 'w', encoding='utf-8') as fh:
-        json.dump(part, fh, ensure_ascii=False, indent=2)
-        fh.write('\n')
-
-    seats = [p for p in positions if p['kind'] == 'majlis-member']
-    print(f'wrote {os.path.relpath(OUT, ROOT)}')
     for term in sorted(counts):
         print(f'  {term}th parliament   {counts[term]} members')
-    print(f'  unique people      {len(persons)}')
-    print(f'  seat positions     {len(seats)}')
-    print(f'  with a party       {sum(1 for p in seats if p.get("party"))}')
-    print(f'  with a photo       {sum(1 for p in persons.values() if p.get("photoUrl"))}')
-    print(f'  speaker positions  {len(speakers)}')
-    missing_dv = sum(1 for p in persons.values() if not p['name'])
+    print(f'  person-terms       {len(roster)}')
+    print(f'  with a party       {sum(1 for r in roster if r["party"])}')
+    print(f'  with a photo       {sum(1 for r in roster if r["photo_url"])}')
+    print(f'  speaker rows       {len(speakers)}')
+    missing_dv = sum(1 for r in roster if not r['name_dv'])
     if missing_dv:
-        print(f'  WARN missing Thaana name for {missing_dv} people')
+        print(f'  WARN missing Thaana name for {missing_dv} person-terms')
 
 
 if __name__ == '__main__':

@@ -39,25 +39,6 @@ export const MINIMUM_WAGE_ANNUAL = MINIMUM_WAGE_MONTHLY.value * 12;
  * Resident Maldivian citizens at the 2022 census. Citizens rather than total
  * residents, because Aasandha covers citizens.
  */
-export const CITIZENS: Comparator = {
-  value: 382639,
-  unit: "people",
-  sourceTitle: "Population and Housing Census 2022",
-  sourcePublisher: "Maldives Bureau of Statistics",
-  sourceUrl: "https://census.gov.mv/2022/",
-  asOf: "2022-09-01",
-};
-
-/**
- * Universal health cover. The original Aasandha scheme capped cover at
- * MVR 100,000 per person per year; Husnuvaa Aasandha removed that ceiling in
- * February 2014.
- *
- * The date matters for how this dataset may be described. The disclosure
- * begins in May 2014, so the whole of it falls *after* the cap was lifted. Any
- * framing that contrasts these premiums with a capped citizen entitlement
- * would be false, and this comment exists so nobody reintroduces that framing.
- */
 export const AASANDHA = {
   uncappedSince: "2014-02-01",
   sourceTitle: "Aasandha Scheme overview",
@@ -87,9 +68,3 @@ export const USD_RATE: Comparator = {
 export function toUsd(mvr: number): number {
   return Math.round(mvr / USD_RATE.value);
 }
-
-export const COMPARATOR_SOURCES = [
-  MINIMUM_WAGE_MONTHLY,
-  CITIZENS,
-  USD_RATE,
-] as const;

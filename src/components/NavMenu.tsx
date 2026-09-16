@@ -4,19 +4,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 /**
- * The header nav. Inline from `sm` up; a burger below it, because three links
- * plus the language switch pushed "MP Watch" onto a second line on a phone.
- *
- * The language switch lives inside the burger with the rest: on a bilingual
- * site it is navigation, not a setting.
+ * The header nav. Inline from `sm` up; a burger below it, because the links
+ * pushed "MP Watch" onto a second line on a phone.
  */
 export function NavMenu({
   links,
-  language,
   menuLabel,
 }: {
   links: { href: string; label: string }[];
-  language: { href: string; label: string; lang: string };
   menuLabel: string;
 }) {
   const [open, setOpen] = useState(false);
@@ -42,14 +37,6 @@ export function NavMenu({
             {link.label}
           </Link>
         ))}
-        <Link
-          href={language.href}
-          lang={language.lang}
-          hrefLang={language.lang}
-          className="flex min-h-11 items-center rounded-card border border-line-strong px-3 hover:border-accent hover:text-accent-ink"
-        >
-          {language.label}
-        </Link>
       </nav>
 
       <button
@@ -93,17 +80,6 @@ export function NavMenu({
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href={language.href}
-                lang={language.lang}
-                hrefLang={language.lang}
-                onClick={() => setOpen(false)}
-                className="flex min-h-12 items-center hover:text-accent-ink"
-              >
-                {language.label}
-              </Link>
-            </li>
           </ul>
         </nav>
       ) : null}

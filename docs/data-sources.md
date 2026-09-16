@@ -75,7 +75,41 @@ Identity resolution is the whole game: build `person` with {majlis_id, seat_no, 
 5. EC political parties registry — chairperson, address, website, bylaw and **manifesto** downloads. Store membership counts with their as-of date (30 Jun 2026 registry vs 31 Dec 2025 news figures are different snapshots, not a contradiction).
 6. EC statistics reports (text PDFs, bilingual) cover LCE2020/LCE2014/PE2019/PE2014/RI2013/2007 — including years where the XLSX 404s.
 
+## The RTI vault — the source of most of what is now ingested
+
+`rtidhonbe.com/vault` is a community archive of RTI responses, and it has a
+plain JSON API that needs no key:
+
+```
+GET https://rtidhonbe.com/api/vault          # the index: id, title, flairs, upvotes
+GET https://rtidhonbe.com/api/vault/{id}     # one entry: institution, request text,
+                                             # status, and direct file URLs
+```
+
+Files are served from `icom.sgp1.digitaloceanspaces.com` and are stable URLs.
+Entry `2abea3e3628a7d28` is where the 2014–2025 premium disclosure and the
+18th/19th VIP tables came from; `cbd1f860a2d6d6d6` is the 20th-Majlis VIP and
+diplomatic passport list.
+
+**Still uningested, and per-MP:** nothing further in the vault is per-member —
+the rest is institutional spending (oath ceremony, presidential commissions,
+Majlis secretariat and Muraidhoo assets, Club Maldives entries for 23 bodies,
+SOE media sponsorships) plus statistics (child abuse, cancer, ACC recoveries).
+The Majlis secretariat and Muraidhoo asset/expense sheets are the most likely
+next fit, but they are institutional rather than member-level, so they do not
+join the claim model without a new subject type.
+
 ## Income & assets — weakest area by far
+
+**Now ingested:** what a political appointment pays, from six ministries'
+RTI responses — see `data/political-posts-*.csv` and `/appointees`. Only
+Finance names anybody; Homeland and Health answered with counts; Education is
+an unreadable scan whose Thaana columns are still open work.
+
+**Still missing:** the four ministries never asked, and the pay ranges the two
+aggregate answers leave undescribed (30 of Homeland's 57 posts, 17 of
+Health's 30).
+
 1. **Salary structure PDF** — 1 fetch, text-based. Official MP remuneration baseline (91 MPs at 20,000 living allowance; three-tier Speaker/Deputy/member). Wide table collapses under naive extraction — use pdfplumber column positions. Confirms committee allowance is pro-rated by committee attendance, which makes your XLSX attendance data *financially* meaningful — a strong, defensible story: "MP missed N committee meetings; allowance is pro-rated by attendance."
 2. **Asset declarations** — filing metadata only. See gaps.
 3. `/Party/Grant` (above) for party-level money in politics.

@@ -20,23 +20,17 @@ tracks how many people the state insures, not a larger benefit to that member.
 | Ingestion | Python + pdfplumber, in `scripts/ingest/` |
 | Rendering | Fully static. Every page is prerendered at build time. |
 
-## Bilingual and RTL
+## Copy and Thaana
 
-The app ships in English and Dhivehi under `/(en|dv)`. `src/proxy.ts` sends
-bare paths to a locale using `Accept-Language`.
+The site is English. Every visible string lives in `src/lib/i18n.ts`;
+components never hardcode copy, and only serializable strings cross into
+Client Components.
 
-Every visible string lives in `src/lib/i18n.ts`. Components never hardcode
-copy, and only serializable strings cross into Client Components.
-
-Two things that are easy to get wrong and are handled deliberately:
-
-- **Thaana optical size.** Thaana renders smaller than Latin at an equal
-  `font-size`, so it gets a bump. The rules in `globals.css` use attribute
-  selectors, which match only elements carrying `lang` and never their
-  descendants, so the scale cannot compound.
-- **Bidi and figures.** Any number, date range or year sits in `.numeral`,
-  which isolates it from the surrounding text direction. Without it, `2014-2025`
-  displays as `2025-2014` inside a Dhivehi sentence.
+Thaana still lives in the data, because it is the identity join key: the Latin
+constituency name drifts between terms ("Hithadhoo Uthuru Dhaaira" becomes
+"North Hithadhoo") while the Thaana is stable. A Person carries `nameDv` and a
+Position carries `constituencyDv`; nothing renders either, but the member
+search matches them, so a reader who types a name in Thaana still finds it.
 
 ## Data model
 
@@ -171,20 +165,20 @@ Decomposing an aggregate is sound; "this member covers N dependents" is not.
 ```bash
 pnpm install
 pnpm dev          # http://localhost:3000
-pnpm build        # prerenders every member page in both languages
+pnpm build        # prerenders every member page
 pnpm lint
 ```
 
 ## Layout
 
 ```
-scripts/ingest/     PDF -> JSON, plus the Thaana helpers
-src/data/parts/     one partial graph per ingest
-src/data/graph.json merged graph, committed so data changes are reviewable
+scripts/ingest/     PDF -> CSV, plus the Thaana helpers
+data/               the CSVs: the data, and the place to correct it
+src/data/graph.json built from data/, committed so data changes are reviewable
 docs/               data source survey and the identity review queue
 src/lib/            schema, registry (data access), i18n, formatting
 src/components/     shared UI
-src/app/[lang]/     routes
+src/app/           routes
 ```
 
 `src/lib/registry.ts` is the only module that reads the graph, so moving to a

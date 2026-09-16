@@ -56,45 +56,12 @@
   --color-flag-wash: var(--flag-wash);
   --radius-card: var(--radius);
   --font-sans: var(--font-latin), system-ui, sans-serif;
-  --font-thaana: var(--font-thaana), var(--font-latin), system-ui, sans-serif;
   --font-mono: var(--font-mono-latin), ui-monospace, monospace;
 }
 
 html {
   background: var(--surface);
   color: var(--ink);
-}
-
-/* Thaana needs more leading than Latin at the same size or the vowel marks
-   collide with the line above. Applied by language, not by element. */
-:lang(dv) {
-  font-family: var(--font-thaana);
-  line-height: 1.9;
-  /* Thaana fili sit above and below the consonant; letter-spacing pulls the
-     marks away from their base, so it stays at zero. */
-  letter-spacing: 0;
-}
-
-/* Thaana sits optically smaller than Latin at an equal font-size, so it gets a
-   bump. The attribute selector only matches elements that carry lang, never
-   their descendants, so the two rules below can never compound: a Dhivehi page
-   scales once at the root, and a Dhivehi island inside an English page scales
-   once at the island. */
-html[lang="dv"] {
-  font-size: 116%;
-}
-
-[lang="dv"]:not(html) {
-  font-size: 1.14em;
-}
-
-/* MV Iyyu ships a single weight. Asking for 500 or 700 would make the browser
-   synthesise a bold by smearing the outline, which on Thaana's fine strokes
-   and stacked fili turns into mush. Turning synthesis off means a heading
-   marked font-semibold simply renders in the one real weight, which is the
-   better of the two outcomes. */
-:lang(dv) {
-  font-synthesis-weight: none;
 }
 
 /* Scroll reveal, done in CSS rather than JavaScript.
@@ -148,17 +115,9 @@ html[lang="dv"] {
   letter-spacing: -0.02em;
 }
 
-/* Small supporting text: eyebrow labels and the notes under a figure.
-   Two reasons these need their own classes rather than raw utilities.
-
-   First, they were set in absolute px, which the Thaana size bump cannot touch
-   because that bump is relative. Second, Thaana needs more height than Latin at
-   the same nominal size: the fili sit above *and* below the consonant, so a
-   size that is merely small in Latin becomes unreadable in Thaana. A multiplier
-   cannot fix that on its own, so Dhivehi gets a floor instead.
-
-   Uppercase and letter-spacing are dropped for Thaana as well: the script has
-   no case, and tracking pulls the fili away from the letter they belong to. */
+/* Small supporting text: eyebrow labels and the notes under a figure. They
+   get their own classes rather than raw utilities so the two sizes stay in one
+   place and cannot drift apart across call sites. */
 .label-eyebrow {
   font-size: 11px;
   line-height: 1.4;
@@ -166,21 +125,9 @@ html[lang="dv"] {
   letter-spacing: 0.03em;
 }
 
-.label-eyebrow:lang(dv) {
-  font-size: 16px;
-  line-height: 1.7;
-  text-transform: none;
-  letter-spacing: 0;
-}
-
 .label-note {
   font-size: 0.75rem;
   line-height: 1.5;
-}
-
-.label-note:lang(dv) {
-  font-size: 16px;
-  line-height: 1.85;
 }
 
 @media (min-width: 640px) {
@@ -191,28 +138,17 @@ html[lang="dv"] {
   .label-note {
     font-size: 0.875rem;
   }
-
-  .label-eyebrow:lang(dv) {
-    font-size: 17px;
-  }
-
-  .label-note:lang(dv) {
-    font-size: 17px;
-  }
 }
 
-/* Figures stay in Latin digits and stay LTR even inside an RTL sentence. */
+/* Figures: tabular, so columns of them line up digit for digit. */
 .numeral {
   /* The font variable set by next/font, not the @theme token of the same
      idea. Tailwind's `@theme inline` substitutes its tokens at definition
      time, so `var(--font-mono)` resolves to nothing here; font-family then
      becomes invalid at computed-value time and, being an inherited property,
-     silently falls back to whatever the parent uses. On a Dhivehi page that is
-     the Thaana face, which cost the figures their tabular alignment. */
+     silently falls back to whatever the parent uses. */
   font-family: var(--font-mono-latin), ui-monospace, monospace;
   font-variant-numeric: tabular-nums;
-  direction: ltr;
-  unicode-bidi: isolate;
 }
 
 /* Native-feeling touch behaviour: no grey flash on tap, no rubber-band on the

@@ -1,0 +1,35 @@
+﻿row_id,source_row,name,office,designation,rank,occupied_date,termination_date,rejoined_date,no_pay_leave,basic_salary,basic_after_10pct_deduction,living_allowance,phone_allowance,car_allowance,source_id
+fin--001,1,Mohamed Shafeeq,Ministry of Finance and Planning,Minister of Finance and Plaining,minister,2023-11-17,2024-09-30,,,42500,,15000,1000,7500,rti-finance-political-staff
+fin--002,2,Moosa Zameer,Ministry of Finance and Planning,Minister of Finance and Plaining,minister,2024-10-01,,,,42500,38250,15000,1000,7500,rti-finance-political-staff
+fin--003,3,Ahmed Munawar,Ministry of Finance and Planning,Advisor to the Minister,,2023-12-12,2024-07-22,,,42500,,15000,1000,,rti-finance-political-staff
+fin--004,4,Ahmed Naseer,Ministry of Finance and Planning,Advisor to the Minister,,2023-12-12,2024-05-01,2025-01-01,2025-07-11,42500,38250,15000,1000,,rti-finance-political-staff
+fin--005,5,Hussain Sham Adam,Ministry of Finance and Planning,Minister of State for Finance and Planning,state-minister,2023-11-21,,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--006,6,Ahmed Mazin,Ministry of Finance and Planning,Minister of State for Finance and Planning,state-minister,2023-11-21,,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--007,7,Zidna Ibrahim,Ministry of Finance and Planning,Minister of State for Finance and Planning,state-minister,2023-12-13,,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--008,8,Mohamed Dilshan Abdulla,Ministry of Finance and Planning,Minister of State for Finance and Planning (Planning),state-minister,2024-12-16,2025-02-04,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--009,9,Husham Ali,Ministry of Finance and Planning,Minister of State for Finance and Planning (Planning),state-minister,2024-12-26,,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--010,10,Hussain Imran Abdul Muhaimin,Ministry of Finance and Planning,Minister of State for Finance and Planning (Planning),state-minister,2024-12-26,,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--011,11,Mohamed Nihad,Ministry of Finance and Planning,Minister of State for Finance and Planning,state-minister,2025-01-21,,,,29500,26550,12500,1500,,rti-finance-political-staff
+fin--012,12,Mohamed Azad,Ministry of Finance and Planning,Accountant General,,2023-04-04,,,,29500,,12500,1500,,rti-finance-political-staff
+fin--013,13,Ahmed Saaid Musthafa,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2023-11-27,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--014,14,Ahmed Aiman,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2023-11-28,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--015,15,Hassan Miras,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2023-12-03,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--016,16,Mohamed Anas,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2023-12-11,2025-03-13,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--017,17,Mohamed Anas,Ministry of Finance and Planning,President of PCB,,2025-03-13,,,,41000,,14000,1000,,rti-finance-political-staff
+fin--018,18,Ahmed Ajwed,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2023-12-19,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--019,19,Aishath Umaima,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2024-03-21,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--020,20,Ali Rasheed,Ministry of Finance and Planning,Deputy Minister (Planning),deputy-minister,2024-12-26,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--021,21,Ibrahim Aleem,Ministry of Finance and Planning,Deputy Minister (Planning),deputy-minister,2024-12-26,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--022,22,Ibrahim Auraaf,Ministry of Finance and Planning,Deputy Minister (Planning),deputy-minister,2024-12-26,,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--023,23,Athuhar Ibrahim Rasheed,Ministry of Finance and Planning,Deputy Minister,deputy-minister,2023-12-24,2025-11-02,,,18000,16200,12500,1000,,rti-finance-political-staff
+fin--024,24,Fathimath Salaha,Ministry of Finance and Planning,Chief Internal Auditor,,2023-04-13,2024-09-01,,,18000,,12500,1000,,rti-finance-political-staff
+fin--025,25,Ahmed Yaish Mohamed,Ministry of Finance and Planning,Senior Political Director (Planning),senior-political-director,2024-12-26,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--026,26,Ali Fayyaz Faiz,Ministry of Finance and Planning,Senior Political Director (Planning),senior-political-director,2024-12-26,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--027,27,Ishaan Ahmed,Ministry of Finance and Planning,Senior Political Director (Planning),senior-political-director,2024-12-26,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--028,28,Nazma Nizam,Ministry of Finance and Planning,Senior Political Director (Planning),senior-political-director,2024-12-26,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--029,29,Aishath Riushana,Ministry of Finance and Planning,Senior Political Director,senior-political-director,2023-12-10,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--030,30,Hussain Mohamed,Ministry of Finance and Planning,Senior Political Director,senior-political-director,2024-05-16,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--031,31,Hassan Ihsan,Ministry of Finance and Planning,Senior Political Director (Planning),senior-political-director,2024-12-26,,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--032,32,Hussain Shaam,Ministry of Finance and Planning,Senior Political Director (Planning),senior-political-director,2024-12-16,2025-01-05,,,15000,13500,10000,500,,rti-finance-political-staff
+fin--033,33,Mohamed Zayan Zubair,Ministry of Finance and Planning,Political Director,political-director,2024-08-18,2025-08-11,,,11000,,9000,350,,rti-finance-political-staff
+fin--034,34,Aminath Miyasha Mahir,Ministry of Finance and Planning,Personal Assistant to the Minister,,2023-12-09,,,,11000,,9000,500,,rti-finance-political-staff

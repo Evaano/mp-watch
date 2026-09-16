@@ -1,18 +1,18 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { MemberCard } from "@/components/MemberCard";
 import { Numeral } from "@/components/Numeral";
 import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
 import { YearTable } from "@/components/YearTable";
 import {
+  AASANDHA,
   MINIMUM_WAGE_ANNUAL,
   MINIMUM_WAGE_MONTHLY,
   USD_RATE,
   toUsd,
 } from "@/lib/comparators";
-import { href, money } from "@/lib/format";
-import { getDict, isLang } from "@/lib/i18n";
+import { money } from "@/lib/format";
+import { dict } from "@/lib/i18n";
 import { CURRENT_PER_HEAD_RATE } from "@/lib/premium";
 import { registry, toSummary } from "@/lib/registry";
 
@@ -24,15 +24,7 @@ import { registry, toSummary } from "@/lib/registry";
  * a re-ingest cannot leave a stale number in a headline. The caveat travels
  * with the figure it qualifies rather than sitting in a footnote.
  */
-export default async function HomePage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  if (!isLang(lang)) notFound();
-  const dict = getDict(lang);
-
+export default function HomePage() {
   const source = registry.primarySource();
   const totals = registry.totals();
   const ranked = registry.ranked();
@@ -45,7 +37,7 @@ export default async function HomePage({
   }));
 
   const memberYears = ranked.flatMap((p) =>
-    registry.expenditure(p.id).map((c) => c.amount),
+    registry.premium(p.id).map((c) => c.amount),
   );
   const aboveMinimumWage = memberYears.filter(
     (a) => a > MINIMUM_WAGE_ANNUAL,
@@ -153,7 +145,7 @@ export default async function HomePage({
               {dict.actPartyBody}
             </p>
             <Link
-              href={href(lang, "/parties")}
+              href="/parties"
               className="mt-6 inline-block rounded-card border border-line-strong px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent-ink"
             >
               {dict.seeParties}
@@ -208,7 +200,7 @@ export default async function HomePage({
           <p className="label-note mt-3 max-w-[70ch] text-ink-muted">
             {dict.aasandhaNote}{" "}
             <a
-              href="https://www.aasandha.mv/en/scheme/aasandha-scheme/overview"
+              href={AASANDHA.sourceUrl}
               rel="noreferrer"
               className="text-accent-ink underline underline-offset-4"
             >
@@ -229,7 +221,6 @@ export default async function HomePage({
               <li key={person.id} className="contents">
                 <MemberCard
                   member={summary}
-                  lang={lang}
                   yearLabel={
                     summary.yearsPaid === 1 ? dict.yearOne : dict.yearMany
                   }
@@ -239,7 +230,7 @@ export default async function HomePage({
           })}
         </ul>
         <Link
-          href={href(lang, "/members")}
+          href="/members"
           className="mt-6 inline-block rounded-card border border-line-strong px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent-ink"
         >
           {dict.seeAllMembers(totals.people)}

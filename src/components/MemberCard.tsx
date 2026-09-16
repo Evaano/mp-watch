@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ConstituencyName, MemberName } from "./MemberName";
 import { Numeral } from "./Numeral";
-import { href } from "@/lib/format";
 import type { PersonSummary } from "@/lib/registry";
-import type { Lang } from "@/lib/i18n";
 
 /**
  * One member, as a card in the directory grid.
@@ -15,16 +13,14 @@ import type { Lang } from "@/lib/i18n";
  */
 export function MemberCard({
   member,
-  lang,
   yearLabel,
 }: {
   member: PersonSummary;
-  lang: Lang;
   yearLabel: string;
 }) {
   return (
     <Link
-      href={href(lang, `/mp/${member.id}`)}
+      href={`/mp/${member.id}`}
       className="group flex flex-col rounded-card border border-line bg-surface-raised p-3 transition-colors hover:border-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:p-4"
     >
       <div className="relative mx-auto aspect-square w-20 overflow-hidden rounded-full border border-line bg-surface-sunken sm:w-24">
@@ -41,15 +37,15 @@ export function MemberCard({
             aria-hidden
             className="flex h-full w-full items-center justify-center text-2xl text-ink-muted"
           >
-            {member.nameLatin.charAt(0).toUpperCase()}
+            {member.name.charAt(0).toUpperCase()}
           </span>
         )}
       </div>
 
       <div className="mt-3 text-center">
-        <MemberName member={member} lang={lang} />
+        <MemberName member={member} />
         <p className="label-note mt-1 text-ink-muted">
-          <ConstituencyName member={member} lang={lang} />
+          <ConstituencyName member={member} />
         </p>
         {member.party ? (
           <p className="label-eyebrow mt-1.5 text-ink-muted">{member.party}</p>

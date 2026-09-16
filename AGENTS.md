@@ -24,20 +24,28 @@ that its claims hold up, so correctness outranks speed and features here.
 
 ```bash
 pnpm dev                                        # localhost:3000
-pnpm build                                      # prerenders every page, both languages
+pnpm build                                      # prerenders every page
 pnpm lint
 
 pip install -r scripts/ingest/requirements.txt
-python scripts/ingest/extract_allowances.py     # -> src/data/parts/allowances.json
-python scripts/ingest/majlis_members.py         # -> src/data/parts/majlis-members.json
+python scripts/ingest/validate.py               # checks data/*.csv; build_graph runs it first
+python scripts/ingest/extract_allowances.py     # -> data/premium-payments.csv
+python scripts/ingest/majlis_members.py         # -> data/majlis-roster.csv + majlis-speakers.csv
+python scripts/ingest/rti_20th_majlis.py        # -> data/rti-20th-majlis.csv
+python scripts/ingest/political_posts.py        # -> data/political-posts-*.csv
+python scripts/ingest/vip_majlis.py             # -> data/vip-*.csv + diplomatic-passports-*.csv
 python scripts/ingest/build_graph.py            # -> src/data/graph.json + docs/identity-review.md
 python scripts/ingest/mirror_photos.py          # -> public/members/*.webp + src/data/photo-manifest.json
 ```
 
-Ingests write a *partial graph* to `src/data/parts/`. `build_graph.py` merges
-them and resolves identities. Fetched pages and source PDFs are cached under
-`scripts/ingest/source/` and committed, so a build reproduces without depending
-on a government site being up or unchanged.
+**`data/*.csv` is the data.** Extractors write it, `build_graph.py` reads it,
+and a wrong figure is fixed by editing the cell and rebuilding — no Python, no
+re-reading a PDF. Read `data/README.md` before touching one.
+
+An extractor re-run **compares and fails** by default; `--accept` is what
+discards hand corrections, and it prints what it is discarding first. Fetched
+pages and source PDFs are cached under `scripts/ingest/source/` and committed,
+so a build reproduces without depending on a government site being up.
 
 ## The data model
 
@@ -56,7 +64,8 @@ variant to `Claim`; it does not add a table.
 ## What the money is (read before writing any copy about it)
 
 The premium is priced **per covered head** and the policy covers the member
-**and their dependents**. `src/lib/premium.ts` holds the rates and the helpers.
+**and their dependents**. `src/lib/premium.ts` holds the editorial rule;
+`scripts/ingest/validate.py` holds the rates and enforces them.
 
 - MVR 24,000 per head per year from 2016-2017, **stated** by the RTI disclosure.
 - MVR 12,500 for 2014-2016, **inferred** from the exact GCD of every row in
@@ -82,6 +91,17 @@ The premium is priced **per covered head** and the policy covers the member
    No remembered figures, no round numbers chosen because they read well.
 4. **Party belongs to a Position, never to a Person.** Six independents crossed
    to PNC within four days of the 2024 election; an undated party label is wrong.
+5. **Spending accessors narrow on `subtype`, never on `type`.**
+   `registry.premium()` is health-insurance premiums and `vip()` is airport
+   VIP. "expenditure" is a family: matching on type alone folds every new
+   dataset into the home page headline, each member's lead figure and
+   `partyTotals()` at once, and no figure on the site looks wrong.
+6. **A political post's pay is an entitlement, never a payment.** `PoliticalPost`
+   carries `measure: "entitlement"`, sits in its own top-level array, and has no
+   `amount` or `currency`. It never passes through `claims()`, `expenditure()`
+   or `totals()`. Do not multiply `posts` by a rate anywhere: that produces an
+   expenditure figure no document states, ignoring vacancies, part-months, the
+   Finance deduction and the ministries that never answered post by post.
 
 ## Traps this codebase has already paid for
 
@@ -97,15 +117,14 @@ Each of these cost real debugging. Do not rediscover them.
   writes Mahloof with `ޙ`, the disclosure with `ޚ`; one ends Muaz in
   sukun, the other in *u*. `fold_for_match()` folds thikijehi letters to plain
   counterparts and drops fili. Use it for matching only, **never for display**.
-- **Thaana renders optically smaller and thinner than Latin** at the same size.
-  The size bump lives on `html[lang="dv"]` and `[lang="dv"]:not(html)` —
-  attribute selectors, which match only elements carrying `lang`, so the scale
-  cannot compound on nesting.
-- **MV Iyyu is a single-weight font** with its own ASCII glyphs. It is scoped by
-  `unicode-range` to the Thaana block so it does not claim the digits, and
-  `font-synthesis-weight` is off so the browser cannot smear a fake bold.
-- **Figures need `.numeral`**, which isolates direction. Without it `2014-2025`
-  renders as `2025-2014` inside a Dhivehi sentence.
+- **The site is English only; Thaana lives in the data, not the UI.** `nameDv`
+  on a Person and `constituencyDv` on a Position are the join keys, nothing
+  renders them, and `name`/`constituency` are the Latin display forms. Do not
+  reintroduce Thaana typography: the MV Iyyu face, the `lang="dv"` size bump
+  and the RTL isolation on `.numeral` were all removed with the Dhivehi UI.
+- **`nameDv` is optional.** A person whose only source prints no Thaana — a
+  political appointee named in an English spreadsheet — is still a valid
+  Person, and is one that can never be roster-joined.
 
 ### Tailwind v4
 
@@ -131,6 +150,13 @@ Each of these cost real debugging. Do not rediscover them.
   silently classified plain-decimal amounts as name text and lost MVR 216,000.
 - **The disclosure's own row numbers are unreliable** — 11 repeat, 5 are
   skipped. Never use them as identity.
+- **The 20th Majlis VIP PDF reverses its Thaana but not its ASCII.** Running
+  `repair_visual_order` over every token turns MVR 3,491.70 into 07.1943 and
+  row 78 into row 87, and both still look like numbers. Repair a token only
+  when it contains Thaana.
+- **A constituency is not unique within a term.** The 18th Majlis VIP table
+  lists Dhiggaru twice, for Ahmed Nazim and then Ahmed Faris Maumoon — a
+  mid-term replacement. 86 rows for 85 seats.
 
 ### Portraits
 

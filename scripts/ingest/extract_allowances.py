@@ -1,15 +1,22 @@
 # -*- coding: utf-8 -*-
-"""Turn the Majlis health-insurance-premium PDF into typed JSON.
+"""Turn the Majlis health-insurance-premium PDF into data/premium-payments.csv.
 
 Source: People's Majlis disclosure of health insurance premiums paid for
 members, 28 May 2014 - 27 May 2025, published at
 https://mvdevsunion.github.io/MPs_allowance/ (mps-allowance.pdf).
 
-Run:  python scripts/ingest/extract_allowances.py
-Out:  src/data/allowances.json
+The CSV is wide - one row per member, one column per fiscal year - because
+that is the shape of the PDF page. A human checking a figure holds the page
+beside the row, and 266 rows that look like the document beat 1,769 rows that
+look like a database. build_graph.py turns it into persons, positions and
+claims.
+
+Rows are written in document order, not in the graph's display order, for the
+same reason. build_graph.py does the sorting.
+
+Run:  python scripts/ingest/extract_allowances.py [--accept]
+Out:  data/premium-payments.csv
 """
-import io
-import json
 import os
 import re
 import sys
@@ -17,30 +24,17 @@ import sys
 import pdfplumber
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import csvio  # noqa: E402
+import pdfgrid  # noqa: E402
 from thaana import repair_visual_order, romanise, slugify, split_title  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 PDF = os.path.join(HERE, 'source', 'mps-allowance.pdf')
-OUT = os.path.join(ROOT, 'src', 'data', 'parts', 'allowances.json')
+CSV = 'premium-payments.csv'
+SOURCE_ID = 'majlis-health-insurance-2014-2025'
 
-SOURCE = {
-    'title': 'Health insurance premiums paid for members of the People\'s Majlis',
-    'titleDv': 'ރައްޔިތުންގެ މަޖިލީހުގެ މެންބަރުންނަށް ހެލްތު އިންޝުއަރެންސް ޕްރީމިއަމަށް ހިނގާފައިވާ ޚަރަދު',
-    'publisher': 'People\'s Majlis',
-    'periodStart': '2014-05-28',
-    'periodEnd': '2025-05-27',
-    'currency': 'MVR',
-    'pdfUrl': 'https://mvdevsunion.github.io/MPs_allowance/mps-allowance.pdf',
-    'landingUrl': 'https://mvdevsunion.github.io/MPs_allowance/',
-}
-
-# Each fiscal year runs 28 May -> 27 May and belongs to one Majlis term.
-TERMS = [
-    {'number': 18, 'start': '2014-05-28', 'end': '2019-05-27'},
-    {'number': 19, 'start': '2019-05-28', 'end': '2024-05-27'},
-    {'number': 20, 'start': '2024-05-28', 'end': '2025-05-27'},
-]
+FIXED_COLUMNS = ['row_id', 'name', 'name_dv', 'title', 'title_dv',
+                 'constituency', 'constituency_dv', 'source_page', 'source_row']
 
 # "dhaairaa" (constituency) as the PDF stores it -> character-reversed.
 DHAAIRAA = ''.join(map(chr, [0x7A7, 0x783, 0x7A8, 0x787, 0x7A7, 0x78B]))
@@ -52,44 +46,12 @@ YEAR = re.compile(r'^20\d\d-20\d\d$')
 ROW_NO = re.compile(r'^\d{1,3}$')
 
 
-def cluster(items, key, tol):
-    """Group items whose key values sit within `tol` of each other."""
-    out = []
-    for it in sorted(items, key=key):
-        if out and abs(key(it) - key(out[-1][-1])) <= tol:
-            out[-1].append(it)
-        else:
-            out.append([it])
-    return out
-
-
-def merge_words(words, gap=1.6):
-    """Glue tokens the PDF split mid-value, e.g. '2' + '4,000' -> '24,000'."""
-    out = []
-    for w in sorted(words, key=lambda w: w['x0']):
-        if out and w['x0'] - out[-1]['x1'] <= gap:
-            out[-1] = {'x0': out[-1]['x0'], 'x1': w['x1'],
-                       'text': out[-1]['text'] + w['text']}
-        else:
-            out.append({'x0': w['x0'], 'x1': w['x1'], 'text': w['text']})
-    return out
-
-
-def term_for(year):
-    start = int(year.split('-')[0])
-    for t in TERMS:
-        if int(t['start'][:4]) <= start < int(t['end'][:4]):
-            return t['number']
-    return TERMS[-1]['number']
-
-
 def parse():
     records, warnings, years = [], [], []
 
     with pdfplumber.open(PDF) as pdf:
         for pno, page in enumerate(pdf.pages, 1):
-            bands = [merge_words(b)
-                     for b in cluster(page.extract_words(), lambda w: w['top'], 3)]
+            bands = pdfgrid.bands(page)
 
             columns = None
             for band in bands:
@@ -125,12 +87,9 @@ def parse():
                     if not (col['x0'] - 14 <= centre <= col['x1'] + 14):
                         warnings.append(f'page {pno}: amount {a["text"]} outside the grid')
                         continue
-                    raw = a['text'].replace(',', '')
-                    if raw == '-':
-                        continue          # explicit nil
-                    value = int(round(float(raw)))
-                    if value == 0:
-                        continue          # nothing paid that year
+                    value = csvio.amount(a['text'])
+                    if value in ('', '0'):
+                        continue          # explicit nil, or nothing paid
                     if col['text'] in by_year:
                         warnings.append(f'page {pno}: two amounts in {col["text"]}')
                     by_year[col['text']] = value
@@ -146,9 +105,6 @@ def parse():
                     'sourcePage': pno,
                     'sourceRowNo': int(band[0]['text']),
                     'byYear': by_year,
-                    'total': sum(by_year.values()),
-                    'yearsPaid': len(by_year),
-                    'terms': sorted({term_for(y) for y in by_year}),
                 })
 
     return records, years, warnings
@@ -179,128 +135,41 @@ def assign_ids(records):
 
 
 
-# ---------------------------------------------------------------------------
-# Emit the graph
-# ---------------------------------------------------------------------------
-
-SOURCE_ID = 'majlis-health-insurance-2014-2025'
-
-# Each fiscal year runs 28 May -> 27 May.
-def year_bounds(fiscal_year):
-    start, end = fiscal_year.split('-')
-    return f'{start}-05-28', f'{end}-05-27'
-
-
-def build_graph(records, years, notes):
-    source = {
-        'id': SOURCE_ID,
-        'title': SOURCE['title'],
-        'titleDv': SOURCE['titleDv'],
-        'publisher': SOURCE['publisher'],
-        'url': SOURCE['pdfUrl'],
-        'kind': 'official-disclosure',
-        'periodStart': SOURCE['periodStart'],
-        'periodEnd': SOURCE['periodEnd'],
-    }
-
-    persons, positions, claims = [], [], []
-    unpaid = []
-
-    for r in records:
-        persons.append({
-            'id': r['id'],
-            'name': r['name'],
-            'nameLatin': r['nameLatin'],
-            'title': r['title'],
-            'titleDv': r.get('titleDv'),
-            'possiblySameAs': r.get('sameNameAs'),
-            'sources': [SOURCE_ID],
-        })
-
-        paid_years = sorted(r['byYear'])
-        if not paid_years:
-            # A row printed with no amount in any year. We can record that the
-            # person appears in the disclosure, but not a term or a payment.
-            unpaid.append(r['id'])
-            continue
-        first_start, _ = year_bounds(paid_years[0])
-        _, last_end = year_bounds(paid_years[-1])
-
-        positions.append({
-            'id': f'{r["id"]}--majlis',
-            'personId': r['id'],
-            'kind': 'majlis-member',
-            'constituency': r['constituency'],
-            'constituencyLatin': r['constituencyLatin'],
-            'termNumbers': r['terms'],
-            'start': first_start,
-            'end': last_end,
-            # The disclosure records payments, not membership. Payment in a
-            # fiscal year strongly implies the seat was held, but the source
-            # never says so, so the app must not claim it did.
-            'basis': 'inferred',
-            'basisNote': 'Derived from the fiscal years in which a premium was paid; '
-                         'the source discloses payments, not terms of service.',
-            'sources': [SOURCE_ID],
-        })
-
-        for fy in paid_years:
-            p_start, p_end = year_bounds(fy)
-            claims.append({
-                'id': f'{r["id"]}--premium--{fy}',
-                'personId': r['id'],
-                'type': 'expenditure',
-                'subtype': 'health-insurance-premium',
-                'amount': r['byYear'][fy],
-                'currency': 'MVR',
-                'fiscalYear': fy,
-                'periodStart': p_start,
-                'periodEnd': p_end,
-                'locator': {'page': r['sourcePage'], 'row': r['sourceRowNo']},
-                'sources': [SOURCE_ID],
-            })
-
-    for pid in unpaid:
-        notes.append(f'{pid}: listed in the disclosure with no amount in any year')
-
-    return {
-        'meta': {
-            'generatedBy': 'scripts/ingest/extract_allowances.py',
-            'datasets': [SOURCE_ID],
-        },
-        'sources': [source],
-        'persons': persons,
-        'positions': positions,
-        'claims': claims,
-        'fiscalYears': years,
-        'terms': TERMS,
-        'warnings': [],
-    }
-
-
 def main():
+    accept = '--accept' in sys.argv
     records, years, warnings = parse()
     records = assign_ids(records)
-    records.sort(key=lambda r: (-r['total'], r['nameLatin']))
 
-    notes = []
-    graph = build_graph(records, years, notes)
-    graph['warnings'] = warnings + notes
+    # The fiscal-year column headers are the year vocabulary. There is no
+    # separate fiscal-years file: a second place to edit is a sync bug waiting
+    # to happen, and build_graph.py reads the vocabulary back off this header.
+    header = FIXED_COLUMNS + years + ['source_id']
 
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with io.open(OUT, 'w', encoding='utf-8') as fh:
-        json.dump(graph, fh, ensure_ascii=False, indent=2)
-        fh.write('\n')
+    rows = []
+    for r in records:
+        row = {
+            'row_id': r['id'],
+            'name': r['nameLatin'],
+            'name_dv': r['name'],
+            'title': r['title'] or '',
+            'title_dv': r['titleDv'] or '',
+            'constituency': r['constituencyLatin'],
+            'constituency_dv': r['constituency'],
+            'source_page': r['sourcePage'],
+            'source_row': r['sourceRowNo'],
+            'source_id': SOURCE_ID,
+        }
+        row.update({y: r['byYear'].get(y, '') for y in years})
+        rows.append(row)
 
-    total = sum(c['amount'] for c in graph['claims'])
-    print(f'wrote {os.path.relpath(OUT, ROOT)}')
-    print(f'  persons     {len(graph["persons"])}')
-    print(f'  positions   {len(graph["positions"])}')
-    print(f'  claims      {len(graph["claims"])}')
+    csvio.sync(CSV, header, rows, accept)
+
+    total = sum(int(v) for r in rows for y in years if (v := r[y]))
+    print(f'  members     {len(rows)}')
     print(f'  fiscal yrs  {len(years)} ({years[0]} .. {years[-1]})')
     print(f'  total MVR   {total:,}')
-    print(f'  warnings    {len(graph["warnings"])}')
-    for w in graph['warnings'][:10]:
+    print(f'  warnings    {len(warnings)}')
+    for w in warnings[:10]:
         print(f'    - {w}')
 
 

@@ -6,7 +6,11 @@ import type {
   Graph,
   Person,
   PersonId,
+  DiplomaticPassport,
+  PoliticalPost,
   Position,
+  PostCoverage,
+  PostRank,
   Source,
   TimelineEntry,
 } from "./schema";
@@ -14,6 +18,7 @@ import type {
 interface LoadedGraph extends Graph {
   fiscalYears: string[];
   terms: { number: number; start: string; end: string }[];
+  meta: Graph["meta"] & { vipRowsUnmatched: number };
 }
 
 const graph = rawGraph as unknown as LoadedGraph;
@@ -38,11 +43,29 @@ for (const claim of graph.claims) {
   claimsByPerson.set(claim.personId, list);
 }
 
-function isExpenditure(claim: Claim): claim is ExpenditureClaim {
-  return claim.type === "expenditure";
+/**
+ * A health insurance premium, and nothing else.
+ *
+ * This deliberately narrows on `subtype`, not on `type`. Every spending
+ * figure on this site - the home page total, each member's lead figure, the
+ * party and tenure tables - runs through here, and "expenditure" is a family:
+ * the moment a second kind of expenditure claim lands, matching on type alone
+ * would fold it into all of them silently, with no figure looking wrong.
+ */
+function isPremium(claim: Claim): claim is ExpenditureClaim {
+  return (
+    claim.type === "expenditure" && claim.subtype === "health-insurance-premium"
+  );
+}
+
+function isVip(claim: Claim): claim is ExpenditureClaim {
+  return claim.type === "expenditure" && claim.subtype === "airport-vip";
 }
 
 /** Everything the app knows, read through one module. */
+/** The 2014-2025 premium disclosure: every spending figure on the site. */
+const PRIMARY_SOURCE_ID = "majlis-health-insurance-2014-2025";
+
 export const registry = {
   fiscalYears: graph.fiscalYears,
   terms: graph.terms,
@@ -53,20 +76,35 @@ export const registry = {
   },
 
   /**
-   * The disclosure the spending figures come from. Looked up by kind rather
-   * than by position: once a second ingest was added, sources[0] became the
-   * member roster, which has no period and silently broke every figure
-   * derived from one.
+   * The disclosure the spending figures come from, looked up by id.
+   *
+   * It was sources[0] once, until a second ingest made that the member roster
+   * - which has no period, and silently broke every figure derived from one.
+   * Then it was the first source of kind "official-disclosure", until the
+   * 20th-Majlis RTI disclosure was registered and became a second one. The id
+   * is the only key that cannot acquire a rival.
    */
   primarySource(): Source {
     return (
-      graph.sources.find((s) => s.kind === "official-disclosure") ??
-      graph.sources[0]
+      graph.sources.find((s) => s.id === PRIMARY_SOURCE_ID) ?? graph.sources[0]
     );
   },
 
   people(): Person[] {
     return graph.persons;
+  },
+
+  /**
+   * People who have held a Majlis seat.
+   *
+   * graph.persons also holds the political appointees named in a ministry pay
+   * sheet, who never sat in the Majlis. Every MP-shaped figure on the site -
+   * the directory, the ranking, the party and tenure tables - runs off this
+   * rather than off people(), so an appointee cannot appear in a member count
+   * with a spending total of zero, or silently join a party's row.
+   */
+  members(): Person[] {
+    return graph.persons.filter((p) => this.seats(p.id).length > 0);
   },
 
   person(id: PersonId): Person | undefined {
@@ -99,18 +137,120 @@ export const registry = {
     return this.seat(id)?.party ?? null;
   },
 
-  expenditure(id: PersonId): ExpenditureClaim[] {
-    return this.claims(id).filter(isExpenditure);
+  premium(id: PersonId): ExpenditureClaim[] {
+    return this.claims(id).filter(isPremium);
   },
 
-  totalSpent(id: PersonId): number {
-    return this.expenditure(id).reduce((sum, c) => sum + c.amount, 0);
+  totalPremium(id: PersonId): number {
+    return this.premium(id).reduce((sum, c) => sum + c.amount, 0);
+  },
+
+  /** Airport VIP charges, one claim per member per Majlis term. */
+  vip(id: PersonId): ExpenditureClaim[] {
+    return this.claims(id).filter(isVip);
+  },
+
+  totalVip(id: PersonId): number {
+    return this.vip(id).reduce((sum, c) => sum + c.amount, 0);
+  },
+
+  /** VIP movements, which is the count the disclosure leads with. */
+  vipMovements(id: PersonId): number {
+    return this.vip(id).reduce((sum, c) => sum + (c.units ?? 0), 0);
+  },
+
+  /**
+   * VIP use by Majlis term, in term order.
+   *
+   * One claim per member per term, because that is how the disclosures are
+   * cut: two of them cover a whole parliament and the third a fixed window
+   * inside the current one. A member with no row in a term is absent from
+   * this list rather than present with a zero - the documents cover different
+   * windows, and a zero would assert that nothing was spent where in fact
+   * nothing was asked.
+   */
+  vipByTerm(id: PersonId): { term: number; claim: ExpenditureClaim }[] {
+    return this.vip(id)
+      .map((claim) => ({
+        claim,
+        term: TERM_OF_VIP_SOURCE[claim.sources[0]] ?? 0,
+      }))
+      .sort((a, b) => a.term - b.term);
+  },
+
+  /** VIP rows left out because no single seat could be identified. */
+  vipRowsUnmatched(): number {
+    return graph.meta.vipRowsUnmatched;
+  },
+
+  holdsDiplomaticPassport(id: PersonId): boolean {
+    return graph.diplomaticPassports.some((p) => p.personId === id);
+  },
+
+  diplomaticPassports(): DiplomaticPassport[] {
+    return graph.diplomaticPassports;
+  },
+
+  /**
+   * VIP use per term: how many members the document names, what it cost, and
+   * the charge per movement it implies.
+   *
+   * The rate is reported per term and never carried across them. The 18th and
+   * 19th price a movement at USD 60 converted at 15.42; the 20th prints a
+   * rufiyaa figure and no dollar amount at all. Averaging those into one
+   * number would state a rate no document gives.
+   */
+  vipTerms(): {
+    term: number;
+    sourceId: string;
+    members: number;
+    movements: number;
+    amount: number;
+    perMovement: number;
+  }[] {
+    const byTerm = new Map<
+      number,
+      { sourceId: string; members: number; movements: number; amount: number }
+    >();
+    for (const claim of graph.claims) {
+      if (!isVip(claim)) continue;
+      const term = TERM_OF_VIP_SOURCE[claim.sources[0]] ?? 0;
+      const bucket = byTerm.get(term) ?? {
+        sourceId: claim.sources[0],
+        members: 0,
+        movements: 0,
+        amount: 0,
+      };
+      bucket.members += 1;
+      bucket.movements += claim.units ?? 0;
+      bucket.amount += claim.amount;
+      byTerm.set(term, bucket);
+    }
+    return [...byTerm.entries()]
+      .map(([term, b]) => ({
+        term,
+        ...b,
+        perMovement: b.movements ? b.amount / b.movements : 0,
+      }))
+      .sort((a, b) => a.term - b.term);
+  },
+
+  /** Members ordered by VIP movements, most first. */
+  vipRanked(): { person: Person; movements: number; amount: number }[] {
+    return this.members()
+      .map((person) => ({
+        person,
+        movements: this.vipMovements(person.id),
+        amount: this.totalVip(person.id),
+      }))
+      .filter((row) => row.movements > 0)
+      .sort((a, b) => b.movements - a.movements);
   },
 
   /** Amount per fiscal year, zero-filled across the full range. */
   spendingSeries(id: PersonId): { year: string; value: number }[] {
     const byYear = new Map<string, number>();
-    for (const claim of this.expenditure(id)) {
+    for (const claim of this.premium(id)) {
       if (!claim.fiscalYear) continue;
       byYear.set(claim.fiscalYear, (byYear.get(claim.fiscalYear) ?? 0) + claim.amount);
     }
@@ -122,7 +262,7 @@ export const registry = {
 
   yearsPaid(id: PersonId): number {
     return new Set(
-      this.expenditure(id)
+      this.premium(id)
         .map((c) => c.fiscalYear)
         .filter(Boolean),
     ).size;
@@ -210,14 +350,14 @@ export const registry = {
   // -- aggregates ---------------------------------------------------------
 
   totals() {
-    const expenditure = graph.claims.filter(isExpenditure);
+    const expenditure = graph.claims.filter(isPremium);
     const byYear: Record<string, number> = {};
     for (const year of graph.fiscalYears) byYear[year] = 0;
     for (const claim of expenditure) {
       if (claim.fiscalYear) byYear[claim.fiscalYear] += claim.amount;
     }
     return {
-      people: graph.persons.length,
+      people: this.members().length,
       peopleWithSpending: new Set(expenditure.map((c) => c.personId)).size,
       amount: expenditure.reduce((sum, c) => sum + c.amount, 0),
       byYear,
@@ -247,7 +387,7 @@ export const registry = {
     const people = new Set<PersonId>();
 
     for (const claim of graph.claims) {
-      if (!isExpenditure(claim)) continue;
+      if (!isPremium(claim)) continue;
       const held = spans.get(claim.personId);
       if (!held) {
         unknownTerm += 1;
@@ -307,7 +447,7 @@ export const registry = {
     };
 
     for (const claim of graph.claims) {
-      if (!isExpenditure(claim)) continue;
+      if (!isPremium(claim)) continue;
       const from = claim.periodStart ?? "";
       const to = claim.periodEnd ?? "";
       const overlapping = (seatsByPerson.get(claim.personId) ?? []).filter(
@@ -369,7 +509,7 @@ export const registry = {
       { members: number; amount: number; memberYears: number }
     >();
 
-    for (const person of graph.persons) {
+    for (const person of this.members()) {
       const terms = this.termsServed(person.id).length;
       if (!terms) continue;
       const bucket = byTerms.get(terms) ?? {
@@ -378,7 +518,7 @@ export const registry = {
         memberYears: 0,
       };
       bucket.members += 1;
-      bucket.amount += this.totalSpent(person.id);
+      bucket.amount += this.totalPremium(person.id);
       bucket.memberYears += this.yearsPaid(person.id);
       byTerms.set(terms, bucket);
     }
@@ -403,19 +543,172 @@ export const registry = {
     return Math.round(ms / 86_400_000);
   },
 
-  /** People ordered by total spent, highest first. */
+  /** Members ordered by total spent, highest first. */
   ranked(): Person[] {
-    return [...graph.persons].sort(
+    return [...this.members()].sort(
       (a, b) =>
-        this.totalSpent(b.id) - this.totalSpent(a.id) ||
-        a.nameLatin.localeCompare(b.nameLatin),
+        this.totalPremium(b.id) - this.totalPremium(a.id) ||
+        a.name.localeCompare(b.name),
     );
   },
 
   rankOf(id: PersonId): number {
     return this.ranked().findIndex((p) => p.id === id) + 1;
   },
+
+  // -- political posts ----------------------------------------------------
+  //
+  // Entitlements attached to posts, never money anyone received. Kept out of
+  // every accessor above: nothing here passes through claims(), premium()
+  // or totals(), so no spending figure on the site can pick it up.
+
+  politicalPosts(): PoliticalPost[] {
+    return graph.politicalPosts;
+  },
+
+  politicalPostCoverage(): PostCoverage[] {
+    return graph.politicalPostCoverage;
+  },
+
+  /** The posts one body disclosed, in the order its document lists them. */
+  postsByBody(bodyId: string): PoliticalPost[] {
+    return graph.politicalPosts.filter((p) => p.bodyId === bodyId);
+  },
+
+  /**
+   * The rates that hold across ministries, rank by rank.
+   *
+   * Each individual rate is stated by a document. Reading them as standing
+   * rates rather than one ministry's arrangement is an inference, and it rests
+   * on three independently-sourced bodies printing the same figures. That is
+   * why `agreeing` and `differing` are both returned: a ministry paying a rank
+   * differently is a finding, not an error, and hiding it would make the
+   * generalisation look stronger than it is.
+   *
+   * `livingLabels` names the headings read as one slot - Health prints
+   * "Housing" where the others print "Living Allowance". That inference is
+   * made here and nowhere else.
+   */
+  rankLadder(): {
+    rank: PostRank;
+    basic: number;
+    living: number;
+    livingLabels: string[];
+    agreeing: string[];
+    differing: { bodyId: string; readings: string[] }[];
+  }[] {
+    // rank -> body -> the distinct "basic|living" readings that body prints.
+    const byRank = new Map<PostRank, Map<string, Map<string, number>>>();
+    const labels = new Map<PostRank, Set<string>>();
+
+    for (const post of graph.politicalPosts) {
+      if (!post.rank) continue;
+      const living = post.components.find((c) => LIVING_LABELS.includes(c.label));
+      if (post.basic === undefined && living === undefined) continue;
+      const bodies = byRank.get(post.rank) ?? new Map();
+      const readings = bodies.get(post.bodyId) ?? new Map<string, number>();
+      const key = `${post.basic ?? ""}|${living?.amount ?? ""}`;
+      readings.set(key, (readings.get(key) ?? 0) + post.posts);
+      bodies.set(post.bodyId, readings);
+      byRank.set(post.rank, bodies);
+      if (living?.label) {
+        labels.set(post.rank, (labels.get(post.rank) ?? new Set()).add(living.label));
+      }
+    }
+
+    return RANK_ORDER.flatMap((rank) => {
+      const bodies = byRank.get(rank);
+      if (!bodies) return [];
+
+      // The ladder rate is the one the most bodies print. A body votes once
+      // however many posts it lists: a ministry with 44 senior political
+      // directors is one ministry stating one rate, not 44 votes for it.
+      const votes = new Map<string, number>();
+      for (const readings of bodies.values()) {
+        for (const key of readings.keys()) {
+          votes.set(key, (votes.get(key) ?? 0) + 1);
+        }
+      }
+      let top = "";
+      let best = 0;
+      for (const [key, n] of votes) {
+        if (n > best) {
+          top = key;
+          best = n;
+        }
+      }
+
+      const [basic, living] = top.split("|");
+      const agreeing: string[] = [];
+      const differing: { bodyId: string; readings: string[] }[] = [];
+      for (const [bodyId, readings] of bodies) {
+        // A body agrees only if every post it lists at this rank carries the
+        // ladder rate. Foreign Affairs pays 37 of its senior political
+        // directors no living allowance at all, and reporting it as agreeing
+        // because one row happens to match would make the generalisation look
+        // firmer than the documents support.
+        const keys = [...readings.keys()];
+        if (keys.length === 1 && keys[0] === top) {
+          agreeing.push(bodyId);
+        } else {
+          differing.push({
+            bodyId,
+            readings: keys
+              .filter((k) => k !== top)
+              .map((k) => {
+                const [b, l] = k.split("|");
+                const basicPart = b
+                  ? `MVR ${Number(b).toLocaleString("en-US")} basic`
+                  : "no basic salary";
+                const livingPart =
+                  l === "0"
+                    ? "no living allowance"
+                    : l
+                      ? `MVR ${Number(l).toLocaleString("en-US")}`
+                      : "none stated";
+                return `${readings.get(k)} on ${basicPart} and ${livingPart}`;
+              }),
+          });
+        }
+      }
+
+      return [
+        {
+          rank,
+          basic: Number(basic),
+          living: Number(living),
+          livingLabels: [...(labels.get(rank) ?? [])],
+          agreeing,
+          differing,
+        },
+      ];
+    });
+  },
 };
+
+/**
+ * Which parliament each VIP disclosure covers.
+ *
+ * Read off the source rather than off the claim's dates, because the 20th's
+ * window closes at 31 July 2025 - part-way through the term - and inferring
+ * the term from that would make it look like a completed one.
+ */
+const TERM_OF_VIP_SOURCE: Record<string, number> = {
+  "rti-majlis-vip-18th": 18,
+  "rti-majlis-vip-19th": 19,
+  "rti-majlis-vip-passports-20th": 20,
+};
+
+/** The headings the bodies use for the same slot. See rankLadder(). */
+const LIVING_LABELS = ["Living Allowance", "Housing"];
+
+const RANK_ORDER: PostRank[] = [
+  "minister",
+  "state-minister",
+  "deputy-minister",
+  "senior-political-director",
+  "political-director",
+];
 
 function describe(claim: Claim): string {
   switch (claim.type) {
@@ -443,15 +736,20 @@ export function photo(id: PersonId): string | null {
   return (photoManifest as Record<string, string>)[id] ?? null;
 }
 
-/** Trimmed payload for the client-side search index. */
+/**
+ * Trimmed payload for the client-side search index.
+ *
+ * The Thaana name and constituency ride along although nothing renders them:
+ * a reader who knows a member's name knows it in Thaana, and matching what
+ * they type costs two fields rather than a second index.
+ */
 export interface PersonSummary {
   id: string;
   name: string;
-  nameLatin: string;
+  nameDv: string;
   title: string | null;
-  titleDv: string | null;
   constituency: string;
-  constituencyLatin: string;
+  constituencyDv: string;
   total: number;
   yearsPaid: number;
   party: string | null;
@@ -464,12 +762,11 @@ export function toSummary(person: Person): PersonSummary {
   return {
     id: person.id,
     name: person.name,
-    nameLatin: person.nameLatin,
+    nameDv: person.nameDv ?? "",
     title: person.title,
-    titleDv: person.titleDv ?? null,
     constituency: seat?.constituency ?? "",
-    constituencyLatin: seat?.constituencyLatin ?? "",
-    total: registry.totalSpent(person.id),
+    constituencyDv: seat?.constituencyDv ?? "",
+    total: registry.totalPremium(person.id),
     yearsPaid: registry.yearsPaid(person.id),
     party: registry.party(person.id),
     photo: photo(person.id),

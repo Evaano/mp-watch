@@ -16,10 +16,6 @@ export interface YearDatum {
  * the viewBox, so a chart that is legible on a laptop renders 4px text on a
  * phone. Here the labels are real text at a real size at every width.
  *
- * The columns are not reversed for Dhivehi: the flex row follows the
- * document's dir, so the earliest year lands on the reading-start edge in both
- * languages.
- *
  * Each column is a real button. That gets keyboard access and screen-reader
  * labelling for free, and makes the exact figure reachable by tap on a phone,
  * where there is no hover at all.
