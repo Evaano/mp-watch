@@ -57,6 +57,9 @@ HEADERS = {
                           'constituency_dv', 'party', 'seat_no', 'photo_url',
                           'source_id'],
     'majlis-speakers.csv': ['row_id', 'name', 'start', 'end', 'source_id'],
+    'rti-20th-majlis.csv': ['row_id', 'name', 'name_dv', 'constituency',
+                            'constituency_dv', 'amount', 'source_page',
+                            'source_row', 'source_id'],
 }
 
 # Files whose header carries a variable tail of fiscal-year columns.
@@ -304,6 +307,7 @@ def run():
     report = Report()
     tables = {}
     referenced = {}
+    checksummed = []
 
     for name in list(HEADERS) + list(WIDE_HEADERS):
         try:
@@ -341,9 +345,19 @@ def run():
         check_thaana_split(report, 'premium-payments.csv', rows,
                            'name_dv', 'constituency_dv')
         check_latin(report, 'premium-payments.csv', rows, ['name', 'constituency'])
-        if 'sources.csv' in tables:
-            check_checksums(report, tables['sources.csv'][1],
-                            [('premium-payments.csv', rows, years)])
+        checksummed.append(('premium-payments.csv', rows, years))
+
+    if 'rti-20th-majlis.csv' in tables:
+        rows = tables['rti-20th-majlis.csv'][1]
+        check_money(report, 'rti-20th-majlis.csv', rows, ['amount'],
+                    {'amount': 24000})
+        check_thaana_split(report, 'rti-20th-majlis.csv', rows,
+                           'name_dv', 'constituency_dv')
+        check_latin(report, 'rti-20th-majlis.csv', rows, ['name', 'constituency'])
+        checksummed.append(('rti-20th-majlis.csv', rows, ['amount']))
+
+    if 'sources.csv' in tables and checksummed:
+        check_checksums(report, tables['sources.csv'][1], checksummed)
 
     return report
 

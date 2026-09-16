@@ -21,6 +21,15 @@ and how you know.
 | `majlis-roster.csv` | 268 person-*terms*, one row per member per parliament, as the roster publishes them. | `majlis_members.py` |
 | `majlis-speakers.csv` | 20 speaker spells. | `majlis_members.py` |
 | `premium-payments.csv` | 266 members × 11 fiscal years of health insurance premiums. | `extract_allowances.py` |
+| `rti-20th-majlis.csv` | 93 members, one two-year total each, from the RTI disclosure that states the per-head rate. | `rti_20th_majlis.py` |
+
+`rti-20th-majlis.csv` is **not yet built into claims**, deliberately. Its
+window (28 May 2024 – 27 May 2026) overlaps the premium disclosure's last
+fiscal year, so adding its 93 rows to `graph.claims` would count 2024-2025
+twice in every total on the site. The document gives one two-year aggregate
+per member and cannot be split, so presenting the two disclosures together is
+an editorial decision, not a merge. Until then the rows are read by
+`validate.py`, which holds them to the total the document prints for itself.
 
 ## Editing rules
 

@@ -41,6 +41,18 @@ export interface Source {
   periodEnd?: string;
   /** ISO date the copy in this repo was taken. */
   retrieved?: string;
+  /**
+   * The issuing body's own reference for the document. RTI responses are
+   * identified by this rather than by a URL, and it is what lets someone who
+   * was not sent the file request it themselves.
+   */
+  reference?: string;
+  /**
+   * The grand total the document prints for itself, where it prints one. An
+   * extraction checksum, never a figure to publish. Absent means the document
+   * states no total: do not compute one.
+   */
+  checksumTotal?: number;
 }
 
 // ---------------------------------------------------------------------------

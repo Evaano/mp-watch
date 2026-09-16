@@ -31,6 +31,7 @@ pip install -r scripts/ingest/requirements.txt
 python scripts/ingest/validate.py               # checks data/*.csv; build_graph runs it first
 python scripts/ingest/extract_allowances.py     # -> data/premium-payments.csv
 python scripts/ingest/majlis_members.py         # -> data/majlis-roster.csv + majlis-speakers.csv
+python scripts/ingest/rti_20th_majlis.py        # -> data/rti-20th-majlis.csv
 python scripts/ingest/build_graph.py            # -> src/data/graph.json + docs/identity-review.md
 python scripts/ingest/mirror_photos.py          # -> public/members/*.webp + src/data/photo-manifest.json
 ```

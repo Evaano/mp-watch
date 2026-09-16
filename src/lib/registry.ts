@@ -43,6 +43,9 @@ function isExpenditure(claim: Claim): claim is ExpenditureClaim {
 }
 
 /** Everything the app knows, read through one module. */
+/** The 2014-2025 premium disclosure: every spending figure on the site. */
+const PRIMARY_SOURCE_ID = "majlis-health-insurance-2014-2025";
+
 export const registry = {
   fiscalYears: graph.fiscalYears,
   terms: graph.terms,
@@ -53,15 +56,17 @@ export const registry = {
   },
 
   /**
-   * The disclosure the spending figures come from. Looked up by kind rather
-   * than by position: once a second ingest was added, sources[0] became the
-   * member roster, which has no period and silently broke every figure
-   * derived from one.
+   * The disclosure the spending figures come from, looked up by id.
+   *
+   * It was sources[0] once, until a second ingest made that the member roster
+   * - which has no period, and silently broke every figure derived from one.
+   * Then it was the first source of kind "official-disclosure", until the
+   * 20th-Majlis RTI disclosure was registered and became a second one. The id
+   * is the only key that cannot acquire a rival.
    */
   primarySource(): Source {
     return (
-      graph.sources.find((s) => s.kind === "official-disclosure") ??
-      graph.sources[0]
+      graph.sources.find((s) => s.id === PRIMARY_SOURCE_ID) ?? graph.sources[0]
     );
   },
 

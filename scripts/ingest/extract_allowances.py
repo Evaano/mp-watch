@@ -25,6 +25,7 @@ import pdfplumber
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import csvio  # noqa: E402
+import pdfgrid  # noqa: E402
 from thaana import repair_visual_order, romanise, slugify, split_title  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -45,36 +46,12 @@ YEAR = re.compile(r'^20\d\d-20\d\d$')
 ROW_NO = re.compile(r'^\d{1,3}$')
 
 
-def cluster(items, key, tol):
-    """Group items whose key values sit within `tol` of each other."""
-    out = []
-    for it in sorted(items, key=key):
-        if out and abs(key(it) - key(out[-1][-1])) <= tol:
-            out[-1].append(it)
-        else:
-            out.append([it])
-    return out
-
-
-def merge_words(words, gap=1.6):
-    """Glue tokens the PDF split mid-value, e.g. '2' + '4,000' -> '24,000'."""
-    out = []
-    for w in sorted(words, key=lambda w: w['x0']):
-        if out and w['x0'] - out[-1]['x1'] <= gap:
-            out[-1] = {'x0': out[-1]['x0'], 'x1': w['x1'],
-                       'text': out[-1]['text'] + w['text']}
-        else:
-            out.append({'x0': w['x0'], 'x1': w['x1'], 'text': w['text']})
-    return out
-
-
 def parse():
     records, warnings, years = [], [], []
 
     with pdfplumber.open(PDF) as pdf:
         for pno, page in enumerate(pdf.pages, 1):
-            bands = [merge_words(b)
-                     for b in cluster(page.extract_words(), lambda w: w['top'], 3)]
+            bands = pdfgrid.bands(page)
 
             columns = None
             for band in bands:
