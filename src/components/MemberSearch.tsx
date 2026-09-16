@@ -3,7 +3,6 @@
 import { useDeferredValue, useId, useMemo, useState } from "react";
 import { MemberCard } from "./MemberCard";
 import type { PersonSummary } from "@/lib/registry";
-import type { Lang } from "@/lib/i18n";
 
 /** Only serializable strings cross into the client bundle. */
 export interface SearchLabels {
@@ -13,7 +12,6 @@ export interface SearchLabels {
   countTemplate: string;
   showMore: string;
   showingOf: string;
-  /** Dhivehi does not inflect the noun, so both slots may hold one word. */
   yearOne: string;
   yearMany: string;
 }
@@ -25,11 +23,9 @@ export interface SearchLabels {
  */
 export function MemberSearch({
   members,
-  lang,
   labels,
 }: {
   members: PersonSummary[];
-  lang: Lang;
   labels: SearchLabels;
 }) {
   const PAGE = 25;
@@ -54,11 +50,11 @@ export function MemberSearch({
     const lower = term.toLowerCase();
     return members.filter(
       (m) =>
-        m.nameLatin.toLowerCase().includes(lower) ||
-        m.constituencyLatin.toLowerCase().includes(lower) ||
+        m.name.toLowerCase().includes(lower) ||
+        m.constituency.toLowerCase().includes(lower) ||
         (m.party ?? "").toLowerCase() === lower ||
-        m.name.includes(term) ||
-        m.constituency.includes(term),
+        m.nameDv.includes(term) ||
+        m.constituencyDv.includes(term),
     );
   }, [members, deferred]);
 
@@ -92,7 +88,6 @@ export function MemberSearch({
             <li key={m.id} className="contents">
               <MemberCard
                 member={m}
-                lang={lang}
                 yearLabel={m.yearsPaid === 1 ? labels.yearOne : labels.yearMany}
               />
             </li>

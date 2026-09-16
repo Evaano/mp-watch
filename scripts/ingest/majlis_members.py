@@ -143,8 +143,8 @@ def main():
                 persons[key] = {
                     'id': key,
                     'majlisId': member_id,
-                    'name': dv.get('name', ''),
-                    'nameLatin': en['name'],
+                    'name': en['name'],
+                    'nameDv': dv.get('name', ''),
                     'title': None,
                     'photoUrl': en.get('photo'),
                     'sources': [ROSTER_SOURCE],
@@ -154,8 +154,8 @@ def main():
                 'id': f'{key}--majlis-{term}',
                 'personId': key,
                 'kind': 'majlis-member',
-                'constituency': dv.get('constituency', ''),
-                'constituencyLatin': en['constituency'],
+                'constituency': en['constituency'],
+                'constituencyDv': dv.get('constituency', ''),
                 'termNumbers': [term],
                 'start': TERMS[term]['start'],
                 'end': TERMS[term]['end'],
@@ -220,7 +220,7 @@ def main():
     print(f'  with a party       {sum(1 for p in seats if p.get("party"))}')
     print(f'  with a photo       {sum(1 for p in persons.values() if p.get("photoUrl"))}')
     print(f'  speaker positions  {len(speakers)}')
-    missing_dv = sum(1 for p in persons.values() if not p['name'])
+    missing_dv = sum(1 for p in persons.values() if not p['nameDv'])
     if missing_dv:
         print(f'  WARN missing Thaana name for {missing_dv} people')
 

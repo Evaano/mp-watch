@@ -3,28 +3,18 @@ import { BackToTop } from "./BackToTop";
 import { NavMenu } from "./NavMenu";
 import type { ReactNode } from "react";
 import { registry } from "@/lib/registry";
-import { href } from "@/lib/format";
-import { getDict, LANG_LABEL, otherLang, type Lang } from "@/lib/i18n";
+import { dict } from "@/lib/i18n";
 
 /** Header, footer and page frame. Every route renders inside this. */
-export function SiteShell({
-  lang,
-  children,
-}: {
-  lang: Lang;
-  children: ReactNode;
-}) {
-  const dict = getDict(lang);
-  const alt = otherLang(lang);
-
+export function SiteShell({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-[100dvh] flex-col">
-      {/* Sticky so the language switch and the way back stay reachable while
-          scrolling a long member list on a phone. */}
+      {/* Sticky so the nav stays reachable while scrolling a long member
+          list on a phone. */}
       <header className="sticky top-0 z-10 border-b border-line bg-surface/90 backdrop-blur-sm">
         <div className="relative mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-4 px-4 sm:h-16">
           <Link
-            href={href(lang)}
+            href="/"
             // Centres its own text: the touch-target rule in globals.css gives every
             // link a 44px min-height on coarse pointers, and a non-flex link
             // renders its text at the top of that box, sitting high in the bar.
@@ -34,10 +24,9 @@ export function SiteShell({
           </Link>
           <NavMenu
             links={[
-              { href: href(lang, "/members"), label: dict.navMembers },
-              { href: href(lang, "/parties"), label: dict.navParties },
+              { href: "/members", label: dict.navMembers },
+              { href: "/parties", label: dict.navParties },
             ]}
-            language={{ href: `/${alt}`, label: LANG_LABEL[alt], lang: alt }}
             menuLabel={dict.navMenu}
           />
         </div>

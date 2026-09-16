@@ -24,7 +24,7 @@ that its claims hold up, so correctness outranks speed and features here.
 
 ```bash
 pnpm dev                                        # localhost:3000
-pnpm build                                      # prerenders every page, both languages
+pnpm build                                      # prerenders every page
 pnpm lint
 
 pip install -r scripts/ingest/requirements.txt
@@ -97,15 +97,14 @@ Each of these cost real debugging. Do not rediscover them.
   writes Mahloof with `ޙ`, the disclosure with `ޚ`; one ends Muaz in
   sukun, the other in *u*. `fold_for_match()` folds thikijehi letters to plain
   counterparts and drops fili. Use it for matching only, **never for display**.
-- **Thaana renders optically smaller and thinner than Latin** at the same size.
-  The size bump lives on `html[lang="dv"]` and `[lang="dv"]:not(html)` —
-  attribute selectors, which match only elements carrying `lang`, so the scale
-  cannot compound on nesting.
-- **MV Iyyu is a single-weight font** with its own ASCII glyphs. It is scoped by
-  `unicode-range` to the Thaana block so it does not claim the digits, and
-  `font-synthesis-weight` is off so the browser cannot smear a fake bold.
-- **Figures need `.numeral`**, which isolates direction. Without it `2014-2025`
-  renders as `2025-2014` inside a Dhivehi sentence.
+- **The site is English only; Thaana lives in the data, not the UI.** `nameDv`
+  on a Person and `constituencyDv` on a Position are the join keys, nothing
+  renders them, and `name`/`constituency` are the Latin display forms. Do not
+  reintroduce Thaana typography: the MV Iyyu face, the `lang="dv"` size bump
+  and the RTL isolation on `.numeral` were all removed with the Dhivehi UI.
+- **`nameDv` is optional.** A person whose only source prints no Thaana — a
+  political appointee named in an English spreadsheet — is still a valid
+  Person, and is one that can never be roster-joined.
 
 ### Tailwind v4
 

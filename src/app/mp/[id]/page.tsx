@@ -9,8 +9,8 @@ import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
 import { YearTable } from "@/components/YearTable";
 import { toUsd } from "@/lib/comparators";
-import { href, money } from "@/lib/format";
-import { getDict, isLang, LANGS } from "@/lib/i18n";
+import { money } from "@/lib/format";
+import { dict } from "@/lib/i18n";
 import { CURRENT_PER_HEAD_RATE } from "@/lib/premium";
 import { photo, registry } from "@/lib/registry";
 import type { Person } from "@/lib/schema";
@@ -20,34 +20,29 @@ function nameProps(person: Person) {
   const seat = registry.seat(person.id);
   return {
     name: person.name,
-    nameLatin: person.nameLatin,
     title: person.title,
-    titleDv: person.titleDv ?? null,
     constituency: seat?.constituency ?? "",
-    constituencyLatin: seat?.constituencyLatin ?? "",
   };
 }
 
 export function generateStaticParams() {
-  return LANGS.flatMap((lang) =>
-    registry.people().map((person) => ({ lang, id: person.id })),
-  );
+  return registry.people().map((person) => ({ id: person.id }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: string; id: string }>;
+  params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-  const { lang, id } = await params;
+  const { id } = await params;
   const person = registry.person(id);
-  if (!person || !isLang(lang)) return {};
+  if (!person) return {};
   const seat = registry.seat(id);
   return {
-    title: lang === "dv" ? person.name : person.nameLatin,
+    title: person.name,
     // Travels into search snippets and link previews with no page context to
     // correct it, so it must not read as a payment to the member.
-    description: `${person.nameLatin} (${seat?.constituencyLatin ?? ""}) - MVR ${registry
+    description: `${person.name} (${seat?.constituency ?? ""}) - MVR ${registry
       .totalSpent(id)
       .toLocaleString("en-US")} in health insurance premiums covering this member and their dependents, 2014-2025.`,
   };
@@ -65,14 +60,12 @@ export async function generateMetadata({
 export default async function MemberPage({
   params,
 }: {
-  params: Promise<{ lang: string; id: string }>;
+  params: Promise<{ id: string }>;
 }) {
-  const { lang, id } = await params;
-  if (!isLang(lang)) notFound();
+  const { id } = await params;
   const person = registry.person(id);
   if (!person) notFound();
 
-  const dict = getDict(lang);
   const totals = registry.totals();
   const rank = registry.rankOf(person.id);
   const series = registry.spendingSeries(person.id);
@@ -89,11 +82,9 @@ export default async function MemberPage({
       <div>
         {/* The way back is a control, not a sentence, and it names where it
             goes: someone arriving from a shared link has no history for a
-            generic "back" to use. It sits at the inline start, so Dhivehi puts
-            it on the right without a second rule - the chevron has to be
-            rotated, though, because the glyph itself does not mirror. */}
+            generic "back" to use. */}
         <Link
-          href={href(lang, "/members")}
+          href="/members"
           className="inline-flex items-center gap-1.5 rounded-card border border-line-strong px-3 py-2 text-sm font-medium hover:border-accent hover:text-accent-ink"
         >
           <svg
@@ -104,7 +95,7 @@ export default async function MemberPage({
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="h-4 w-4 rtl:rotate-180"
+            className="h-4 w-4"
           >
             <path d="M15 6l-6 6 6 6" />
           </svg>
@@ -129,17 +120,17 @@ export default async function MemberPage({
                 aria-hidden
                 className="flex h-full w-full items-center justify-center text-4xl text-ink-muted"
               >
-                {person.nameLatin.charAt(0).toUpperCase()}
+                {person.name.charAt(0).toUpperCase()}
               </span>
             )}
           </div>
 
           <div className="min-w-0">
             <h1>
-              <MemberName member={nameProps(person)} lang={lang} size="lg" />
+              <MemberName member={nameProps(person)} size="lg" />
             </h1>
             <p className="mt-2 text-lg text-ink-muted">
-              <ConstituencyName member={nameProps(person)} lang={lang} />
+              <ConstituencyName member={nameProps(person)} />
             </p>
 
             <ul className="mt-4 flex flex-wrap items-center gap-2">
@@ -220,7 +211,7 @@ export default async function MemberPage({
           {dict.profileCareerHeading}
         </h2>
         <div className="mt-5">
-          <PositionList positions={positions} lang={lang} dict={dict} />
+          <PositionList positions={positions} dict={dict} />
         </div>
       </section>
 
@@ -245,7 +236,7 @@ export default async function MemberPage({
         <div className="mt-7">
           <YearColumns
             data={series}
-            ariaLabel={`${dict.profileBreakdown} - ${person.nameLatin}`}
+            ariaLabel={`${dict.profileBreakdown} - ${person.name}`}
             emptyLabel={dict.profileNoPayment}
           />
         </div>
@@ -271,10 +262,10 @@ export default async function MemberPage({
               return (
                 <li key={otherId}>
                   <Link
-                    href={href(lang, `/mp/${otherId}`)}
+                    href={`/mp/${otherId}`}
                     className="text-sm text-accent-ink underline underline-offset-4"
                   >
-                    <ConstituencyName member={nameProps(other)} lang={lang} />
+                    <ConstituencyName member={nameProps(other)} />
                   </Link>
                 </li>
               );

@@ -1,4 +1,4 @@
-import type { Dict, Lang } from "@/lib/i18n";
+import type { Dict } from "@/lib/i18n";
 import type { Position } from "@/lib/schema";
 
 /**
@@ -9,11 +9,9 @@ import type { Position } from "@/lib/schema";
  */
 export function PositionList({
   positions,
-  lang,
   dict,
 }: {
   positions: Position[];
-  lang: Lang;
   dict: Dict;
 }) {
   if (!positions.length) return null;
@@ -29,13 +27,11 @@ export function PositionList({
           <p className="font-medium">
             {position.kind === "speaker"
               ? dict.speakerLabel
-              : lang === "dv"
-                ? position.constituency
-                : capitalise(
-                    (position.constituencyLatin ?? "")
-                      .replace(/ dhaaira?$/i, "")
-                      .trim(),
-                  )}
+              : capitalise(
+                  (position.constituency ?? "")
+                    .replace(/ dhaaira?$/i, "")
+                    .trim(),
+                )}
           </p>
           {position.party ? (
             <span className="mt-1 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 label-eyebrow text-ink-muted">

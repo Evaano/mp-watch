@@ -67,8 +67,8 @@ def build_roster_index(positions, persons_by_id, roster_ids):
         person = persons_by_id.get(position.get('personId'))
         if not person:
             continue
-        key = (fold_for_match(person.get('name')),
-               fold_for_match(position.get('constituency')))
+        key = (fold_for_match(person.get('nameDv')),
+               fold_for_match(position.get('constituencyDv')))
         if not key[0] or not key[1]:
             continue
         index.setdefault(key, set()).add(person['id'])
@@ -99,8 +99,8 @@ def consolidate_roster(persons, positions):
         seat = seat_of.get(person['id'])
         if not seat:
             continue
-        key = (fold_for_match(person.get('name')),
-               fold_for_match(seat.get('constituency')))
+        key = (fold_for_match(person.get('nameDv')),
+               fold_for_match(seat.get('constituencyDv')))
         groups.setdefault(key, []).append(person)
 
     remap, kept, merges = {}, [], 0
@@ -157,10 +157,10 @@ def main():
     for person in persons:
         if person['id'] in roster_ids:
             continue
-        name = fold_for_match(person.get('name'))
+        name = fold_for_match(person.get('nameDv'))
         # An unmerged person's constituency lives on their own position.
         own = [p for p in positions if p.get('personId') == person['id']]
-        keys = {(name, fold_for_match(p.get('constituency'))) for p in own}
+        keys = {(name, fold_for_match(p.get('constituencyDv'))) for p in own}
         matches = set()
         for key in keys:
             matches |= index.get(key, set())
@@ -198,7 +198,7 @@ def main():
     latin_index = {}
     for person in persons:
         if person['id'] in roster_ids:
-            latin_index.setdefault(norm(person['nameLatin']).lower(), set()).add(person['id'])
+            latin_index.setdefault(norm(person['name']).lower(), set()).add(person['id'])
     # index is keyed the same way the speaker lookup will key its query
 
     # Speaker names carry honorifics the roster omits.
@@ -241,7 +241,7 @@ def main():
     by_name = {}
     for person in kept_persons:
         person.pop('possiblySameAs', None)
-        by_name.setdefault(norm(person.get('name')) or person['nameLatin'], []).append(person)
+        by_name.setdefault(norm(person.get('nameDv')) or person['name'], []).append(person)
     for group in by_name.values():
         if len(group) > 1:
             ids = [p['id'] for p in group]
@@ -299,7 +299,7 @@ def write_review(ambiguous, unmatched, speakers_unresolved):
     ]
     if ambiguous:
         for person, matches in ambiguous:
-            lines.append(f'- **{person["nameLatin"]}** ({person["name"]}) -> '
+            lines.append(f'- **{person["name"]}** ({person.get("nameDv", "")}) -> '
                          + ', '.join(f'`{m}`' for m in matches))
     else:
         lines.append('_None._')
@@ -313,8 +313,8 @@ def write_review(ambiguous, unmatched, speakers_unresolved):
         '',
     ]
     if unmatched:
-        for person in sorted(unmatched, key=lambda p: p['nameLatin']):
-            lines.append(f'- **{person["nameLatin"]}** ({person["name"]}) `{person["id"]}`')
+        for person in sorted(unmatched, key=lambda p: p['name']):
+            lines.append(f'- **{person["name"]}** ({person.get("nameDv", "")}) `{person["id"]}`')
     else:
         lines.append('_None._')
 

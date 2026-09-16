@@ -20,8 +20,8 @@
   "persons": [
     {
       "id": "qaasim-ibraaheem-maamigili",
-      "name": "ޤާސިމް އިބްރާހީމް",
-      "nameLatin": "qaasim ibraaheem",
+      "name": "qaasim ibraaheem",
+      "nameDv": "ޤާސިމް އިބްރާހީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -31,8 +31,8 @@
     },
     {
       "id": "saudhu-husain-vilingili",
-      "name": "ސަޢުދު ޙުސައިން",
-      "nameLatin": "saudhu husain",
+      "name": "saudhu husain",
+      "nameDv": "ސަޢުދު ޙުސައިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -42,8 +42,8 @@
     },
     {
       "id": "ahmadhu-taariq-mahibadhoo",
-      "name": "އަޙްމަދު ޠާރިޤް",
-      "nameLatin": "ahmadhu taariq",
+      "name": "ahmadhu taariq",
+      "nameDv": "އަޙްމަދު ޠާރިޤް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -53,8 +53,8 @@
     },
     {
       "id": "ibraaheem-naseeru-mulaku",
-      "name": "އިބްރާހީމް ނަޞީރު",
-      "nameLatin": "ibraaheem naseeru",
+      "name": "ibraaheem naseeru",
+      "nameDv": "އިބްރާހީމް ނަޞީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -64,8 +64,8 @@
     },
     {
       "id": "alee-husain-kendhoo",
-      "name": "ޢަލީ ޙުސައިން",
-      "nameLatin": "alee husain",
+      "name": "alee husain",
+      "nameDv": "ޢަލީ ޙުސައިން",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -75,8 +75,8 @@
     },
     {
       "id": "muhamadhu-aslam-hithadhoo-uthuru",
-      "name": "މުޙައްމަދު އަސްލަމް",
-      "nameLatin": "muhamadhu aslam",
+      "name": "muhamadhu aslam",
+      "nameDv": "މުޙައްމަދު އަސްލަމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -86,8 +86,8 @@
     },
     {
       "id": "abdhuullah-rifaau-maafannu-dhekunu",
-      "name": "ޢަބްދުﷲ ރިފާޢު",
-      "nameLatin": "abdhuullah rifaau",
+      "name": "abdhuullah rifaau",
+      "nameDv": "ޢަބްދުﷲ ރިފާޢު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -97,8 +97,8 @@
     },
     {
       "id": "ibraaheem-hasan-thodoo",
-      "name": "އިބްރާހީމް ޙަސަން",
-      "nameLatin": "ibraaheem hasan",
+      "name": "ibraaheem hasan",
+      "nameDv": "އިބްރާހީމް ޙަސަން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -108,8 +108,8 @@
     },
     {
       "id": "muhamadhu-abdhuullah-ihavandhoo",
-      "name": "މުޙައްމަދު ޢަބްދުﷲ",
-      "nameLatin": "muhamadhu abdhuullah",
+      "name": "muhamadhu abdhuullah",
+      "nameDv": "މުޙައްމަދު ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -119,8 +119,8 @@
     },
     {
       "id": "riyaaz-rasheedhu-vilufushi",
-      "name": "ރިޔާޟް ރަޝީދު",
-      "nameLatin": "riyaaz rasheedhu",
+      "name": "riyaaz rasheedhu",
+      "nameDv": "ރިޔާޟް ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -130,8 +130,8 @@
     },
     {
       "id": "ahmadhu-shiyaam-naifaru",
-      "name": "އަޙްމަދު ޝިޔާމް",
-      "nameLatin": "ahmadhu shiyaam",
+      "name": "ahmadhu shiyaam",
+      "nameDv": "އަޙްމަދު ޝިޔާމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -141,8 +141,8 @@
     },
     {
       "id": "muhamadhu-mustafaa-thimarafushi",
-      "name": "މުޙައްމަދު މުސްޠަފާ",
-      "nameLatin": "muhamadhu mustafaa",
+      "name": "muhamadhu mustafaa",
+      "nameDv": "މުޙައްމަދު މުސްޠަފާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -152,8 +152,8 @@
     },
     {
       "id": "hasan-mufeedhu-abdhulqaadhiru-milandhoo",
-      "name": "ޙަސަން މުފީދު ޢަބްދުލްޤާދިރު",
-      "nameLatin": "hasan mufeedhu abdhulqaadhiru",
+      "name": "hasan mufeedhu abdhulqaadhiru",
+      "nameDv": "ޙަސަން މުފީދު ޢަބްދުލްޤާދިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -163,8 +163,8 @@
     },
     {
       "id": "muhamadhu-shaahidhu-hulhudhoo",
-      "name": "މުޙައްމަދު ޝާހިދު",
-      "nameLatin": "muhamadhu shaahidhu",
+      "name": "muhamadhu shaahidhu",
+      "nameDv": "މުޙައްމަދު ޝާހިދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -176,8 +176,8 @@
     },
     {
       "id": "abdhuullah-khaleel-nilandhoo",
-      "name": "ޢަބްދުﷲ ޚަލީލް",
-      "nameLatin": "abdhuullah khaleel",
+      "name": "abdhuullah khaleel",
+      "nameDv": "ޢަބްދުﷲ ޚަލީލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -187,8 +187,8 @@
     },
     {
       "id": "alee-aazim-medhuhenveyru",
-      "name": "ޢަލީ ޢާޒިމް",
-      "nameLatin": "alee aazim",
+      "name": "alee aazim",
+      "nameDv": "ޢަލީ ޢާޒިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -198,8 +198,8 @@
     },
     {
       "id": "ismaaeel-ahmadhu-dhuvaafaru",
-      "name": "އިސްމާޢީލް އަޙްމަދު",
-      "nameLatin": "ismaaeel ahmadhu",
+      "name": "ismaaeel ahmadhu",
+      "nameDv": "އިސްމާޢީލް އަޙްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -209,8 +209,8 @@
     },
     {
       "id": "ahmadhu-asadhu-dhaandhoo",
-      "name": "އަޙްމަދު އަސްޢަދު",
-      "nameLatin": "ahmadhu asadhu",
+      "name": "ahmadhu asadhu",
+      "nameDv": "އަޙްމަދު އަސްޢަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -220,8 +220,8 @@
     },
     {
       "id": "muhamadhu-falaah-maafannu-hulhangu",
-      "name": "މުޙައްމަދު ފަލާޙް",
-      "nameLatin": "muhamadhu falaah",
+      "name": "muhamadhu falaah",
+      "nameDv": "މުޙައްމަދު ފަލާޙް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -231,8 +231,8 @@
     },
     {
       "id": "ahmadhu-naazim-dhigaru",
-      "name": "އަޙްމަދު ނާޒިމް",
-      "nameLatin": "ahmadhu naazim",
+      "name": "ahmadhu naazim",
+      "nameDv": "އަޙްމަދު ނާޒިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -242,8 +242,8 @@
     },
     {
       "id": "muhamadhu-abdhulkareem-henveyru-dhekunu",
-      "name": "މުޙައްމަދު ޢަބްދުލްކަރީމް",
-      "nameLatin": "muhamadhu abdhulkareem",
+      "name": "muhamadhu abdhulkareem",
+      "nameDv": "މުޙައްމަދު ޢަބްދުލްކަރީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -253,8 +253,8 @@
     },
     {
       "id": "ahmadhu-saleem-eydhafushi",
-      "name": "އަޙްމަދު ސަލީމް",
-      "nameLatin": "ahmadhu saleem",
+      "name": "ahmadhu saleem",
+      "nameDv": "އަޙްމަދު ސަލީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -266,8 +266,8 @@
     },
     {
       "id": "eevaa-abdhuullah-galolhu-uthuru",
-      "name": "އީވާ ޢަބްދުﷲ",
-      "nameLatin": "eevaa abdhuullah",
+      "name": "eevaa abdhuullah",
+      "nameDv": "އީވާ ޢަބްދުﷲ",
       "title": "Alfaazilaa",
       "titleDv": "އަލްފާޟިލާ",
       "possiblySameAs": null,
@@ -277,8 +277,8 @@
     },
     {
       "id": "ibraaheem-rizaa-guraidhoo",
-      "name": "އިބްރާހީމް ރިޟާ",
-      "nameLatin": "ibraaheem rizaa",
+      "name": "ibraaheem rizaa",
+      "nameDv": "އިބްރާހީމް ރިޟާ",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -288,8 +288,8 @@
     },
     {
       "id": "ahmadhu-mubeen-bilethdhoo",
-      "name": "އަޙްމަދު މުބީން",
-      "nameLatin": "ahmadhu mubeen",
+      "name": "ahmadhu mubeen",
+      "nameDv": "އަޙްމަދު މުބީން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -299,8 +299,8 @@
     },
     {
       "id": "husain-shahudhee-hanimaadhoo",
-      "name": "ޙުސައިން ޝަހުދީ",
-      "nameLatin": "husain shahudhee",
+      "name": "husain shahudhee",
+      "nameDv": "ޙުސައިން ޝަހުދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -310,8 +310,8 @@
     },
     {
       "id": "ilhaam-ahmadhu-dhangethi",
-      "name": "އިލްހާމް އަޙްމަދު",
-      "nameLatin": "ilhaam ahmadhu",
+      "name": "ilhaam ahmadhu",
+      "nameDv": "އިލްހާމް އަޙްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -321,8 +321,8 @@
     },
     {
       "id": "jameel-uthmaan-gemanafushi",
-      "name": "ޖަމީލް ޢުޘްމާން",
-      "nameLatin": "jameel uthmaan",
+      "name": "jameel uthmaan",
+      "nameDv": "ޖަމީލް ޢުޘްމާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -332,8 +332,8 @@
     },
     {
       "id": "ibraaheem-shujaau-baarashu",
-      "name": "އިބްރާހީމް ޝުޖާޢު",
-      "nameLatin": "ibraaheem shujaau",
+      "name": "ibraaheem shujaau",
+      "nameDv": "އިބްރާހީމް ޝުޖާޢު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -343,8 +343,8 @@
     },
     {
       "id": "muhamadhu-alee-dhuvaafaru",
-      "name": "މުޙައްމަދު ޢަލީ",
-      "nameLatin": "muhamadhu alee",
+      "name": "muhamadhu alee",
+      "nameDv": "މުޙައްމަދު ޢަލީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -356,8 +356,8 @@
     },
     {
       "id": "imthiyaaz-fahumee-maafannu-uthuru",
-      "name": "އިމްތިޔާޒް ފަހުމީ",
-      "nameLatin": "imthiyaaz fahumee",
+      "name": "imthiyaaz fahumee",
+      "nameDv": "އިމްތިޔާޒް ފަހުމީ",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -367,8 +367,8 @@
     },
     {
       "id": "abdhuullah-saneef-thinadhoo-dhekunu",
-      "name": "ޢަބްދުﷲ ސަނީފް",
-      "nameLatin": "abdhuullah saneef",
+      "name": "abdhuullah saneef",
+      "nameDv": "ޢަބްދުﷲ ސަނީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -378,8 +378,8 @@
     },
     {
       "id": "husain-muhamadhudheedhee-fuvamulaku-medhu",
-      "name": "ޙުސައިން މުޙައްމަދުދީދީ",
-      "nameLatin": "husain muhamadhudheedhee",
+      "name": "husain muhamadhudheedhee",
+      "nameDv": "ޙުސައިން މުޙައްމަދުދީދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -389,8 +389,8 @@
     },
     {
       "id": "ilyaas-labeebu-hulhudhoo",
-      "name": "އިލްޔާސް ލަބީބު",
-      "nameLatin": "ilyaas labeebu",
+      "name": "ilyaas labeebu",
+      "nameDv": "އިލްޔާސް ލަބީބު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -402,8 +402,8 @@
     },
     {
       "id": "yauqoobu-abdhuullah-dhaandhoo",
-      "name": "ޔަޢުޤޫބު ޢަބްދުﷲ",
-      "nameLatin": "yauqoobu abdhuullah",
+      "name": "yauqoobu abdhuullah",
+      "nameDv": "ޔަޢުޤޫބު ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -413,8 +413,8 @@
     },
     {
       "id": "faisal-naseem-kaashidhoo",
-      "name": "ފައިޞަލް ނަސީމް",
-      "nameLatin": "faisal naseem",
+      "name": "faisal naseem",
+      "nameDv": "ފައިޞަލް ނަސީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -424,8 +424,8 @@
     },
     {
       "id": "ahmadhu-maruzoogu-felidhoo",
-      "name": "އަޙްމަދު މަރުޒޫގު",
-      "nameLatin": "ahmadhu maruzoogu",
+      "name": "ahmadhu maruzoogu",
+      "nameDv": "އަޙްމަދު މަރުޒޫގު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -435,8 +435,8 @@
     },
     {
       "id": "alee-nizaaru-hithadhoo-dhekunu",
-      "name": "ޢަލީ ނިޒާރު",
-      "nameLatin": "alee nizaaru",
+      "name": "alee nizaaru",
+      "nameDv": "ޢަލީ ނިޒާރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -446,8 +446,8 @@
     },
     {
       "id": "muhamadhu-vaheedhu-ibraaheem-thulusdhoo",
-      "name": "މުޙައްމަދު ވަޙީދު އިބްރާހީމް",
-      "nameLatin": "muhamadhu vaheedhu ibraaheem",
+      "name": "muhamadhu vaheedhu ibraaheem",
+      "nameDv": "މުޙައްމަދު ވަޙީދު އިބްރާހީމް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -457,8 +457,8 @@
     },
     {
       "id": "naazim-rashaadhu-thulhaadhoo",
-      "name": "ނާޒިމް ރަޝާދު",
-      "nameLatin": "naazim rashaadhu",
+      "name": "naazim rashaadhu",
+      "nameDv": "ނާޒިމް ރަޝާދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -468,8 +468,8 @@
     },
     {
       "id": "rozainaa-aadham-adoomeedhoo",
-      "name": "ރޮޒައިނާ އާދަމް",
-      "nameLatin": "rozainaa aadham",
+      "name": "rozainaa aadham",
+      "nameDv": "ރޮޒައިނާ އާދަމް",
       "title": "Alfaazilaa",
       "titleDv": "އަލްފާޟިލާ",
       "possiblySameAs": null,
@@ -479,8 +479,8 @@
     },
     {
       "id": "alee-fazaadhu-fuvamulaku-medhu",
-      "name": "ޢަލީ ފަޒާދު",
-      "nameLatin": "alee fazaadhu",
+      "name": "alee fazaadhu",
+      "nameDv": "ޢަލީ ފަޒާދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -490,8 +490,8 @@
     },
     {
       "id": "abdhuullah-jaabiru-kaashidhoo",
-      "name": "ޢަބްދުﷲ ޖާބިރު",
-      "nameLatin": "abdhuullah jaabiru",
+      "name": "abdhuullah jaabiru",
+      "nameDv": "ޢަބްދުﷲ ޖާބިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -501,8 +501,8 @@
     },
     {
       "id": "abdhulmughunee-thinadhoo-uthuru",
-      "name": "ޢަބްދުލްމުޣުނީ",
-      "nameLatin": "abdhulmughunee",
+      "name": "abdhulmughunee",
+      "nameDv": "ޢަބްދުލްމުޣުނީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -512,8 +512,8 @@
     },
     {
       "id": "ahmadhu-khaitham-machangolhi-dhekunu",
-      "name": "އަޙްމަދު ޚައިތަމް",
-      "nameLatin": "ahmadhu khaitham",
+      "name": "ahmadhu khaitham",
+      "nameDv": "އަޙްމަދު ޚައިތަމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -523,8 +523,8 @@
     },
     {
       "id": "ibraaheem-naseem-thulusdhoo",
-      "name": "އިބްރާހީމް ނަސީމް",
-      "nameLatin": "ibraaheem naseem",
+      "name": "ibraaheem naseem",
+      "nameDv": "އިބްރާހީމް ނަސީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -534,8 +534,8 @@
     },
     {
       "id": "abdhulmuhusin-hameedhu-nilandhoo",
-      "name": "ޢަބްދުލްމުޙުސިން ޙަމީދު",
-      "nameLatin": "abdhulmuhusin hameedhu",
+      "name": "abdhulmuhusin hameedhu",
+      "nameDv": "ޢަބްދުލްމުޙުސިން ޙަމީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -545,8 +545,8 @@
     },
     {
       "id": "abdhuullah-shaheem-abdhulhakeem-kanditheemu",
-      "name": "ޢަބްދުﷲ ޝަހީމް ޢަބްދުލްޙަކީމް",
-      "nameLatin": "abdhuullah shaheem abdhulhakeem",
+      "name": "abdhuullah shaheem abdhulhakeem",
+      "nameDv": "ޢަބްދުﷲ ޝަހީމް ޢަބްދުލްޙަކީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -556,8 +556,8 @@
     },
     {
       "id": "ahmadhu-saeedhu-gemanafushi",
-      "name": "އަޙްމަދު ސަޢީދު",
-      "nameLatin": "ahmadhu saeedhu",
+      "name": "ahmadhu saeedhu",
+      "nameDv": "އަޙްމަދު ސަޢީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -567,8 +567,8 @@
     },
     {
       "id": "jeehaan-mahmoodhu-hinnavaru",
-      "name": "ޖީހާން މަޙްމޫދު",
-      "nameLatin": "jeehaan mahmoodhu",
+      "name": "jeehaan mahmoodhu",
+      "nameDv": "ޖީހާން މަޙްމޫދު",
       "title": "Alfaazilaa",
       "titleDv": "އަލްފާޟިލާ",
       "possiblySameAs": null,
@@ -578,8 +578,8 @@
     },
     {
       "id": "muhamadhu-shifaau-ihavandhoo",
-      "name": "މުޙައްމަދު ޝިފާޢު",
-      "nameLatin": "muhamadhu shifaau",
+      "name": "muhamadhu shifaau",
+      "nameDv": "މުޙައްމަދު ޝިފާޢު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -589,8 +589,8 @@
     },
     {
       "id": "husain-muhamadhu-lateef-faresmaathodaa",
-      "name": "ޙުސައިން މުޙައްމަދު ލަޠީފް",
-      "nameLatin": "husain muhamadhu lateef",
+      "name": "husain muhamadhu lateef",
+      "nameDv": "ޙުސައިން މުޙައްމަދު ލަޠީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -600,8 +600,8 @@
     },
     {
       "id": "abdhuullah-ahmadhu-thinadhoo-dhekunu",
-      "name": "ޢަބްދުﷲ އަޙްމަދު",
-      "nameLatin": "abdhuullah ahmadhu",
+      "name": "abdhuullah ahmadhu",
+      "nameDv": "ޢަބްދުﷲ އަޙްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -611,8 +611,8 @@
     },
     {
       "id": "muhamadhu-naazim-vaikaradhoo",
-      "name": "މުޙައްމަދު ނާޡިމް",
-      "nameLatin": "muhamadhu naazim",
+      "name": "muhamadhu naazim",
+      "nameDv": "މުޙައްމަދު ނާޡިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -625,8 +625,8 @@
     },
     {
       "id": "ibraaheem-falaah-inguraidhoo",
-      "name": "އިބްރާހީމް ފަލާޙް",
-      "nameLatin": "ibraaheem falaah",
+      "name": "ibraaheem falaah",
+      "nameDv": "އިބްރާހީމް ފަލާޙް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -636,8 +636,8 @@
     },
     {
       "id": "muhamadhu-rasheedhu-husain-alifushi",
-      "name": "މުޙައްމަދު ރަޝީދު ޙުސައިން",
-      "nameLatin": "muhamadhu rasheedhu husain",
+      "name": "muhamadhu rasheedhu husain",
+      "nameDv": "މުޙައްމަދު ރަޝީދު ޙުސައިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -647,8 +647,8 @@
     },
     {
       "id": "muhamadhu-ameethu-ahmadhumaniku-maduvari",
-      "name": "މުޙައްމަދު އަމީތު އަޙްމަދުމަނިކު",
-      "nameLatin": "muhamadhu ameethu ahmadhumaniku",
+      "name": "muhamadhu ameethu ahmadhumaniku",
+      "nameDv": "މުޙައްމަދު އަމީތު އަޙްމަދުމަނިކު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -658,8 +658,8 @@
     },
     {
       "id": "anaaraa-naeem-makunudhoo",
-      "name": "އަނާރާ ނަޢީމް",
-      "nameLatin": "anaaraa naeem",
+      "name": "anaaraa naeem",
+      "nameDv": "އަނާރާ ނަޢީމް",
       "title": "Dr",
       "titleDv": "ޑޮކްޓަރ",
       "possiblySameAs": [
@@ -671,8 +671,8 @@
     },
     {
       "id": "muhamadhu-ismaaeel-hoarafushi",
-      "name": "މުޙައްމަދު އިސްމާޢީލް",
-      "nameLatin": "muhamadhu ismaaeel",
+      "name": "muhamadhu ismaaeel",
+      "nameDv": "މުޙައްމަދު އިސްމާޢީލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -684,8 +684,8 @@
     },
     {
       "id": "abdhulghanee-abdhulhakeem-kurendhoo",
-      "name": "ޢަބްދުލްޣަނީ ޢަބްދުލްޙަކީމް",
-      "nameLatin": "abdhulghanee abdhulhakeem",
+      "name": "abdhulghanee abdhulhakeem",
+      "nameDv": "ޢަބްދުލްޣަނީ ޢަބްދުލްޙަކީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -695,8 +695,8 @@
     },
     {
       "id": "ahmadhu-haaroon-manadhoo",
-      "name": "އަޙްމަދު ހާރޫން",
-      "nameLatin": "ahmadhu haaroon",
+      "name": "ahmadhu haaroon",
+      "nameDv": "އަޙްމަދު ހާރޫން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -706,8 +706,8 @@
     },
     {
       "id": "alee-hameedhu-isdhoo",
-      "name": "ޢަލީ ޙަމީދު",
-      "nameLatin": "alee hameedhu",
+      "name": "alee hameedhu",
+      "nameDv": "ޢަލީ ޙަމީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -717,8 +717,8 @@
     },
     {
       "id": "alee-niyaaz-hulhumaale",
-      "name": "ޢަލީ ނިޔާޒް",
-      "nameLatin": "alee niyaaz",
+      "name": "alee niyaaz",
+      "nameDv": "ޢަލީ ނިޔާޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -728,8 +728,8 @@
     },
     {
       "id": "hasan-lateef-henveyru-hulhangu",
-      "name": "ޙަސަން ލަޠީފް",
-      "nameLatin": "hasan lateef",
+      "name": "hasan lateef",
+      "nameDv": "ޙަސަން ލަޠީފް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": [
@@ -741,8 +741,8 @@
     },
     {
       "id": "husain-shaheem-henveyru-dhekunu",
-      "name": "ޙުސައިން ޝަހީމް",
-      "nameLatin": "husain shaheem",
+      "name": "husain shaheem",
+      "nameDv": "ޙުސައިން ޝަހީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -752,8 +752,8 @@
     },
     {
       "id": "muhamadhu-raaee-makunudhoo",
-      "name": "މުޙައްމަދު ރާޢީ",
-      "nameLatin": "muhamadhu raaee",
+      "name": "muhamadhu raaee",
+      "nameDv": "މުޙައްމަދު ރާޢީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -763,8 +763,8 @@
     },
     {
       "id": "muhamadhu-rasheedhu-fuvamulaku-uthuru",
-      "name": "މުޙައްމަދު ރަޝީދު",
-      "nameLatin": "muhamadhu rasheedhu",
+      "name": "muhamadhu rasheedhu",
+      "nameDv": "މުޙައްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -778,8 +778,8 @@
     },
     {
       "id": "alee-aarif-kelaa",
-      "name": "ޢަލީ ޢާރިފް",
-      "nameLatin": "alee aarif",
+      "name": "alee aarif",
+      "nameDv": "ޢަލީ ޢާރިފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -789,8 +789,8 @@
     },
     {
       "id": "alee-rizaa-milandhoo",
-      "name": "ޢަލީ ރިޟާ",
-      "nameLatin": "alee rizaa",
+      "name": "alee rizaa",
+      "nameDv": "ޢަލީ ރިޟާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -800,8 +800,8 @@
     },
     {
       "id": "muhamadhu-mumthaaz-fuvamulaku-dhekunu",
-      "name": "މުޙައްމަދު މުމްތާޒް",
-      "nameLatin": "muhamadhu mumthaaz",
+      "name": "muhamadhu mumthaaz",
+      "nameDv": "މުޙައްމަދު މުމްތާޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -811,8 +811,8 @@
     },
     {
       "id": "muhamadhu-nihaadhu-feydhoo",
-      "name": "މުޙައްމަދު ނިހާދު",
-      "nameLatin": "muhamadhu nihaadhu",
+      "name": "muhamadhu nihaadhu",
+      "nameDv": "މުޙައްމަދު ނިހާދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -822,8 +822,8 @@
     },
     {
       "id": "alee-shaah-fuvamulaku-uthuru",
-      "name": "ޢަލީ ޝާހް",
-      "nameLatin": "alee shaah",
+      "name": "alee shaah",
+      "nameDv": "ޢަލީ ޝާހް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -833,8 +833,8 @@
     },
     {
       "id": "ashaih-moosaa-nizaaru-ibraaheem-keyodhoo",
-      "name": "އައްޝައިޙް މޫސާ ނިޒާރު އިބްރާހީމް",
-      "nameLatin": "ashaih moosaa nizaaru ibraaheem",
+      "name": "ashaih moosaa nizaaru ibraaheem",
+      "nameDv": "އައްޝައިޙް މޫސާ ނިޒާރު އިބްރާހީމް",
       "title": null,
       "titleDv": null,
       "possiblySameAs": null,
@@ -844,8 +844,8 @@
     },
     {
       "id": "abdhuraheem-abdhuullah-fonadhoo",
-      "name": "ޢަބްދުއްރަޙީމް ޢަބްދުﷲ",
-      "nameLatin": "abdhuraheem abdhuullah",
+      "name": "abdhuraheem abdhuullah",
+      "nameDv": "ޢަބްދުއްރަޙީމް ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -855,8 +855,8 @@
     },
     {
       "id": "ibraaheem-shareef-maradhoo",
-      "name": "އިބްރާހީމް ޝަރީފް",
-      "nameLatin": "ibraaheem shareef",
+      "name": "ibraaheem shareef",
+      "nameDv": "އިބްރާހީމް ޝަރީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -868,8 +868,8 @@
     },
     {
       "id": "hasan-shiyaan-thodoo",
-      "name": "ޙަސަން ޝިޔާން",
-      "nameLatin": "hasan shiyaan",
+      "name": "hasan shiyaan",
+      "nameDv": "ޙަސަން ޝިޔާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -879,8 +879,8 @@
     },
     {
       "id": "hasan-zareeru-mathiveri",
-      "name": "ޙަސަން ޒަރީރު",
-      "nameLatin": "hasan zareeru",
+      "name": "hasan zareeru",
+      "nameDv": "ޙަސަން ޒަރީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -890,8 +890,8 @@
     },
     {
       "id": "ibraaheem-naazil-hithadhoo-dhekunu",
-      "name": "އިބްރާހީމް ނާޒިލް",
-      "nameLatin": "ibraaheem naazil",
+      "name": "ibraaheem naazil",
+      "nameDv": "އިބްރާހީމް ނާޒިލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -901,8 +901,8 @@
     },
     {
       "id": "jaufaru-dhaaoodhu-ungoofaaru",
-      "name": "ޖަޢުފަރު ދާއޫދު",
-      "nameLatin": "jaufaru dhaaoodhu",
+      "name": "jaufaru dhaaoodhu",
+      "nameDv": "ޖަޢުފަރު ދާއޫދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -912,8 +912,8 @@
     },
     {
       "id": "moosaa-maniku-hulhuhenveyru",
-      "name": "މޫސާ މަނިކު",
-      "nameLatin": "moosaa maniku",
+      "name": "moosaa maniku",
+      "nameDv": "މޫސާ މަނިކު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -923,8 +923,8 @@
     },
     {
       "id": "alee-mauroof-kendhikulhudhoo",
-      "name": "ޢަލީ މަޢުރޫފް",
-      "nameLatin": "alee mauroof",
+      "name": "alee mauroof",
+      "nameDv": "ޢަލީ މަޢުރޫފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -934,8 +934,8 @@
     },
     {
       "id": "ahmadhu-azhaan-fahumee-maavashu",
-      "name": "އަޙްމަދު އަޒްހާން ފަހުމީ",
-      "nameLatin": "ahmadhu azhaan fahumee",
+      "name": "ahmadhu azhaan fahumee",
+      "nameDv": "އަޙްމަދު އަޒްހާން ފަހުމީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -945,8 +945,8 @@
     },
     {
       "id": "ibraaheem-muhamadhudheedhee-hithadhoo-medhu",
-      "name": "އިބްރާހީމް މުޙައްމަދުދީދީ",
-      "nameLatin": "ibraaheem muhamadhudheedhee",
+      "name": "ibraaheem muhamadhudheedhee",
+      "nameDv": "އިބްރާހީމް މުޙައްމަދުދީދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -956,8 +956,8 @@
     },
     {
       "id": "ahmadhu-abdhuullah-baarashu",
-      "name": "އަޙްމަދު ޢަބްދުﷲ",
-      "nameLatin": "ahmadhu abdhuullah",
+      "name": "ahmadhu abdhuullah",
+      "nameDv": "އަޙްމަދު ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -969,8 +969,8 @@
     },
     {
       "id": "husain-ziyaadhu-vaikaradhoo",
-      "name": "ޙުސައިން ޒިޔާދު",
-      "nameLatin": "husain ziyaadhu",
+      "name": "husain ziyaadhu",
+      "nameDv": "ޙުސައިން ޒިޔާދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -980,8 +980,8 @@
     },
     {
       "id": "ibraaheem-muizu-henveyru-uthuru",
-      "name": "އިބްރާހީމް މުޢިއްޒު",
-      "nameLatin": "ibraaheem muizu",
+      "name": "ibraaheem muizu",
+      "nameDv": "އިބްރާހީމް މުޢިއްޒު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -991,8 +991,8 @@
     },
     {
       "id": "muhamadhu-rasheedhu-machangolhi-uthuru",
-      "name": "މުޙައްމަދު ރަޝީދު",
-      "nameLatin": "muhamadhu rasheedhu",
+      "name": "muhamadhu rasheedhu",
+      "nameDv": "މުޙައްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1006,8 +1006,8 @@
     },
     {
       "id": "yaasiru-abdhulateef-kulhudhufushi-uthuru",
-      "name": "ޔާސިރު ޢަބްދުއްލަޠީފް",
-      "nameLatin": "yaasiru abdhulateef",
+      "name": "yaasiru abdhulateef",
+      "nameDv": "ޔާސިރު ޢަބްދުއްލަޠީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1017,8 +1017,8 @@
     },
     {
       "id": "muaazu-muhamadhu-rasheedhu-madaveli",
-      "name": "މުޢާޒު މުޙައްމަދު ރަޝީދު",
-      "nameLatin": "muaazu muhamadhu rasheedhu",
+      "name": "muaazu muhamadhu rasheedhu",
+      "nameDv": "މުޢާޒު މުޙައްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1028,8 +1028,8 @@
     },
     {
       "id": "ahmadhu-ushaam-vilimaale",
-      "name": "އަޙްމަދު އުޝާމް",
-      "nameLatin": "ahmadhu ushaam",
+      "name": "ahmadhu ushaam",
+      "nameDv": "އަޙްމަދު އުޝާމް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -1039,8 +1039,8 @@
     },
     {
       "id": "ibraaheem-fazul-rasheedhu-felidhoo",
-      "name": "އިބްރާހީމް ފަޟުލް ރަޝީދު",
-      "nameLatin": "ibraaheem fazul rasheedhu",
+      "name": "ibraaheem fazul rasheedhu",
+      "nameDv": "އިބްރާހީމް ފަޟުލް ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1050,8 +1050,8 @@
     },
     {
       "id": "fayaaz-ismaaeel-gamu",
-      "name": "ފައްޔާޟް އިސްމާޢީލް",
-      "nameLatin": "fayaaz ismaaeel",
+      "name": "fayaaz ismaaeel",
+      "nameDv": "ފައްޔާޟް އިސްމާޢީލް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -1061,8 +1061,8 @@
     },
     {
       "id": "maariyaa-ahmadhu-dheedhee-machangolhi-uthuru",
-      "name": "މާރިޔާ އަޙްމަދު ދީދީ",
-      "nameLatin": "maariyaa ahmadhu dheedhee",
+      "name": "maariyaa ahmadhu dheedhee",
+      "nameDv": "މާރިޔާ އަޙްމަދު ދީދީ",
       "title": "Al-Ustaza",
       "titleDv": "އަލްއުސްތާޛާ",
       "possiblySameAs": null,
@@ -1072,8 +1072,8 @@
     },
     {
       "id": "saudhuullah-hilmee-thinadhoo-uthuru",
-      "name": "ސަޢުދުﷲ ޙިލްމީ",
-      "nameLatin": "saudhuullah hilmee",
+      "name": "saudhuullah hilmee",
+      "nameDv": "ސަޢުދުﷲ ޙިލްމީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1083,8 +1083,8 @@
     },
     {
       "id": "husainmaniku-dhonmaniku-th-guraidhoo",
-      "name": "ޙުސައިންމަނިކު ދޮންމަނިކު",
-      "nameLatin": "husainmaniku dhonmaniku",
+      "name": "husainmaniku dhonmaniku",
+      "nameDv": "ޙުސައިންމަނިކު ދޮންމަނިކު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1094,8 +1094,8 @@
     },
     {
       "id": "aadham-alee-maafannu-dhekunu",
-      "name": "އާދަމް ޢަލީ",
-      "nameLatin": "aadham alee",
+      "name": "aadham alee",
+      "nameDv": "އާދަމް ޢަލީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1105,8 +1105,8 @@
     },
     {
       "id": "abdhuullah-vaheedhu-dhidhoo",
-      "name": "ޢަބްދުﷲ ވަޙީދު",
-      "nameLatin": "abdhuullah vaheedhu",
+      "name": "abdhuullah vaheedhu",
+      "nameDv": "ޢަބްދުﷲ ވަޙީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1116,8 +1116,8 @@
     },
     {
       "id": "ahmadhu-rasheedhu-hithadhoo-medhu",
-      "name": "އަޙްމަދު ރަޝީދު",
-      "nameLatin": "ahmadhu rasheedhu",
+      "name": "ahmadhu rasheedhu",
+      "nameDv": "އަޙްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1130,8 +1130,8 @@
     },
     {
       "id": "hisaan-husain-thulhaadhoo",
-      "name": "ޙިސާން ޙުސައިން",
-      "nameLatin": "hisaan husain",
+      "name": "hisaan husain",
+      "nameDv": "ޙިސާން ޙުސައިން",
       "title": "Al-Ustaza",
       "titleDv": "އަލްއުސްތާޛާ",
       "possiblySameAs": null,
@@ -1141,8 +1141,8 @@
     },
     {
       "id": "ikraam-hasan-dhigaru",
-      "name": "އިކްރާމް ޙަސަން",
-      "nameLatin": "ikraam hasan",
+      "name": "ikraam hasan",
+      "nameDv": "އިކްރާމް ޙަސަން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1152,8 +1152,8 @@
     },
     {
       "id": "muhamadhu-abdhuullah-shafeeq-velidhoo",
-      "name": "މުޙައްމަދު ޢަބްދުﷲ ޝަފީޤް",
-      "nameLatin": "muhamadhu abdhuullah shafeeq",
+      "name": "muhamadhu abdhuullah shafeeq",
+      "nameDv": "މުޙައްމަދު ޢަބްދުﷲ ޝަފީޤް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1163,8 +1163,8 @@
     },
     {
       "id": "muhamadhu-nasheedhu-abdhuullah-nolhivaram",
-      "name": "މުޙައްމަދު ނަޝީދު ޢަބްދުﷲ",
-      "nameLatin": "muhamadhu nasheedhu abdhuullah",
+      "name": "muhamadhu nasheedhu abdhuullah",
+      "nameDv": "މުޙައްމަދު ނަޝީދު ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1174,8 +1174,8 @@
     },
     {
       "id": "muhamadhu-saeedhu-maavashu",
-      "name": "މުޙައްމަދު ސަޢީދު",
-      "nameLatin": "muhamadhu saeedhu",
+      "name": "muhamadhu saeedhu",
+      "nameDv": "މުޙައްމަދު ސަޢީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1185,8 +1185,8 @@
     },
     {
       "id": "muhamadhu-shaahidhu-funadhoo",
-      "name": "މުޙައްމަދު ޝާހިދު",
-      "nameLatin": "muhamadhu shaahidhu",
+      "name": "muhamadhu shaahidhu",
+      "nameDv": "މުޙައްމަދު ޝާހިދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1198,8 +1198,8 @@
     },
     {
       "id": "yoonus-alee-holhudhoo",
-      "name": "ޔޫނުސް ޢަލީ",
-      "nameLatin": "yoonus alee",
+      "name": "yoonus alee",
+      "nameDv": "ޔޫނުސް ޢަލީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1209,8 +1209,8 @@
     },
     {
       "id": "abdhulbaaree-abdhuullah-kurendhoo",
-      "name": "ޢަބްދުލްބާރީ ޢަބްދުﷲ",
-      "nameLatin": "abdhulbaaree abdhuullah",
+      "name": "abdhulbaaree abdhuullah",
+      "nameDv": "ޢަބްދުލްބާރީ ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1220,8 +1220,8 @@
     },
     {
       "id": "alee-muhamadhu-holhudhoo",
-      "name": "ޢަލީ މުޙައްމަދު",
-      "nameLatin": "alee muhamadhu",
+      "name": "alee muhamadhu",
+      "nameDv": "ޢަލީ މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1231,8 +1231,8 @@
     },
     {
       "id": "ahmadhu-eesaa-kendhikulhudhoo",
-      "name": "އަޙްމަދު ޢީސާ",
-      "nameLatin": "ahmadhu eesaa",
+      "name": "ahmadhu eesaa",
+      "nameDv": "އަޙްމަދު ޢީސާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1242,8 +1242,8 @@
     },
     {
       "id": "abdhuullah-riyaaz-thimarafushi",
-      "name": "ޢަބްދުﷲ ރިޔާޟް",
-      "nameLatin": "abdhuullah riyaaz",
+      "name": "abdhuullah riyaaz",
+      "nameDv": "ޢަބްދުﷲ ރިޔާޟް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1255,8 +1255,8 @@
     },
     {
       "id": "husain-qaasim-keyodhoo",
-      "name": "ޙުސައިން ޤާސިމް",
-      "nameLatin": "husain qaasim",
+      "name": "husain qaasim",
+      "nameDv": "ޙުސައިން ޤާސިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1266,8 +1266,8 @@
     },
     {
       "id": "ibraaheem-rasheedhu-maafannu-medhu",
-      "name": "އިބްރާހީމް ރަޝީދު",
-      "nameLatin": "ibraaheem rasheedhu",
+      "name": "ibraaheem rasheedhu",
+      "nameDv": "އިބްރާހީމް ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1279,8 +1279,8 @@
     },
     {
       "id": "ibraaheem-shareef-kelaa",
-      "name": "އިބްރާހީމް ޝަރީފް",
-      "nameLatin": "ibraaheem shareef",
+      "name": "ibraaheem shareef",
+      "nameDv": "އިބްރާހީމް ޝަރީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1292,8 +1292,8 @@
     },
     {
       "id": "muhamadhu-ghasaan-maumoon-th-guraidhoo",
-      "name": "މުޙައްމަދު ޣައްސާން މައުމޫން",
-      "nameLatin": "muhamadhu ghasaan maumoon",
+      "name": "muhamadhu ghasaan maumoon",
+      "nameDv": "މުޙައްމަދު ޣައްސާން މައުމޫން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1303,8 +1303,8 @@
     },
     {
       "id": "ahmadhu-naashidhu-komandoo",
-      "name": "އަޙްމަދު ނާޝިދު",
-      "nameLatin": "ahmadhu naashidhu",
+      "name": "ahmadhu naashidhu",
+      "nameDv": "އަޙްމަދު ނާޝިދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1314,8 +1314,8 @@
     },
     {
       "id": "abdhuullah-shaahidhu-henveyru-uthuru",
-      "name": "ޢަބްދުﷲ ޝާހިދު",
-      "nameLatin": "abdhuullah shaahidhu",
+      "name": "abdhuullah shaahidhu",
+      "nameDv": "ޢަބްދުﷲ ޝާހިދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1325,8 +1325,8 @@
     },
     {
       "id": "abdhulateef-muhamadhu-dhidhoo",
-      "name": "ޢަބްދުއްލަޠީފް މުޙައްމަދު",
-      "nameLatin": "abdhulateef muhamadhu",
+      "name": "abdhulateef muhamadhu",
+      "nameDv": "ޢަބްދުއްލަޠީފް މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1336,8 +1336,8 @@
     },
     {
       "id": "abdhuullah-maseehu-muhamadhu-fuvamulaku-dhekunu",
-      "name": "ޢަބްދުﷲ މަސީޙު މުޙައްމަދު",
-      "nameLatin": "abdhuullah maseehu muhamadhu",
+      "name": "abdhuullah maseehu muhamadhu",
+      "nameDv": "ޢަބްދުﷲ މަސީޙު މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1347,8 +1347,8 @@
     },
     {
       "id": "ahmadhu-rasheedhu-ibraaheem-isdhoo",
-      "name": "އަޙްމަދު ރަޝީދު އިބްރާހީމް",
-      "nameLatin": "ahmadhu rasheedhu ibraaheem",
+      "name": "ahmadhu rasheedhu ibraaheem",
+      "nameDv": "އަޙްމަދު ރަޝީދު އިބްރާހީމް",
       "title": "Al-Sheikh",
       "titleDv": "އައްޝައިޚް",
       "possiblySameAs": null,
@@ -1358,8 +1358,8 @@
     },
     {
       "id": "alee-saleem-funadhoo",
-      "name": "ޢަލީ ސަލީމް",
-      "nameLatin": "alee saleem",
+      "name": "alee saleem",
+      "nameDv": "ޢަލީ ސަލީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1369,8 +1369,8 @@
     },
     {
       "id": "alfaazlaa-asmaa-rasheedhu-maafannu-medhu",
-      "name": "އަލްފާޟލާ އަސްމާ ރަޝީދު",
-      "nameLatin": "alfaazlaa asmaa rasheedhu",
+      "name": "alfaazlaa asmaa rasheedhu",
+      "nameDv": "އަލްފާޟލާ އަސްމާ ރަޝީދު",
       "title": null,
       "titleDv": null,
       "possiblySameAs": null,
@@ -1380,8 +1380,8 @@
     },
     {
       "id": "husain-areef-nolhivaram",
-      "name": "ޙުސައިން ޢަރީފް",
-      "nameLatin": "husain areef",
+      "name": "husain areef",
+      "nameDv": "ޙުސައިން ޢަރީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1391,8 +1391,8 @@
     },
     {
       "id": "muhamadhu-husain-kanditheemu",
-      "name": "މުޙައްމަދު ޙުސައިން",
-      "nameLatin": "muhamadhu husain",
+      "name": "muhamadhu husain",
+      "nameDv": "މުޙައްމަދު ޙުސައިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1402,8 +1402,8 @@
     },
     {
       "id": "umaru-husain-manadhoo",
-      "name": "ޢުމަރު ޙުސައިން",
-      "nameLatin": "umaru husain",
+      "name": "umaru husain",
+      "nameDv": "ޢުމަރު ޙުސައިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1413,8 +1413,8 @@
     },
     {
       "id": "ahmadhu-haleem-bilethdhoo",
-      "name": "އަޙްމަދު ޙަލީމް",
-      "nameLatin": "ahmadhu haleem",
+      "name": "ahmadhu haleem",
+      "nameDv": "އަޙްމަދު ޙަލީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1424,8 +1424,8 @@
     },
     {
       "id": "ahmadhu-saleem-hoarafushi",
-      "name": "އަޙްމަދު ސަލީމް",
-      "nameLatin": "ahmadhu saleem",
+      "name": "ahmadhu saleem",
+      "nameDv": "އަޙްމަދު ސަލީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1437,8 +1437,8 @@
     },
     {
       "id": "ahmadhu-zaahiru-gadhoo",
-      "name": "އަޙްމަދު ޒާހިރު",
-      "nameLatin": "ahmadhu zaahiru",
+      "name": "ahmadhu zaahiru",
+      "nameDv": "އަޙްމަދު ޒާހިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1450,8 +1450,8 @@
     },
     {
       "id": "muhamadhu-naazim-dhangethi",
-      "name": "މުޙައްމަދު ނާޡިމް",
-      "nameLatin": "muhamadhu naazim",
+      "name": "muhamadhu naazim",
+      "nameDv": "މުޙައްމަދު ނާޡިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1464,8 +1464,8 @@
     },
     {
       "id": "muhamadhu-vaheedhu-ungoofaaru",
-      "name": "މުޙައްމަދު ވަޙީދު",
-      "nameLatin": "muhamadhu vaheedhu",
+      "name": "muhamadhu vaheedhu",
+      "nameDv": "މުޙައްމަދު ވަޙީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1475,8 +1475,8 @@
     },
     {
       "id": "abdhuullah-riyaaz-kinbidhoo",
-      "name": "ޢަބްދުﷲ ރިޔާޟް",
-      "nameLatin": "abdhuullah riyaaz",
+      "name": "abdhuullah riyaaz",
+      "nameDv": "ޢަބްދުﷲ ރިޔާޟް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1488,8 +1488,8 @@
     },
     {
       "id": "ahmadhu-makhloof-galolhu-dhekunu",
-      "name": "އަޙްމަދު މަޚްލޫފް",
-      "nameLatin": "ahmadhu makhloof",
+      "name": "ahmadhu makhloof",
+      "nameDv": "އަޙްމަދު މަޚްލޫފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1499,8 +1499,8 @@
     },
     {
       "id": "ahmadhu-nihaan-husainmaniku-vilimaale",
-      "name": "އަޙްމަދު ނިހާން ޙުސައިންމަނިކު",
-      "nameLatin": "ahmadhu nihaan husainmaniku",
+      "name": "ahmadhu nihaan husainmaniku",
+      "nameDv": "އަޙްމަދު ނިހާން ޙުސައިންމަނިކު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1512,8 +1512,8 @@
     },
     {
       "id": "ibraaheemdheedhee-feydhoo",
-      "name": "އިބްރާހީމްދީދީ",
-      "nameLatin": "ibraaheemdheedhee",
+      "name": "ibraaheemdheedhee",
+      "nameDv": "އިބްރާހީމްދީދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1526,8 +1526,8 @@
     },
     {
       "id": "husain-vaheedhu-komandoo",
-      "name": "ޙުސައިން ވަޙީދު",
-      "nameLatin": "husain vaheedhu",
+      "name": "husain vaheedhu",
+      "nameDv": "ޙުސައިން ވަޙީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1537,8 +1537,8 @@
     },
     {
       "id": "aadham-shareef-maduvari",
-      "name": "އާދަމް ޝަރީފް",
-      "nameLatin": "aadham shareef",
+      "name": "aadham shareef",
+      "nameDv": "އާދަމް ޝަރީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1548,8 +1548,8 @@
     },
     {
       "id": "ahmadhu-siyaam-muhamadhu-meedhoo",
-      "name": "އަޙްމަދު ސިޔާމް މުޙައްމަދު",
-      "nameLatin": "ahmadhu siyaam muhamadhu",
+      "name": "ahmadhu siyaam muhamadhu",
+      "nameDv": "އަޙްމަދު ސިޔާމް މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1559,8 +1559,8 @@
     },
     {
       "id": "abdhulghafooru-moosaa-hanimaadhoo",
-      "name": "ޢަބްދުލްޣަފޫރު މޫސާ",
-      "nameLatin": "abdhulghafooru moosaa",
+      "name": "abdhulghafooru moosaa",
+      "nameDv": "ޢަބްދުލްޣަފޫރު މޫސާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1572,8 +1572,8 @@
     },
     {
       "id": "hasan-afeefu-vilufushi",
-      "name": "ޙަސަން ޢަފީފު",
-      "nameLatin": "hasan afeefu",
+      "name": "hasan afeefu",
+      "nameDv": "ޙަސަން ޢަފީފު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1583,8 +1583,8 @@
     },
     {
       "id": "hasan-ahmadhu-inguraidhoo",
-      "name": "ޙަސަން އަޙްމަދު",
-      "nameLatin": "hasan ahmadhu",
+      "name": "hasan ahmadhu",
+      "nameDv": "ޙަސަން އަޙްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1594,8 +1594,8 @@
     },
     {
       "id": "husain-firushaan-madaveli",
-      "name": "ޙުސައިން ފިރުޝާން",
-      "nameLatin": "husain firushaan",
+      "name": "husain firushaan",
+      "nameDv": "ޙުސައިން ފިރުޝާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1605,8 +1605,8 @@
     },
     {
       "id": "jamsheedhu-muhamadhu-kulhudhufushi-dhekunu",
-      "name": "ޖަމްޝީދު މުޙައްމަދު",
-      "nameLatin": "jamsheedhu muhamadhu",
+      "name": "jamsheedhu muhamadhu",
+      "nameDv": "ޖަމްޝީދު މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1616,8 +1616,8 @@
     },
     {
       "id": "moosaa-siraaju-fonadhoo",
-      "name": "މޫސާ ސިރާޖު",
-      "nameLatin": "moosaa siraaju",
+      "name": "moosaa siraaju",
+      "nameDv": "މޫސާ ސިރާޖު",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -1627,8 +1627,8 @@
     },
     {
       "id": "muhamadhu-nasheedhu-machangolhi-medhu",
-      "name": "މުޙައްމަދު ނަޝީދު",
-      "nameLatin": "muhamadhu nasheedhu",
+      "name": "muhamadhu nasheedhu",
+      "nameDv": "މުޙައްމަދު ނަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1641,8 +1641,8 @@
     },
     {
       "id": "abdhulazeez-jamaal-aboobakuru-maavashu",
-      "name": "ޢަބްދުލްޢަޒީޒް ޖަމާލް އަބޫބަކުރު",
-      "nameLatin": "abdhulazeez jamaal aboobakuru",
+      "name": "abdhulazeez jamaal aboobakuru",
+      "nameDv": "ޢަބްދުލްޢަޒީޒް ޖަމާލް އަބޫބަކުރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1652,8 +1652,8 @@
     },
     {
       "id": "abdhuullah-abdhuraheem-maafannu-hulhangu",
-      "name": "ޢަބްދުﷲ ޢަބްދުއްރަޙީމް",
-      "nameLatin": "abdhuullah abdhuraheem",
+      "name": "abdhuullah abdhuraheem",
+      "nameDv": "ޢަބްދުﷲ ޢަބްދުއްރަޙީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1663,8 +1663,8 @@
     },
     {
       "id": "abdhuullah-sinaan-machangolhi-dhekunu",
-      "name": "ޢަބްދުﷲ ސިނާން",
-      "nameLatin": "abdhuullah sinaan",
+      "name": "abdhuullah sinaan",
+      "nameDv": "ޢަބްދުﷲ ސިނާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1674,8 +1674,8 @@
     },
     {
       "id": "abdhuullah-yaamin-velidhoo",
-      "name": "ޢަބްދުﷲ ޔާމިން",
-      "nameLatin": "abdhuullah yaamin",
+      "name": "abdhuullah yaamin",
+      "nameDv": "ޢަބްދުﷲ ޔާމިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1685,8 +1685,8 @@
     },
     {
       "id": "ahmadhu-aamiru-kudahuvadhoo",
-      "name": "އަޙްމަދު ޢާމިރު",
-      "nameLatin": "ahmadhu aamiru",
+      "name": "ahmadhu aamiru",
+      "nameDv": "އަޙްމަދު ޢާމިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1696,8 +1696,8 @@
     },
     {
       "id": "ahmadhu-hamzaa-bilethdhoo",
-      "name": "އަޙްމަދު ޙަމްޒާ",
-      "nameLatin": "ahmadhu hamzaa",
+      "name": "ahmadhu hamzaa",
+      "nameDv": "އަޙްމަދު ޙަމްޒާ",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -1707,8 +1707,8 @@
     },
     {
       "id": "ahmadhu-moosaa-kurendhoo",
-      "name": "އަޙްމަދު މޫސާ",
-      "nameLatin": "ahmadhu moosaa",
+      "name": "ahmadhu moosaa",
+      "nameDv": "އަޙްމަދު މޫސާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1718,8 +1718,8 @@
     },
     {
       "id": "ahmadhu-muhamadhu-naifaru",
-      "name": "އަޙްމަދު މުޙައްމަދު",
-      "nameLatin": "ahmadhu muhamadhu",
+      "name": "ahmadhu muhamadhu",
+      "nameDv": "އަޙްމަދު މުޙައްމަދު",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -1729,8 +1729,8 @@
     },
     {
       "id": "ahmadhu-rasheedhu-hoarafushi",
-      "name": "އަޙްމަދު ރަޝީދު",
-      "nameLatin": "ahmadhu rasheedhu",
+      "name": "ahmadhu rasheedhu",
+      "nameDv": "އަޙްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1743,8 +1743,8 @@
     },
     {
       "id": "ahmadhu-rasheedhu-gadhoo",
-      "name": "އަޙްމަދު ރަޝީދު",
-      "nameLatin": "ahmadhu rasheedhu",
+      "name": "ahmadhu rasheedhu",
+      "nameDv": "އަޙްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1757,8 +1757,8 @@
     },
     {
       "id": "ahmadhu-sameeru-dhidhoo",
-      "name": "އަޙްމަދު ސަމީރު",
-      "nameLatin": "ahmadhu sameeru",
+      "name": "ahmadhu sameeru",
+      "nameDv": "އަޙްމަދު ސަމީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1768,8 +1768,8 @@
     },
     {
       "id": "ahmadhu-thasmeen-alee-kendhoo",
-      "name": "އަޙްމަދު ތަސްމީން ޢަލީ",
-      "nameLatin": "ahmadhu thasmeen alee",
+      "name": "ahmadhu thasmeen alee",
+      "nameDv": "އަޙްމަދު ތަސްމީން ޢަލީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1779,8 +1779,8 @@
     },
     {
       "id": "alhaan-fahumee-feydhoo",
-      "name": "އަލްޙާން ފަޙުމީ",
-      "nameLatin": "alhaan fahumee",
+      "name": "alhaan fahumee",
+      "nameDv": "އަލްޙާން ފަޙުމީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1790,8 +1790,8 @@
     },
     {
       "id": "haamidhu-abdhulghafooru-henveyru-dhekunu",
-      "name": "ޙާމިދު ޢަބްދުލްޣަފޫރު",
-      "nameLatin": "haamidhu abdhulghafooru",
+      "name": "haamidhu abdhulghafooru",
+      "nameDv": "ޙާމިދު ޢަބްދުލްޣަފޫރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1801,8 +1801,8 @@
     },
     {
       "id": "hamdhoon-abdhuullah-hameedhu-inguraidhoo",
-      "name": "ޙަމްދޫން ޢަބްދުﷲ ޙަމީދު",
-      "nameLatin": "hamdhoon abdhuullah hameedhu",
+      "name": "hamdhoon abdhuullah hameedhu",
+      "nameDv": "ޙަމްދޫން ޢަބްދުﷲ ޙަމީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1812,8 +1812,8 @@
     },
     {
       "id": "hasan-aadhil-maradhoo",
-      "name": "ޙަސަން އާދިލް",
-      "nameLatin": "hasan aadhil",
+      "name": "hasan aadhil",
+      "nameDv": "ޙަސަން އާދިލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1823,8 +1823,8 @@
     },
     {
       "id": "hasan-lateef-hithadhoo-dhekunu",
-      "name": "ޙަސަން ލަޠީފް",
-      "nameLatin": "hasan lateef",
+      "name": "hasan lateef",
+      "nameDv": "ޙަސަން ލަޠީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1836,8 +1836,8 @@
     },
     {
       "id": "ibraaheem-mutalib-faresmaathodaa",
-      "name": "އިބްރާހީމް މުއްޠަލިބް",
-      "nameLatin": "ibraaheem mutalib",
+      "name": "ibraaheem mutalib",
+      "nameDv": "އިބްރާހީމް މުއްޠަލިބް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1847,8 +1847,8 @@
     },
     {
       "id": "ismaaeel-abdhulhameedhu-kaashidhoo",
-      "name": "އިސްމާޢީލް ޢަބްދުލްޙަމީދު",
-      "nameLatin": "ismaaeel abdhulhameedhu",
+      "name": "ismaaeel abdhulhameedhu",
+      "nameDv": "އިސްމާޢީލް ޢަބްދުލްޙަމީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1858,8 +1858,8 @@
     },
     {
       "id": "muhamadhu-mujuthaaz-hanimaadhoo",
-      "name": "މުޙައްމަދު މުޖުތާޒް",
-      "nameLatin": "muhamadhu mujuthaaz",
+      "name": "muhamadhu mujuthaaz",
+      "nameDv": "މުޙައްމަދު މުޖުތާޒް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -1869,8 +1869,8 @@
     },
     {
       "id": "muhamadhu-naazim-madaveli",
-      "name": "މުޙައްމަދު ނާޒިމް",
-      "nameLatin": "muhamadhu naazim",
+      "name": "muhamadhu naazim",
+      "nameDv": "މުޙައްމަދު ނާޒިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1880,8 +1880,8 @@
     },
     {
       "id": "muhamadhu-nasheedhu-nolhivaram",
-      "name": "މުޙައްމަދު ނަޝީދު",
-      "nameLatin": "muhamadhu nasheedhu",
+      "name": "muhamadhu nasheedhu",
+      "nameDv": "މުޙައްމަދު ނަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1894,8 +1894,8 @@
     },
     {
       "id": "muhamadhu-nasheedhu-kulhudhufushi-dhekunu",
-      "name": "މުޙައްމަދު ނަޝީދު",
-      "nameLatin": "muhamadhu nasheedhu",
+      "name": "muhamadhu nasheedhu",
+      "nameDv": "މުޙައްމަދު ނަޝީދު",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": [
@@ -1908,8 +1908,8 @@
     },
     {
       "id": "muhamadhu-qasam-thinadhoo",
-      "name": "މުޙައްމަދު ޤަސަމް",
-      "nameLatin": "muhamadhu qasam",
+      "name": "muhamadhu qasam",
+      "nameDv": "މުޙައްމަދު ޤަސަމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1919,8 +1919,8 @@
     },
     {
       "id": "muhamadhu-raamiz-vilingili",
-      "name": "މުޙައްމަދު ރާމިޒް",
-      "nameLatin": "muhamadhu raamiz",
+      "name": "muhamadhu raamiz",
+      "nameDv": "މުޙައްމަދު ރާމިޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1930,8 +1930,8 @@
     },
     {
       "id": "muhamadhu-rafeeq-hasan-fuvamulaku-uthuru",
-      "name": "މުޙައްމަދު ރަފީޤް ޙަސަން",
-      "nameLatin": "muhamadhu rafeeq hasan",
+      "name": "muhamadhu rafeeq hasan",
+      "nameDv": "މުޙައްމަދު ރަފީޤް ޙަސަން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1941,8 +1941,8 @@
     },
     {
       "id": "muhamadhu-rasheedhu-hithadhoo-medhu",
-      "name": "މުޙައްމަދު ރަޝީދު",
-      "nameLatin": "muhamadhu rasheedhu",
+      "name": "muhamadhu rasheedhu",
+      "nameDv": "މުޙައްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -1956,8 +1956,8 @@
     },
     {
       "id": "muhamadhu-riyaaz-dhaandhoo",
-      "name": "މުޙައްމަދު ރިޔާޒް",
-      "nameLatin": "muhamadhu riyaaz",
+      "name": "muhamadhu riyaaz",
+      "nameDv": "މުޙައްމަދު ރިޔާޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1967,8 +1967,8 @@
     },
     {
       "id": "muhamadhu-shifaaz-baarashu",
-      "name": "މުޙައްމަދު ޝިފާޒް",
-      "nameLatin": "muhamadhu shifaaz",
+      "name": "muhamadhu shifaaz",
+      "nameDv": "މުޙައްމަދު ޝިފާޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1978,8 +1978,8 @@
     },
     {
       "id": "muhamadhu-taariq-manadhoo",
-      "name": "މުޙައްމަދު ޠާރިޤް",
-      "nameLatin": "muhamadhu taariq",
+      "name": "muhamadhu taariq",
+      "nameDv": "މުޙައްމަދު ޠާރިޤް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -1989,8 +1989,8 @@
     },
     {
       "id": "muhamadhu-zubairu-dhuvaafaru",
-      "name": "މުޙައްމަދު ޒުބައިރު",
-      "nameLatin": "muhamadhu zubairu",
+      "name": "muhamadhu zubairu",
+      "nameDv": "މުޙައްމަދު ޒުބައިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2000,8 +2000,8 @@
     },
     {
       "id": "ruqiyaa-muhamadhu-mahibadhoo",
-      "name": "ރުޤިއްޔާ މުޙައްމަދު",
-      "nameLatin": "ruqiyaa muhamadhu",
+      "name": "ruqiyaa muhamadhu",
+      "nameDv": "ރުޤިއްޔާ މުޙައްމަދު",
       "title": "Alfaazilaa",
       "titleDv": "އަލްފާޟިލާ",
       "possiblySameAs": null,
@@ -2011,8 +2011,8 @@
     },
     {
       "id": "shifaaq-mufeedhu-fuvamulaku-medhu",
-      "name": "ޝިފާޤް މުފީދު",
-      "nameLatin": "shifaaq mufeedhu",
+      "name": "shifaaq mufeedhu",
+      "nameDv": "ޝިފާޤް މުފީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2022,8 +2022,8 @@
     },
     {
       "id": "visaam-alee-maduvari",
-      "name": "ވިސާމް ޢަލީ",
-      "nameLatin": "visaam alee",
+      "name": "visaam alee",
+      "nameDv": "ވިސާމް ޢަލީ",
       "title": "Alfaazilaa",
       "titleDv": "އަލްފާޟިލާ",
       "possiblySameAs": null,
@@ -2033,8 +2033,8 @@
     },
     {
       "id": "yoosuf-abdhulghafooru-gamu",
-      "name": "ޔޫސުފް ޢަބްދުލްޣަފޫރު",
-      "nameLatin": "yoosuf abdhulghafooru",
+      "name": "yoosuf abdhulghafooru",
+      "nameDv": "ޔޫސުފް ޢަބްދުލްޣަފޫރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2044,8 +2044,8 @@
     },
     {
       "id": "yoosuf-naeem-felidhoo",
-      "name": "ޔޫސުފް ނައީމް",
-      "nameLatin": "yoosuf naeem",
+      "name": "yoosuf naeem",
+      "nameDv": "ޔޫސުފް ނައީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2055,8 +2055,8 @@
     },
     {
       "id": "muhamadhu-visaam-gamu",
-      "name": "މުޙައްމަދު ވިސާމް",
-      "nameLatin": "muhamadhu visaam",
+      "name": "muhamadhu visaam",
+      "nameDv": "މުޙައްމަދު ވިސާމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2066,8 +2066,8 @@
     },
     {
       "id": "meekaaeelu-ahmadhu-naseem-galolhu-dhekunu",
-      "name": "މީކާއީލު އަޙްމަދު ނަސީމް",
-      "nameLatin": "meekaaeelu ahmadhu naseem",
+      "name": "meekaaeelu ahmadhu naseem",
+      "nameDv": "މީކާއީލު އަޙްމަދު ނަސީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2077,8 +2077,8 @@
     },
     {
       "id": "muhamadhu-raashidhu-komandoo",
-      "name": "މުޙައްމަދު ރާޝިދު",
-      "nameLatin": "muhamadhu raashidhu",
+      "name": "muhamadhu raashidhu",
+      "nameDv": "މުޙައްމަދު ރާޝިދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2088,8 +2088,8 @@
     },
     {
       "id": "ibraaheem-muhamadhu-saalih-hinnavaru",
-      "name": "އިބްރާހީމް މުޙައްމަދު ޞާލިޙް",
-      "nameLatin": "ibraaheem muhamadhu saalih",
+      "name": "ibraaheem muhamadhu saalih",
+      "nameDv": "އިބްރާހީމް މުޙައްމަދު ޞާލިޙް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2099,8 +2099,8 @@
     },
     {
       "id": "abdhulghafooru-moosaa-kulhudhufushi-uthuru",
-      "name": "ޢަބްދުލްޣަފޫރު މޫސާ",
-      "nameLatin": "abdhulghafooru moosaa",
+      "name": "abdhulghafooru moosaa",
+      "nameDv": "ޢަބްދުލްޣަފޫރު މޫސާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2112,8 +2112,8 @@
     },
     {
       "id": "alee-vaheedhu-thodoo",
-      "name": "ޢަލީ ވަޙީދު",
-      "nameLatin": "alee vaheedhu",
+      "name": "alee vaheedhu",
+      "nameDv": "ޢަލީ ވަޙީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2123,8 +2123,8 @@
     },
     {
       "id": "abdhuullah-mausoom-kelaa",
-      "name": "ޢަބްދުﷲ މަޢުޞޫމް",
-      "nameLatin": "abdhuullah mausoom",
+      "name": "abdhuullah mausoom",
+      "nameDv": "ޢަބްދުﷲ މަޢުޞޫމް",
       "title": "Dr",
       "titleDv": "ޑޮކްޓަރ",
       "possiblySameAs": null,
@@ -2134,8 +2134,8 @@
     },
     {
       "id": "abdhusathaaru-muhamadhu-holhudhoo",
-      "name": "ޢަބްދުއްސައްތާރު މުޙައްމަދު",
-      "nameLatin": "abdhusathaaru muhamadhu",
+      "name": "abdhusathaaru muhamadhu",
+      "nameDv": "ޢަބްދުއްސައްތާރު މުޙައްމަދު",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -2145,8 +2145,8 @@
     },
     {
       "id": "ahmadhu-zaahiru-maduvari",
-      "name": "އަޙްމަދު ޒާހިރު",
-      "nameLatin": "ahmadhu zaahiru",
+      "name": "ahmadhu zaahiru",
+      "nameDv": "އަޙްމަދު ޒާހިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2158,8 +2158,8 @@
     },
     {
       "id": "alfaazeel-husain-shareefu-hulhumaale-uthuru",
-      "name": "އަލްފާޟީލް ޙުސައިން ޝަރީފު",
-      "nameLatin": "alfaazeel husain shareefu",
+      "name": "alfaazeel husain shareefu",
+      "nameDv": "އަލްފާޟީލް ޙުސައިން ޝަރީފު",
       "title": null,
       "titleDv": null,
       "possiblySameAs": null,
@@ -2169,8 +2169,8 @@
     },
     {
       "id": "husain-muhamadhu-mathiveri",
-      "name": "ޙުސައިން މުޙައްމަދު",
-      "nameLatin": "husain muhamadhu",
+      "name": "husain muhamadhu",
+      "nameDv": "ޙުސައިން މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2180,8 +2180,8 @@
     },
     {
       "id": "moosaa-zameeru-kinbidhoo",
-      "name": "މޫސާ ޒަމީރު",
-      "nameLatin": "moosaa zameeru",
+      "name": "moosaa zameeru",
+      "nameDv": "މޫސާ ޒަމީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2191,8 +2191,8 @@
     },
     {
       "id": "zaahiru-aadham-gadhoo",
-      "name": "ޒާހިރު އާދަމް",
-      "nameLatin": "zaahiru aadham",
+      "name": "zaahiru aadham",
+      "nameDv": "ޒާހިރު އާދަމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2202,8 +2202,8 @@
     },
     {
       "id": "ahmadhu-nihaan-husainmaniku-vilimaafannu",
-      "name": "އަޙްމަދު ނިހާން ޙުސައިންމަނިކު",
-      "nameLatin": "ahmadhu nihaan husainmaniku",
+      "name": "ahmadhu nihaan husainmaniku",
+      "nameDv": "އަޙްމަދު ނިހާން ޙުސައިންމަނިކު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2215,8 +2215,8 @@
     },
     {
       "id": "ahmadhu-shaakiru-maavashu",
-      "name": "އަޙްމަދު ޝާކިރު",
-      "nameLatin": "ahmadhu shaakiru",
+      "name": "ahmadhu shaakiru",
+      "nameDv": "އަޙްމަދު ޝާކިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2226,8 +2226,8 @@
     },
     {
       "id": "faatimathu-saudhaa-nilandhoo",
-      "name": "ފާޠިމަތު ސަޢުދާ",
-      "nameLatin": "faatimathu saudhaa",
+      "name": "faatimathu saudhaa",
+      "nameDv": "ފާޠިމަތު ސަޢުދާ",
       "title": "Alfaazilaa",
       "titleDv": "އަލްފާޟިލާ",
       "possiblySameAs": null,
@@ -2237,8 +2237,8 @@
     },
     {
       "id": "lfaazil-muhamadhu-shaamin-habeebu-kurendhoo",
-      "name": "އލްފާޟިލް މުޙައްމަދު ޝާމިން ޙަބީބު",
-      "nameLatin": "lfaazil muhamadhu shaamin habeebu",
+      "name": "lfaazil muhamadhu shaamin habeebu",
+      "nameDv": "އލްފާޟިލް މުޙައްމަދު ޝާމިން ޙަބީބު",
       "title": null,
       "titleDv": null,
       "possiblySameAs": null,
@@ -2248,8 +2248,8 @@
     },
     {
       "id": "muhamadhu-ismaaeel-vilimaale",
-      "name": "މުޙައްމަދު އިސްމާޢީލް",
-      "nameLatin": "muhamadhu ismaaeel",
+      "name": "muhamadhu ismaaeel",
+      "nameDv": "މުޙައްމަދު އިސްމާޢީލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2261,8 +2261,8 @@
     },
     {
       "id": "muhamadhu-naashiz-kinbidhoo",
-      "name": "މުޙައްމަދު ނާޝިޒް",
-      "nameLatin": "muhamadhu naashiz",
+      "name": "muhamadhu naashiz",
+      "nameDv": "މުޙައްމަދު ނާޝިޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2274,8 +2274,8 @@
     },
     {
       "id": "yoosuf-nasheedhu-gamu",
-      "name": "ޔޫސުފް ނަޝީދު",
-      "nameLatin": "yoosuf nasheedhu",
+      "name": "yoosuf nasheedhu",
+      "nameDv": "ޔޫސުފް ނަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2285,8 +2285,8 @@
     },
     {
       "id": "aazim-abdhulazeez-vilingili",
-      "name": "ޢާޒިމް ޢަބްދުލްޢަޒީޒް",
-      "nameLatin": "aazim abdhulazeez",
+      "name": "aazim abdhulazeez",
+      "nameDv": "ޢާޒިމް ޢަބްދުލްޢަޒީޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2296,8 +2296,8 @@
     },
     {
       "id": "abdhuullah-shadheem-hulhumaale-medhu",
-      "name": "ޢަބްދުﷲ ޝަޛީމް",
-      "nameLatin": "abdhuullah shadheem",
+      "name": "abdhuullah shadheem",
+      "nameDv": "ޢަބްދުﷲ ޝަޛީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2307,8 +2307,8 @@
     },
     {
       "id": "abdhuullah-shareef-kelaa",
-      "name": "ޢަބްދުﷲ ޝަރީފް",
-      "nameLatin": "abdhuullah shareef",
+      "name": "abdhuullah shareef",
+      "nameDv": "ޢަބްދުﷲ ޝަރީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2318,8 +2318,8 @@
     },
     {
       "id": "ahmadhu-zameeru-machangolhi-medhu",
-      "name": "އަޙްމަދު ޟަމީރު",
-      "nameLatin": "ahmadhu zameeru",
+      "name": "ahmadhu zameeru",
+      "nameDv": "އަޙްމަދު ޟަމީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2329,8 +2329,8 @@
     },
     {
       "id": "hasan-vaheedhu-vilufushi",
-      "name": "ޙަސަން ވަޙީދު",
-      "nameLatin": "hasan vaheedhu",
+      "name": "hasan vaheedhu",
+      "nameDv": "ޙަސަން ވަޙީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2340,8 +2340,8 @@
     },
     {
       "id": "ibraaheem-husain-fuvamulaku-dhekunu",
-      "name": "އިބްރާހީމް ޙުސައިން",
-      "nameLatin": "ibraaheem husain",
+      "name": "ibraaheem husain",
+      "nameDv": "އިބްރާހީމް ޙުސައިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2351,8 +2351,8 @@
     },
     {
       "id": "ibraaheem-naufal-mulaku",
-      "name": "އިބްރާހީމް ނައުފަލް",
-      "nameLatin": "ibraaheem naufal",
+      "name": "ibraaheem naufal",
+      "nameDv": "އިބްރާހީމް ނައުފަލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2362,8 +2362,8 @@
     },
     {
       "id": "ibraaheem-shifaaz-ungoofaaru",
-      "name": "އިބްރާހީމް ޝިފާޒް",
-      "nameLatin": "ibraaheem shifaaz",
+      "name": "ibraaheem shifaaz",
+      "nameDv": "އިބްރާހީމް ޝިފާޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2373,8 +2373,8 @@
     },
     {
       "id": "ibraaheemdheedhee-kolamaafushi",
-      "name": "އިބްރާހީމްދީދީ",
-      "nameLatin": "ibraaheemdheedhee",
+      "name": "ibraaheemdheedhee",
+      "nameDv": "އިބްރާހީމްދީދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2387,8 +2387,8 @@
     },
     {
       "id": "muhamadhu-abaas-velidhoo",
-      "name": "މުޙައްމަދު ޢައްބާސް",
-      "nameLatin": "muhamadhu abaas",
+      "name": "muhamadhu abaas",
+      "nameDv": "މުޙައްމަދު ޢައްބާސް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2398,8 +2398,8 @@
     },
     {
       "id": "muhamadhu-abdhurahmaan-hinnavaru",
-      "name": "މުޙައްމަދު ޢަބްދުއްރަޙްމާން",
-      "nameLatin": "muhamadhu abdhurahmaan",
+      "name": "muhamadhu abdhurahmaan",
+      "nameDv": "މުޙައްމަދު ޢަބްދުއްރަޙްމާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2409,8 +2409,8 @@
     },
     {
       "id": "munthazim-ibraaheem-kaashidhoo",
-      "name": "މުންތަޡިމް އިބްރާހީމް",
-      "nameLatin": "munthazim ibraaheem",
+      "name": "munthazim ibraaheem",
+      "nameDv": "މުންތަޡިމް އިބްރާހީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2420,8 +2420,8 @@
     },
     {
       "id": "yaaseen-abdhuullah-naifaru",
-      "name": "ޔާސީން ޢަބްދުﷲ",
-      "nameLatin": "yaaseen abdhuullah",
+      "name": "yaaseen abdhuullah",
+      "nameDv": "ޔާސީން ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2431,8 +2431,8 @@
     },
     {
       "id": "ahmadhu-abdhuullah-ihavandhoo",
-      "name": "އަޙްމަދު ޢަބްދުﷲ",
-      "nameLatin": "ahmadhu abdhuullah",
+      "name": "ahmadhu abdhuullah",
+      "nameDv": "އަޙްމަދު ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2444,8 +2444,8 @@
     },
     {
       "id": "ibraaheem-rasheedhu-maafannu-dhekunu",
-      "name": "އިބްރާހީމް ރަޝީދު",
-      "nameLatin": "ibraaheem rasheedhu",
+      "name": "ibraaheem rasheedhu",
+      "nameDv": "އިބްރާހީމް ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2457,8 +2457,8 @@
     },
     {
       "id": "ilyaas-labeebu-hulhumeedhoo",
-      "name": "އިލްޔާސް ލަބީބު",
-      "nameLatin": "ilyaas labeebu",
+      "name": "ilyaas labeebu",
+      "nameDv": "އިލްޔާސް ލަބީބު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2470,8 +2470,8 @@
     },
     {
       "id": "muhamadhu-naashiz-alifushi",
-      "name": "މުޙައްމަދު ނާޝިޒް",
-      "nameLatin": "muhamadhu naashiz",
+      "name": "muhamadhu naashiz",
+      "nameDv": "މުޙައްމަދު ނާޝިޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2483,8 +2483,8 @@
     },
     {
       "id": "aadham-shafeequ-makunudhoo",
-      "name": "އާދަމް ޝަފީޤު",
-      "nameLatin": "aadham shafeequ",
+      "name": "aadham shafeequ",
+      "nameDv": "އާދަމް ޝަފީޤު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2494,8 +2494,8 @@
     },
     {
       "id": "abdhuullah-rasheedhu-dhangethi",
-      "name": "ޢަބްދުﷲ ރަޝީދު",
-      "nameLatin": "abdhuullah rasheedhu",
+      "name": "abdhuullah rasheedhu",
+      "nameDv": "ޢަބްދުﷲ ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2505,8 +2505,8 @@
     },
     {
       "id": "ahmadhu-shamheedhu-hulhumaale-dhekunu",
-      "name": "އަޙްމަދު ޝަމްހީދު",
-      "nameLatin": "ahmadhu shamheedhu",
+      "name": "ahmadhu shamheedhu",
+      "nameDv": "އަޙްމަދު ޝަމްހީދު",
       "title": "Dr",
       "titleDv": "ޑޮކްޓަރ",
       "possiblySameAs": null,
@@ -2516,8 +2516,8 @@
     },
     {
       "id": "ahmadhudheedhee-maradhoo",
-      "name": "އަޙްމަދުދީދީ",
-      "nameLatin": "ahmadhudheedhee",
+      "name": "ahmadhudheedhee",
+      "nameDv": "އަޙްމަދުދީދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2527,8 +2527,8 @@
     },
     {
       "id": "ameen-faisal-kanditheemu",
-      "name": "އަމީން ފައިޞަލް",
-      "nameLatin": "ameen faisal",
+      "name": "ameen faisal",
+      "nameDv": "އަމީން ފައިޞަލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2538,8 +2538,8 @@
     },
     {
       "id": "asadhuullah-shihaab-gemanafushi",
-      "name": "އަސަދުﷲ ޝިހާބް",
-      "nameLatin": "asadhuullah shihaab",
+      "name": "asadhuullah shihaab",
+      "nameDv": "އަސަދުﷲ ޝިހާބް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2549,8 +2549,8 @@
     },
     {
       "id": "ashraf-rasheedhu-faresmaathodaa",
-      "name": "އަޝްރަފް ރަޝީދު",
-      "nameLatin": "ashraf rasheedhu",
+      "name": "ashraf rasheedhu",
+      "nameDv": "އަޝްރަފް ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2560,8 +2560,8 @@
     },
     {
       "id": "husain-imraan-lateef-henveyru-dhekunu",
-      "name": "ޙުސައިން އިމްރާން ލަޠީފް",
-      "nameLatin": "husain imraan lateef",
+      "name": "husain imraan lateef",
+      "nameDv": "ޙުސައިން އިމްރާން ލަޠީފް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2571,8 +2571,8 @@
     },
     {
       "id": "husain-sameeru-thodoo",
-      "name": "ޙުސައިން ސަމީރު",
-      "nameLatin": "husain sameeru",
+      "name": "husain sameeru",
+      "nameDv": "ޙުސައިން ސަމީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2582,8 +2582,8 @@
     },
     {
       "id": "husnee-mubaarik-manadhoo",
-      "name": "ޙުސްނީ މުބާރިކް",
-      "nameLatin": "husnee mubaarik",
+      "name": "husnee mubaarik",
+      "nameDv": "ޙުސްނީ މުބާރިކް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -2593,8 +2593,8 @@
     },
     {
       "id": "ibraaheem-shaazu-guraidhoo",
-      "name": "އިބްރާހީމް ޝާޒު",
-      "nameLatin": "ibraaheem shaazu",
+      "name": "ibraaheem shaazu",
+      "nameDv": "އިބްރާހީމް ޝާޒު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2604,8 +2604,8 @@
     },
     {
       "id": "ismaaeel-nizaaru-feydhoo-uthuru",
-      "name": "އިސްމާޢީލް ނިޒާރު",
-      "nameLatin": "ismaaeel nizaaru",
+      "name": "ismaaeel nizaaru",
+      "nameDv": "އިސްމާޢީލް ނިޒާރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2615,8 +2615,8 @@
     },
     {
       "id": "ismaaeel-shafeeu-isdhoo",
-      "name": "އިސްމާޢީލް ޝަފީޢު",
-      "nameLatin": "ismaaeel shafeeu",
+      "name": "ismaaeel shafeeu",
+      "nameDv": "އިސްމާޢީލް ޝަފީޢު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2626,8 +2626,8 @@
     },
     {
       "id": "mauroof-dhaakiru-kendhoo",
-      "name": "މަޢުރޫފް ޛާކިރު",
-      "nameLatin": "mauroof dhaakiru",
+      "name": "mauroof dhaakiru",
+      "nameDv": "މަޢުރޫފް ޛާކިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2637,8 +2637,8 @@
     },
     {
       "id": "muhamadhu-afoo-haamidhu-kendhikulhudhoo",
-      "name": "މުޙައްމަދު ޢަފޫ ޙާމިދު",
-      "nameLatin": "muhamadhu afoo haamidhu",
+      "name": "muhamadhu afoo haamidhu",
+      "nameDv": "މުޙައްމަދު ޢަފޫ ޙާމިދު",
       "title": null,
       "titleDv": null,
       "possiblySameAs": null,
@@ -2648,8 +2648,8 @@
     },
     {
       "id": "muhamadhu-alee-gadhoo",
-      "name": "މުޙައްމަދު ޢަލީ",
-      "nameLatin": "muhamadhu alee",
+      "name": "muhamadhu alee",
+      "nameDv": "މުޙައްމަދު ޢަލީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2661,8 +2661,8 @@
     },
     {
       "id": "muhamadhu-dhaaoodhu-kulhudhufushi-uthuru",
-      "name": "މުޙައްމަދު ދާއޫދު",
-      "nameLatin": "muhamadhu dhaaoodhu",
+      "name": "muhamadhu dhaaoodhu",
+      "nameDv": "މުޙައްމަދު ދާއޫދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2672,8 +2672,8 @@
     },
     {
       "id": "muhamadhu-fazeel-dhaandhoo",
-      "name": "މުޙައްމަދު ފަޟީލް",
-      "nameLatin": "muhamadhu fazeel",
+      "name": "muhamadhu fazeel",
+      "nameDv": "މުޙައްމަދު ފަޟީލް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2683,8 +2683,8 @@
     },
     {
       "id": "muhamadhu-mustafaa-ibraaheem-maafannu-hulhangu",
-      "name": "މުޙައްމަދު މުޞްޠަފާ އިބްރާހީމް",
-      "nameLatin": "muhamadhu mustafaa ibraaheem",
+      "name": "muhamadhu mustafaa ibraaheem",
+      "nameDv": "މުޙައްމަދު މުޞްޠަފާ އިބްރާހީމް",
       "title": null,
       "titleDv": null,
       "possiblySameAs": null,
@@ -2694,8 +2694,8 @@
     },
     {
       "id": "muhamadhu-niushaadhu-keyodhoo",
-      "name": "މުޙައްމަދު ނިއުޝާދު",
-      "nameLatin": "muhamadhu niushaadhu",
+      "name": "muhamadhu niushaadhu",
+      "nameDv": "މުޙައްމަދު ނިއުޝާދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2705,8 +2705,8 @@
     },
     {
       "id": "muhamadhu-sinaan-hithadhoo-uthuru",
-      "name": "މުޙައްމަދު ސިނާން",
-      "nameLatin": "muhamadhu sinaan",
+      "name": "muhamadhu sinaan",
+      "nameDv": "މުޙައްމަދު ސިނާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2716,8 +2716,8 @@
     },
     {
       "id": "muhamadhu-siruhaan-hithaadhoo",
-      "name": "މުޙައްމަދު ސިރުހާން",
-      "nameLatin": "muhamadhu siruhaan",
+      "name": "muhamadhu siruhaan",
+      "nameDv": "މުޙައްމަދު ސިރުހާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2727,8 +2727,8 @@
     },
     {
       "id": "abdhulateef-abdhurahmaanu-alifushi",
-      "name": "ޢަބްދުއްލަޠީފް ޢަބްދުއްރަޙްމާނު",
-      "nameLatin": "abdhulateef abdhurahmaanu",
+      "name": "abdhulateef abdhurahmaanu",
+      "nameDv": "ޢަބްދުއްލަޠީފް ޢަބްދުއްރަޙްމާނު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2738,8 +2738,8 @@
     },
     {
       "id": "abdhurahmaan-adoomeedhoo",
-      "name": "ޢަބްދުއްރަޙްމާން",
-      "nameLatin": "abdhurahmaan",
+      "name": "abdhurahmaan",
+      "nameDv": "ޢަބްދުއްރަޙްމާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2749,8 +2749,8 @@
     },
     {
       "id": "ahmadhu-aifaan-henveyru-uthuru",
-      "name": "އަޙްމަދު އައިފާން",
-      "nameLatin": "ahmadhu aifaan",
+      "name": "ahmadhu aifaan",
+      "nameDv": "އަޙްމަދު އައިފާން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2760,8 +2760,8 @@
     },
     {
       "id": "ahmadhu-naseeru-ihavandhoo",
-      "name": "އަޙްމަދު ނަޞީރު",
-      "nameLatin": "ahmadhu naseeru",
+      "name": "ahmadhu naseeru",
+      "nameDv": "އަޙްމަދު ނަޞީރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2771,8 +2771,8 @@
     },
     {
       "id": "alee-ibraaheem-henveyru-hulhangu",
-      "name": "ޢަލީ އިބްރާހީމް",
-      "nameLatin": "alee ibraaheem",
+      "name": "alee ibraaheem",
+      "nameDv": "ޢަލީ އިބްރާހީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2782,8 +2782,8 @@
     },
     {
       "id": "alee-moosaa-hoarafushi",
-      "name": "ޢަލީ މޫސާ",
-      "nameLatin": "alee moosaa",
+      "name": "alee moosaa",
+      "nameDv": "ޢަލީ މޫސާ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2793,8 +2793,8 @@
     },
     {
       "id": "faruhathu-muhamadhu-kulhudhufushi-dhekunu",
-      "name": "ފަރުޙަތު މުޙައްމަދު",
-      "nameLatin": "faruhathu muhamadhu",
+      "name": "faruhathu muhamadhu",
+      "nameDv": "ފަރުޙަތު މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2804,8 +2804,8 @@
     },
     {
       "id": "husain-hameedhu-kudahuvadhoo",
-      "name": "ޙުސައިން ޙަމީދު",
-      "nameLatin": "husain hameedhu",
+      "name": "husain hameedhu",
+      "nameDv": "ޙުސައިން ޙަމީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2815,8 +2815,8 @@
     },
     {
       "id": "husain-naasih-medhuhenveyru",
-      "name": "ޙުސައިން ނާޞިޙް",
-      "nameLatin": "husain naasih",
+      "name": "husain naasih",
+      "nameDv": "ޙުސައިން ނާޞިޙް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2826,8 +2826,8 @@
     },
     {
       "id": "ibraaheem-muhamadhu-machangolhi-uthuru",
-      "name": "އިބްރާހީމް މުޙައްމަދު",
-      "nameLatin": "ibraaheem muhamadhu",
+      "name": "ibraaheem muhamadhu",
+      "nameDv": "އިބްރާހީމް މުޙައްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2837,8 +2837,8 @@
     },
     {
       "id": "muhamadhu-ibraaheem-galolhu-uthuru",
-      "name": "މުޙައްމަދު އިބްރާހީމް",
-      "nameLatin": "muhamadhu ibraaheem",
+      "name": "muhamadhu ibraaheem",
+      "nameDv": "މުޙައްމަދު އިބްރާހީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2850,8 +2850,8 @@
     },
     {
       "id": "muhamadhu-ibraaheem-komandoo",
-      "name": "މުޙައްމަދު އިބްރާހީމް",
-      "nameLatin": "muhamadhu ibraaheem",
+      "name": "muhamadhu ibraaheem",
+      "nameDv": "މުޙައްމަދު އިބްރާހީމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2863,8 +2863,8 @@
     },
     {
       "id": "muhamadhu-shameez-madaveli",
-      "name": "މުޙައްމަދު ޝަމީޒް",
-      "nameLatin": "muhamadhu shameez",
+      "name": "muhamadhu shameez",
+      "nameDv": "މުޙައްމަދު ޝަމީޒް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2874,8 +2874,8 @@
     },
     {
       "id": "mustafaa-husain-machangolhi-dhekunu",
-      "name": "މުޞްޠަފާ ޙުސައިން",
-      "nameLatin": "mustafaa husain",
+      "name": "mustafaa husain",
+      "nameDv": "މުޞްޠަފާ ޙުސައިން",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2885,8 +2885,8 @@
     },
     {
       "id": "aadham-zaahiru-felidhoo",
-      "name": "އާދަމް ޒާހިރު",
-      "nameLatin": "aadham zaahiru",
+      "name": "aadham zaahiru",
+      "nameDv": "އާދަމް ޒާހިރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2896,8 +2896,8 @@
     },
     {
       "id": "abdhulhannaan-aboobakuru-thulhaadhoo",
-      "name": "ޢަބްދުލްޙަންނާން އަބޫބަކުރު",
-      "nameLatin": "abdhulhannaan aboobakuru",
+      "name": "abdhulhannaan aboobakuru",
+      "nameDv": "ޢަބްދުލްޙަންނާން އަބޫބަކުރު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2907,8 +2907,8 @@
     },
     {
       "id": "ahmadhu-aslam-bilethdhoo",
-      "name": "އަޙްމަދު އަސްލަމް",
-      "nameLatin": "ahmadhu aslam",
+      "name": "ahmadhu aslam",
+      "nameDv": "އަޙްމަދު އަސްލަމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2918,8 +2918,8 @@
     },
     {
       "id": "ahmadhu-azaan-maruzooqu-hithadhoo-medhu",
-      "name": "އަޙްމަދު އަޒާން މަރުޒޫޤު",
-      "nameLatin": "ahmadhu azaan maruzooqu",
+      "name": "ahmadhu azaan maruzooqu",
+      "nameDv": "އަޙްމަދު އަޒާން މަރުޒޫޤު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2929,8 +2929,8 @@
     },
     {
       "id": "ahmadhu-riyaaz-thimarafushi",
-      "name": "އަޙްމަދު ރިޔާޟް",
-      "nameLatin": "ahmadhu riyaaz",
+      "name": "ahmadhu riyaaz",
+      "nameDv": "އަޙްމަދު ރިޔާޟް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2940,8 +2940,8 @@
     },
     {
       "id": "hamadhu-abdhuullah-fuvamulaku-uthuru",
-      "name": "ޙަމަދު ޢަބްދުﷲ",
-      "nameLatin": "hamadhu abdhuullah",
+      "name": "hamadhu abdhuullah",
+      "nameDv": "ޙަމަދު ޢަބްދުﷲ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2951,8 +2951,8 @@
     },
     {
       "id": "hanaan-muhamadhu-rasheedhu-guraidhoo",
-      "name": "ހަނާން މުޙައްމަދު ރަޝީދު",
-      "nameLatin": "hanaan muhamadhu rasheedhu",
+      "name": "hanaan muhamadhu rasheedhu",
+      "nameDv": "ހަނާން މުޙައްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -2962,8 +2962,8 @@
     },
     {
       "id": "ibraaheemdheedhee-feydhoo-dhekunu",
-      "name": "އިބްރާހީމްދީދީ",
-      "nameLatin": "ibraaheemdheedhee",
+      "name": "ibraaheemdheedhee",
+      "nameDv": "އިބްރާހީމްދީދީ",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2976,8 +2976,8 @@
     },
     {
       "id": "muhamadhu-naazim-maafannu-uthuru",
-      "name": "މުޙައްމަދު ނާޡިމް",
-      "nameLatin": "muhamadhu naazim",
+      "name": "muhamadhu naazim",
+      "nameDv": "މުޙައްމަދު ނާޡިމް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -2990,8 +2990,8 @@
     },
     {
       "id": "muhamadhu-rasheedhu-nolhivaram",
-      "name": "މުޙައްމަދު ރަޝީދު",
-      "nameLatin": "muhamadhu rasheedhu",
+      "name": "muhamadhu rasheedhu",
+      "nameDv": "މުޙައްމަދު ރަޝީދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": [
@@ -3005,8 +3005,8 @@
     },
     {
       "id": "alee-ashraq-kinbidhoo",
-      "name": "ޢަލީ އަޝްރަޤް",
-      "nameLatin": "alee ashraq",
+      "name": "alee ashraq",
+      "nameDv": "ޢަލީ އަޝްރަޤް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -3016,8 +3016,8 @@
     },
     {
       "id": "anaaraa-naeem-huraa",
-      "name": "އަނާރާ ނަޢީމް",
-      "nameLatin": "anaaraa naeem",
+      "name": "anaaraa naeem",
+      "nameDv": "އަނާރާ ނަޢީމް",
       "title": "Dr",
       "titleDv": "ޑޮކްޓަރ",
       "possiblySameAs": [
@@ -3029,8 +3029,8 @@
     },
     {
       "id": "husain-rizaa-aadham-maafushi",
-      "name": "ޙުސައިން ރިޟާ އާދަމް",
-      "nameLatin": "husain rizaa aadham",
+      "name": "husain rizaa aadham",
+      "nameDv": "ޙުސައިން ރިޟާ އާދަމް",
       "title": "Al-Ustaz",
       "titleDv": "އަލްއުސްތާޛު",
       "possiblySameAs": null,
@@ -3040,8 +3040,8 @@
     },
     {
       "id": "muhamadhu-alsan-ahmadhu-thinadhoo-dhekunu",
-      "name": "މުޙައްމަދު އަލްސަން އަޙްމަދު",
-      "nameLatin": "muhamadhu alsan ahmadhu",
+      "name": "muhamadhu alsan ahmadhu",
+      "nameDv": "މުޙައްމަދު އަލްސަން އަޙްމަދު",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -3051,8 +3051,8 @@
     },
     {
       "id": "muhamadhu-mamdhooh-funadhoo",
-      "name": "މުޙައްމަދު މަމްދޫޙް",
-      "nameLatin": "muhamadhu mamdhooh",
+      "name": "muhamadhu mamdhooh",
+      "nameDv": "މުޙައްމަދު މަމްދޫޙް",
       "title": "Alfaazil",
       "titleDv": "އަލްފާޟިލް",
       "possiblySameAs": null,
@@ -3066,8 +3066,8 @@
       "id": "qaasim-ibraaheem-maamigili--majlis",
       "personId": "qaasim-ibraaheem-maamigili",
       "kind": "majlis-member",
-      "constituency": "މާމިގިލި ދާއިރާ",
-      "constituencyLatin": "maamigili dhaairaa",
+      "constituency": "maamigili dhaairaa",
+      "constituencyDv": "މާމިގިލި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3085,8 +3085,8 @@
       "id": "saudhu-husain-vilingili--majlis",
       "personId": "saudhu-husain-vilingili",
       "kind": "majlis-member",
-      "constituency": "ވިލިނގިލި ދާއިރާ",
-      "constituencyLatin": "vilingili dhaairaa",
+      "constituency": "vilingili dhaairaa",
+      "constituencyDv": "ވިލިނގިލި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3104,8 +3104,8 @@
       "id": "ahmadhu-taariq-mahibadhoo--majlis",
       "personId": "ahmadhu-taariq-mahibadhoo",
       "kind": "majlis-member",
-      "constituency": "މަހިބަދޫ ދާއިރާ",
-      "constituencyLatin": "mahibadhoo dhaairaa",
+      "constituency": "mahibadhoo dhaairaa",
+      "constituencyDv": "މަހިބަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3123,8 +3123,8 @@
       "id": "ibraaheem-naseeru-mulaku--majlis",
       "personId": "ibraaheem-naseeru-mulaku",
       "kind": "majlis-member",
-      "constituency": "މުލަކު ދާއިރާ",
-      "constituencyLatin": "mulaku dhaairaa",
+      "constituency": "mulaku dhaairaa",
+      "constituencyDv": "މުލަކު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3142,8 +3142,8 @@
       "id": "alee-husain-kendhoo--majlis",
       "personId": "alee-husain-kendhoo",
       "kind": "majlis-member",
-      "constituency": "ކެންދޫ ދާއިރާ",
-      "constituencyLatin": "kendhoo dhaairaa",
+      "constituency": "kendhoo dhaairaa",
+      "constituencyDv": "ކެންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3161,8 +3161,8 @@
       "id": "muhamadhu-aslam-hithadhoo-uthuru--majlis",
       "personId": "muhamadhu-aslam-hithadhoo-uthuru",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ އުތުރު ދާއިރާ",
-      "constituencyLatin": "hithadhoo uthuru dhaairaa",
+      "constituency": "hithadhoo uthuru dhaairaa",
+      "constituencyDv": "ހިތަދޫ އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3180,8 +3180,8 @@
       "id": "abdhuullah-rifaau-maafannu-dhekunu--majlis",
       "personId": "abdhuullah-rifaau-maafannu-dhekunu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "maafannu dhekunu dhaairaa",
+      "constituency": "maafannu dhekunu dhaairaa",
+      "constituencyDv": "މާފަންނު ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3199,8 +3199,8 @@
       "id": "ibraaheem-hasan-thodoo--majlis",
       "personId": "ibraaheem-hasan-thodoo",
       "kind": "majlis-member",
-      "constituency": "ތޮއްޑޫ ދާއިރާ",
-      "constituencyLatin": "thodoo dhaairaa",
+      "constituency": "thodoo dhaairaa",
+      "constituencyDv": "ތޮއްޑޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3218,8 +3218,8 @@
       "id": "muhamadhu-abdhuullah-ihavandhoo--majlis",
       "personId": "muhamadhu-abdhuullah-ihavandhoo",
       "kind": "majlis-member",
-      "constituency": "އިހަވަންދޫ ދާއިރާ",
-      "constituencyLatin": "ihavandhoo dhaairaa",
+      "constituency": "ihavandhoo dhaairaa",
+      "constituencyDv": "އިހަވަންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3237,8 +3237,8 @@
       "id": "riyaaz-rasheedhu-vilufushi--majlis",
       "personId": "riyaaz-rasheedhu-vilufushi",
       "kind": "majlis-member",
-      "constituency": "ވިލުފުށި ދާއިރާ",
-      "constituencyLatin": "vilufushi dhaairaa",
+      "constituency": "vilufushi dhaairaa",
+      "constituencyDv": "ވިލުފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3256,8 +3256,8 @@
       "id": "ahmadhu-shiyaam-naifaru--majlis",
       "personId": "ahmadhu-shiyaam-naifaru",
       "kind": "majlis-member",
-      "constituency": "ނައިފަރު ދާއިރާ",
-      "constituencyLatin": "naifaru dhaairaa",
+      "constituency": "naifaru dhaairaa",
+      "constituencyDv": "ނައިފަރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3275,8 +3275,8 @@
       "id": "muhamadhu-mustafaa-thimarafushi--majlis",
       "personId": "muhamadhu-mustafaa-thimarafushi",
       "kind": "majlis-member",
-      "constituency": "ތިމަރަފުށި ދާއިރާ",
-      "constituencyLatin": "thimarafushi dhaairaa",
+      "constituency": "thimarafushi dhaairaa",
+      "constituencyDv": "ތިމަރަފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3294,8 +3294,8 @@
       "id": "hasan-mufeedhu-abdhulqaadhiru-milandhoo--majlis",
       "personId": "hasan-mufeedhu-abdhulqaadhiru-milandhoo",
       "kind": "majlis-member",
-      "constituency": "މިލަންދޫ ދާއިރާ",
-      "constituencyLatin": "milandhoo dhaairaa",
+      "constituency": "milandhoo dhaairaa",
+      "constituencyDv": "މިލަންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3313,8 +3313,8 @@
       "id": "muhamadhu-shaahidhu-hulhudhoo--majlis",
       "personId": "muhamadhu-shaahidhu-hulhudhoo",
       "kind": "majlis-member",
-      "constituency": "ހުޅުދޫ ދާއިރާ",
-      "constituencyLatin": "hulhudhoo dhaairaa",
+      "constituency": "hulhudhoo dhaairaa",
+      "constituencyDv": "ހުޅުދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3332,8 +3332,8 @@
       "id": "abdhuullah-khaleel-nilandhoo--majlis",
       "personId": "abdhuullah-khaleel-nilandhoo",
       "kind": "majlis-member",
-      "constituency": "ނިލަންދޫ ދާއިރާ",
-      "constituencyLatin": "nilandhoo dhaairaa",
+      "constituency": "nilandhoo dhaairaa",
+      "constituencyDv": "ނިލަންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -3350,8 +3350,8 @@
       "id": "alee-aazim-medhuhenveyru--majlis",
       "personId": "alee-aazim-medhuhenveyru",
       "kind": "majlis-member",
-      "constituency": "މެދުހެންވޭރު ދާއިރާ",
-      "constituencyLatin": "medhuhenveyru dhaairaa",
+      "constituency": "medhuhenveyru dhaairaa",
+      "constituencyDv": "މެދުހެންވޭރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3369,8 +3369,8 @@
       "id": "ismaaeel-ahmadhu-dhuvaafaru--majlis",
       "personId": "ismaaeel-ahmadhu-dhuvaafaru",
       "kind": "majlis-member",
-      "constituency": "ދުވާފަރު ދާއިރާ",
-      "constituencyLatin": "dhuvaafaru dhaairaa",
+      "constituency": "dhuvaafaru dhaairaa",
+      "constituencyDv": "ދުވާފަރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3387,8 +3387,8 @@
       "id": "ahmadhu-asadhu-dhaandhoo--majlis",
       "personId": "ahmadhu-asadhu-dhaandhoo",
       "kind": "majlis-member",
-      "constituency": "ދާންދޫ ދާއިރާ",
-      "constituencyLatin": "dhaandhoo dhaairaa",
+      "constituency": "dhaandhoo dhaairaa",
+      "constituencyDv": "ދާންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3406,8 +3406,8 @@
       "id": "muhamadhu-falaah-maafannu-hulhangu--majlis",
       "personId": "muhamadhu-falaah-maafannu-hulhangu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު ހުޅަނގު ދާއިރާ",
-      "constituencyLatin": "maafannu hulhangu dhaairaa",
+      "constituency": "maafannu hulhangu dhaairaa",
+      "constituencyDv": "މާފަންނު ހުޅަނގު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3425,8 +3425,8 @@
       "id": "ahmadhu-naazim-dhigaru--majlis",
       "personId": "ahmadhu-naazim-dhigaru",
       "kind": "majlis-member",
-      "constituency": "ދިއްގަރު ދާއިރާ",
-      "constituencyLatin": "dhigaru dhaairaa",
+      "constituency": "dhigaru dhaairaa",
+      "constituencyDv": "ދިއްގަރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3444,8 +3444,8 @@
       "id": "muhamadhu-abdhulkareem-henveyru-dhekunu--majlis",
       "personId": "muhamadhu-abdhulkareem-henveyru-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "constituency": "henveyru dhekunu dhaairaa",
+      "constituencyDv": "ހެންވޭރު ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3463,8 +3463,8 @@
       "id": "ahmadhu-saleem-eydhafushi--majlis",
       "personId": "ahmadhu-saleem-eydhafushi",
       "kind": "majlis-member",
-      "constituency": "އޭދަފުށި ދާއިރާ",
-      "constituencyLatin": "eydhafushi dhaairaa",
+      "constituency": "eydhafushi dhaairaa",
+      "constituencyDv": "އޭދަފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3482,8 +3482,8 @@
       "id": "eevaa-abdhuullah-galolhu-uthuru--majlis",
       "personId": "eevaa-abdhuullah-galolhu-uthuru",
       "kind": "majlis-member",
-      "constituency": "ގަލޮޅު އުތުރު ދާއިރާ",
-      "constituencyLatin": "galolhu uthuru dhaairaa",
+      "constituency": "galolhu uthuru dhaairaa",
+      "constituencyDv": "ގަލޮޅު އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3501,8 +3501,8 @@
       "id": "ibraaheem-rizaa-guraidhoo--majlis",
       "personId": "ibraaheem-rizaa-guraidhoo",
       "kind": "majlis-member",
-      "constituency": "ގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "guraidhoo dhaairaa",
+      "constituency": "guraidhoo dhaairaa",
+      "constituencyDv": "ގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -3519,8 +3519,8 @@
       "id": "ahmadhu-mubeen-bilethdhoo--majlis",
       "personId": "ahmadhu-mubeen-bilethdhoo",
       "kind": "majlis-member",
-      "constituency": "ބިލެތްދޫ ދާއިރާ",
-      "constituencyLatin": "bilethdhoo dhaairaa",
+      "constituency": "bilethdhoo dhaairaa",
+      "constituencyDv": "ބިލެތްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3538,8 +3538,8 @@
       "id": "husain-shahudhee-hanimaadhoo--majlis",
       "personId": "husain-shahudhee-hanimaadhoo",
       "kind": "majlis-member",
-      "constituency": "ހަނިމާދޫ ދާއިރާ",
-      "constituencyLatin": "hanimaadhoo dhaairaa",
+      "constituency": "hanimaadhoo dhaairaa",
+      "constituencyDv": "ހަނިމާދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3557,8 +3557,8 @@
       "id": "ilhaam-ahmadhu-dhangethi--majlis",
       "personId": "ilhaam-ahmadhu-dhangethi",
       "kind": "majlis-member",
-      "constituency": "ދަނގެތި ދާއިރާ",
-      "constituencyLatin": "dhangethi dhaairaa",
+      "constituency": "dhangethi dhaairaa",
+      "constituencyDv": "ދަނގެތި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3576,8 +3576,8 @@
       "id": "jameel-uthmaan-gemanafushi--majlis",
       "personId": "jameel-uthmaan-gemanafushi",
       "kind": "majlis-member",
-      "constituency": "ގެމަނަފުށި ދާއިރާ",
-      "constituencyLatin": "gemanafushi dhaairaa",
+      "constituency": "gemanafushi dhaairaa",
+      "constituencyDv": "ގެމަނަފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3595,8 +3595,8 @@
       "id": "ibraaheem-shujaau-baarashu--majlis",
       "personId": "ibraaheem-shujaau-baarashu",
       "kind": "majlis-member",
-      "constituency": "ބާރަށު ދާއިރާ",
-      "constituencyLatin": "baarashu dhaairaa",
+      "constituency": "baarashu dhaairaa",
+      "constituencyDv": "ބާރަށު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3614,8 +3614,8 @@
       "id": "muhamadhu-alee-dhuvaafaru--majlis",
       "personId": "muhamadhu-alee-dhuvaafaru",
       "kind": "majlis-member",
-      "constituency": "ދުވާފަރު ދާއިރާ",
-      "constituencyLatin": "dhuvaafaru dhaairaa",
+      "constituency": "dhuvaafaru dhaairaa",
+      "constituencyDv": "ދުވާފަރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3633,8 +3633,8 @@
       "id": "imthiyaaz-fahumee-maafannu-uthuru--majlis",
       "personId": "imthiyaaz-fahumee-maafannu-uthuru",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު އުތުރު ދާއިރާ",
-      "constituencyLatin": "maafannu uthuru dhaairaa",
+      "constituency": "maafannu uthuru dhaairaa",
+      "constituencyDv": "މާފަންނު އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3652,8 +3652,8 @@
       "id": "abdhuullah-saneef-thinadhoo-dhekunu--majlis",
       "personId": "abdhuullah-saneef-thinadhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ތިނަދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "thinadhoo dhekunu dhaairaa",
+      "constituency": "thinadhoo dhekunu dhaairaa",
+      "constituencyDv": "ތިނަދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3670,8 +3670,8 @@
       "id": "husain-muhamadhudheedhee-fuvamulaku-medhu--majlis",
       "personId": "husain-muhamadhudheedhee-fuvamulaku-medhu",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު މެދު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku medhu dhaairaa",
+      "constituency": "fuvamulaku medhu dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު މެދު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3688,8 +3688,8 @@
       "id": "ilyaas-labeebu-hulhudhoo--majlis",
       "personId": "ilyaas-labeebu-hulhudhoo",
       "kind": "majlis-member",
-      "constituency": "ހުޅުދޫ ދާއިރާ",
-      "constituencyLatin": "hulhudhoo dhaairaa",
+      "constituency": "hulhudhoo dhaairaa",
+      "constituencyDv": "ހުޅުދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3706,8 +3706,8 @@
       "id": "yauqoobu-abdhuullah-dhaandhoo--majlis",
       "personId": "yauqoobu-abdhuullah-dhaandhoo",
       "kind": "majlis-member",
-      "constituency": "ދާންދޫ ދާއިރާ",
-      "constituencyLatin": "dhaandhoo dhaairaa",
+      "constituency": "dhaandhoo dhaairaa",
+      "constituencyDv": "ދާންދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3724,8 +3724,8 @@
       "id": "faisal-naseem-kaashidhoo--majlis",
       "personId": "faisal-naseem-kaashidhoo",
       "kind": "majlis-member",
-      "constituency": "ކާށިދޫ ދާއިރާ",
-      "constituencyLatin": "kaashidhoo dhaairaa",
+      "constituency": "kaashidhoo dhaairaa",
+      "constituencyDv": "ކާށިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         20
@@ -3742,8 +3742,8 @@
       "id": "ahmadhu-maruzoogu-felidhoo--majlis",
       "personId": "ahmadhu-maruzoogu-felidhoo",
       "kind": "majlis-member",
-      "constituency": "ފެލިދޫ ދާއިރާ",
-      "constituencyLatin": "felidhoo dhaairaa",
+      "constituency": "felidhoo dhaairaa",
+      "constituencyDv": "ފެލިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3761,8 +3761,8 @@
       "id": "alee-nizaaru-hithadhoo-dhekunu--majlis",
       "personId": "alee-nizaaru-hithadhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "hithadhoo dhekunu dhaairaa",
+      "constituency": "hithadhoo dhekunu dhaairaa",
+      "constituencyDv": "ހިތަދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3780,8 +3780,8 @@
       "id": "muhamadhu-vaheedhu-ibraaheem-thulusdhoo--majlis",
       "personId": "muhamadhu-vaheedhu-ibraaheem-thulusdhoo",
       "kind": "majlis-member",
-      "constituency": "ތުލުސްދޫ ދާއިރާ",
-      "constituencyLatin": "thulusdhoo dhaairaa",
+      "constituency": "thulusdhoo dhaairaa",
+      "constituencyDv": "ތުލުސްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3799,8 +3799,8 @@
       "id": "naazim-rashaadhu-thulhaadhoo--majlis",
       "personId": "naazim-rashaadhu-thulhaadhoo",
       "kind": "majlis-member",
-      "constituency": "ތުޅާދޫ ދާއިރާ",
-      "constituencyLatin": "thulhaadhoo dhaairaa",
+      "constituency": "thulhaadhoo dhaairaa",
+      "constituencyDv": "ތުޅާދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3818,8 +3818,8 @@
       "id": "rozainaa-aadham-adoomeedhoo--majlis",
       "personId": "rozainaa-aadham-adoomeedhoo",
       "kind": "majlis-member",
-      "constituency": "އައްޑޫމީދޫ ދާއިރާ",
-      "constituencyLatin": "adoomeedhoo dhaairaa",
+      "constituency": "adoomeedhoo dhaairaa",
+      "constituencyDv": "އައްޑޫމީދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3837,8 +3837,8 @@
       "id": "alee-fazaadhu-fuvamulaku-medhu--majlis",
       "personId": "alee-fazaadhu-fuvamulaku-medhu",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު މެދު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku medhu dhaairaa",
+      "constituency": "fuvamulaku medhu dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު މެދު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3856,8 +3856,8 @@
       "id": "abdhuullah-jaabiru-kaashidhoo--majlis",
       "personId": "abdhuullah-jaabiru-kaashidhoo",
       "kind": "majlis-member",
-      "constituency": "ކާށިދޫ ދާއިރާ",
-      "constituencyLatin": "kaashidhoo dhaairaa",
+      "constituency": "kaashidhoo dhaairaa",
+      "constituencyDv": "ކާށިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3875,8 +3875,8 @@
       "id": "abdhulmughunee-thinadhoo-uthuru--majlis",
       "personId": "abdhulmughunee-thinadhoo-uthuru",
       "kind": "majlis-member",
-      "constituency": "ތިނަދޫ އުތުރު ދާއިރާ",
-      "constituencyLatin": "thinadhoo uthuru dhaairaa",
+      "constituency": "thinadhoo uthuru dhaairaa",
+      "constituencyDv": "ތިނަދޫ އުތުރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3893,8 +3893,8 @@
       "id": "ahmadhu-khaitham-machangolhi-dhekunu--majlis",
       "personId": "ahmadhu-khaitham-machangolhi-dhekunu",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
-      "constituencyLatin": "machangolhi dhekunu dhaairaa",
+      "constituency": "machangolhi dhekunu dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3911,8 +3911,8 @@
       "id": "ibraaheem-naseem-thulusdhoo--majlis",
       "personId": "ibraaheem-naseem-thulusdhoo",
       "kind": "majlis-member",
-      "constituency": "ތުލުސްދޫ ދާއިރާ",
-      "constituencyLatin": "thulusdhoo dhaairaa",
+      "constituency": "thulusdhoo dhaairaa",
+      "constituencyDv": "ތުލުސްދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3929,8 +3929,8 @@
       "id": "abdhulmuhusin-hameedhu-nilandhoo--majlis",
       "personId": "abdhulmuhusin-hameedhu-nilandhoo",
       "kind": "majlis-member",
-      "constituency": "ނިލަންދޫ ދާއިރާ",
-      "constituencyLatin": "nilandhoo dhaairaa",
+      "constituency": "nilandhoo dhaairaa",
+      "constituencyDv": "ނިލަންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -3948,8 +3948,8 @@
       "id": "abdhuullah-shaheem-abdhulhakeem-kanditheemu--majlis",
       "personId": "abdhuullah-shaheem-abdhulhakeem-kanditheemu",
       "kind": "majlis-member",
-      "constituency": "ކަނޑިތީމު ދާއިރާ",
-      "constituencyLatin": "kanditheemu dhaairaa",
+      "constituency": "kanditheemu dhaairaa",
+      "constituencyDv": "ކަނޑިތީމު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3966,8 +3966,8 @@
       "id": "ahmadhu-saeedhu-gemanafushi--majlis",
       "personId": "ahmadhu-saeedhu-gemanafushi",
       "kind": "majlis-member",
-      "constituency": "ގެމަނަފުށި ދާއިރާ",
-      "constituencyLatin": "gemanafushi dhaairaa",
+      "constituency": "gemanafushi dhaairaa",
+      "constituencyDv": "ގެމަނަފުށި ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -3984,8 +3984,8 @@
       "id": "jeehaan-mahmoodhu-hinnavaru--majlis",
       "personId": "jeehaan-mahmoodhu-hinnavaru",
       "kind": "majlis-member",
-      "constituency": "ހިންނަވަރު ދާއިރާ",
-      "constituencyLatin": "hinnavaru dhaairaa",
+      "constituency": "hinnavaru dhaairaa",
+      "constituencyDv": "ހިންނަވަރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4002,8 +4002,8 @@
       "id": "muhamadhu-shifaau-ihavandhoo--majlis",
       "personId": "muhamadhu-shifaau-ihavandhoo",
       "kind": "majlis-member",
-      "constituency": "އިހަވަންދޫ ދާއިރާ",
-      "constituencyLatin": "ihavandhoo dhaairaa",
+      "constituency": "ihavandhoo dhaairaa",
+      "constituencyDv": "އިހަވަންދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4020,8 +4020,8 @@
       "id": "husain-muhamadhu-lateef-faresmaathodaa--majlis",
       "personId": "husain-muhamadhu-lateef-faresmaathodaa",
       "kind": "majlis-member",
-      "constituency": "ފަރެސްމާތޮޑާ ދާއިރާ",
-      "constituencyLatin": "faresmaathodaa dhaairaa",
+      "constituency": "faresmaathodaa dhaairaa",
+      "constituencyDv": "ފަރެސްމާތޮޑާ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -4038,8 +4038,8 @@
       "id": "abdhuullah-ahmadhu-thinadhoo-dhekunu--majlis",
       "personId": "abdhuullah-ahmadhu-thinadhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ތިނަދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "thinadhoo dhekunu dhaairaa",
+      "constituency": "thinadhoo dhekunu dhaairaa",
+      "constituencyDv": "ތިނަދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4057,8 +4057,8 @@
       "id": "muhamadhu-naazim-vaikaradhoo--majlis",
       "personId": "muhamadhu-naazim-vaikaradhoo",
       "kind": "majlis-member",
-      "constituency": "ވައިކަރަދޫ ދާއިރާ",
-      "constituencyLatin": "vaikaradhoo dhaairaa",
+      "constituency": "vaikaradhoo dhaairaa",
+      "constituencyDv": "ވައިކަރަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4076,8 +4076,8 @@
       "id": "ibraaheem-falaah-inguraidhoo--majlis",
       "personId": "ibraaheem-falaah-inguraidhoo",
       "kind": "majlis-member",
-      "constituency": "އިނގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "inguraidhoo dhaairaa",
+      "constituency": "inguraidhoo dhaairaa",
+      "constituencyDv": "އިނގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4095,8 +4095,8 @@
       "id": "muhamadhu-rasheedhu-husain-alifushi--majlis",
       "personId": "muhamadhu-rasheedhu-husain-alifushi",
       "kind": "majlis-member",
-      "constituency": "އަލިފުށި ދާއިރާ",
-      "constituencyLatin": "alifushi dhaairaa",
+      "constituency": "alifushi dhaairaa",
+      "constituencyDv": "އަލިފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4114,8 +4114,8 @@
       "id": "muhamadhu-ameethu-ahmadhumaniku-maduvari--majlis",
       "personId": "muhamadhu-ameethu-ahmadhumaniku-maduvari",
       "kind": "majlis-member",
-      "constituency": "މަޑުއްވަރި ދާއިރާ",
-      "constituencyLatin": "maduvari dhaairaa",
+      "constituency": "maduvari dhaairaa",
+      "constituencyDv": "މަޑުއްވަރި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4133,8 +4133,8 @@
       "id": "anaaraa-naeem-makunudhoo--majlis",
       "personId": "anaaraa-naeem-makunudhoo",
       "kind": "majlis-member",
-      "constituency": "މަކުނުދޫ ދާއިރާ",
-      "constituencyLatin": "makunudhoo dhaairaa",
+      "constituency": "makunudhoo dhaairaa",
+      "constituencyDv": "މަކުނުދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -4151,8 +4151,8 @@
       "id": "muhamadhu-ismaaeel-hoarafushi--majlis",
       "personId": "muhamadhu-ismaaeel-hoarafushi",
       "kind": "majlis-member",
-      "constituency": "ހޯރަފުށި ދާއިރާ",
-      "constituencyLatin": "hoarafushi dhaairaa",
+      "constituency": "hoarafushi dhaairaa",
+      "constituencyDv": "ހޯރަފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -4169,8 +4169,8 @@
       "id": "abdhulghanee-abdhulhakeem-kurendhoo--majlis",
       "personId": "abdhulghanee-abdhulhakeem-kurendhoo",
       "kind": "majlis-member",
-      "constituency": "ކުރެންދޫ ދާއިރާ",
-      "constituencyLatin": "kurendhoo dhaairaa",
+      "constituency": "kurendhoo dhaairaa",
+      "constituencyDv": "ކުރެންދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4187,8 +4187,8 @@
       "id": "ahmadhu-haaroon-manadhoo--majlis",
       "personId": "ahmadhu-haaroon-manadhoo",
       "kind": "majlis-member",
-      "constituency": "މަނަދޫ ދާއިރާ",
-      "constituencyLatin": "manadhoo dhaairaa",
+      "constituency": "manadhoo dhaairaa",
+      "constituencyDv": "މަނަދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4205,8 +4205,8 @@
       "id": "alee-hameedhu-isdhoo--majlis",
       "personId": "alee-hameedhu-isdhoo",
       "kind": "majlis-member",
-      "constituency": "އިސްދޫ ދާއިރާ",
-      "constituencyLatin": "isdhoo dhaairaa",
+      "constituency": "isdhoo dhaairaa",
+      "constituencyDv": "އިސްދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4223,8 +4223,8 @@
       "id": "alee-niyaaz-hulhumaale--majlis",
       "personId": "alee-niyaaz-hulhumaale",
       "kind": "majlis-member",
-      "constituency": "ހުޅުމާލެ ދާއިރާ",
-      "constituencyLatin": "hulhumaale dhaairaa",
+      "constituency": "hulhumaale dhaairaa",
+      "constituencyDv": "ހުޅުމާލެ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4241,8 +4241,8 @@
       "id": "hasan-lateef-henveyru-hulhangu--majlis",
       "personId": "hasan-lateef-henveyru-hulhangu",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު ހުޅަނގު ދާއިރާ",
-      "constituencyLatin": "henveyru hulhangu dhaairaa",
+      "constituency": "henveyru hulhangu dhaairaa",
+      "constituencyDv": "ހެންވޭރު ހުޅަނގު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4259,8 +4259,8 @@
       "id": "husain-shaheem-henveyru-dhekunu--majlis",
       "personId": "husain-shaheem-henveyru-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "constituency": "henveyru dhekunu dhaairaa",
+      "constituencyDv": "ހެންވޭރު ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4277,8 +4277,8 @@
       "id": "muhamadhu-raaee-makunudhoo--majlis",
       "personId": "muhamadhu-raaee-makunudhoo",
       "kind": "majlis-member",
-      "constituency": "މަކުނުދޫ ދާއިރާ",
-      "constituencyLatin": "makunudhoo dhaairaa",
+      "constituency": "makunudhoo dhaairaa",
+      "constituencyDv": "މަކުނުދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4295,8 +4295,8 @@
       "id": "muhamadhu-rasheedhu-fuvamulaku-uthuru--majlis",
       "personId": "muhamadhu-rasheedhu-fuvamulaku-uthuru",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "constituency": "fuvamulaku uthuru dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4313,8 +4313,8 @@
       "id": "alee-aarif-kelaa--majlis",
       "personId": "alee-aarif-kelaa",
       "kind": "majlis-member",
-      "constituency": "ކެލާ ދާއިރާ",
-      "constituencyLatin": "kelaa dhaairaa",
+      "constituency": "kelaa dhaairaa",
+      "constituencyDv": "ކެލާ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -4331,8 +4331,8 @@
       "id": "alee-rizaa-milandhoo--majlis",
       "personId": "alee-rizaa-milandhoo",
       "kind": "majlis-member",
-      "constituency": "މިލަންދޫ ދާއިރާ",
-      "constituencyLatin": "milandhoo dhaairaa",
+      "constituency": "milandhoo dhaairaa",
+      "constituencyDv": "މިލަންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4350,8 +4350,8 @@
       "id": "muhamadhu-mumthaaz-fuvamulaku-dhekunu--majlis",
       "personId": "muhamadhu-mumthaaz-fuvamulaku-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku dhekunu dhaairaa",
+      "constituency": "fuvamulaku dhekunu dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4368,8 +4368,8 @@
       "id": "muhamadhu-nihaadhu-feydhoo--majlis",
       "personId": "muhamadhu-nihaadhu-feydhoo",
       "kind": "majlis-member",
-      "constituency": "ފޭދޫ ދާއިރާ",
-      "constituencyLatin": "feydhoo dhaairaa",
+      "constituency": "feydhoo dhaairaa",
+      "constituencyDv": "ފޭދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4386,8 +4386,8 @@
       "id": "alee-shaah-fuvamulaku-uthuru--majlis",
       "personId": "alee-shaah-fuvamulaku-uthuru",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "constituency": "fuvamulaku uthuru dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4405,8 +4405,8 @@
       "id": "ashaih-moosaa-nizaaru-ibraaheem-keyodhoo--majlis",
       "personId": "ashaih-moosaa-nizaaru-ibraaheem-keyodhoo",
       "kind": "majlis-member",
-      "constituency": "ކެޔޮދޫ ދާއިރާ",
-      "constituencyLatin": "keyodhoo dhaairaa",
+      "constituency": "keyodhoo dhaairaa",
+      "constituencyDv": "ކެޔޮދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4424,8 +4424,8 @@
       "id": "abdhuraheem-abdhuullah-fonadhoo--majlis",
       "personId": "abdhuraheem-abdhuullah-fonadhoo",
       "kind": "majlis-member",
-      "constituency": "ފޮނަދޫ ދާއިރާ",
-      "constituencyLatin": "fonadhoo dhaairaa",
+      "constituency": "fonadhoo dhaairaa",
+      "constituencyDv": "ފޮނަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4443,8 +4443,8 @@
       "id": "ibraaheem-shareef-maradhoo--majlis",
       "personId": "ibraaheem-shareef-maradhoo",
       "kind": "majlis-member",
-      "constituency": "މަރަދޫ ދާއިރާ",
-      "constituencyLatin": "maradhoo dhaairaa",
+      "constituency": "maradhoo dhaairaa",
+      "constituencyDv": "މަރަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4462,8 +4462,8 @@
       "id": "hasan-shiyaan-thodoo--majlis",
       "personId": "hasan-shiyaan-thodoo",
       "kind": "majlis-member",
-      "constituency": "ތޮއްޑޫ ދާއިރާ",
-      "constituencyLatin": "thodoo dhaairaa",
+      "constituency": "thodoo dhaairaa",
+      "constituencyDv": "ތޮއްޑޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4480,8 +4480,8 @@
       "id": "hasan-zareeru-mathiveri--majlis",
       "personId": "hasan-zareeru-mathiveri",
       "kind": "majlis-member",
-      "constituency": "މަތިވެރި ދާއިރާ",
-      "constituencyLatin": "mathiveri dhaairaa",
+      "constituency": "mathiveri dhaairaa",
+      "constituencyDv": "މަތިވެރި ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4498,8 +4498,8 @@
       "id": "ibraaheem-naazil-hithadhoo-dhekunu--majlis",
       "personId": "ibraaheem-naazil-hithadhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "hithadhoo dhekunu dhaairaa",
+      "constituency": "hithadhoo dhekunu dhaairaa",
+      "constituencyDv": "ހިތަދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4516,8 +4516,8 @@
       "id": "jaufaru-dhaaoodhu-ungoofaaru--majlis",
       "personId": "jaufaru-dhaaoodhu-ungoofaaru",
       "kind": "majlis-member",
-      "constituency": "އުނގޫފާރު ދާއިރާ",
-      "constituencyLatin": "ungoofaaru dhaairaa",
+      "constituency": "ungoofaaru dhaairaa",
+      "constituencyDv": "އުނގޫފާރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4535,8 +4535,8 @@
       "id": "moosaa-maniku-hulhuhenveyru--majlis",
       "personId": "moosaa-maniku-hulhuhenveyru",
       "kind": "majlis-member",
-      "constituency": "ހުޅުހެންވޭރު ދާއިރާ",
-      "constituencyLatin": "hulhuhenveyru dhaairaa",
+      "constituency": "hulhuhenveyru dhaairaa",
+      "constituencyDv": "ހުޅުހެންވޭރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4554,8 +4554,8 @@
       "id": "alee-mauroof-kendhikulhudhoo--majlis",
       "personId": "alee-mauroof-kendhikulhudhoo",
       "kind": "majlis-member",
-      "constituency": "ކެނދިކުޅުދޫ ދާއިރާ",
-      "constituencyLatin": "kendhikulhudhoo dhaairaa",
+      "constituency": "kendhikulhudhoo dhaairaa",
+      "constituencyDv": "ކެނދިކުޅުދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4573,8 +4573,8 @@
       "id": "ahmadhu-azhaan-fahumee-maavashu--majlis",
       "personId": "ahmadhu-azhaan-fahumee-maavashu",
       "kind": "majlis-member",
-      "constituency": "މާވަށު ދާއިރާ",
-      "constituencyLatin": "maavashu dhaairaa",
+      "constituency": "maavashu dhaairaa",
+      "constituencyDv": "މާވަށު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4592,8 +4592,8 @@
       "id": "ibraaheem-muhamadhudheedhee-hithadhoo-medhu--majlis",
       "personId": "ibraaheem-muhamadhudheedhee-hithadhoo-medhu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
-      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "constituency": "hithadhoo medhu dhaairaa",
+      "constituencyDv": "ހިތަދޫ މެދު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4611,8 +4611,8 @@
       "id": "ahmadhu-abdhuullah-baarashu--majlis",
       "personId": "ahmadhu-abdhuullah-baarashu",
       "kind": "majlis-member",
-      "constituency": "ބާރަށު ދާއިރާ",
-      "constituencyLatin": "baarashu dhaairaa",
+      "constituency": "baarashu dhaairaa",
+      "constituencyDv": "ބާރަށު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4629,8 +4629,8 @@
       "id": "husain-ziyaadhu-vaikaradhoo--majlis",
       "personId": "husain-ziyaadhu-vaikaradhoo",
       "kind": "majlis-member",
-      "constituency": "ވައިކަރަދޫ ދާއިރާ",
-      "constituencyLatin": "vaikaradhoo dhaairaa",
+      "constituency": "vaikaradhoo dhaairaa",
+      "constituencyDv": "ވައިކަރަދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4647,8 +4647,8 @@
       "id": "ibraaheem-muizu-henveyru-uthuru--majlis",
       "personId": "ibraaheem-muizu-henveyru-uthuru",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު އުތުރު ދާއިރާ",
-      "constituencyLatin": "henveyru uthuru dhaairaa",
+      "constituency": "henveyru uthuru dhaairaa",
+      "constituencyDv": "ހެންވޭރު އުތުރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4665,8 +4665,8 @@
       "id": "muhamadhu-rasheedhu-machangolhi-uthuru--majlis",
       "personId": "muhamadhu-rasheedhu-machangolhi-uthuru",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
-      "constituencyLatin": "machangolhi uthuru dhaairaa",
+      "constituency": "machangolhi uthuru dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4683,8 +4683,8 @@
       "id": "yaasiru-abdhulateef-kulhudhufushi-uthuru--majlis",
       "personId": "yaasiru-abdhulateef-kulhudhufushi-uthuru",
       "kind": "majlis-member",
-      "constituency": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
-      "constituencyLatin": "kulhudhufushi uthuru dhaairaa",
+      "constituency": "kulhudhufushi uthuru dhaairaa",
+      "constituencyDv": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4701,8 +4701,8 @@
       "id": "muaazu-muhamadhu-rasheedhu-madaveli--majlis",
       "personId": "muaazu-muhamadhu-rasheedhu-madaveli",
       "kind": "majlis-member",
-      "constituency": "މަޑަވެލި ދާއިރާ",
-      "constituencyLatin": "madaveli dhaairaa",
+      "constituency": "madaveli dhaairaa",
+      "constituencyDv": "މަޑަވެލި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4720,8 +4720,8 @@
       "id": "ahmadhu-ushaam-vilimaale--majlis",
       "personId": "ahmadhu-ushaam-vilimaale",
       "kind": "majlis-member",
-      "constituency": "ވިލިމާލެ ދާއިރާ",
-      "constituencyLatin": "vilimaale dhaairaa",
+      "constituency": "vilimaale dhaairaa",
+      "constituencyDv": "ވިލިމާލެ ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -4737,8 +4737,8 @@
       "id": "ibraaheem-fazul-rasheedhu-felidhoo--majlis",
       "personId": "ibraaheem-fazul-rasheedhu-felidhoo",
       "kind": "majlis-member",
-      "constituency": "ފެލިދޫ ދާއިރާ",
-      "constituencyLatin": "felidhoo dhaairaa",
+      "constituency": "felidhoo dhaairaa",
+      "constituencyDv": "ފެލިދޫ ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -4754,8 +4754,8 @@
       "id": "fayaaz-ismaaeel-gamu--majlis",
       "personId": "fayaaz-ismaaeel-gamu",
       "kind": "majlis-member",
-      "constituency": "ގަމު ދާއިރާ",
-      "constituencyLatin": "gamu dhaairaa",
+      "constituency": "gamu dhaairaa",
+      "constituencyDv": "ގަމު ދާއިރާ",
       "termNumbers": [
         18,
         20
@@ -4772,8 +4772,8 @@
       "id": "maariyaa-ahmadhu-dheedhee-machangolhi-uthuru--majlis",
       "personId": "maariyaa-ahmadhu-dheedhee-machangolhi-uthuru",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
-      "constituencyLatin": "machangolhi uthuru dhaairaa",
+      "constituency": "machangolhi uthuru dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         20
@@ -4790,8 +4790,8 @@
       "id": "saudhuullah-hilmee-thinadhoo-uthuru--majlis",
       "personId": "saudhuullah-hilmee-thinadhoo-uthuru",
       "kind": "majlis-member",
-      "constituency": "ތިނަދޫ އުތުރު ދާއިރާ",
-      "constituencyLatin": "thinadhoo uthuru dhaairaa",
+      "constituency": "thinadhoo uthuru dhaairaa",
+      "constituencyDv": "ތިނަދޫ އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4809,8 +4809,8 @@
       "id": "husainmaniku-dhonmaniku-th-guraidhoo--majlis",
       "personId": "husainmaniku-dhonmaniku-th-guraidhoo",
       "kind": "majlis-member",
-      "constituency": "ތ. ގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "th guraidhoo dhaairaa",
+      "constituency": "th guraidhoo dhaairaa",
+      "constituencyDv": "ތ. ގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -4828,8 +4828,8 @@
       "id": "aadham-alee-maafannu-dhekunu--majlis",
       "personId": "aadham-alee-maafannu-dhekunu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "maafannu dhekunu dhaairaa",
+      "constituency": "maafannu dhekunu dhaairaa",
+      "constituencyDv": "މާފަންނު ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4846,8 +4846,8 @@
       "id": "abdhuullah-vaheedhu-dhidhoo--majlis",
       "personId": "abdhuullah-vaheedhu-dhidhoo",
       "kind": "majlis-member",
-      "constituency": "ދިއްދޫ ދާއިރާ",
-      "constituencyLatin": "dhidhoo dhaairaa",
+      "constituency": "dhidhoo dhaairaa",
+      "constituencyDv": "ދިއްދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4864,8 +4864,8 @@
       "id": "ahmadhu-rasheedhu-hithadhoo-medhu--majlis",
       "personId": "ahmadhu-rasheedhu-hithadhoo-medhu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
-      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "constituency": "hithadhoo medhu dhaairaa",
+      "constituencyDv": "ހިތަދޫ މެދު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4882,8 +4882,8 @@
       "id": "hisaan-husain-thulhaadhoo--majlis",
       "personId": "hisaan-husain-thulhaadhoo",
       "kind": "majlis-member",
-      "constituency": "ތުޅާދޫ ދާއިރާ",
-      "constituencyLatin": "thulhaadhoo dhaairaa",
+      "constituency": "thulhaadhoo dhaairaa",
+      "constituencyDv": "ތުޅާދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4900,8 +4900,8 @@
       "id": "ikraam-hasan-dhigaru--majlis",
       "personId": "ikraam-hasan-dhigaru",
       "kind": "majlis-member",
-      "constituency": "ދިއްގަރު ދާއިރާ",
-      "constituencyLatin": "dhigaru dhaairaa",
+      "constituency": "dhigaru dhaairaa",
+      "constituencyDv": "ދިއްގަރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4918,8 +4918,8 @@
       "id": "muhamadhu-abdhuullah-shafeeq-velidhoo--majlis",
       "personId": "muhamadhu-abdhuullah-shafeeq-velidhoo",
       "kind": "majlis-member",
-      "constituency": "ވެލިދޫ ދާއިރާ",
-      "constituencyLatin": "velidhoo dhaairaa",
+      "constituency": "velidhoo dhaairaa",
+      "constituencyDv": "ވެލިދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4936,8 +4936,8 @@
       "id": "muhamadhu-nasheedhu-abdhuullah-nolhivaram--majlis",
       "personId": "muhamadhu-nasheedhu-abdhuullah-nolhivaram",
       "kind": "majlis-member",
-      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
-      "constituencyLatin": "nolhivaram dhaairaa",
+      "constituency": "nolhivaram dhaairaa",
+      "constituencyDv": "ނޮޅިވަރަމް ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4954,8 +4954,8 @@
       "id": "muhamadhu-saeedhu-maavashu--majlis",
       "personId": "muhamadhu-saeedhu-maavashu",
       "kind": "majlis-member",
-      "constituency": "މާވަށު ދާއިރާ",
-      "constituencyLatin": "maavashu dhaairaa",
+      "constituency": "maavashu dhaairaa",
+      "constituencyDv": "މާވަށު ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -4971,8 +4971,8 @@
       "id": "muhamadhu-shaahidhu-funadhoo--majlis",
       "personId": "muhamadhu-shaahidhu-funadhoo",
       "kind": "majlis-member",
-      "constituency": "ފުނަދޫ ދާއިރާ",
-      "constituencyLatin": "funadhoo dhaairaa",
+      "constituency": "funadhoo dhaairaa",
+      "constituencyDv": "ފުނަދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -4989,8 +4989,8 @@
       "id": "yoonus-alee-holhudhoo--majlis",
       "personId": "yoonus-alee-holhudhoo",
       "kind": "majlis-member",
-      "constituency": "ހޮޅުދޫ ދާއިރާ",
-      "constituencyLatin": "holhudhoo dhaairaa",
+      "constituency": "holhudhoo dhaairaa",
+      "constituencyDv": "ހޮޅުދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5007,8 +5007,8 @@
       "id": "abdhulbaaree-abdhuullah-kurendhoo--majlis",
       "personId": "abdhulbaaree-abdhuullah-kurendhoo",
       "kind": "majlis-member",
-      "constituency": "ކުރެންދޫ ދާއިރާ",
-      "constituencyLatin": "kurendhoo dhaairaa",
+      "constituency": "kurendhoo dhaairaa",
+      "constituencyDv": "ކުރެންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5026,8 +5026,8 @@
       "id": "alee-muhamadhu-holhudhoo--majlis",
       "personId": "alee-muhamadhu-holhudhoo",
       "kind": "majlis-member",
-      "constituency": "ހޮޅުދޫ ދާއިރާ",
-      "constituencyLatin": "holhudhoo dhaairaa",
+      "constituency": "holhudhoo dhaairaa",
+      "constituencyDv": "ހޮޅުދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5045,8 +5045,8 @@
       "id": "ahmadhu-eesaa-kendhikulhudhoo--majlis",
       "personId": "ahmadhu-eesaa-kendhikulhudhoo",
       "kind": "majlis-member",
-      "constituency": "ކެނދިކުޅުދޫ ދާއިރާ",
-      "constituencyLatin": "kendhikulhudhoo dhaairaa",
+      "constituency": "kendhikulhudhoo dhaairaa",
+      "constituencyDv": "ކެނދިކުޅުދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5064,8 +5064,8 @@
       "id": "abdhuullah-riyaaz-thimarafushi--majlis",
       "personId": "abdhuullah-riyaaz-thimarafushi",
       "kind": "majlis-member",
-      "constituency": "ތިމަރަފުށި ދާއިރާ",
-      "constituencyLatin": "thimarafushi dhaairaa",
+      "constituency": "thimarafushi dhaairaa",
+      "constituencyDv": "ތިމަރަފުށި ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5082,8 +5082,8 @@
       "id": "husain-qaasim-keyodhoo--majlis",
       "personId": "husain-qaasim-keyodhoo",
       "kind": "majlis-member",
-      "constituency": "ކެޔޮދޫ ދާއިރާ",
-      "constituencyLatin": "keyodhoo dhaairaa",
+      "constituency": "keyodhoo dhaairaa",
+      "constituencyDv": "ކެޔޮދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5100,8 +5100,8 @@
       "id": "ibraaheem-rasheedhu-maafannu-medhu--majlis",
       "personId": "ibraaheem-rasheedhu-maafannu-medhu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު މެދު ދާއިރާ",
-      "constituencyLatin": "maafannu medhu dhaairaa",
+      "constituency": "maafannu medhu dhaairaa",
+      "constituencyDv": "މާފަންނު މެދު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5118,8 +5118,8 @@
       "id": "ibraaheem-shareef-kelaa--majlis",
       "personId": "ibraaheem-shareef-kelaa",
       "kind": "majlis-member",
-      "constituency": "ކެލާ ދާއިރާ",
-      "constituencyLatin": "kelaa dhaairaa",
+      "constituency": "kelaa dhaairaa",
+      "constituencyDv": "ކެލާ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5136,8 +5136,8 @@
       "id": "muhamadhu-ghasaan-maumoon-th-guraidhoo--majlis",
       "personId": "muhamadhu-ghasaan-maumoon-th-guraidhoo",
       "kind": "majlis-member",
-      "constituency": "ތ. ގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "th guraidhoo dhaairaa",
+      "constituency": "th guraidhoo dhaairaa",
+      "constituencyDv": "ތ. ގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -5153,8 +5153,8 @@
       "id": "ahmadhu-naashidhu-komandoo--majlis",
       "personId": "ahmadhu-naashidhu-komandoo",
       "kind": "majlis-member",
-      "constituency": "ކޮމަންޑޫ ދާއިރާ",
-      "constituencyLatin": "komandoo dhaairaa",
+      "constituency": "komandoo dhaairaa",
+      "constituencyDv": "ކޮމަންޑޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5172,8 +5172,8 @@
       "id": "abdhuullah-shaahidhu-henveyru-uthuru--majlis",
       "personId": "abdhuullah-shaahidhu-henveyru-uthuru",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު އުތުރު ދާއިރާ",
-      "constituencyLatin": "henveyru uthuru dhaairaa",
+      "constituency": "henveyru uthuru dhaairaa",
+      "constituencyDv": "ހެންވޭރު އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         20
@@ -5190,8 +5190,8 @@
       "id": "abdhulateef-muhamadhu-dhidhoo--majlis",
       "personId": "abdhulateef-muhamadhu-dhidhoo",
       "kind": "majlis-member",
-      "constituency": "ދިއްދޫ ދާއިރާ",
-      "constituencyLatin": "dhidhoo dhaairaa",
+      "constituency": "dhidhoo dhaairaa",
+      "constituencyDv": "ދިއްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5209,8 +5209,8 @@
       "id": "abdhuullah-maseehu-muhamadhu-fuvamulaku-dhekunu--majlis",
       "personId": "abdhuullah-maseehu-muhamadhu-fuvamulaku-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku dhekunu dhaairaa",
+      "constituency": "fuvamulaku dhekunu dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5228,8 +5228,8 @@
       "id": "ahmadhu-rasheedhu-ibraaheem-isdhoo--majlis",
       "personId": "ahmadhu-rasheedhu-ibraaheem-isdhoo",
       "kind": "majlis-member",
-      "constituency": "އިސްދޫ ދާއިރާ",
-      "constituencyLatin": "isdhoo dhaairaa",
+      "constituency": "isdhoo dhaairaa",
+      "constituencyDv": "އިސްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5247,8 +5247,8 @@
       "id": "alee-saleem-funadhoo--majlis",
       "personId": "alee-saleem-funadhoo",
       "kind": "majlis-member",
-      "constituency": "ފުނަދޫ ދާއިރާ",
-      "constituencyLatin": "funadhoo dhaairaa",
+      "constituency": "funadhoo dhaairaa",
+      "constituencyDv": "ފުނަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5266,8 +5266,8 @@
       "id": "alfaazlaa-asmaa-rasheedhu-maafannu-medhu--majlis",
       "personId": "alfaazlaa-asmaa-rasheedhu-maafannu-medhu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު މެދު ދާއިރާ",
-      "constituencyLatin": "maafannu medhu dhaairaa",
+      "constituency": "maafannu medhu dhaairaa",
+      "constituencyDv": "މާފަންނު މެދު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5285,8 +5285,8 @@
       "id": "husain-areef-nolhivaram--majlis",
       "personId": "husain-areef-nolhivaram",
       "kind": "majlis-member",
-      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
-      "constituencyLatin": "nolhivaram dhaairaa",
+      "constituency": "nolhivaram dhaairaa",
+      "constituencyDv": "ނޮޅިވަރަމް ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5304,8 +5304,8 @@
       "id": "muhamadhu-husain-kanditheemu--majlis",
       "personId": "muhamadhu-husain-kanditheemu",
       "kind": "majlis-member",
-      "constituency": "ކަނޑިތީމު ދާއިރާ",
-      "constituencyLatin": "kanditheemu dhaairaa",
+      "constituency": "kanditheemu dhaairaa",
+      "constituencyDv": "ކަނޑިތީމު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5323,8 +5323,8 @@
       "id": "umaru-husain-manadhoo--majlis",
       "personId": "umaru-husain-manadhoo",
       "kind": "majlis-member",
-      "constituency": "މަނަދޫ ދާއިރާ",
-      "constituencyLatin": "manadhoo dhaairaa",
+      "constituency": "manadhoo dhaairaa",
+      "constituencyDv": "މަނަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5342,8 +5342,8 @@
       "id": "ahmadhu-haleem-bilethdhoo--majlis",
       "personId": "ahmadhu-haleem-bilethdhoo",
       "kind": "majlis-member",
-      "constituency": "ބިލެތްދޫ ދާއިރާ",
-      "constituencyLatin": "bilethdhoo dhaairaa",
+      "constituency": "bilethdhoo dhaairaa",
+      "constituencyDv": "ބިލެތްދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5360,8 +5360,8 @@
       "id": "ahmadhu-saleem-hoarafushi--majlis",
       "personId": "ahmadhu-saleem-hoarafushi",
       "kind": "majlis-member",
-      "constituency": "ހޯރަފުށި ދާއިރާ",
-      "constituencyLatin": "hoarafushi dhaairaa",
+      "constituency": "hoarafushi dhaairaa",
+      "constituencyDv": "ހޯރަފުށި ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5378,8 +5378,8 @@
       "id": "ahmadhu-zaahiru-gadhoo--majlis",
       "personId": "ahmadhu-zaahiru-gadhoo",
       "kind": "majlis-member",
-      "constituency": "ގައްދޫ ދާއިރާ",
-      "constituencyLatin": "gadhoo dhaairaa",
+      "constituency": "gadhoo dhaairaa",
+      "constituencyDv": "ގައްދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5396,8 +5396,8 @@
       "id": "muhamadhu-naazim-dhangethi--majlis",
       "personId": "muhamadhu-naazim-dhangethi",
       "kind": "majlis-member",
-      "constituency": "ދަނގެތި ދާއިރާ",
-      "constituencyLatin": "dhangethi dhaairaa",
+      "constituency": "dhangethi dhaairaa",
+      "constituencyDv": "ދަނގެތި ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -5413,8 +5413,8 @@
       "id": "muhamadhu-vaheedhu-ungoofaaru--majlis",
       "personId": "muhamadhu-vaheedhu-ungoofaaru",
       "kind": "majlis-member",
-      "constituency": "އުނގޫފާރު ދާއިރާ",
-      "constituencyLatin": "ungoofaaru dhaairaa",
+      "constituency": "ungoofaaru dhaairaa",
+      "constituencyDv": "އުނގޫފާރު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5431,8 +5431,8 @@
       "id": "abdhuullah-riyaaz-kinbidhoo--majlis",
       "personId": "abdhuullah-riyaaz-kinbidhoo",
       "kind": "majlis-member",
-      "constituency": "ކިނބިދޫ ދާއިރާ",
-      "constituencyLatin": "kinbidhoo dhaairaa",
+      "constituency": "kinbidhoo dhaairaa",
+      "constituencyDv": "ކިނބިދޫ ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -5448,8 +5448,8 @@
       "id": "ahmadhu-makhloof-galolhu-dhekunu--majlis",
       "personId": "ahmadhu-makhloof-galolhu-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ގަލޮޅު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "galolhu dhekunu dhaairaa",
+      "constituency": "galolhu dhekunu dhaairaa",
+      "constituencyDv": "ގަލޮޅު ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         20
@@ -5466,8 +5466,8 @@
       "id": "ahmadhu-nihaan-husainmaniku-vilimaale--majlis",
       "personId": "ahmadhu-nihaan-husainmaniku-vilimaale",
       "kind": "majlis-member",
-      "constituency": "ވިލިމާލެ ދާއިރާ",
-      "constituencyLatin": "vilimaale dhaairaa",
+      "constituency": "vilimaale dhaairaa",
+      "constituencyDv": "ވިލިމާލެ ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -5483,8 +5483,8 @@
       "id": "ibraaheemdheedhee-feydhoo--majlis",
       "personId": "ibraaheemdheedhee-feydhoo",
       "kind": "majlis-member",
-      "constituency": "ފޭދޫ ދާއިރާ",
-      "constituencyLatin": "feydhoo dhaairaa",
+      "constituency": "feydhoo dhaairaa",
+      "constituencyDv": "ފޭދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -5501,8 +5501,8 @@
       "id": "husain-vaheedhu-komandoo--majlis",
       "personId": "husain-vaheedhu-komandoo",
       "kind": "majlis-member",
-      "constituency": "ކޮމަންޑޫ ދާއިރާ",
-      "constituencyLatin": "komandoo dhaairaa",
+      "constituency": "komandoo dhaairaa",
+      "constituencyDv": "ކޮމަންޑޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -5519,8 +5519,8 @@
       "id": "aadham-shareef-maduvari--majlis",
       "personId": "aadham-shareef-maduvari",
       "kind": "majlis-member",
-      "constituency": "މަޑުއްވަރި ދާއިރާ",
-      "constituencyLatin": "maduvari dhaairaa",
+      "constituency": "maduvari dhaairaa",
+      "constituencyDv": "މަޑުއްވަރި ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -5536,8 +5536,8 @@
       "id": "ahmadhu-siyaam-muhamadhu-meedhoo--majlis",
       "personId": "ahmadhu-siyaam-muhamadhu-meedhoo",
       "kind": "majlis-member",
-      "constituency": "މީދޫ ދާއިރާ",
-      "constituencyLatin": "meedhoo dhaairaa",
+      "constituency": "meedhoo dhaairaa",
+      "constituencyDv": "މީދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5555,8 +5555,8 @@
       "id": "abdhulghafooru-moosaa-hanimaadhoo--majlis",
       "personId": "abdhulghafooru-moosaa-hanimaadhoo",
       "kind": "majlis-member",
-      "constituency": "ހަނިމާދޫ ދާއިރާ",
-      "constituencyLatin": "hanimaadhoo dhaairaa",
+      "constituency": "hanimaadhoo dhaairaa",
+      "constituencyDv": "ހަނިމާދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5573,8 +5573,8 @@
       "id": "hasan-afeefu-vilufushi--majlis",
       "personId": "hasan-afeefu-vilufushi",
       "kind": "majlis-member",
-      "constituency": "ވިލުފުށި ދާއިރާ",
-      "constituencyLatin": "vilufushi dhaairaa",
+      "constituency": "vilufushi dhaairaa",
+      "constituencyDv": "ވިލުފުށި ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5591,8 +5591,8 @@
       "id": "hasan-ahmadhu-inguraidhoo--majlis",
       "personId": "hasan-ahmadhu-inguraidhoo",
       "kind": "majlis-member",
-      "constituency": "އިނގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "inguraidhoo dhaairaa",
+      "constituency": "inguraidhoo dhaairaa",
+      "constituencyDv": "އިނގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5609,8 +5609,8 @@
       "id": "husain-firushaan-madaveli--majlis",
       "personId": "husain-firushaan-madaveli",
       "kind": "majlis-member",
-      "constituency": "މަޑަވެލި ދާއިރާ",
-      "constituencyLatin": "madaveli dhaairaa",
+      "constituency": "madaveli dhaairaa",
+      "constituencyDv": "މަޑަވެލި ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5627,8 +5627,8 @@
       "id": "jamsheedhu-muhamadhu-kulhudhufushi-dhekunu--majlis",
       "personId": "jamsheedhu-muhamadhu-kulhudhufushi-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
-      "constituencyLatin": "kulhudhufushi dhekunu dhaairaa",
+      "constituency": "kulhudhufushi dhekunu dhaairaa",
+      "constituencyDv": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5645,8 +5645,8 @@
       "id": "moosaa-siraaju-fonadhoo--majlis",
       "personId": "moosaa-siraaju-fonadhoo",
       "kind": "majlis-member",
-      "constituency": "ފޮނަދޫ ދާއިރާ",
-      "constituencyLatin": "fonadhoo dhaairaa",
+      "constituency": "fonadhoo dhaairaa",
+      "constituencyDv": "ފޮނަދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -5663,8 +5663,8 @@
       "id": "muhamadhu-nasheedhu-machangolhi-medhu--majlis",
       "personId": "muhamadhu-nasheedhu-machangolhi-medhu",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި މެދު ދާއިރާ",
-      "constituencyLatin": "machangolhi medhu dhaairaa",
+      "constituency": "machangolhi medhu dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި މެދު ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -5680,8 +5680,8 @@
       "id": "abdhulazeez-jamaal-aboobakuru-maavashu--majlis",
       "personId": "abdhulazeez-jamaal-aboobakuru-maavashu",
       "kind": "majlis-member",
-      "constituency": "މާވަށު ދާއިރާ",
-      "constituencyLatin": "maavashu dhaairaa",
+      "constituency": "maavashu dhaairaa",
+      "constituencyDv": "މާވަށު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5699,8 +5699,8 @@
       "id": "abdhuullah-abdhuraheem-maafannu-hulhangu--majlis",
       "personId": "abdhuullah-abdhuraheem-maafannu-hulhangu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު ހުޅަނގު ދާއިރާ",
-      "constituencyLatin": "maafannu hulhangu dhaairaa",
+      "constituency": "maafannu hulhangu dhaairaa",
+      "constituencyDv": "މާފަންނު ހުޅަނގު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5718,8 +5718,8 @@
       "id": "abdhuullah-sinaan-machangolhi-dhekunu--majlis",
       "personId": "abdhuullah-sinaan-machangolhi-dhekunu",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
-      "constituencyLatin": "machangolhi dhekunu dhaairaa",
+      "constituency": "machangolhi dhekunu dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5737,8 +5737,8 @@
       "id": "abdhuullah-yaamin-velidhoo--majlis",
       "personId": "abdhuullah-yaamin-velidhoo",
       "kind": "majlis-member",
-      "constituency": "ވެލިދޫ ދާއިރާ",
-      "constituencyLatin": "velidhoo dhaairaa",
+      "constituency": "velidhoo dhaairaa",
+      "constituencyDv": "ވެލިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5756,8 +5756,8 @@
       "id": "ahmadhu-aamiru-kudahuvadhoo--majlis",
       "personId": "ahmadhu-aamiru-kudahuvadhoo",
       "kind": "majlis-member",
-      "constituency": "ކުޑަހުވަދޫ ދާއިރާ",
-      "constituencyLatin": "kudahuvadhoo dhaairaa",
+      "constituency": "kudahuvadhoo dhaairaa",
+      "constituencyDv": "ކުޑަހުވަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5775,8 +5775,8 @@
       "id": "ahmadhu-hamzaa-bilethdhoo--majlis",
       "personId": "ahmadhu-hamzaa-bilethdhoo",
       "kind": "majlis-member",
-      "constituency": "ބިލެތްދޫ ދާއިރާ",
-      "constituencyLatin": "bilethdhoo dhaairaa",
+      "constituency": "bilethdhoo dhaairaa",
+      "constituencyDv": "ބިލެތްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5794,8 +5794,8 @@
       "id": "ahmadhu-moosaa-kurendhoo--majlis",
       "personId": "ahmadhu-moosaa-kurendhoo",
       "kind": "majlis-member",
-      "constituency": "ކުރެންދޫ ދާއިރާ",
-      "constituencyLatin": "kurendhoo dhaairaa",
+      "constituency": "kurendhoo dhaairaa",
+      "constituencyDv": "ކުރެންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5813,8 +5813,8 @@
       "id": "ahmadhu-muhamadhu-naifaru--majlis",
       "personId": "ahmadhu-muhamadhu-naifaru",
       "kind": "majlis-member",
-      "constituency": "ނައިފަރު ދާއިރާ",
-      "constituencyLatin": "naifaru dhaairaa",
+      "constituency": "naifaru dhaairaa",
+      "constituencyDv": "ނައިފަރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5832,8 +5832,8 @@
       "id": "ahmadhu-rasheedhu-hoarafushi--majlis",
       "personId": "ahmadhu-rasheedhu-hoarafushi",
       "kind": "majlis-member",
-      "constituency": "ހޯރަފުށި ދާއިރާ",
-      "constituencyLatin": "hoarafushi dhaairaa",
+      "constituency": "hoarafushi dhaairaa",
+      "constituencyDv": "ހޯރަފުށި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5851,8 +5851,8 @@
       "id": "ahmadhu-rasheedhu-gadhoo--majlis",
       "personId": "ahmadhu-rasheedhu-gadhoo",
       "kind": "majlis-member",
-      "constituency": "ގައްދޫ ދާއިރާ",
-      "constituencyLatin": "gadhoo dhaairaa",
+      "constituency": "gadhoo dhaairaa",
+      "constituencyDv": "ގައްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5870,8 +5870,8 @@
       "id": "ahmadhu-sameeru-dhidhoo--majlis",
       "personId": "ahmadhu-sameeru-dhidhoo",
       "kind": "majlis-member",
-      "constituency": "ދިއްދޫ ދާއިރާ",
-      "constituencyLatin": "dhidhoo dhaairaa",
+      "constituency": "dhidhoo dhaairaa",
+      "constituencyDv": "ދިއްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5889,8 +5889,8 @@
       "id": "ahmadhu-thasmeen-alee-kendhoo--majlis",
       "personId": "ahmadhu-thasmeen-alee-kendhoo",
       "kind": "majlis-member",
-      "constituency": "ކެންދޫ ދާއިރާ",
-      "constituencyLatin": "kendhoo dhaairaa",
+      "constituency": "kendhoo dhaairaa",
+      "constituencyDv": "ކެންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5908,8 +5908,8 @@
       "id": "alhaan-fahumee-feydhoo--majlis",
       "personId": "alhaan-fahumee-feydhoo",
       "kind": "majlis-member",
-      "constituency": "ފޭދޫ ދާއިރާ",
-      "constituencyLatin": "feydhoo dhaairaa",
+      "constituency": "feydhoo dhaairaa",
+      "constituencyDv": "ފޭދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5927,8 +5927,8 @@
       "id": "haamidhu-abdhulghafooru-henveyru-dhekunu--majlis",
       "personId": "haamidhu-abdhulghafooru-henveyru-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "constituency": "henveyru dhekunu dhaairaa",
+      "constituencyDv": "ހެންވޭރު ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5946,8 +5946,8 @@
       "id": "hamdhoon-abdhuullah-hameedhu-inguraidhoo--majlis",
       "personId": "hamdhoon-abdhuullah-hameedhu-inguraidhoo",
       "kind": "majlis-member",
-      "constituency": "އިނގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "inguraidhoo dhaairaa",
+      "constituency": "inguraidhoo dhaairaa",
+      "constituencyDv": "އިނގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5965,8 +5965,8 @@
       "id": "hasan-aadhil-maradhoo--majlis",
       "personId": "hasan-aadhil-maradhoo",
       "kind": "majlis-member",
-      "constituency": "މަރަދޫ ދާއިރާ",
-      "constituencyLatin": "maradhoo dhaairaa",
+      "constituency": "maradhoo dhaairaa",
+      "constituencyDv": "މަރަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -5984,8 +5984,8 @@
       "id": "hasan-lateef-hithadhoo-dhekunu--majlis",
       "personId": "hasan-lateef-hithadhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "hithadhoo dhekunu dhaairaa",
+      "constituency": "hithadhoo dhekunu dhaairaa",
+      "constituencyDv": "ހިތަދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6003,8 +6003,8 @@
       "id": "ibraaheem-mutalib-faresmaathodaa--majlis",
       "personId": "ibraaheem-mutalib-faresmaathodaa",
       "kind": "majlis-member",
-      "constituency": "ފަރެސްމާތޮޑާ ދާއިރާ",
-      "constituencyLatin": "faresmaathodaa dhaairaa",
+      "constituency": "faresmaathodaa dhaairaa",
+      "constituencyDv": "ފަރެސްމާތޮޑާ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6022,8 +6022,8 @@
       "id": "ismaaeel-abdhulhameedhu-kaashidhoo--majlis",
       "personId": "ismaaeel-abdhulhameedhu-kaashidhoo",
       "kind": "majlis-member",
-      "constituency": "ކާށިދޫ ދާއިރާ",
-      "constituencyLatin": "kaashidhoo dhaairaa",
+      "constituency": "kaashidhoo dhaairaa",
+      "constituencyDv": "ކާށިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6041,8 +6041,8 @@
       "id": "muhamadhu-mujuthaaz-hanimaadhoo--majlis",
       "personId": "muhamadhu-mujuthaaz-hanimaadhoo",
       "kind": "majlis-member",
-      "constituency": "ހަނިމާދޫ ދާއިރާ",
-      "constituencyLatin": "hanimaadhoo dhaairaa",
+      "constituency": "hanimaadhoo dhaairaa",
+      "constituencyDv": "ހަނިމާދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6060,8 +6060,8 @@
       "id": "muhamadhu-naazim-madaveli--majlis",
       "personId": "muhamadhu-naazim-madaveli",
       "kind": "majlis-member",
-      "constituency": "މަޑަވެލި ދާއިރާ",
-      "constituencyLatin": "madaveli dhaairaa",
+      "constituency": "madaveli dhaairaa",
+      "constituencyDv": "މަޑަވެލި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6079,8 +6079,8 @@
       "id": "muhamadhu-nasheedhu-nolhivaram--majlis",
       "personId": "muhamadhu-nasheedhu-nolhivaram",
       "kind": "majlis-member",
-      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
-      "constituencyLatin": "nolhivaram dhaairaa",
+      "constituency": "nolhivaram dhaairaa",
+      "constituencyDv": "ނޮޅިވަރަމް ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6098,8 +6098,8 @@
       "id": "muhamadhu-nasheedhu-kulhudhufushi-dhekunu--majlis",
       "personId": "muhamadhu-nasheedhu-kulhudhufushi-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
-      "constituencyLatin": "kulhudhufushi dhekunu dhaairaa",
+      "constituency": "kulhudhufushi dhekunu dhaairaa",
+      "constituencyDv": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6117,8 +6117,8 @@
       "id": "muhamadhu-qasam-thinadhoo--majlis",
       "personId": "muhamadhu-qasam-thinadhoo",
       "kind": "majlis-member",
-      "constituency": "ތިނަދޫ ދާއިރާ",
-      "constituencyLatin": "thinadhoo dhaairaa",
+      "constituency": "thinadhoo dhaairaa",
+      "constituencyDv": "ތިނަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6136,8 +6136,8 @@
       "id": "muhamadhu-raamiz-vilingili--majlis",
       "personId": "muhamadhu-raamiz-vilingili",
       "kind": "majlis-member",
-      "constituency": "ވިލިނގިލި ދާއިރާ",
-      "constituencyLatin": "vilingili dhaairaa",
+      "constituency": "vilingili dhaairaa",
+      "constituencyDv": "ވިލިނގިލި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6155,8 +6155,8 @@
       "id": "muhamadhu-rafeeq-hasan-fuvamulaku-uthuru--majlis",
       "personId": "muhamadhu-rafeeq-hasan-fuvamulaku-uthuru",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "constituency": "fuvamulaku uthuru dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6174,8 +6174,8 @@
       "id": "muhamadhu-rasheedhu-hithadhoo-medhu--majlis",
       "personId": "muhamadhu-rasheedhu-hithadhoo-medhu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
-      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "constituency": "hithadhoo medhu dhaairaa",
+      "constituencyDv": "ހިތަދޫ މެދު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6193,8 +6193,8 @@
       "id": "muhamadhu-riyaaz-dhaandhoo--majlis",
       "personId": "muhamadhu-riyaaz-dhaandhoo",
       "kind": "majlis-member",
-      "constituency": "ދާންދޫ ދާއިރާ",
-      "constituencyLatin": "dhaandhoo dhaairaa",
+      "constituency": "dhaandhoo dhaairaa",
+      "constituencyDv": "ދާންދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6212,8 +6212,8 @@
       "id": "muhamadhu-shifaaz-baarashu--majlis",
       "personId": "muhamadhu-shifaaz-baarashu",
       "kind": "majlis-member",
-      "constituency": "ބާރަށު ދާއިރާ",
-      "constituencyLatin": "baarashu dhaairaa",
+      "constituency": "baarashu dhaairaa",
+      "constituencyDv": "ބާރަށު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6231,8 +6231,8 @@
       "id": "muhamadhu-taariq-manadhoo--majlis",
       "personId": "muhamadhu-taariq-manadhoo",
       "kind": "majlis-member",
-      "constituency": "މަނަދޫ ދާއިރާ",
-      "constituencyLatin": "manadhoo dhaairaa",
+      "constituency": "manadhoo dhaairaa",
+      "constituencyDv": "މަނަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6250,8 +6250,8 @@
       "id": "muhamadhu-zubairu-dhuvaafaru--majlis",
       "personId": "muhamadhu-zubairu-dhuvaafaru",
       "kind": "majlis-member",
-      "constituency": "ދުވާފަރު ދާއިރާ",
-      "constituencyLatin": "dhuvaafaru dhaairaa",
+      "constituency": "dhuvaafaru dhaairaa",
+      "constituencyDv": "ދުވާފަރު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6269,8 +6269,8 @@
       "id": "ruqiyaa-muhamadhu-mahibadhoo--majlis",
       "personId": "ruqiyaa-muhamadhu-mahibadhoo",
       "kind": "majlis-member",
-      "constituency": "މަހިބަދޫ ދާއިރާ",
-      "constituencyLatin": "mahibadhoo dhaairaa",
+      "constituency": "mahibadhoo dhaairaa",
+      "constituencyDv": "މަހިބަދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6288,8 +6288,8 @@
       "id": "shifaaq-mufeedhu-fuvamulaku-medhu--majlis",
       "personId": "shifaaq-mufeedhu-fuvamulaku-medhu",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު މެދު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku medhu dhaairaa",
+      "constituency": "fuvamulaku medhu dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު މެދު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6307,8 +6307,8 @@
       "id": "visaam-alee-maduvari--majlis",
       "personId": "visaam-alee-maduvari",
       "kind": "majlis-member",
-      "constituency": "މަޑުއްވަރި ދާއިރާ",
-      "constituencyLatin": "maduvari dhaairaa",
+      "constituency": "maduvari dhaairaa",
+      "constituencyDv": "މަޑުއްވަރި ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6326,8 +6326,8 @@
       "id": "yoosuf-abdhulghafooru-gamu--majlis",
       "personId": "yoosuf-abdhulghafooru-gamu",
       "kind": "majlis-member",
-      "constituency": "ގަމު ދާއިރާ",
-      "constituencyLatin": "gamu dhaairaa",
+      "constituency": "gamu dhaairaa",
+      "constituencyDv": "ގަމު ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6345,8 +6345,8 @@
       "id": "yoosuf-naeem-felidhoo--majlis",
       "personId": "yoosuf-naeem-felidhoo",
       "kind": "majlis-member",
-      "constituency": "ފެލިދޫ ދާއިރާ",
-      "constituencyLatin": "felidhoo dhaairaa",
+      "constituency": "felidhoo dhaairaa",
+      "constituencyDv": "ފެލިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6364,8 +6364,8 @@
       "id": "muhamadhu-visaam-gamu--majlis",
       "personId": "muhamadhu-visaam-gamu",
       "kind": "majlis-member",
-      "constituency": "ގަމު ދާއިރާ",
-      "constituencyLatin": "gamu dhaairaa",
+      "constituency": "gamu dhaairaa",
+      "constituencyDv": "ގަމު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -6382,8 +6382,8 @@
       "id": "meekaaeelu-ahmadhu-naseem-galolhu-dhekunu--majlis",
       "personId": "meekaaeelu-ahmadhu-naseem-galolhu-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ގަލޮޅު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "galolhu dhekunu dhaairaa",
+      "constituency": "galolhu dhekunu dhaairaa",
+      "constituencyDv": "ގަލޮޅު ދެކުނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -6400,8 +6400,8 @@
       "id": "muhamadhu-raashidhu-komandoo--majlis",
       "personId": "muhamadhu-raashidhu-komandoo",
       "kind": "majlis-member",
-      "constituency": "ކޮމަންޑޫ ދާއިރާ",
-      "constituencyLatin": "komandoo dhaairaa",
+      "constituency": "komandoo dhaairaa",
+      "constituencyDv": "ކޮމަންޑޫ ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -6417,8 +6417,8 @@
       "id": "ibraaheem-muhamadhu-saalih-hinnavaru--majlis",
       "personId": "ibraaheem-muhamadhu-saalih-hinnavaru",
       "kind": "majlis-member",
-      "constituency": "ހިންނަވަރު ދާއިރާ",
-      "constituencyLatin": "hinnavaru dhaairaa",
+      "constituency": "hinnavaru dhaairaa",
+      "constituencyDv": "ހިންނަވަރު ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -6434,8 +6434,8 @@
       "id": "abdhulghafooru-moosaa-kulhudhufushi-uthuru--majlis",
       "personId": "abdhulghafooru-moosaa-kulhudhufushi-uthuru",
       "kind": "majlis-member",
-      "constituency": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
-      "constituencyLatin": "kulhudhufushi uthuru dhaairaa",
+      "constituency": "kulhudhufushi uthuru dhaairaa",
+      "constituencyDv": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -6451,8 +6451,8 @@
       "id": "alee-vaheedhu-thodoo--majlis",
       "personId": "alee-vaheedhu-thodoo",
       "kind": "majlis-member",
-      "constituency": "ތޮއްޑޫ ދާއިރާ",
-      "constituencyLatin": "thodoo dhaairaa",
+      "constituency": "thodoo dhaairaa",
+      "constituencyDv": "ތޮއްޑޫ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6470,8 +6470,8 @@
       "id": "abdhuullah-mausoom-kelaa--majlis",
       "personId": "abdhuullah-mausoom-kelaa",
       "kind": "majlis-member",
-      "constituency": "ކެލާ ދާއިރާ",
-      "constituencyLatin": "kelaa dhaairaa",
+      "constituency": "kelaa dhaairaa",
+      "constituencyDv": "ކެލާ ދާއިރާ",
       "termNumbers": [
         18,
         19,
@@ -6489,8 +6489,8 @@
       "id": "abdhusathaaru-muhamadhu-holhudhoo--majlis",
       "personId": "abdhusathaaru-muhamadhu-holhudhoo",
       "kind": "majlis-member",
-      "constituency": "ހޮޅުދޫ ދާއިރާ",
-      "constituencyLatin": "holhudhoo dhaairaa",
+      "constituency": "holhudhoo dhaairaa",
+      "constituencyDv": "ހޮޅުދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6506,8 +6506,8 @@
       "id": "ahmadhu-zaahiru-maduvari--majlis",
       "personId": "ahmadhu-zaahiru-maduvari",
       "kind": "majlis-member",
-      "constituency": "މަޑުއްވަރި ދާއިރާ",
-      "constituencyLatin": "maduvari dhaairaa",
+      "constituency": "maduvari dhaairaa",
+      "constituencyDv": "މަޑުއްވަރި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6523,8 +6523,8 @@
       "id": "alfaazeel-husain-shareefu-hulhumaale-uthuru--majlis",
       "personId": "alfaazeel-husain-shareefu-hulhumaale-uthuru",
       "kind": "majlis-member",
-      "constituency": "ހުޅުމާލެ އުތުރު ދާއިރާ",
-      "constituencyLatin": "hulhumaale uthuru dhaairaa",
+      "constituency": "hulhumaale uthuru dhaairaa",
+      "constituencyDv": "ހުޅުމާލެ އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6540,8 +6540,8 @@
       "id": "husain-muhamadhu-mathiveri--majlis",
       "personId": "husain-muhamadhu-mathiveri",
       "kind": "majlis-member",
-      "constituency": "މަތިވެރި ދާއިރާ",
-      "constituencyLatin": "mathiveri dhaairaa",
+      "constituency": "mathiveri dhaairaa",
+      "constituencyDv": "މަތިވެރި ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -6558,8 +6558,8 @@
       "id": "moosaa-zameeru-kinbidhoo--majlis",
       "personId": "moosaa-zameeru-kinbidhoo",
       "kind": "majlis-member",
-      "constituency": "ކިނބިދޫ ދާއިރާ",
-      "constituencyLatin": "kinbidhoo dhaairaa",
+      "constituency": "kinbidhoo dhaairaa",
+      "constituencyDv": "ކިނބިދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -6576,8 +6576,8 @@
       "id": "zaahiru-aadham-gadhoo--majlis",
       "personId": "zaahiru-aadham-gadhoo",
       "kind": "majlis-member",
-      "constituency": "ގައްދޫ ދާއިރާ",
-      "constituencyLatin": "gadhoo dhaairaa",
+      "constituency": "gadhoo dhaairaa",
+      "constituencyDv": "ގައްދޫ ދާއިރާ",
       "termNumbers": [
         18,
         19
@@ -6594,8 +6594,8 @@
       "id": "ahmadhu-nihaan-husainmaniku-vilimaafannu--majlis",
       "personId": "ahmadhu-nihaan-husainmaniku-vilimaafannu",
       "kind": "majlis-member",
-      "constituency": "ވިލިމާފަންނު ދާއިރާ",
-      "constituencyLatin": "vilimaafannu dhaairaa",
+      "constituency": "vilimaafannu dhaairaa",
+      "constituencyDv": "ވިލިމާފަންނު ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -6612,8 +6612,8 @@
       "id": "ahmadhu-shaakiru-maavashu--majlis",
       "personId": "ahmadhu-shaakiru-maavashu",
       "kind": "majlis-member",
-      "constituency": "މާވަށު ދާއިރާ",
-      "constituencyLatin": "maavashu dhaairaa",
+      "constituency": "maavashu dhaairaa",
+      "constituencyDv": "މާވަށު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6629,8 +6629,8 @@
       "id": "faatimathu-saudhaa-nilandhoo--majlis",
       "personId": "faatimathu-saudhaa-nilandhoo",
       "kind": "majlis-member",
-      "constituency": "ނިލަންދޫ ދާއިރާ",
-      "constituencyLatin": "nilandhoo dhaairaa",
+      "constituency": "nilandhoo dhaairaa",
+      "constituencyDv": "ނިލަންދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6646,8 +6646,8 @@
       "id": "lfaazil-muhamadhu-shaamin-habeebu-kurendhoo--majlis",
       "personId": "lfaazil-muhamadhu-shaamin-habeebu-kurendhoo",
       "kind": "majlis-member",
-      "constituency": "ކުރެންދޫ ދާއިރާ",
-      "constituencyLatin": "kurendhoo dhaairaa",
+      "constituency": "kurendhoo dhaairaa",
+      "constituencyDv": "ކުރެންދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6663,8 +6663,8 @@
       "id": "muhamadhu-ismaaeel-vilimaale--majlis",
       "personId": "muhamadhu-ismaaeel-vilimaale",
       "kind": "majlis-member",
-      "constituency": "ވިލިމާލެ ދާއިރާ",
-      "constituencyLatin": "vilimaale dhaairaa",
+      "constituency": "vilimaale dhaairaa",
+      "constituencyDv": "ވިލިމާލެ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6680,8 +6680,8 @@
       "id": "muhamadhu-naashiz-kinbidhoo--majlis",
       "personId": "muhamadhu-naashiz-kinbidhoo",
       "kind": "majlis-member",
-      "constituency": "ކިނބިދޫ ދާއިރާ",
-      "constituencyLatin": "kinbidhoo dhaairaa",
+      "constituency": "kinbidhoo dhaairaa",
+      "constituencyDv": "ކިނބިދޫ ދާއިރާ",
       "termNumbers": [
         19,
         20
@@ -6698,8 +6698,8 @@
       "id": "yoosuf-nasheedhu-gamu--majlis",
       "personId": "yoosuf-nasheedhu-gamu",
       "kind": "majlis-member",
-      "constituency": "ގަމު ދާއިރާ",
-      "constituencyLatin": "gamu dhaairaa",
+      "constituency": "gamu dhaairaa",
+      "constituencyDv": "ގަމު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6715,8 +6715,8 @@
       "id": "aazim-abdhulazeez-vilingili--majlis",
       "personId": "aazim-abdhulazeez-vilingili",
       "kind": "majlis-member",
-      "constituency": "ވިލިނގިލި ދާއިރާ",
-      "constituencyLatin": "vilingili dhaairaa",
+      "constituency": "vilingili dhaairaa",
+      "constituencyDv": "ވިލިނގިލި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6732,8 +6732,8 @@
       "id": "abdhuullah-shadheem-hulhumaale-medhu--majlis",
       "personId": "abdhuullah-shadheem-hulhumaale-medhu",
       "kind": "majlis-member",
-      "constituency": "ހުޅުމާލެ މެދު ދާއިރާ",
-      "constituencyLatin": "hulhumaale medhu dhaairaa",
+      "constituency": "hulhumaale medhu dhaairaa",
+      "constituencyDv": "ހުޅުމާލެ މެދު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6749,8 +6749,8 @@
       "id": "abdhuullah-shareef-kelaa--majlis",
       "personId": "abdhuullah-shareef-kelaa",
       "kind": "majlis-member",
-      "constituency": "ކެލާ ދާއިރާ",
-      "constituencyLatin": "kelaa dhaairaa",
+      "constituency": "kelaa dhaairaa",
+      "constituencyDv": "ކެލާ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6766,8 +6766,8 @@
       "id": "ahmadhu-zameeru-machangolhi-medhu--majlis",
       "personId": "ahmadhu-zameeru-machangolhi-medhu",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި މެދު ދާއިރާ",
-      "constituencyLatin": "machangolhi medhu dhaairaa",
+      "constituency": "machangolhi medhu dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި މެދު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6783,8 +6783,8 @@
       "id": "hasan-vaheedhu-vilufushi--majlis",
       "personId": "hasan-vaheedhu-vilufushi",
       "kind": "majlis-member",
-      "constituency": "ވިލުފުށި ދާއިރާ",
-      "constituencyLatin": "vilufushi dhaairaa",
+      "constituency": "vilufushi dhaairaa",
+      "constituencyDv": "ވިލުފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6800,8 +6800,8 @@
       "id": "ibraaheem-husain-fuvamulaku-dhekunu--majlis",
       "personId": "ibraaheem-husain-fuvamulaku-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku dhekunu dhaairaa",
+      "constituency": "fuvamulaku dhekunu dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6817,8 +6817,8 @@
       "id": "ibraaheem-naufal-mulaku--majlis",
       "personId": "ibraaheem-naufal-mulaku",
       "kind": "majlis-member",
-      "constituency": "މުލަކު ދާއިރާ",
-      "constituencyLatin": "mulaku dhaairaa",
+      "constituency": "mulaku dhaairaa",
+      "constituencyDv": "މުލަކު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6834,8 +6834,8 @@
       "id": "ibraaheem-shifaaz-ungoofaaru--majlis",
       "personId": "ibraaheem-shifaaz-ungoofaaru",
       "kind": "majlis-member",
-      "constituency": "އުނގޫފާރު ދާއިރާ",
-      "constituencyLatin": "ungoofaaru dhaairaa",
+      "constituency": "ungoofaaru dhaairaa",
+      "constituencyDv": "އުނގޫފާރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6851,8 +6851,8 @@
       "id": "ibraaheemdheedhee-kolamaafushi--majlis",
       "personId": "ibraaheemdheedhee-kolamaafushi",
       "kind": "majlis-member",
-      "constituency": "ކޮލަމާފުށި ދާއިރާ",
-      "constituencyLatin": "kolamaafushi dhaairaa",
+      "constituency": "kolamaafushi dhaairaa",
+      "constituencyDv": "ކޮލަމާފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6868,8 +6868,8 @@
       "id": "muhamadhu-abaas-velidhoo--majlis",
       "personId": "muhamadhu-abaas-velidhoo",
       "kind": "majlis-member",
-      "constituency": "ވެލިދޫ ދާއިރާ",
-      "constituencyLatin": "velidhoo dhaairaa",
+      "constituency": "velidhoo dhaairaa",
+      "constituencyDv": "ވެލިދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6885,8 +6885,8 @@
       "id": "muhamadhu-abdhurahmaan-hinnavaru--majlis",
       "personId": "muhamadhu-abdhurahmaan-hinnavaru",
       "kind": "majlis-member",
-      "constituency": "ހިންނަވަރު ދާއިރާ",
-      "constituencyLatin": "hinnavaru dhaairaa",
+      "constituency": "hinnavaru dhaairaa",
+      "constituencyDv": "ހިންނަވަރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6902,8 +6902,8 @@
       "id": "munthazim-ibraaheem-kaashidhoo--majlis",
       "personId": "munthazim-ibraaheem-kaashidhoo",
       "kind": "majlis-member",
-      "constituency": "ކާށިދޫ ދާއިރާ",
-      "constituencyLatin": "kaashidhoo dhaairaa",
+      "constituency": "kaashidhoo dhaairaa",
+      "constituencyDv": "ކާށިދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6919,8 +6919,8 @@
       "id": "yaaseen-abdhuullah-naifaru--majlis",
       "personId": "yaaseen-abdhuullah-naifaru",
       "kind": "majlis-member",
-      "constituency": "ނައިފަރު ދާއިރާ",
-      "constituencyLatin": "naifaru dhaairaa",
+      "constituency": "naifaru dhaairaa",
+      "constituencyDv": "ނައިފަރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -6936,8 +6936,8 @@
       "id": "ahmadhu-abdhuullah-ihavandhoo--majlis",
       "personId": "ahmadhu-abdhuullah-ihavandhoo",
       "kind": "majlis-member",
-      "constituency": "އިހަވަންދޫ ދާއިރާ",
-      "constituencyLatin": "ihavandhoo dhaairaa",
+      "constituency": "ihavandhoo dhaairaa",
+      "constituencyDv": "އިހަވަންދޫ ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -6953,8 +6953,8 @@
       "id": "ibraaheem-rasheedhu-maafannu-dhekunu--majlis",
       "personId": "ibraaheem-rasheedhu-maafannu-dhekunu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "maafannu dhekunu dhaairaa",
+      "constituency": "maafannu dhekunu dhaairaa",
+      "constituencyDv": "މާފަންނު ދެކުނު ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -6970,8 +6970,8 @@
       "id": "ilyaas-labeebu-hulhumeedhoo--majlis",
       "personId": "ilyaas-labeebu-hulhumeedhoo",
       "kind": "majlis-member",
-      "constituency": "ހުޅުމީދޫ ދާއިރާ",
-      "constituencyLatin": "hulhumeedhoo dhaairaa",
+      "constituency": "hulhumeedhoo dhaairaa",
+      "constituencyDv": "ހުޅުމީދޫ ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -6987,8 +6987,8 @@
       "id": "muhamadhu-naashiz-alifushi--majlis",
       "personId": "muhamadhu-naashiz-alifushi",
       "kind": "majlis-member",
-      "constituency": "އަލިފުށި ދާއިރާ",
-      "constituencyLatin": "alifushi dhaairaa",
+      "constituency": "alifushi dhaairaa",
+      "constituencyDv": "އަލިފުށި ދާއިރާ",
       "termNumbers": [
         18
       ],
@@ -7004,8 +7004,8 @@
       "id": "aadham-shafeequ-makunudhoo--majlis",
       "personId": "aadham-shafeequ-makunudhoo",
       "kind": "majlis-member",
-      "constituency": "މަކުނުދޫ ދާއިރާ",
-      "constituencyLatin": "makunudhoo dhaairaa",
+      "constituency": "makunudhoo dhaairaa",
+      "constituencyDv": "މަކުނުދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7021,8 +7021,8 @@
       "id": "abdhuullah-rasheedhu-dhangethi--majlis",
       "personId": "abdhuullah-rasheedhu-dhangethi",
       "kind": "majlis-member",
-      "constituency": "ދަނގެތި ދާއިރާ",
-      "constituencyLatin": "dhangethi dhaairaa",
+      "constituency": "dhangethi dhaairaa",
+      "constituencyDv": "ދަނގެތި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7038,8 +7038,8 @@
       "id": "ahmadhu-shamheedhu-hulhumaale-dhekunu--majlis",
       "personId": "ahmadhu-shamheedhu-hulhumaale-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހުޅުމާލެ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "hulhumaale dhekunu dhaairaa",
+      "constituency": "hulhumaale dhekunu dhaairaa",
+      "constituencyDv": "ހުޅުމާލެ ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7055,8 +7055,8 @@
       "id": "ahmadhudheedhee-maradhoo--majlis",
       "personId": "ahmadhudheedhee-maradhoo",
       "kind": "majlis-member",
-      "constituency": "މަރަދޫ ދާއިރާ",
-      "constituencyLatin": "maradhoo dhaairaa",
+      "constituency": "maradhoo dhaairaa",
+      "constituencyDv": "މަރަދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7072,8 +7072,8 @@
       "id": "ameen-faisal-kanditheemu--majlis",
       "personId": "ameen-faisal-kanditheemu",
       "kind": "majlis-member",
-      "constituency": "ކަނޑިތީމު ދާއިރާ",
-      "constituencyLatin": "kanditheemu dhaairaa",
+      "constituency": "kanditheemu dhaairaa",
+      "constituencyDv": "ކަނޑިތީމު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7089,8 +7089,8 @@
       "id": "asadhuullah-shihaab-gemanafushi--majlis",
       "personId": "asadhuullah-shihaab-gemanafushi",
       "kind": "majlis-member",
-      "constituency": "ގެމަނަފުށި ދާއިރާ",
-      "constituencyLatin": "gemanafushi dhaairaa",
+      "constituency": "gemanafushi dhaairaa",
+      "constituencyDv": "ގެމަނަފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7106,8 +7106,8 @@
       "id": "ashraf-rasheedhu-faresmaathodaa--majlis",
       "personId": "ashraf-rasheedhu-faresmaathodaa",
       "kind": "majlis-member",
-      "constituency": "ފަރެސްމާތޮޑާ ދާއިރާ",
-      "constituencyLatin": "faresmaathodaa dhaairaa",
+      "constituency": "faresmaathodaa dhaairaa",
+      "constituencyDv": "ފަރެސްމާތޮޑާ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7123,8 +7123,8 @@
       "id": "husain-imraan-lateef-henveyru-dhekunu--majlis",
       "personId": "husain-imraan-lateef-henveyru-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު ދެކުނު ދާއިރާ",
-      "constituencyLatin": "henveyru dhekunu dhaairaa",
+      "constituency": "henveyru dhekunu dhaairaa",
+      "constituencyDv": "ހެންވޭރު ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7140,8 +7140,8 @@
       "id": "husain-sameeru-thodoo--majlis",
       "personId": "husain-sameeru-thodoo",
       "kind": "majlis-member",
-      "constituency": "ތޮއްޑޫ ދާއިރާ",
-      "constituencyLatin": "thodoo dhaairaa",
+      "constituency": "thodoo dhaairaa",
+      "constituencyDv": "ތޮއްޑޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7157,8 +7157,8 @@
       "id": "husnee-mubaarik-manadhoo--majlis",
       "personId": "husnee-mubaarik-manadhoo",
       "kind": "majlis-member",
-      "constituency": "މަނަދޫ ދާއިރާ",
-      "constituencyLatin": "manadhoo dhaairaa",
+      "constituency": "manadhoo dhaairaa",
+      "constituencyDv": "މަނަދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7174,8 +7174,8 @@
       "id": "ibraaheem-shaazu-guraidhoo--majlis",
       "personId": "ibraaheem-shaazu-guraidhoo",
       "kind": "majlis-member",
-      "constituency": "ގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "guraidhoo dhaairaa",
+      "constituency": "guraidhoo dhaairaa",
+      "constituencyDv": "ގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         19
       ],
@@ -7191,8 +7191,8 @@
       "id": "ismaaeel-nizaaru-feydhoo-uthuru--majlis",
       "personId": "ismaaeel-nizaaru-feydhoo-uthuru",
       "kind": "majlis-member",
-      "constituency": "ފޭދޫ އުތުރު ދާއިރާ",
-      "constituencyLatin": "feydhoo uthuru dhaairaa",
+      "constituency": "feydhoo uthuru dhaairaa",
+      "constituencyDv": "ފޭދޫ އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7208,8 +7208,8 @@
       "id": "ismaaeel-shafeeu-isdhoo--majlis",
       "personId": "ismaaeel-shafeeu-isdhoo",
       "kind": "majlis-member",
-      "constituency": "އިސްދޫ ދާއިރާ",
-      "constituencyLatin": "isdhoo dhaairaa",
+      "constituency": "isdhoo dhaairaa",
+      "constituencyDv": "އިސްދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7225,8 +7225,8 @@
       "id": "mauroof-dhaakiru-kendhoo--majlis",
       "personId": "mauroof-dhaakiru-kendhoo",
       "kind": "majlis-member",
-      "constituency": "ކެންދޫ ދާއިރާ",
-      "constituencyLatin": "kendhoo dhaairaa",
+      "constituency": "kendhoo dhaairaa",
+      "constituencyDv": "ކެންދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7242,8 +7242,8 @@
       "id": "muhamadhu-afoo-haamidhu-kendhikulhudhoo--majlis",
       "personId": "muhamadhu-afoo-haamidhu-kendhikulhudhoo",
       "kind": "majlis-member",
-      "constituency": "ކެނދިކުޅުދޫ ދާއިރާ",
-      "constituencyLatin": "kendhikulhudhoo dhaairaa",
+      "constituency": "kendhikulhudhoo dhaairaa",
+      "constituencyDv": "ކެނދިކުޅުދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7259,8 +7259,8 @@
       "id": "muhamadhu-alee-gadhoo--majlis",
       "personId": "muhamadhu-alee-gadhoo",
       "kind": "majlis-member",
-      "constituency": "ގައްދޫ ދާއިރާ",
-      "constituencyLatin": "gadhoo dhaairaa",
+      "constituency": "gadhoo dhaairaa",
+      "constituencyDv": "ގައްދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7276,8 +7276,8 @@
       "id": "muhamadhu-dhaaoodhu-kulhudhufushi-uthuru--majlis",
       "personId": "muhamadhu-dhaaoodhu-kulhudhufushi-uthuru",
       "kind": "majlis-member",
-      "constituency": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
-      "constituencyLatin": "kulhudhufushi uthuru dhaairaa",
+      "constituency": "kulhudhufushi uthuru dhaairaa",
+      "constituencyDv": "ކުޅުދުއްފުށި އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7293,8 +7293,8 @@
       "id": "muhamadhu-fazeel-dhaandhoo--majlis",
       "personId": "muhamadhu-fazeel-dhaandhoo",
       "kind": "majlis-member",
-      "constituency": "ދާންދޫ ދާއިރާ",
-      "constituencyLatin": "dhaandhoo dhaairaa",
+      "constituency": "dhaandhoo dhaairaa",
+      "constituencyDv": "ދާންދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7310,8 +7310,8 @@
       "id": "muhamadhu-mustafaa-ibraaheem-maafannu-hulhangu--majlis",
       "personId": "muhamadhu-mustafaa-ibraaheem-maafannu-hulhangu",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު ހުޅަނގު ދާއިރާ",
-      "constituencyLatin": "maafannu hulhangu dhaairaa",
+      "constituency": "maafannu hulhangu dhaairaa",
+      "constituencyDv": "މާފަންނު ހުޅަނގު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7327,8 +7327,8 @@
       "id": "muhamadhu-niushaadhu-keyodhoo--majlis",
       "personId": "muhamadhu-niushaadhu-keyodhoo",
       "kind": "majlis-member",
-      "constituency": "ކެޔޮދޫ ދާއިރާ",
-      "constituencyLatin": "keyodhoo dhaairaa",
+      "constituency": "keyodhoo dhaairaa",
+      "constituencyDv": "ކެޔޮދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7344,8 +7344,8 @@
       "id": "muhamadhu-sinaan-hithadhoo-uthuru--majlis",
       "personId": "muhamadhu-sinaan-hithadhoo-uthuru",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ އުތުރު ދާއިރާ",
-      "constituencyLatin": "hithadhoo uthuru dhaairaa",
+      "constituency": "hithadhoo uthuru dhaairaa",
+      "constituencyDv": "ހިތަދޫ އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7361,8 +7361,8 @@
       "id": "muhamadhu-siruhaan-hithaadhoo--majlis",
       "personId": "muhamadhu-siruhaan-hithaadhoo",
       "kind": "majlis-member",
-      "constituency": "ހިތާދޫ ދާއިރާ",
-      "constituencyLatin": "hithaadhoo dhaairaa",
+      "constituency": "hithaadhoo dhaairaa",
+      "constituencyDv": "ހިތާދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7378,8 +7378,8 @@
       "id": "abdhulateef-abdhurahmaanu-alifushi--majlis",
       "personId": "abdhulateef-abdhurahmaanu-alifushi",
       "kind": "majlis-member",
-      "constituency": "އަލިފުށި ދާއިރާ",
-      "constituencyLatin": "alifushi dhaairaa",
+      "constituency": "alifushi dhaairaa",
+      "constituencyDv": "އަލިފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7395,8 +7395,8 @@
       "id": "abdhurahmaan-adoomeedhoo--majlis",
       "personId": "abdhurahmaan-adoomeedhoo",
       "kind": "majlis-member",
-      "constituency": "އައްޑޫމީދޫ ދާއިރާ",
-      "constituencyLatin": "adoomeedhoo dhaairaa",
+      "constituency": "adoomeedhoo dhaairaa",
+      "constituencyDv": "އައްޑޫމީދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7412,8 +7412,8 @@
       "id": "ahmadhu-aifaan-henveyru-uthuru--majlis",
       "personId": "ahmadhu-aifaan-henveyru-uthuru",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު އުތުރު ދާއިރާ",
-      "constituencyLatin": "henveyru uthuru dhaairaa",
+      "constituency": "henveyru uthuru dhaairaa",
+      "constituencyDv": "ހެންވޭރު އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7429,8 +7429,8 @@
       "id": "ahmadhu-naseeru-ihavandhoo--majlis",
       "personId": "ahmadhu-naseeru-ihavandhoo",
       "kind": "majlis-member",
-      "constituency": "އިހަވަންދޫ ދާއިރާ",
-      "constituencyLatin": "ihavandhoo dhaairaa",
+      "constituency": "ihavandhoo dhaairaa",
+      "constituencyDv": "އިހަވަންދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7446,8 +7446,8 @@
       "id": "alee-ibraaheem-henveyru-hulhangu--majlis",
       "personId": "alee-ibraaheem-henveyru-hulhangu",
       "kind": "majlis-member",
-      "constituency": "ހެންވޭރު ހުޅަނގު ދާއިރާ",
-      "constituencyLatin": "henveyru hulhangu dhaairaa",
+      "constituency": "henveyru hulhangu dhaairaa",
+      "constituencyDv": "ހެންވޭރު ހުޅަނގު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7463,8 +7463,8 @@
       "id": "alee-moosaa-hoarafushi--majlis",
       "personId": "alee-moosaa-hoarafushi",
       "kind": "majlis-member",
-      "constituency": "ހޯރަފުށި ދާއިރާ",
-      "constituencyLatin": "hoarafushi dhaairaa",
+      "constituency": "hoarafushi dhaairaa",
+      "constituencyDv": "ހޯރަފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7480,8 +7480,8 @@
       "id": "faruhathu-muhamadhu-kulhudhufushi-dhekunu--majlis",
       "personId": "faruhathu-muhamadhu-kulhudhufushi-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
-      "constituencyLatin": "kulhudhufushi dhekunu dhaairaa",
+      "constituency": "kulhudhufushi dhekunu dhaairaa",
+      "constituencyDv": "ކުޅުދުއްފުށި ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7497,8 +7497,8 @@
       "id": "husain-hameedhu-kudahuvadhoo--majlis",
       "personId": "husain-hameedhu-kudahuvadhoo",
       "kind": "majlis-member",
-      "constituency": "ކުޑަހުވަދޫ ދާއިރާ",
-      "constituencyLatin": "kudahuvadhoo dhaairaa",
+      "constituency": "kudahuvadhoo dhaairaa",
+      "constituencyDv": "ކުޑަހުވަދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7514,8 +7514,8 @@
       "id": "husain-naasih-medhuhenveyru--majlis",
       "personId": "husain-naasih-medhuhenveyru",
       "kind": "majlis-member",
-      "constituency": "މެދުހެންވޭރު ދާއިރާ",
-      "constituencyLatin": "medhuhenveyru dhaairaa",
+      "constituency": "medhuhenveyru dhaairaa",
+      "constituencyDv": "މެދުހެންވޭރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7531,8 +7531,8 @@
       "id": "ibraaheem-muhamadhu-machangolhi-uthuru--majlis",
       "personId": "ibraaheem-muhamadhu-machangolhi-uthuru",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
-      "constituencyLatin": "machangolhi uthuru dhaairaa",
+      "constituency": "machangolhi uthuru dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7548,8 +7548,8 @@
       "id": "muhamadhu-ibraaheem-galolhu-uthuru--majlis",
       "personId": "muhamadhu-ibraaheem-galolhu-uthuru",
       "kind": "majlis-member",
-      "constituency": "ގަލޮޅު އުތުރު ދާއިރާ",
-      "constituencyLatin": "galolhu uthuru dhaairaa",
+      "constituency": "galolhu uthuru dhaairaa",
+      "constituencyDv": "ގަލޮޅު އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7565,8 +7565,8 @@
       "id": "muhamadhu-ibraaheem-komandoo--majlis",
       "personId": "muhamadhu-ibraaheem-komandoo",
       "kind": "majlis-member",
-      "constituency": "ކޮމަންޑޫ ދާއިރާ",
-      "constituencyLatin": "komandoo dhaairaa",
+      "constituency": "komandoo dhaairaa",
+      "constituencyDv": "ކޮމަންޑޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7582,8 +7582,8 @@
       "id": "muhamadhu-shameez-madaveli--majlis",
       "personId": "muhamadhu-shameez-madaveli",
       "kind": "majlis-member",
-      "constituency": "މަޑަވެލި ދާއިރާ",
-      "constituencyLatin": "madaveli dhaairaa",
+      "constituency": "madaveli dhaairaa",
+      "constituencyDv": "މަޑަވެލި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7599,8 +7599,8 @@
       "id": "mustafaa-husain-machangolhi-dhekunu--majlis",
       "personId": "mustafaa-husain-machangolhi-dhekunu",
       "kind": "majlis-member",
-      "constituency": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
-      "constituencyLatin": "machangolhi dhekunu dhaairaa",
+      "constituency": "machangolhi dhekunu dhaairaa",
+      "constituencyDv": "މައްޗަންގޮޅި ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7616,8 +7616,8 @@
       "id": "aadham-zaahiru-felidhoo--majlis",
       "personId": "aadham-zaahiru-felidhoo",
       "kind": "majlis-member",
-      "constituency": "ފެލިދޫ ދާއިރާ",
-      "constituencyLatin": "felidhoo dhaairaa",
+      "constituency": "felidhoo dhaairaa",
+      "constituencyDv": "ފެލިދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7633,8 +7633,8 @@
       "id": "abdhulhannaan-aboobakuru-thulhaadhoo--majlis",
       "personId": "abdhulhannaan-aboobakuru-thulhaadhoo",
       "kind": "majlis-member",
-      "constituency": "ތުޅާދޫ ދާއިރާ",
-      "constituencyLatin": "thulhaadhoo dhaairaa",
+      "constituency": "thulhaadhoo dhaairaa",
+      "constituencyDv": "ތުޅާދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7650,8 +7650,8 @@
       "id": "ahmadhu-aslam-bilethdhoo--majlis",
       "personId": "ahmadhu-aslam-bilethdhoo",
       "kind": "majlis-member",
-      "constituency": "ބިލެތްދޫ ދާއިރާ",
-      "constituencyLatin": "bilethdhoo dhaairaa",
+      "constituency": "bilethdhoo dhaairaa",
+      "constituencyDv": "ބިލެތްދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7667,8 +7667,8 @@
       "id": "ahmadhu-azaan-maruzooqu-hithadhoo-medhu--majlis",
       "personId": "ahmadhu-azaan-maruzooqu-hithadhoo-medhu",
       "kind": "majlis-member",
-      "constituency": "ހިތަދޫ މެދު ދާއިރާ",
-      "constituencyLatin": "hithadhoo medhu dhaairaa",
+      "constituency": "hithadhoo medhu dhaairaa",
+      "constituencyDv": "ހިތަދޫ މެދު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7684,8 +7684,8 @@
       "id": "ahmadhu-riyaaz-thimarafushi--majlis",
       "personId": "ahmadhu-riyaaz-thimarafushi",
       "kind": "majlis-member",
-      "constituency": "ތިމަރަފުށި ދާއިރާ",
-      "constituencyLatin": "thimarafushi dhaairaa",
+      "constituency": "thimarafushi dhaairaa",
+      "constituencyDv": "ތިމަރަފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7701,8 +7701,8 @@
       "id": "hamadhu-abdhuullah-fuvamulaku-uthuru--majlis",
       "personId": "hamadhu-abdhuullah-fuvamulaku-uthuru",
       "kind": "majlis-member",
-      "constituency": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
-      "constituencyLatin": "fuvamulaku uthuru dhaairaa",
+      "constituency": "fuvamulaku uthuru dhaairaa",
+      "constituencyDv": "ފުވައްމުލަކު އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7718,8 +7718,8 @@
       "id": "hanaan-muhamadhu-rasheedhu-guraidhoo--majlis",
       "personId": "hanaan-muhamadhu-rasheedhu-guraidhoo",
       "kind": "majlis-member",
-      "constituency": "ގުރައިދޫ ދާއިރާ",
-      "constituencyLatin": "guraidhoo dhaairaa",
+      "constituency": "guraidhoo dhaairaa",
+      "constituencyDv": "ގުރައިދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7735,8 +7735,8 @@
       "id": "ibraaheemdheedhee-feydhoo-dhekunu--majlis",
       "personId": "ibraaheemdheedhee-feydhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ފޭދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "feydhoo dhekunu dhaairaa",
+      "constituency": "feydhoo dhekunu dhaairaa",
+      "constituencyDv": "ފޭދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7752,8 +7752,8 @@
       "id": "muhamadhu-naazim-maafannu-uthuru--majlis",
       "personId": "muhamadhu-naazim-maafannu-uthuru",
       "kind": "majlis-member",
-      "constituency": "މާފަންނު އުތުރު ދާއިރާ",
-      "constituencyLatin": "maafannu uthuru dhaairaa",
+      "constituency": "maafannu uthuru dhaairaa",
+      "constituencyDv": "މާފަންނު އުތުރު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7769,8 +7769,8 @@
       "id": "muhamadhu-rasheedhu-nolhivaram--majlis",
       "personId": "muhamadhu-rasheedhu-nolhivaram",
       "kind": "majlis-member",
-      "constituency": "ނޮޅިވަރަމް ދާއިރާ",
-      "constituencyLatin": "nolhivaram dhaairaa",
+      "constituency": "nolhivaram dhaairaa",
+      "constituencyDv": "ނޮޅިވަރަމް ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7786,8 +7786,8 @@
       "id": "alee-ashraq-kinbidhoo--majlis",
       "personId": "alee-ashraq-kinbidhoo",
       "kind": "majlis-member",
-      "constituency": "ކިނބިދޫ ދާއިރާ",
-      "constituencyLatin": "kinbidhoo dhaairaa",
+      "constituency": "kinbidhoo dhaairaa",
+      "constituencyDv": "ކިނބިދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7803,8 +7803,8 @@
       "id": "anaaraa-naeem-huraa--majlis",
       "personId": "anaaraa-naeem-huraa",
       "kind": "majlis-member",
-      "constituency": "ހުރާ ދާއިރާ",
-      "constituencyLatin": "huraa dhaairaa",
+      "constituency": "huraa dhaairaa",
+      "constituencyDv": "ހުރާ ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7820,8 +7820,8 @@
       "id": "husain-rizaa-aadham-maafushi--majlis",
       "personId": "husain-rizaa-aadham-maafushi",
       "kind": "majlis-member",
-      "constituency": "މާފުށި ދާއިރާ",
-      "constituencyLatin": "maafushi dhaairaa",
+      "constituency": "maafushi dhaairaa",
+      "constituencyDv": "މާފުށި ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7837,8 +7837,8 @@
       "id": "muhamadhu-alsan-ahmadhu-thinadhoo-dhekunu--majlis",
       "personId": "muhamadhu-alsan-ahmadhu-thinadhoo-dhekunu",
       "kind": "majlis-member",
-      "constituency": "ތިނަދޫ ދެކުނު ދާއިރާ",
-      "constituencyLatin": "thinadhoo dhekunu dhaairaa",
+      "constituency": "thinadhoo dhekunu dhaairaa",
+      "constituencyDv": "ތިނަދޫ ދެކުނު ދާއިރާ",
       "termNumbers": [
         20
       ],
@@ -7854,8 +7854,8 @@
       "id": "muhamadhu-mamdhooh-funadhoo--majlis",
       "personId": "muhamadhu-mamdhooh-funadhoo",
       "kind": "majlis-member",
-      "constituency": "ފުނަދޫ ދާއިރާ",
-      "constituencyLatin": "funadhoo dhaairaa",
+      "constituency": "funadhoo dhaairaa",
+      "constituencyDv": "ފުނަދޫ ދާއިރާ",
       "termNumbers": [
         20
       ],

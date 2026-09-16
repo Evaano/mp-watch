@@ -408,7 +408,7 @@ export const registry = {
     return [...graph.persons].sort(
       (a, b) =>
         this.totalSpent(b.id) - this.totalSpent(a.id) ||
-        a.nameLatin.localeCompare(b.nameLatin),
+        a.name.localeCompare(b.name),
     );
   },
 
@@ -443,15 +443,20 @@ export function photo(id: PersonId): string | null {
   return (photoManifest as Record<string, string>)[id] ?? null;
 }
 
-/** Trimmed payload for the client-side search index. */
+/**
+ * Trimmed payload for the client-side search index.
+ *
+ * The Thaana name and constituency ride along although nothing renders them:
+ * a reader who knows a member's name knows it in Thaana, and matching what
+ * they type costs two fields rather than a second index.
+ */
 export interface PersonSummary {
   id: string;
   name: string;
-  nameLatin: string;
+  nameDv: string;
   title: string | null;
-  titleDv: string | null;
   constituency: string;
-  constituencyLatin: string;
+  constituencyDv: string;
   total: number;
   yearsPaid: number;
   party: string | null;
@@ -464,11 +469,10 @@ export function toSummary(person: Person): PersonSummary {
   return {
     id: person.id,
     name: person.name,
-    nameLatin: person.nameLatin,
+    nameDv: person.nameDv ?? "",
     title: person.title,
-    titleDv: person.titleDv ?? null,
     constituency: seat?.constituency ?? "",
-    constituencyLatin: seat?.constituencyLatin ?? "",
+    constituencyDv: seat?.constituencyDv ?? "",
     total: registry.totalSpent(person.id),
     yearsPaid: registry.yearsPaid(person.id),
     party: registry.party(person.id),

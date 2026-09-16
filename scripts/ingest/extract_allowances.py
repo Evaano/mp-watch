@@ -209,8 +209,8 @@ def build_graph(records, years, notes):
     for r in records:
         persons.append({
             'id': r['id'],
-            'name': r['name'],
-            'nameLatin': r['nameLatin'],
+            'name': r['nameLatin'],
+            'nameDv': r['name'],
             'title': r['title'],
             'titleDv': r.get('titleDv'),
             'possiblySameAs': r.get('sameNameAs'),
@@ -230,8 +230,8 @@ def build_graph(records, years, notes):
             'id': f'{r["id"]}--majlis',
             'personId': r['id'],
             'kind': 'majlis-member',
-            'constituency': r['constituency'],
-            'constituencyLatin': r['constituencyLatin'],
+            'constituency': r['constituencyLatin'],
+            'constituencyDv': r['constituency'],
             'termNumbers': r['terms'],
             'start': first_start,
             'end': last_end,

@@ -1,23 +1,12 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import { Numeral } from "@/components/Numeral";
-import { getDict, isLang, LANGS } from "@/lib/i18n";
+import { dict } from "@/lib/i18n";
 import { registry } from "@/lib/registry";
 
-export function generateStaticParams() {
-  return LANGS.map((lang) => ({ lang }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}): Promise<Metadata> {
-  const { lang } = await params;
-  if (!isLang(lang)) return {};
-  const dict = getDict(lang);
-  return { title: dict.partiesHeading, description: dict.partiesIntro };
-}
+export const metadata: Metadata = {
+  title: dict.partiesHeading,
+  description: dict.partiesIntro,
+};
 
 /**
  * Two comparisons the member pages cannot make on their own: what each party's
@@ -27,15 +16,7 @@ export async function generateMetadata({
  * in any source this repo holds, and writing them from memory would be an
  * unsourced assertion on a page whose whole point is attribution.
  */
-export default async function PartiesPage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  if (!isLang(lang)) notFound();
-  const dict = getDict(lang);
-
+export default function PartiesPage() {
   const { parties, unattributed } = registry.partyTotals();
   const cohorts = registry.tenureCohorts();
 

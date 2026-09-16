@@ -52,13 +52,17 @@ export interface Person {
   /** Majlis member ids. One per parliament: the Majlis reissues them. */
   majlisId?: number;
   majlisIds?: number[];
-  /** Name in Thaana, as printed in the source. */
+  /** The display name, Latin. Official spelling where a roster gives one. */
   name: string;
-  /** Approximate Latin transliteration, for slugs and Latin search. */
-  nameLatin: string;
+  /**
+   * The name in Thaana, as printed in the source. Not displayed, but it is the
+   * identity join key: the Latin spelling drifts between documents and between
+   * terms, and `fold_for_match` reconciles the Thaana. Absent for a person
+   * whose only source prints no Thaana.
+   */
+  nameDv?: string;
   /** Honorific printed before the name. Display metadata, not identity. */
   title: string | null;
-  /** The same honorific in Thaana, for the Dhivehi side. */
   titleDv?: string | null;
   /** Official portrait, served from the Majlis site. */
   photoUrl?: string | null;
@@ -89,7 +93,9 @@ export interface Position {
   kind: PositionKind;
   /** Constituency for an elected seat, organisation for an appointed one. */
   constituency?: string;
-  constituencyLatin?: string;
+  /** The constituency in Thaana. Stable across terms where the Latin is not,
+   *  so this is what the roster join keys on. */
+  constituencyDv?: string;
   organisation?: string;
   /** Majlis terms this position spans, where known. */
   termNumbers?: number[];

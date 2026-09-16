@@ -1,8 +1,8 @@
 import { money, moneyCompact } from "@/lib/format";
 
 /**
- * Figures anywhere in the app. Isolates the number from surrounding RTL text
- * so "MVR 92,235,000" never reorders inside a Dhivehi sentence.
+ * Figures anywhere in the app, set in tabular figures so a column of them
+ * lines up digit for digit.
  */
 export function Numeral({
   value,
