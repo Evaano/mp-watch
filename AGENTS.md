@@ -64,7 +64,8 @@ variant to `Claim`; it does not add a table.
 ## What the money is (read before writing any copy about it)
 
 The premium is priced **per covered head** and the policy covers the member
-**and their dependents**. `src/lib/premium.ts` holds the rates and the helpers.
+**and their dependents**. `src/lib/premium.ts` holds the editorial rule;
+`scripts/ingest/validate.py` holds the rates and enforces them.
 
 - MVR 24,000 per head per year from 2016-2017, **stated** by the RTI disclosure.
 - MVR 12,500 for 2014-2016, **inferred** from the exact GCD of every row in

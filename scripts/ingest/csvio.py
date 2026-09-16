@@ -6,18 +6,10 @@ the CSV and rebuilds, without touching Python or re-reading a PDF. That only
 holds if an extractor can never quietly overwrite a hand correction, so
 `sync()` compares by default and writes only when asked.
 
-Conventions, all enforced here so no caller can drift from them:
-
-- **UTF-8 with a BOM.** Three bytes, so that double-clicking a file on Windows
-  opens it in Excel as UTF-8 rather than cp1252. Without it someone fixes a
-  number, saves, and commits destroyed Thaana. `utf-8-sig` strips it on read,
-  so no caller ever sees it.
-- **LF line endings.** Python's csv module defaults to CRLF, which fights git
-  on Windows. Excel reads LF-only CSV without complaint.
-- **Minimal quoting.** Thaana holds no commas, quotes or newlines, so Thaana
-  cells are never quoted and stay legible in the raw file.
-- **No Unicode normalisation.** The bytes are what the source printed.
-  Normalising could change what `fold_for_match` sees, and the join runs on it.
+The encoding, quoting and line-ending rules are documented for editors in
+data/README.md and enforced here so no caller can drift from them. The BOM is
+the one that looks optional and is not: without it, double-clicking a file on
+Windows opens it in Excel as cp1252 and a saved edit commits destroyed Thaana.
 """
 import csv
 import io
@@ -52,7 +44,7 @@ def write(name, header, rows):
             writer.writerow([row.get(c, '') for c in header])
 
 
-def sync(name, header, rows, accept, label=None):
+def sync(name, header, rows, accept):
     """Compare a fresh extraction against the committed CSV.
 
     Exits non-zero on any difference unless `accept` is set, in which case the
@@ -64,11 +56,10 @@ def sync(name, header, rows, accept, label=None):
     Matching is positional, in document order. A parse that drops or gains a
     row therefore fails loudly instead of re-keying every row after it.
     """
-    label = label or name
     if not os.path.exists(path_for(name)):
         write(name, header, rows)
         print(f'wrote data/{name} ({len(rows)} rows, new file)')
-        return True
+        return
 
     old_header, old_rows = read(name)
     problems = []
@@ -98,9 +89,9 @@ def sync(name, header, rows, accept, label=None):
 
     if not problems:
         print(f'data/{name}: {len(rows)} rows, identical to the committed file')
-        return True
+        return
 
-    print(f'{label}: {len(problems)} difference(s) against data/{name}')
+    print(f'{name}: {len(problems)} difference(s) against data/{name}')
     for p in problems[:40]:
         print(p)
     if len(problems) > 40:

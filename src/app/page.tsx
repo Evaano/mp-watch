@@ -5,6 +5,7 @@ import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
 import { YearTable } from "@/components/YearTable";
 import {
+  AASANDHA,
   MINIMUM_WAGE_ANNUAL,
   MINIMUM_WAGE_MONTHLY,
   USD_RATE,
@@ -199,7 +200,7 @@ export default function HomePage() {
           <p className="label-note mt-3 max-w-[70ch] text-ink-muted">
             {dict.aasandhaNote}{" "}
             <a
-              href="https://www.aasandha.mv/en/scheme/aasandha-scheme/overview"
+              href={AASANDHA.sourceUrl}
               rel="noreferrer"
               className="text-accent-ink underline underline-offset-4"
             >

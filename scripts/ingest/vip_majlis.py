@@ -16,14 +16,6 @@ reconciled here and must not be: each document's own figures are published as
 it prints them, and inventing a bridge between them would be an assertion
 neither makes.
 
-THE TRAP IN THE 20th
---------------------
-Its Thaana is stored character-reversed, as Majlis PDFs are. Its ASCII is not.
-Run repair_visual_order over everything and MVR 3,491.70 becomes 07.1943 and
-row 78 becomes row 87 - which is exactly the digit-reversal AGENTS.md warns
-about, and it is silent, because both results still look like numbers. So the
-repair is applied to a token only when the token holds Thaana.
-
 Run:  python scripts/ingest/vip_majlis.py [--accept]
 Out:  data/vip-18th-majlis.csv, data/vip-19th-majlis.csv,
       data/vip-20th-majlis.csv, data/diplomatic-passports-20th-majlis.csv
@@ -76,11 +68,9 @@ THAANA_NAME_X = 350
 def latin(term):
     """One row per member: constituency, name, movements, and the two totals.
 
-    Classified by token shape rather than by column index. `extract_tables`
-    loses a cell on at least one row of the 19th - Ikram Hassan's movements
-    and dollar total both come back empty while the rufiyaa total survives -
-    and a silently missing count is the failure this whole layer exists to
-    prevent.
+    Read from word positions, not `extract_tables`, which loses a cell on at
+    least one row of the 19th: Ikram Hassan's movements and dollar total come
+    back empty while the rufiyaa total survives.
     """
     filename, _, source_id, _ = LATIN[term]
     rows, warnings = [], []

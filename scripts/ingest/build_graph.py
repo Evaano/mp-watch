@@ -242,18 +242,12 @@ def load_appointees():
     than strings on a row: the site is a record of public figures, and a
     minister named in an official pay disclosure is one.
 
-    Two identity rules, and neither is negotiable:
-
-    - Rows are collapsed within THIS document only, on an exact name match.
-      One ministry listing its own staff is one authority, and two rows with
-      the same name are that authority saying "this person, twice" - Mohamed
-      Anas moves from deputy minister to president of the PCB on the day the
-      first post ends. Nothing is collapsed across documents.
-    - Nothing is EVER joined to the Majlis roster. These rows carry no
-      constituency, so the folded-name-plus-exact-constituency rule cannot be
-      satisfied, and anything looser attaches one person's record to another
-      with nothing downstream to reveal it. Names that also appear on the
-      roster are written to the review file for a human, and that is all.
+    Rows collapse within THIS document only, on an exact name match: one
+    ministry listing its own staff is one authority, and Mohamed Anas moves
+    from deputy minister to president of the PCB on the day the first post
+    ends. Nothing is EVER joined to the Majlis roster - these rows carry no
+    constituency, which is the half of the key that makes a match safe - so
+    names that also appear there go to the review file and no further.
     """
     persons, positions, person_of_row = {}, [], {}
     for row in csvio.read('political-posts-finance.csv')[1]:
@@ -379,31 +373,13 @@ def vip_keys(row, term):
 def load_vip(persons, positions, sources_by_id):
     """VIP claims, plus the rows no roster seat could be found for.
 
-    THE JOIN, and why it is two keys rather than one.
-
-    Each document drifts on a different axis, and on the other it is exact.
-    The 19th spells constituencies its own way - "Medhuhenveyru" for the
-    roster's "Medhu Henveyru" - while every one of those members' names is on
-    the roster verbatim. The 18th does the reverse: its constituencies match
-    exactly and its names do not, printing "Eva Abdulla" for "Eeva Abdulla"
-    and "Hon. Mohamed Ismail" without the honorific.
-
-    So a seat is claimed only when the two keys agree, or when one of them
-    resolves uniquely and the other contradicts nothing:
-
-      1. Both keys resolve and land on the same single person -> match.
-      2. Both resolve and disagree -> review. That is a contradiction, and
-         guessing which key to believe is exactly how a wrong merge happens.
-      3. One key resolves to exactly one person and the other resolves to
-         nobody -> match. A constituency returns one member per parliament
-         and a name is unique within one, so each is a real key; the silent
-         one is a spelling the two documents disagree about, not evidence.
-      4. Anything else -> review.
-
-    A constituency is NOT unique per term in the VIP tables: the 18th lists
-    Dhiggaru twice, for Ahmed Nazim and then Ahmed Faris Maumoon, which is a
-    mid-term replacement. So where a constituency carries two rows the name
-    has to break the tie, and rule 3 is deliberately blocked for it.
+    Two keys, because each document drifts on a different axis and is exact on
+    the other: the 19th spells constituencies its own way while its names are
+    verbatim, the 18th the reverse. A seat is claimed when both keys land on
+    one person, or when one resolves uniquely and the other resolves to
+    nobody. Keys that disagree go to review - guessing which to believe is how
+    a wrong merge happens. A constituency listing two rows is a mid-term
+    replacement, so there the name must break the tie.
     """
     seats, names = build_vip_index(persons, positions)
     claims, unmatched = [], []

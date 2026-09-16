@@ -16,20 +16,6 @@ people they cover. Every one of the 93 rows divides exactly by 24,000, and the
 rows sum to the document's own printed total of MVR 16,608,000, which is what
 confirms the reading rather than merely permitting it.
 
-THE TRAP THIS FILE PAID FOR
----------------------------
-This used to split each row by finding the constituency marker in a list of
-tokens and slicing around its index. In the older disclosure that marker sits
-near the end of the row; in this document it sits at the *start*. So the slice
-inverted: all 93 rows were written with the bare word `dhaairaa` as their
-constituency and the real constituency glued onto the end of the name, and the
-committed output carried that for months. The STATED_TOTAL checksum passed
-throughout, because it only ever validated amounts.
-
-The fix is to stop using token order at all. The header band names its own
-columns - `ދާއިރާ` and `ނަން` - so the split is the x position between them,
-read off the page. validate.py then checks the result from both sides.
-
 Run:  python scripts/ingest/rti_20th_majlis.py [--accept]
 Out:  data/rti-20th-majlis.csv
 """
@@ -65,11 +51,12 @@ AMOUNT = re.compile(r'^[\d,]+(?:\.\d+)?$')
 
 
 def column_split(bands):
-    """The x position that separates the constituency column from the name.
+    """The x position separating the constituency column from the name.
 
-    Taken from the header band, so the document defines its own layout. If the
-    headings ever move, this moves with them; if they disappear, the parse
-    stops rather than guessing.
+    Read off the header band rather than taken from token order. The marker
+    sits at the start of a row here and near the end in the older disclosure,
+    so an index-relative split inverts silently - which it did, for months,
+    with the amount checksum passing throughout.
     """
     for band in bands:
         seat = next((w for w in band if w['text'] == DHAAIRAA), None)
@@ -139,9 +126,8 @@ def main():
     rows, warnings = parse()
     total = sum(int(r['amount']) for r in rows)
 
-    # Fail loudly rather than write a drifted parse. This is a weaker guard
-    # than it looks - it checks amounts and nothing else, which is precisely
-    # why it did not notice the inverted split. validate.py carries the rest.
+    # A weaker guard than it looks: it checks amounts and nothing else, which
+    # is why it did not notice the inverted split. validate.py carries the rest.
     if total != STATED_TOTAL:
         raise SystemExit(
             f'ABORT: rows sum to {total:,}, but the document states '
