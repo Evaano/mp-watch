@@ -6,6 +6,7 @@ import type {
   Graph,
   Person,
   PersonId,
+  DiplomaticPassport,
   PoliticalPost,
   Position,
   PostCoverage,
@@ -17,6 +18,7 @@ import type {
 interface LoadedGraph extends Graph {
   fiscalYears: string[];
   terms: { number: number; start: string; end: string }[];
+  meta: Graph["meta"] & { vipRowsUnmatched: number };
 }
 
 const graph = rawGraph as unknown as LoadedGraph;
@@ -155,6 +157,94 @@ export const registry = {
   /** VIP movements, which is the count the disclosure leads with. */
   vipMovements(id: PersonId): number {
     return this.vip(id).reduce((sum, c) => sum + (c.units ?? 0), 0);
+  },
+
+  /**
+   * VIP use by Majlis term, in term order.
+   *
+   * One claim per member per term, because that is how the disclosures are
+   * cut: two of them cover a whole parliament and the third a fixed window
+   * inside the current one. A member with no row in a term is absent from
+   * this list rather than present with a zero - the documents cover different
+   * windows, and a zero would assert that nothing was spent where in fact
+   * nothing was asked.
+   */
+  vipByTerm(id: PersonId): { term: number; claim: ExpenditureClaim }[] {
+    return this.vip(id)
+      .map((claim) => ({
+        claim,
+        term: TERM_OF_VIP_SOURCE[claim.sources[0]] ?? 0,
+      }))
+      .sort((a, b) => a.term - b.term);
+  },
+
+  /** VIP rows left out because no single seat could be identified. */
+  vipRowsUnmatched(): number {
+    return graph.meta.vipRowsUnmatched;
+  },
+
+  holdsDiplomaticPassport(id: PersonId): boolean {
+    return graph.diplomaticPassports.some((p) => p.personId === id);
+  },
+
+  diplomaticPassports(): DiplomaticPassport[] {
+    return graph.diplomaticPassports;
+  },
+
+  /**
+   * VIP use per term: how many members the document names, what it cost, and
+   * the charge per movement it implies.
+   *
+   * The rate is reported per term and never carried across them. The 18th and
+   * 19th price a movement at USD 60 converted at 15.42; the 20th prints a
+   * rufiyaa figure and no dollar amount at all. Averaging those into one
+   * number would state a rate no document gives.
+   */
+  vipTerms(): {
+    term: number;
+    sourceId: string;
+    members: number;
+    movements: number;
+    amount: number;
+    perMovement: number;
+  }[] {
+    const byTerm = new Map<
+      number,
+      { sourceId: string; members: number; movements: number; amount: number }
+    >();
+    for (const claim of graph.claims) {
+      if (!isVip(claim)) continue;
+      const term = TERM_OF_VIP_SOURCE[claim.sources[0]] ?? 0;
+      const bucket = byTerm.get(term) ?? {
+        sourceId: claim.sources[0],
+        members: 0,
+        movements: 0,
+        amount: 0,
+      };
+      bucket.members += 1;
+      bucket.movements += claim.units ?? 0;
+      bucket.amount += claim.amount;
+      byTerm.set(term, bucket);
+    }
+    return [...byTerm.entries()]
+      .map(([term, b]) => ({
+        term,
+        ...b,
+        perMovement: b.movements ? b.amount / b.movements : 0,
+      }))
+      .sort((a, b) => a.term - b.term);
+  },
+
+  /** Members ordered by VIP movements, most first. */
+  vipRanked(): { person: Person; movements: number; amount: number }[] {
+    return this.members()
+      .map((person) => ({
+        person,
+        movements: this.vipMovements(person.id),
+        amount: this.totalVip(person.id),
+      }))
+      .filter((row) => row.movements > 0)
+      .sort((a, b) => b.movements - a.movements);
   },
 
   /** Amount per fiscal year, zero-filled across the full range. */
@@ -594,6 +684,19 @@ export const registry = {
       ];
     });
   },
+};
+
+/**
+ * Which parliament each VIP disclosure covers.
+ *
+ * Read off the source rather than off the claim's dates, because the 20th's
+ * window closes at 31 July 2025 - part-way through the term - and inferring
+ * the term from that would make it look like a completed one.
+ */
+const TERM_OF_VIP_SOURCE: Record<string, number> = {
+  "rti-majlis-vip-18th": 18,
+  "rti-majlis-vip-19th": 19,
+  "rti-majlis-vip-passports-20th": 20,
 };
 
 /** The headings the bodies use for the same slot. See rankLadder(). */

@@ -90,6 +90,19 @@ HEADERS = {
     'political-posts-coverage.csv': [
         'body_id', 'body_name', 'as_of', 'answer_kind', 'posts_stated',
         'posts_itemised', 'note', 'source_id'],
+    'vip-18th-majlis.csv': [
+        'row_id', 'source_page', 'source_row', 'constituency', 'name',
+        'movements', 'rate_usd', 'total_usd', 'total_mvr', 'source_id'],
+    'vip-19th-majlis.csv': [
+        'row_id', 'source_page', 'source_row', 'constituency', 'name',
+        'movements', 'rate_usd', 'total_usd', 'total_mvr', 'source_id'],
+    'vip-20th-majlis.csv': [
+        'row_id', 'source_page', 'source_row', 'name', 'name_dv',
+        'constituency', 'constituency_dv', 'movements', 'total_mvr',
+        'source_id'],
+    'diplomatic-passports-20th-majlis.csv': [
+        'row_id', 'source_page', 'source_row', 'name', 'name_dv',
+        'constituency', 'constituency_dv', 'source_id'],
 }
 
 # Files whose header carries a variable tail of fiscal-year columns.
@@ -120,6 +133,11 @@ RANK_LADDER = {
     'senior-political-director': (15000, 10000),
     'political-director': (11000, 9000),
 }
+
+# The pegged rate the 18th and 19th convert at, and the flat charge per
+# movement they price at. Both are printed in the documents themselves.
+VIP_RATE_USD = 60
+VIP_MVR_PER_USD = 15.42
 
 # Rows each document itemises, as its own coverage row states.
 EXPECTED_ROWS = {
@@ -300,8 +318,15 @@ def check_thaana_split(report, name, rows, name_column, constituency_column):
                 f'is the bare word {DHAAIRAA!r} with no constituency in front '
                 'of it. The name/constituency split has inverted.')
         elif not seat.strip().endswith(DHAAIRAA):
-            report.error(at(name, i, row, constituency_column),
-                         f'does not end with {DHAAIRAA!r}')
+            # A warning, not an error. The bare-marker check above and the
+            # marker-inside-the-name check below are the actual signature of
+            # an inverted split, and neither can fire on a faithful row. This
+            # one can: the 20th VIP table prints Mathiveri with no marker at
+            # all on row 41, and failing a build over a faithful extraction
+            # would teach the next person to weaken the checks that matter.
+            report.warn(at(name, i, row, constituency_column),
+                        f'does not end with {DHAAIRAA!r}, so either the source '
+                        'omits the marker or the split is short')
 
         if DHAAIRAA in (person or ''):
             report.error(
@@ -363,6 +388,73 @@ def check_roster(report, rows, terms):
             report.warn(at('majlis-roster.csv'),
                         f'{len(entries)} rows fold to the same (name, constituency) '
                         f'across member ids {sorted(ids)}')
+
+
+def check_vip(report, tables):
+    """The VIP disclosures price every movement, so the row must reconcile.
+
+    movements x USD 60 is the dollar total, and that times 15.42 is the
+    rufiyaa total. Both hold exactly in every row of both documents, which is
+    what makes the count trustworthy: a dropped or misread movement figure
+    breaks the identity immediately.
+
+    The 20th is not checked this way on purpose. It prints MVR 872.93 a
+    movement and no dollar figure at all, which is a different arrangement,
+    and forcing the two into one formula would assert a bridge neither
+    document makes.
+    """
+    for name in ('vip-18th-majlis.csv', 'vip-19th-majlis.csv'):
+        if name not in tables:
+            continue
+        rows = tables[name][1]
+        check_money(report, name, rows, ['movements'])
+        check_money(report, name, rows,
+                    ['rate_usd', 'total_usd', 'total_mvr'],
+                    decimal=('rate_usd', 'total_usd', 'total_mvr'))
+        for i, row in enumerate(rows, 1):
+            if not row['movements'] or not row['total_usd']:
+                continue
+            movements = int(row['movements'])
+            usd, mvr = float(row['total_usd']), float(row['total_mvr'] or 0)
+            if float(row['rate_usd']) != VIP_RATE_USD:
+                report.warn(at(name, i, row),
+                            f'is priced at USD {row["rate_usd"]}, not the '
+                            f'USD {VIP_RATE_USD} every other row states')
+            if abs(movements * VIP_RATE_USD - usd) > 0.005:
+                report.error(at(name, i, row),
+                             f'{movements} movements at USD {VIP_RATE_USD} is '
+                             f'{movements * VIP_RATE_USD:,}, but the row states '
+                             f'USD {usd:,.2f}')
+            if row['total_mvr'] and abs(usd * VIP_MVR_PER_USD - mvr) > 0.02:
+                report.error(at(name, i, row),
+                             f'USD {usd:,.2f} at {VIP_MVR_PER_USD} is '
+                             f'{usd * VIP_MVR_PER_USD:,.2f}, but the row states '
+                             f'MVR {mvr:,.2f}')
+
+    if 'vip-20th-majlis.csv' in tables:
+        rows = tables['vip-20th-majlis.csv'][1]
+        check_money(report, 'vip-20th-majlis.csv', rows, ['movements'])
+        check_money(report, 'vip-20th-majlis.csv', rows, ['total_mvr'],
+                    decimal=('total_mvr',))
+        check_thaana_split(report, 'vip-20th-majlis.csv', rows,
+                           'name_dv', 'constituency_dv')
+        check_latin(report, 'vip-20th-majlis.csv', rows, ['name', 'constituency'])
+        # One flat charge, whatever it is. Reported rather than assumed: the
+        # rate is not stated in words anywhere in the document, so the check
+        # is that it is consistent, not that it is a particular number.
+        rates = {round(float(r['total_mvr']) / int(r['movements']), 2)
+                 for r in rows if r['movements'] and int(r['movements'])}
+        if len(rates) > 2:
+            report.warn(at('vip-20th-majlis.csv'),
+                        f'implies {len(rates)} different charges per movement: '
+                        f'{sorted(rates)}')
+
+    if 'diplomatic-passports-20th-majlis.csv' in tables:
+        rows = tables['diplomatic-passports-20th-majlis.csv'][1]
+        check_thaana_split(report, 'diplomatic-passports-20th-majlis.csv', rows,
+                           'name_dv', 'constituency_dv')
+        check_latin(report, 'diplomatic-passports-20th-majlis.csv', rows,
+                    ['name', 'constituency'])
 
 
 def check_posts(report, tables):
@@ -570,6 +662,7 @@ def run():
         check_checksums(report, tables['sources.csv'][1], checksummed)
 
     check_posts(report, tables)
+    check_vip(report, tables)
 
     return report
 

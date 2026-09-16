@@ -11,8 +11,12 @@
       "rti-foreign-affairs-salary-structure-2025",
       "rti-health-family-welfare-political-2026",
       "rti-health-political-appointees-2025",
-      "rti-homeland-security-technology-political-2025"
-    ]
+      "rti-homeland-security-technology-political-2025",
+      "rti-majlis-vip-18th",
+      "rti-majlis-vip-19th",
+      "rti-majlis-vip-passports-20th"
+    ],
+    "vipRowsUnmatched": 13
   },
   "sources": [
     {
@@ -107,6 +111,36 @@
       "periodStart": "2025-09-18",
       "periodEnd": "2025-09-18",
       "retrieved": "2026-08-24"
+    },
+    {
+      "id": "rti-majlis-vip-18th",
+      "title": "Airport VIP service paid by the Majlis on behalf of members, 18th Majlis",
+      "publisher": "People's Majlis, via the Information Commissioner's Office",
+      "url": "https://icom.sgp1.digitaloceanspaces.com/18th%20Majlis-1760009929046.pdf",
+      "kind": "official-disclosure",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "rti-majlis-vip-19th",
+      "title": "Airport VIP service paid by the Majlis on behalf of members, 19th Majlis",
+      "publisher": "People's Majlis, via the Information Commissioner's Office",
+      "url": "https://icom.sgp1.digitaloceanspaces.com/19th%20Majlis-1760009937309.pdf",
+      "kind": "official-disclosure",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "retrieved": "2026-09-16"
+    },
+    {
+      "id": "rti-majlis-vip-passports-20th",
+      "title": "20th Majlis members holding a diplomatic passport, and airport VIP use to 31 July 2025",
+      "publisher": "People's Majlis, via the Information Commissioner's Office",
+      "url": "https://icom.sgp1.digitaloceanspaces.com/RTI%20_Jubraan%20Shareef-1756806263615.pdf",
+      "kind": "official-disclosure",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "retrieved": "2026-09-16"
     }
   ],
   "persons": [
@@ -42811,6 +42845,4690 @@
       "sources": [
         "majlis-health-insurance-2014-2025"
       ]
+    },
+    {
+      "id": "vip18--002",
+      "personId": "majlis-74",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2775.6,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 2
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 180.00 for 3 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--003",
+      "personId": "majlis-75",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 74016.0,
+      "currency": "MVR",
+      "units": 80,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 3
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,800.00 for 80 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--004",
+      "personId": "majlis-76",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 267382.8,
+      "currency": "MVR",
+      "units": 289,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 4
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 17,340.00 for 289 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--005",
+      "personId": "majlis-78",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 15728.4,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 5
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,020.00 for 17 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--006",
+      "personId": "majlis-77",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 87894.0,
+      "currency": "MVR",
+      "units": 95,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 6
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 5,700.00 for 95 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--007",
+      "personId": "majlis-80",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 36082.8,
+      "currency": "MVR",
+      "units": 39,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 7
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,340.00 for 39 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--009",
+      "personId": "majlis-81",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 49960.8,
+      "currency": "MVR",
+      "units": 54,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 9
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,240.00 for 54 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--010",
+      "personId": "majlis-82",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 10
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--011",
+      "personId": "majlis-85",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 46260.0,
+      "currency": "MVR",
+      "units": 50,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 11
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,000.00 for 50 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--012",
+      "personId": "majlis-83",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 166536.0,
+      "currency": "MVR",
+      "units": 180,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 12
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 10,800.00 for 180 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--013",
+      "personId": "majlis-84",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 169311.6,
+      "currency": "MVR",
+      "units": 183,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 13
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 10,980.00 for 183 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--014",
+      "personId": "majlis-1",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 197992.8,
+      "currency": "MVR",
+      "units": 214,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 14
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 12,840.00 for 214 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--015",
+      "personId": "majlis-2",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 4626.0,
+      "currency": "MVR",
+      "units": 5,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 15
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 300.00 for 5 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--016",
+      "personId": "majlis-3",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 119350.8,
+      "currency": "MVR",
+      "units": 129,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 16
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 7,740.00 for 129 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--018",
+      "personId": "majlis-5",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 132303.6,
+      "currency": "MVR",
+      "units": 143,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 18
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 8,580.00 for 143 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--019",
+      "personId": "majlis-6",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 43484.4,
+      "currency": "MVR",
+      "units": 47,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 19
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,820.00 for 47 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--020",
+      "personId": "majlis-7",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 20
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--021",
+      "personId": "majlis-8",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 211870.8,
+      "currency": "MVR",
+      "units": 229,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 21
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 13,740.00 for 229 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--022",
+      "personId": "majlis-9",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 175788.0,
+      "currency": "MVR",
+      "units": 190,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 22
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 11,400.00 for 190 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--023",
+      "personId": "majlis-10",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3700.8,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 23
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 240.00 for 4 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--024",
+      "personId": "majlis-11",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 73090.8,
+      "currency": "MVR",
+      "units": 79,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 24
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,740.00 for 79 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--025",
+      "personId": "majlis-12",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 261831.6,
+      "currency": "MVR",
+      "units": 283,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 25
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 16,980.00 for 283 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--026",
+      "personId": "majlis-13",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 56437.2,
+      "currency": "MVR",
+      "units": 61,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 26
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,660.00 for 61 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--027",
+      "personId": "majlis-14",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 27
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--028",
+      "personId": "majlis-15",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 54586.8,
+      "currency": "MVR",
+      "units": 59,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 28
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,540.00 for 59 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--029",
+      "personId": "majlis-16",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 69390.0,
+      "currency": "MVR",
+      "units": 75,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 29
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,500.00 for 75 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--030",
+      "personId": "majlis-17",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 18504.0,
+      "currency": "MVR",
+      "units": 20,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 30
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,200.00 for 20 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--031",
+      "personId": "majlis-18",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 50886.0,
+      "currency": "MVR",
+      "units": 55,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 31
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,300.00 for 55 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--032",
+      "personId": "majlis-19",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 39783.6,
+      "currency": "MVR",
+      "units": 43,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 32
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,580.00 for 43 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--033",
+      "personId": "majlis-20",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 33
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--034",
+      "personId": "majlis-21",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 94370.4,
+      "currency": "MVR",
+      "units": 102,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 34
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 6,120.00 for 102 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--035",
+      "personId": "majlis-22",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 86043.6,
+      "currency": "MVR",
+      "units": 93,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 35
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 5,580.00 for 93 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--036",
+      "personId": "majlis-23",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 321969.6,
+      "currency": "MVR",
+      "units": 348,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 36
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 20,880.00 for 348 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--037",
+      "personId": "majlis-24",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 75866.4,
+      "currency": "MVR",
+      "units": 82,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 37
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,920.00 for 82 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--038",
+      "personId": "majlis-25",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 38
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--039",
+      "personId": "majlis-26",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 15728.4,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 39
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,020.00 for 17 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--040",
+      "personId": "majlis-27",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 45334.8,
+      "currency": "MVR",
+      "units": 49,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 40
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,940.00 for 49 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--041",
+      "personId": "majlis-28",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 42559.2,
+      "currency": "MVR",
+      "units": 46,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 41
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,760.00 for 46 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--042",
+      "personId": "majlis-29",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 64764.0,
+      "currency": "MVR",
+      "units": 70,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 42
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,200.00 for 70 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--043",
+      "personId": "majlis-30",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 24055.2,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 43
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,560.00 for 26 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--044",
+      "personId": "majlis-31",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 1,
+        "row": 44
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--045",
+      "personId": "majlis-32",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 43484.4,
+      "currency": "MVR",
+      "units": 47,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 45
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,820.00 for 47 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--046",
+      "personId": "majlis-33",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 60138.0,
+      "currency": "MVR",
+      "units": 65,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 46
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,900.00 for 65 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--047",
+      "personId": "majlis-34",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 4626.0,
+      "currency": "MVR",
+      "units": 5,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 47
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 300.00 for 5 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--048",
+      "personId": "majlis-35",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3700.8,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 48
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 240.00 for 4 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--049",
+      "personId": "majlis-36",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 60138.0,
+      "currency": "MVR",
+      "units": 65,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 49
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,900.00 for 65 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--050",
+      "personId": "majlis-37",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 15728.4,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 50
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,020.00 for 17 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--051",
+      "personId": "majlis-38",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 169311.6,
+      "currency": "MVR",
+      "units": 183,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 51
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 10,980.00 for 183 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--052",
+      "personId": "majlis-39",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 66614.4,
+      "currency": "MVR",
+      "units": 72,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 52
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,320.00 for 72 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--053",
+      "personId": "majlis-40",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 53
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--055",
+      "personId": "majlis-41",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 82342.8,
+      "currency": "MVR",
+      "units": 89,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 54
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 5,340.00 for 89 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--056",
+      "personId": "majlis-42",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 47185.2,
+      "currency": "MVR",
+      "units": 51,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 55
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,060.00 for 51 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--057",
+      "personId": "majlis-43",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 38858.4,
+      "currency": "MVR",
+      "units": 42,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 56
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,520.00 for 42 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--058",
+      "personId": "majlis-44",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 110098.8,
+      "currency": "MVR",
+      "units": 119,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 57
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 7,140.00 for 119 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--059",
+      "personId": "majlis-45",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 172087.2,
+      "currency": "MVR",
+      "units": 186,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 58
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 11,160.00 for 186 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--060",
+      "personId": "majlis-46",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 16653.6,
+      "currency": "MVR",
+      "units": 18,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 59
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,080.00 for 18 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--061",
+      "personId": "majlis-47",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 437619.6,
+      "currency": "MVR",
+      "units": 473,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 60
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 28,380.00 for 473 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--062",
+      "personId": "majlis-48",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 233150.4,
+      "currency": "MVR",
+      "units": 252,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 61
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 15,120.00 for 252 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--063",
+      "personId": "majlis-49",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 6476.4,
+      "currency": "MVR",
+      "units": 7,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 62
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 420.00 for 7 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--064",
+      "personId": "majlis-50",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 52736.4,
+      "currency": "MVR",
+      "units": 57,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 63
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,420.00 for 57 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--065",
+      "personId": "majlis-51",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 37933.2,
+      "currency": "MVR",
+      "units": 41,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 64
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,460.00 for 41 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--066",
+      "personId": "majlis-52",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 8326.8,
+      "currency": "MVR",
+      "units": 9,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 65
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 540.00 for 9 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--067",
+      "personId": "majlis-53",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 752187.6,
+      "currency": "MVR",
+      "units": 813,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 66
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 48,780.00 for 813 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--068",
+      "personId": "majlis-54",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 61988.4,
+      "currency": "MVR",
+      "units": 67,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 67
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,020.00 for 67 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--069",
+      "personId": "majlis-55",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 61988.4,
+      "currency": "MVR",
+      "units": 67,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 68
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,020.00 for 67 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--070",
+      "personId": "majlis-56",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 22204.8,
+      "currency": "MVR",
+      "units": 24,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 69
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 1,440.00 for 24 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--071",
+      "personId": "majlis-57",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 37933.2,
+      "currency": "MVR",
+      "units": 41,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 70
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,460.00 for 41 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--072",
+      "personId": "majlis-58",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 71
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--073",
+      "personId": "majlis-59",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 156358.8,
+      "currency": "MVR",
+      "units": 169,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 72
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 10,140.00 for 169 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--074",
+      "personId": "majlis-60",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 70315.2,
+      "currency": "MVR",
+      "units": 76,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 73
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,560.00 for 76 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--075",
+      "personId": "majlis-61",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 46260.0,
+      "currency": "MVR",
+      "units": 50,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 74
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 3,000.00 for 50 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--076",
+      "personId": "majlis-62",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 125827.2,
+      "currency": "MVR",
+      "units": 136,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 75
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 8,160.00 for 136 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--077",
+      "personId": "majlis-63",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 9252.0,
+      "currency": "MVR",
+      "units": 10,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 76
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 600.00 for 10 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--078",
+      "personId": "majlis-64",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 79567.2,
+      "currency": "MVR",
+      "units": 86,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 77
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 5,160.00 for 86 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--079",
+      "personId": "majlis-65",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3700.8,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 78
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 240.00 for 4 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--080",
+      "personId": "majlis-66",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 38858.4,
+      "currency": "MVR",
+      "units": 42,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 79
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 2,520.00 for 42 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--081",
+      "personId": "majlis-67",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 82342.8,
+      "currency": "MVR",
+      "units": 89,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 80
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 5,340.00 for 89 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--082",
+      "personId": "majlis-68",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 925.2,
+      "currency": "MVR",
+      "units": 1,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 81
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 60.00 for 1 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--083",
+      "personId": "majlis-69",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 82
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--084",
+      "personId": "majlis-70",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 68464.8,
+      "currency": "MVR",
+      "units": 74,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 83
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 4,440.00 for 74 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--085",
+      "personId": "majlis-71",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 12952.8,
+      "currency": "MVR",
+      "units": 14,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 84
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 840.00 for 14 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip18--086",
+      "personId": "majlis-72",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 101772.0,
+      "currency": "MVR",
+      "units": 110,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2014-05-28",
+      "periodEnd": "2019-05-27",
+      "locator": {
+        "page": 2,
+        "row": 85
+      },
+      "sources": [
+        "rti-majlis-vip-18th"
+      ],
+      "note": "USD 6,600.00 for 110 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--001",
+      "personId": "majlis-86",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 66614.4,
+      "currency": "MVR",
+      "units": 72,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 1
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,320.00 for 72 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--003",
+      "personId": "majlis-74",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 9252.0,
+      "currency": "MVR",
+      "units": 10,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 3
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 600.00 for 10 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--004",
+      "personId": "majlis-88",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 81417.6,
+      "currency": "MVR",
+      "units": 88,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 4
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 5,280.00 for 88 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--005",
+      "personId": "majlis-90",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 8326.8,
+      "currency": "MVR",
+      "units": 9,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 5
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 540.00 for 9 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--009",
+      "personId": "majlis-94",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 925.2,
+      "currency": "MVR",
+      "units": 1,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 9
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 60.00 for 1 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--010",
+      "personId": "majlis-95",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 71240.4,
+      "currency": "MVR",
+      "units": 77,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 10
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,620.00 for 77 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--012",
+      "personId": "majlis-98",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 12
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--013",
+      "personId": "majlis-99",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 13
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--014",
+      "personId": "majlis-97",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 6476.4,
+      "currency": "MVR",
+      "units": 7,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 14
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 420.00 for 7 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--015",
+      "personId": "majlis-100",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 16653.6,
+      "currency": "MVR",
+      "units": 18,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 15
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,080.00 for 18 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--016",
+      "personId": "majlis-101",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 6476.4,
+      "currency": "MVR",
+      "units": 7,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 16
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 420.00 for 7 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--017",
+      "personId": "majlis-102",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 53661.6,
+      "currency": "MVR",
+      "units": 58,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 17
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,480.00 for 58 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--018",
+      "personId": "majlis-103",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 23130.0,
+      "currency": "MVR",
+      "units": 25,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 18
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,500.00 for 25 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--019",
+      "personId": "majlis-104",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 11102.4,
+      "currency": "MVR",
+      "units": 12,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 19
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 720.00 for 12 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--020",
+      "personId": "majlis-105",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 10177.2,
+      "currency": "MVR",
+      "units": 11,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 20
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 660.00 for 11 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--021",
+      "personId": "majlis-106",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 27756.0,
+      "currency": "MVR",
+      "units": 30,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 21
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,800.00 for 30 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--022",
+      "personId": "majlis-107",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 20354.4,
+      "currency": "MVR",
+      "units": 22,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 22
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,320.00 for 22 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--023",
+      "personId": "majlis-108",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 7401.6,
+      "currency": "MVR",
+      "units": 8,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 23
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 480.00 for 8 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--024",
+      "personId": "majlis-109",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 30531.6,
+      "currency": "MVR",
+      "units": 33,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 24
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,980.00 for 33 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--025",
+      "personId": "majlis-110",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 13878.0,
+      "currency": "MVR",
+      "units": 15,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 25
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 900.00 for 15 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--026",
+      "personId": "majlis-111",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 52736.4,
+      "currency": "MVR",
+      "units": 57,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 26
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,420.00 for 57 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--027",
+      "personId": "majlis-112",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 81417.6,
+      "currency": "MVR",
+      "units": 88,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 27
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 5,280.00 for 88 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--028",
+      "personId": "majlis-113",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 7401.6,
+      "currency": "MVR",
+      "units": 8,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 28
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 480.00 for 8 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--029",
+      "personId": "majlis-173",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 61063.2,
+      "currency": "MVR",
+      "units": 66,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 29
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,960.00 for 66 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--031",
+      "personId": "majlis-115",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 15728.4,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 31
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,020.00 for 17 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--032",
+      "personId": "majlis-116",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 72165.6,
+      "currency": "MVR",
+      "units": 78,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 32
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,680.00 for 78 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--033",
+      "personId": "majlis-117",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 33
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--034",
+      "personId": "majlis-118",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 9252.0,
+      "currency": "MVR",
+      "units": 10,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 34
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 600.00 for 10 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--035",
+      "personId": "majlis-119",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 11102.4,
+      "currency": "MVR",
+      "units": 12,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 35
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 720.00 for 12 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--036",
+      "personId": "majlis-20",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5551.2,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 36
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 360.00 for 6 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--037",
+      "personId": "majlis-121",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 14803.2,
+      "currency": "MVR",
+      "units": 16,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 37
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 960.00 for 16 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--038",
+      "personId": "majlis-122",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 70315.2,
+      "currency": "MVR",
+      "units": 76,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 38
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,560.00 for 76 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--039",
+      "personId": "majlis-123",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5551.2,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 39
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 360.00 for 6 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--040",
+      "personId": "majlis-124",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 49035.6,
+      "currency": "MVR",
+      "units": 53,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 40
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,180.00 for 53 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--041",
+      "personId": "majlis-125",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 29606.4,
+      "currency": "MVR",
+      "units": 32,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 41
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,920.00 for 32 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--042",
+      "personId": "majlis-26",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2775.6,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 42
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 180.00 for 3 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--043",
+      "personId": "majlis-27",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 35157.6,
+      "currency": "MVR",
+      "units": 38,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 43
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,280.00 for 38 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--044",
+      "personId": "majlis-128",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 157284.0,
+      "currency": "MVR",
+      "units": 170,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 44
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 10,200.00 for 170 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--045",
+      "personId": "majlis-29",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 61063.2,
+      "currency": "MVR",
+      "units": 66,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 45
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,960.00 for 66 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--046",
+      "personId": "majlis-130",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 37933.2,
+      "currency": "MVR",
+      "units": 41,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 46
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,460.00 for 41 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--047",
+      "personId": "majlis-131",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 105472.8,
+      "currency": "MVR",
+      "units": 114,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 47
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 6,840.00 for 114 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--048",
+      "personId": "majlis-132",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 38858.4,
+      "currency": "MVR",
+      "units": 42,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 48
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,520.00 for 42 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--049",
+      "personId": "majlis-33",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 12952.8,
+      "currency": "MVR",
+      "units": 14,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 49
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 840.00 for 14 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--051",
+      "personId": "majlis-134",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5551.2,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 51
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 360.00 for 6 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--052",
+      "personId": "majlis-135",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 11102.4,
+      "currency": "MVR",
+      "units": 12,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 52
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 720.00 for 12 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--053",
+      "personId": "majlis-36",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 24055.2,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 53
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,560.00 for 26 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--054",
+      "personId": "majlis-37",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 40708.8,
+      "currency": "MVR",
+      "units": 44,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 54
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,640.00 for 44 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--055",
+      "personId": "majlis-138",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 164685.6,
+      "currency": "MVR",
+      "units": 178,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 55
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 10,680.00 for 178 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--056",
+      "personId": "majlis-139",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 18504.0,
+      "currency": "MVR",
+      "units": 20,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 56
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,200.00 for 20 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--057",
+      "personId": "majlis-140",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 61063.2,
+      "currency": "MVR",
+      "units": 66,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 1,
+        "row": 57
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,960.00 for 66 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--058",
+      "personId": "majlis-141",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 37933.2,
+      "currency": "MVR",
+      "units": 41,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 58
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,460.00 for 41 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--059",
+      "personId": "majlis-42",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 66614.4,
+      "currency": "MVR",
+      "units": 72,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 59
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,320.00 for 72 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--060",
+      "personId": "majlis-143",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 40708.8,
+      "currency": "MVR",
+      "units": 44,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 60
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,640.00 for 44 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--061",
+      "personId": "majlis-144",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 12027.6,
+      "currency": "MVR",
+      "units": 13,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 61
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 780.00 for 13 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--062",
+      "personId": "majlis-45",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 120276.0,
+      "currency": "MVR",
+      "units": 130,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 62
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 7,800.00 for 130 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--063",
+      "personId": "majlis-46",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1850.4,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 63
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 120.00 for 2 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--064",
+      "personId": "majlis-147",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 4626.0,
+      "currency": "MVR",
+      "units": 5,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 64
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 300.00 for 5 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--065",
+      "personId": "majlis-148",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 73090.8,
+      "currency": "MVR",
+      "units": 79,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 65
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,740.00 for 79 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--066",
+      "personId": "majlis-149",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 79567.2,
+      "currency": "MVR",
+      "units": 86,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 66
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 5,160.00 for 86 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--067",
+      "personId": "majlis-150",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 89744.4,
+      "currency": "MVR",
+      "units": 97,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 67
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 5,820.00 for 97 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--068",
+      "personId": "majlis-151",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 24055.2,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 68
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,560.00 for 26 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--070",
+      "personId": "majlis-153",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 41634.0,
+      "currency": "MVR",
+      "units": 45,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 70
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,700.00 for 45 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--071",
+      "personId": "majlis-154",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 111949.2,
+      "currency": "MVR",
+      "units": 121,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 71
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 7,260.00 for 121 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--072",
+      "personId": "majlis-55",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 141555.6,
+      "currency": "MVR",
+      "units": 153,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 72
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 9,180.00 for 153 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--073",
+      "personId": "majlis-156",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 29606.4,
+      "currency": "MVR",
+      "units": 32,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 73
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,920.00 for 32 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--074",
+      "personId": "majlis-157",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 15728.4,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 74
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,020.00 for 17 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--075",
+      "personId": "majlis-158",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 55512.0,
+      "currency": "MVR",
+      "units": 60,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 75
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 3,600.00 for 60 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--076",
+      "personId": "majlis-159",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 4626.0,
+      "currency": "MVR",
+      "units": 5,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 76
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 300.00 for 5 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--077",
+      "personId": "majlis-160",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 40708.8,
+      "currency": "MVR",
+      "units": 44,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 77
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,640.00 for 44 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--078",
+      "personId": "majlis-61",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 35157.6,
+      "currency": "MVR",
+      "units": 38,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 78
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,280.00 for 38 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--079",
+      "personId": "majlis-162",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 79
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--081",
+      "personId": "majlis-164",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 82342.8,
+      "currency": "MVR",
+      "units": 89,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 81
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 5,340.00 for 89 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--082",
+      "personId": "majlis-165",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 63838.8,
+      "currency": "MVR",
+      "units": 69,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 82
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 4,140.00 for 69 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--083",
+      "personId": "majlis-166",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 31456.8,
+      "currency": "MVR",
+      "units": 34,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 83
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,040.00 for 34 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--084",
+      "personId": "majlis-167",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 20354.4,
+      "currency": "MVR",
+      "units": 22,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 84
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,320.00 for 22 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--085",
+      "personId": "majlis-68",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 19429.2,
+      "currency": "MVR",
+      "units": 21,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 85
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,260.00 for 21 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--086",
+      "personId": "majlis-69",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 18504.0,
+      "currency": "MVR",
+      "units": 20,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 86
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 1,200.00 for 20 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--087",
+      "personId": "majlis-170",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 0.0,
+      "currency": "MVR",
+      "units": 0,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 87
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 0.00 for 0 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--088",
+      "personId": "majlis-171",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 38858.4,
+      "currency": "MVR",
+      "units": 42,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 88
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 2,520.00 for 42 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip19--089",
+      "personId": "majlis-72",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 82342.8,
+      "currency": "MVR",
+      "units": 89,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2019-05-28",
+      "periodEnd": "2024-05-27",
+      "locator": {
+        "page": 2,
+        "row": 89
+      },
+      "sources": [
+        "rti-majlis-vip-19th"
+      ],
+      "note": "USD 5,340.00 for 89 movements at USD 60.00 each, converted at 15.42."
+    },
+    {
+      "id": "vip20--001",
+      "personId": "majlis-175",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 20950.23,
+      "currency": "MVR",
+      "units": 24,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 1
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--002",
+      "personId": "majlis-177",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 872.93,
+      "currency": "MVR",
+      "units": 1,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 2
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--003",
+      "personId": "majlis-180",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 34044.12,
+      "currency": "MVR",
+      "units": 39,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 3
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--004",
+      "personId": "majlis-181",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 25314.86,
+      "currency": "MVR",
+      "units": 29,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 4
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--005",
+      "personId": "majlis-92",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 6983.41,
+      "currency": "MVR",
+      "units": 8,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 5
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--006",
+      "personId": "majlis-184",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2618.77,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 6
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--007",
+      "personId": "majlis-186",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 14839.75,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 7
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--008",
+      "personId": "majlis-187",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 57613.13,
+      "currency": "MVR",
+      "units": 66,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 8
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--009",
+      "personId": "majlis-85",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5237.55,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 9
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--010",
+      "personId": "majlis-83",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 21823.16,
+      "currency": "MVR",
+      "units": 25,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 10
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--011",
+      "personId": "majlis-190",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 43646.31,
+      "currency": "MVR",
+      "units": 50,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 11
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--012",
+      "personId": "majlis-191",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 19204.38,
+      "currency": "MVR",
+      "units": 22,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 12
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--013",
+      "personId": "majlis-192",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 872.92,
+      "currency": "MVR",
+      "units": 1,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 13
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--014",
+      "personId": "majlis-193",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 29679.49,
+      "currency": "MVR",
+      "units": 34,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 14
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--015",
+      "personId": "majlis-3",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 27060.71,
+      "currency": "MVR",
+      "units": 31,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 15
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--016",
+      "personId": "majlis-196",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 22696.08,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 16
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--017",
+      "personId": "majlis-108",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 14839.74,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 17
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--018",
+      "personId": "majlis-200",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 4364.63,
+      "currency": "MVR",
+      "units": 5,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 18
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--019",
+      "personId": "majlis-202",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 12220.96,
+      "currency": "MVR",
+      "units": 14,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 4,
+        "row": 19
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--020",
+      "personId": "majlis-203",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3491.7,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 20
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--021",
+      "personId": "majlis-13",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 22696.08,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 21
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--022",
+      "personId": "majlis-206",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 15712.67,
+      "currency": "MVR",
+      "units": 18,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 22
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--023",
+      "personId": "majlis-207",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 21823.15,
+      "currency": "MVR",
+      "units": 25,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 23
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--024",
+      "personId": "majlis-208",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 11348.04,
+      "currency": "MVR",
+      "units": 13,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 24
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--025",
+      "personId": "majlis-209",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2618.77,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 25
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--026",
+      "personId": "majlis-210",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5237.55,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 26
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--027",
+      "personId": "majlis-211",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1745.85,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 27
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--028",
+      "personId": "majlis-212",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3491.7,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 28
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--029",
+      "personId": "majlis-22",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 14839.74,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 29
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--030",
+      "personId": "majlis-23",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 25314.86,
+      "currency": "MVR",
+      "units": 29,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 30
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--031",
+      "personId": "majlis-215",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 16585.59,
+      "currency": "MVR",
+      "units": 19,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 31
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--032",
+      "personId": "majlis-216",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 13966.82,
+      "currency": "MVR",
+      "units": 16,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 32
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--033",
+      "personId": "majlis-26",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 32298.26,
+      "currency": "MVR",
+      "units": 37,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 33
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--034",
+      "personId": "majlis-218",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 8729.26,
+      "currency": "MVR",
+      "units": 10,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 34
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--035",
+      "personId": "majlis-220",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2618.77,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 35
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--036",
+      "personId": "majlis-221",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 9602.18,
+      "currency": "MVR",
+      "units": 11,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 36
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--037",
+      "personId": "majlis-222",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3491.7,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 37
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--038",
+      "personId": "majlis-223",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 22696.08,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 38
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--039",
+      "personId": "majlis-132",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3491.7,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 39
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--040",
+      "personId": "majlis-227",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 23569.0,
+      "currency": "MVR",
+      "units": 27,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 40
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--041",
+      "personId": "majlis-134",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 3491.7,
+      "currency": "MVR",
+      "units": 4,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 41
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--042",
+      "personId": "majlis-230",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 21823.15,
+      "currency": "MVR",
+      "units": 25,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 42
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--043",
+      "personId": "majlis-36",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 11348.04,
+      "currency": "MVR",
+      "units": 13,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 43
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--044",
+      "personId": "majlis-37",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5237.55,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 44
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--045",
+      "personId": "majlis-236",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2618.77,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 45
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--046",
+      "personId": "majlis-238",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 10475.11,
+      "currency": "MVR",
+      "units": 12,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 46
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--047",
+      "personId": "majlis-240",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 116099.18,
+      "currency": "MVR",
+      "units": 133,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 47
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--048",
+      "personId": "majlis-241",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 27933.63,
+      "currency": "MVR",
+      "units": 32,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 48
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--049",
+      "personId": "majlis-243",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 2618.77,
+      "currency": "MVR",
+      "units": 3,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 49
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--050",
+      "personId": "majlis-245",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 19204.37,
+      "currency": "MVR",
+      "units": 22,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 50
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--051",
+      "personId": "majlis-45",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 68088.24,
+      "currency": "MVR",
+      "units": 78,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 51
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--052",
+      "personId": "majlis-248",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 10475.11,
+      "currency": "MVR",
+      "units": 12,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 52
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--053",
+      "personId": "majlis-250",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 5237.55,
+      "currency": "MVR",
+      "units": 6,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 53
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--054",
+      "personId": "majlis-251",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 9602.18,
+      "currency": "MVR",
+      "units": 11,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 54
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--055",
+      "personId": "majlis-253",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 17458.52,
+      "currency": "MVR",
+      "units": 20,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 5,
+        "row": 55
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--056",
+      "personId": "majlis-254",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 17458.52,
+      "currency": "MVR",
+      "units": 20,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 56
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--057",
+      "personId": "majlis-255",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 9602.18,
+      "currency": "MVR",
+      "units": 11,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 57
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--058",
+      "personId": "majlis-257",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 16585.59,
+      "currency": "MVR",
+      "units": 19,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 58
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--059",
+      "personId": "majlis-260",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 26187.78,
+      "currency": "MVR",
+      "units": 30,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 59
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--060",
+      "personId": "majlis-262",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 53248.49,
+      "currency": "MVR",
+      "units": 61,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 60
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--061",
+      "personId": "majlis-264",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 6983.4,
+      "currency": "MVR",
+      "units": 8,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 61
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--062",
+      "personId": "majlis-266",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 13093.89,
+      "currency": "MVR",
+      "units": 15,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 62
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--063",
+      "personId": "majlis-267",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 16585.59,
+      "currency": "MVR",
+      "units": 19,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 63
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--064",
+      "personId": "majlis-263",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 8729.26,
+      "currency": "MVR",
+      "units": 10,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 64
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--065",
+      "personId": "majlis-261",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 10475.11,
+      "currency": "MVR",
+      "units": 12,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 65
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--066",
+      "personId": "majlis-258",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 1745.85,
+      "currency": "MVR",
+      "units": 2,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 66
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--067",
+      "personId": "majlis-256",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 22696.08,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 67
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--068",
+      "personId": "majlis-64",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 20950.23,
+      "currency": "MVR",
+      "units": 24,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 68
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--069",
+      "personId": "majlis-247",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 27060.71,
+      "currency": "MVR",
+      "units": 31,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 69
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--070",
+      "personId": "majlis-66",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 22696.08,
+      "currency": "MVR",
+      "units": 26,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 70
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--071",
+      "personId": "majlis-242",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 25314.86,
+      "currency": "MVR",
+      "units": 29,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 71
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--072",
+      "personId": "majlis-239",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 84673.84,
+      "currency": "MVR",
+      "units": 97,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 72
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--073",
+      "personId": "majlis-237",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 14839.74,
+      "currency": "MVR",
+      "units": 17,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 73
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--074",
+      "personId": "majlis-233",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 55867.28,
+      "currency": "MVR",
+      "units": 64,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 74
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--075",
+      "personId": "majlis-231",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 17458.52,
+      "currency": "MVR",
+      "units": 20,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 75
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "id": "vip20--076",
+      "personId": "majlis-171",
+      "type": "expenditure",
+      "subtype": "airport-vip",
+      "amount": 25314.86,
+      "currency": "MVR",
+      "units": 29,
+      "unitLabel": "airport VIP movements",
+      "periodStart": "2024-05-28",
+      "periodEnd": "2025-07-31",
+      "locator": {
+        "page": 6,
+        "row": 76
+      },
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
     }
   ],
   "politicalPosts": [
@@ -67629,6 +72347,530 @@
       "asOf": "2025-09-18",
       "postsStated": 30,
       "note": "A narrative answer, not a table: 30 political appointees in total, of whom 7 deputy ministers and 6 political directors are described with a pay range. This is a different body at a different date from the Health, Family and Welfare response above, and the two are not additive."
+    }
+  ],
+  "diplomaticPassports": [
+    {
+      "personId": "majlis-175",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-176",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-178",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-179",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-180",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-181",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-92",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-184",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-185",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-186",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-85",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-83",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-190",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-191",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-192",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-193",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-3",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-4",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-196",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-106",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-198",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-108",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-201",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-202",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-203",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-13",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-205",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-206",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-207",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-208",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-209",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-210",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-211",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-212",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-22",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-23",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-215",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-216",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-26",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-218",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-219",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-220",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-221",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-222",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-223",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-132",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-225",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-227",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-134",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-230",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-36",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-37",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-235",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-236",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-238",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-241",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-243",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-245",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-45",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-248",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-250",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-251",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-253",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-254",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-255",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-257",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-53",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-260",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-262",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-264",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-267",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-58",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-263",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-261",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-258",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-256",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-252",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-64",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-247",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-66",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-242",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-239",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-237",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-233",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-231",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-171",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
+    },
+    {
+      "personId": "majlis-226",
+      "sources": [
+        "rti-majlis-vip-passports-20th"
+      ]
     }
   ],
   "fiscalYears": [

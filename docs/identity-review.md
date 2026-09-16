@@ -97,3 +97,25 @@ Confirming one is a human decision and needs a second source.
 - **Ahmed Naseer** `appointee-ahmed-naseer` -> `majlis-193`
 - **Hussain Mohamed** `appointee-hussain-mohamed` -> `majlis-34`
 - **Mohamed Nihad** `appointee-mohamed-nihad` -> `majlis-167`
+
+## VIP rows with no matching roster seat
+
+A row is claimed only when the constituency and the name agree on
+one member, or when one of them resolves uniquely and the other
+resolves to nobody. A row where the two keys point at DIFFERENT
+members is the dangerous case and is never guessed: it is left out
+of the graph and listed here with the reason.
+
+- `vip-18th-majlis.csv` row 1: **Moosa Maniku** (Hulhuhenveyru) -> no candidate - _no unique seat_
+- `vip-18th-majlis.csv` row 8: **Abdulla Sinan** (Machchangolhi Dhekunu) -> no candidate - _no unique seat_
+- `vip-18th-majlis.csv` row 17: **Abdul Latheef Ahmed** (Dhidhdhoo) -> no candidate - _no unique seat_
+- `vip-18th-majlis.csv` row 54: **Ahmed Nazim** (Dhiggaru) -> `majlis-41` - _no unique seat_
+- `vip-19th-majlis.csv` row 2: **Ibrahim Muizzu** (henveyru uthuru) -> no candidate - _no unique seat_
+- `vip-19th-majlis.csv` row 6: **Eva Abdulla** (Galolhu Uthuru) -> no candidate - _no unique seat_
+- `vip-19th-majlis.csv` row 7: **Meekail Ahmed Nasym** (Galolhu Dhekunu) -> no candidate - _no unique seat_
+- `vip-19th-majlis.csv` row 8: **Mohamed Rasheed** (Machchangolhi Uthuru) -> `majlis-163`, `majlis-93` - _no unique seat_
+- `vip-19th-majlis.csv` row 11: **Imthiyaz Fahmy** (Maafannu Uthuru) -> no candidate - _no unique seat_
+- `vip-19th-majlis.csv` row 30: **Rashid** (Komandoo) -> `majlis-114`, `majlis-173` - _no unique seat_
+- `vip-19th-majlis.csv` row 50: **Shaaz** (Guraidhoo) -> `majlis-150`, `majlis-174`, `majlis-33` - _no unique seat_
+- `vip-19th-majlis.csv` row 69: **Mohamed Wisam** (Gamu) -> no candidate - _no unique seat_
+- `vip-19th-majlis.csv` row 80: **Mohamed Rasheed** (Fuvahmulaku Uthuru) -> `majlis-163`, `majlis-93` - _no unique seat_

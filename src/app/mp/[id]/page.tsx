@@ -85,6 +85,8 @@ export default async function MemberPage({
   // members. Rendering the member furniture for them would print "MVR 0" as
   // a headline figure and a rank out of 278 they were never in.
   const isMember = registry.seats(person.id).length > 0;
+  const vip = registry.vipByTerm(person.id);
+  const passport = registry.holdsDiplomaticPassport(person.id);
   const posts = registry
     .politicalPosts()
     .filter((post) => post.personId === person.id);
@@ -178,6 +180,11 @@ export default async function MemberPage({
                   {dict.termLabel(term)}
                 </li>
               ))}
+              {passport ? (
+                <li className="label-eyebrow rounded-card bg-surface-sunken px-2.5 py-1 text-ink-muted">
+                  {dict.profileVipChip}
+                </li>
+              ) : null}
             </ul>
 
             {/* The figure sits with the identity rather than further down the
@@ -246,6 +253,56 @@ export default async function MemberPage({
           <PositionList positions={positions} dict={dict} />
         </div>
       </section>
+
+      {vip.length ? (
+        <section>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {dict.profileVipHeading}
+          </h2>
+          <p className="mt-3 max-w-[62ch] text-sm text-ink-muted">
+            {dict.profileVipNote}
+          </p>
+          <div className="mt-5 overflow-x-auto">
+            <table className="w-full border-collapse text-xs sm:text-sm">
+              <thead>
+                <tr className="border-b border-line">
+                  <th
+                    scope="col"
+                    className="py-2 pe-2 text-start font-medium text-ink-muted sm:pe-4"
+                  >
+                    {dict.colTerm}
+                  </th>
+                  <th
+                    scope="col"
+                    className="py-2 pe-2 text-end font-medium text-ink-muted sm:pe-4"
+                  >
+                    {dict.colMovements}
+                  </th>
+                  <th
+                    scope="col"
+                    className="py-2 text-end font-medium text-ink-muted"
+                  >
+                    {dict.colCost}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {vip.map(({ term, claim }) => (
+                  <tr key={claim.id} className="border-b border-line/60">
+                    <td className="py-2 pe-2 sm:pe-4">{dict.termLabel(term)}</td>
+                    <td className="py-2 pe-2 text-end sm:pe-4">
+                      <Numeral value={claim.units ?? 0} />
+                    </td>
+                    <td className="py-2 text-end">
+                      <Numeral value={Math.round(claim.amount)} currency />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ) : null}
 
       {!isMember && posts.length ? (
         <section>

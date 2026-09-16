@@ -298,6 +298,208 @@ RANK_LABELS = {
 }
 
 
+# ---------------------------------------------------------------------------
+# Airport VIP
+#
+# One claim per member per term. The 18th and 19th price every movement at
+# USD 60 and convert at 15.42; the 20th prints a flat rufiyaa charge and no
+# dollar figure. Each document's own figures are published as it prints them,
+# and the two are never reconciled.
+#
+# The joins are the interesting part, and they are two different joins:
+#
+#   18th, 19th   Latin only. The Latin constituency is the key AGENTS.md
+#                records as DRIFTING between terms, so the term number is
+#                carried into the key and the match must be unique within it.
+#   20th         Thaana, which is the stable key everything else uses.
+#
+# Nothing is merged on a name alone, and an unmatched row is written to the
+# review file rather than attached to the nearest plausible person.
+# ---------------------------------------------------------------------------
+
+VIP_TERMS = {
+    'vip-18th-majlis.csv': 18,
+    'vip-19th-majlis.csv': 19,
+    'vip-20th-majlis.csv': 20,
+}
+
+
+def latin_key(text):
+    """Lowercase, letters and digits only, and no trailing "dhaaira".
+
+    "Medhu Henveyru", "Medhuhenveyru" and "medhu henveyru" are the same seat
+    written three ways across two documents. The roster also suffixes every
+    constituency with "Dhaaira" - the word for constituency - where the VIP
+    tables do not, so that suffix goes too. Spacing, case and that one word
+    are all this folds; anything beyond is a judgement and goes to a human.
+    """
+    key = re.sub(r'[^a-z0-9]+', '', (text or '').lower())
+    return re.sub(r'dhaaira+$', '', key)
+
+
+def build_vip_index(persons, positions):
+    """Two indexes per term: seats by folded constituency, and by folded name.
+
+    Both keys are exact after folding. Nothing here scores similarity or picks
+    a nearest match.
+    """
+    by_id = {p['id']: p for p in persons}
+    seats, names = {}, {}
+    for position in positions:
+        if position.get('kind') != 'majlis-member' or position.get('basis') != 'stated':
+            continue
+        person = by_id.get(position.get('personId'))
+        if not person:
+            continue
+        for term in position.get('termNumbers') or []:
+            for key, value in (
+                    (latin_key(position.get('constituency')), seats),
+                    (fold_for_match(position.get('constituencyDv')), seats),
+            ):
+                if key:
+                    value.setdefault((term, key), set()).add(person['id'])
+            for key, value in (
+                    (latin_key(person.get('name')), names),
+                    (fold_for_match(person.get('nameDv')), names),
+            ):
+                if key:
+                    value.setdefault((term, key), set()).add(person['id'])
+    return seats, names
+
+
+def vip_keys(row, term):
+    """The row's constituency and name keys, in whichever script it prints."""
+    if row.get('name_dv'):
+        return ((term, fold_for_match(row['constituency_dv'])),
+                (term, fold_for_match(row['name_dv'])))
+    return ((term, latin_key(row['constituency'])),
+            (term, latin_key(row['name'])))
+
+
+def load_vip(persons, positions, sources_by_id):
+    """VIP claims, plus the rows no roster seat could be found for.
+
+    THE JOIN, and why it is two keys rather than one.
+
+    Each document drifts on a different axis, and on the other it is exact.
+    The 19th spells constituencies its own way - "Medhuhenveyru" for the
+    roster's "Medhu Henveyru" - while every one of those members' names is on
+    the roster verbatim. The 18th does the reverse: its constituencies match
+    exactly and its names do not, printing "Eva Abdulla" for "Eeva Abdulla"
+    and "Hon. Mohamed Ismail" without the honorific.
+
+    So a seat is claimed only when the two keys agree, or when one of them
+    resolves uniquely and the other contradicts nothing:
+
+      1. Both keys resolve and land on the same single person -> match.
+      2. Both resolve and disagree -> review. That is a contradiction, and
+         guessing which key to believe is exactly how a wrong merge happens.
+      3. One key resolves to exactly one person and the other resolves to
+         nobody -> match. A constituency returns one member per parliament
+         and a name is unique within one, so each is a real key; the silent
+         one is a spelling the two documents disagree about, not evidence.
+      4. Anything else -> review.
+
+    A constituency is NOT unique per term in the VIP tables: the 18th lists
+    Dhiggaru twice, for Ahmed Nazim and then Ahmed Faris Maumoon, which is a
+    mid-term replacement. So where a constituency carries two rows the name
+    has to break the tie, and rule 3 is deliberately blocked for it.
+    """
+    seats, names = build_vip_index(persons, positions)
+    claims, unmatched = [], []
+
+    for name, term in VIP_TERMS.items():
+        rows = csvio.read(name)[1]
+        # Constituencies this document lists more than once: a replacement
+        # mid-term, where the seat alone cannot say which holder a row means.
+        shared = {key for key in
+                  [vip_keys(row, term)[0] for row in rows]
+                  if [vip_keys(r, term)[0] for r in rows].count(key) > 1}
+
+        for row in rows:
+            if not row['movements']:
+                continue
+            seat_key, name_key = vip_keys(row, term)
+            by_seat = seats.get(seat_key, set())
+            by_name = names.get(name_key, set())
+
+            both = by_seat & by_name
+            if len(both) == 1:
+                person_id = next(iter(both))
+            elif by_seat and by_name:
+                unmatched.append((name, row, sorted(by_seat | by_name),
+                                  'the constituency and the name point at '
+                                  'different members'))
+                continue
+            elif len(by_seat) == 1 and seat_key not in shared:
+                person_id = next(iter(by_seat))
+            elif len(by_name) == 1:
+                person_id = next(iter(by_name))
+            else:
+                unmatched.append((name, row, sorted(by_seat | by_name),
+                                  'no unique seat'))
+                continue
+
+            source = sources_by_id[row['source_id']]
+            claim = {
+                'id': row['row_id'],
+                'personId': person_id,
+                'type': 'expenditure',
+                'subtype': 'airport-vip',
+                'amount': round(float(row['total_mvr'] or 0), 2),
+                'currency': 'MVR',
+                'units': int(row['movements']),
+                'unitLabel': 'airport VIP movements',
+                'periodStart': source['periodStart'],
+                'periodEnd': source['periodEnd'],
+                'locator': {'page': int(row['source_page']),
+                            'row': int(row['source_row'])},
+                'sources': [row['source_id']],
+            }
+            if row.get('total_usd'):
+                # The 18th and 19th state the dollar figure and the rate they
+                # converted at. Carried as a note rather than a second amount:
+                # the claim is one payment, not two.
+                claim['note'] = (
+                    f'USD {float(row["total_usd"]):,.2f} for '
+                    f'{row["movements"]} movements at USD '
+                    f'{float(row["rate_usd"]):,.2f} each, converted at 15.42.')
+            claims.append(claim)
+
+    return claims, unmatched
+
+
+def load_passports(persons, positions):
+    """The 87 members of the 20th Majlis who took a diplomatic passport.
+
+    Joined exactly as the VIP rows are, and against the same 20th-Majlis
+    roster. A holder we cannot place is dropped rather than guessed: the list
+    is a fact about named people, and attaching one to the wrong member is the
+    failure this whole join exists to avoid.
+    """
+    seats, names = build_vip_index(persons, positions)
+    held, unmatched = [], []
+    for row in csvio.read('diplomatic-passports-20th-majlis.csv')[1]:
+        seat_key, name_key = vip_keys(row, 20)
+        by_seat = seats.get(seat_key, set())
+        by_name = names.get(name_key, set())
+        both = by_seat & by_name
+        if len(both) == 1:
+            person_id = next(iter(both))
+        elif by_seat and by_name:
+            unmatched.append((row, sorted(by_seat | by_name)))
+            continue
+        elif len(by_seat) == 1:
+            person_id = next(iter(by_seat))
+        elif len(by_name) == 1:
+            person_id = next(iter(by_name))
+        else:
+            unmatched.append((row, sorted(by_seat | by_name)))
+            continue
+        held.append({'personId': person_id, 'sources': [row['source_id']]})
+    return held, unmatched
+
+
 def load_sources():
     """sources.csv -> Source records, in file order.
 
@@ -672,10 +874,20 @@ def main():
             for person in group:
                 person['possiblySameAs'] = [i for i in ids if i != person['id']]
 
+    # After every identity is settled, so a VIP row joins the person the
+    # roster and the premium disclosure already agreed on.
+    vip_claims, vip_unmatched = load_vip(
+        kept_persons, kept_positions, {s['id']: s for s in sources})
+    claims += vip_claims
+    passports, passports_unmatched = load_passports(kept_persons, kept_positions)
+
     graph = {
         'meta': {
             'generatedBy': 'scripts/ingest/build_graph.py',
             'datasets': sorted(s['id'] for s in sources),
+            # Published, not buried: the VIP page states its own coverage gap,
+            # and it can only do that if the number reaches it.
+            'vipRowsUnmatched': len(vip_unmatched),
         },
         'sources': sources,
         'persons': kept_persons,
@@ -683,6 +895,7 @@ def main():
         'claims': claims,
         'politicalPosts': political_posts,
         'politicalPostCoverage': post_coverage,
+        'diplomaticPassports': passports,
         'fiscalYears': fiscal_years,
         'terms': terms,
         'warnings': warnings,
@@ -693,7 +906,7 @@ def main():
         fh.write('\n')
 
     write_review(ambiguous, unmatched, speakers_unresolved,
-                 appointee_collisions(kept_persons))
+                 appointee_collisions(kept_persons), vip_unmatched)
 
     orphan_claims = sum(
         1 for c in claims if c['personId'] not in {p['id'] for p in kept_persons})
@@ -702,6 +915,10 @@ def main():
     print(f'  persons            {len(kept_persons)}')
     print(f'  political posts    {len(political_posts)} '
           f'across {len(post_coverage)} bodies')
+    print(f'  VIP claims         {len(vip_claims)} '
+          f'({len(vip_unmatched)} rows unmatched)')
+    print(f'  passport holders   {len(passports)} '
+          f'({len(passports_unmatched)} rows unmatched)')
     print(f'  positions          {len(final_positions)}')
     print(f'  claims             {len(claims)}')
     print(f'  roster terms merged{roster_merges:>4}')
@@ -735,7 +952,8 @@ def appointee_collisions(persons):
     return out
 
 
-def write_review(ambiguous, unmatched, speakers_unresolved, appointees=()):
+def write_review(ambiguous, unmatched, speakers_unresolved, appointees=(),
+                 vip_unmatched=()):
     lines = [
         '# Identity review queue',
         '',
@@ -798,6 +1016,26 @@ def write_review(ambiguous, unmatched, speakers_unresolved, appointees=()):
         for person, hits in sorted(appointees, key=lambda pair: pair[0]['name']):
             lines.append(f'- **{person["name"]}** `{person["id"]}` -> '
                          + ', '.join(f'`{h}`' for h in hits))
+    else:
+        lines.append('_None._')
+
+    lines += [
+        '',
+        '## VIP rows with no matching roster seat',
+        '',
+        'A row is claimed only when the constituency and the name agree on',
+        'one member, or when one of them resolves uniquely and the other',
+        'resolves to nobody. A row where the two keys point at DIFFERENT',
+        'members is the dangerous case and is never guessed: it is left out',
+        'of the graph and listed here with the reason.',
+        '',
+    ]
+    if vip_unmatched:
+        for name, row, matches, why in vip_unmatched:
+            found = ', '.join(f'`{m}`' for m in matches) or 'no candidate'
+            lines.append(f'- `{name}` row {row["source_row"]}: '
+                         f'**{row["name"]}** ({row["constituency"]}) -> {found} '
+                         f'- _{why}_')
     else:
         lines.append('_None._')
 

@@ -5,6 +5,7 @@ export const dict = {
   navMembers: "Members",
   navParties: "Parties",
   navAppointees: "Appointees",
+  navVip: "Airport VIP",
   navMenu: "Menu",
   navSpending: "Spending",
   navAbout: "About",
@@ -212,6 +213,31 @@ export const dict = {
   appointeesSourcesHeading: "The documents behind this page",
   appointeesReference: "Reference",
   appointeesViewDocument: "Open the document",
+
+  vipHeading: "Airport VIP, member by member",
+  vipIntro:
+    "The Majlis pays for members to use the VIP terminal at Velana International Airport. Three disclosures cover the 18th and 19th parliaments in full and the 20th to 31 July 2025, and each one counts movements first and prices them at a flat rate, so the count is the fact and the money follows from it.",
+  vipTermsHeading: "What each parliament used",
+  vipTermsNote:
+    "The rate is shown per parliament and never carried across them. The 18th and 19th price a movement at USD 60 and convert at MVR 15.42 to the dollar; the 20th prints a rufiyaa charge and no dollar figure at all. Averaging the two would state a rate no document gives.",
+  vipPartialNote: (shown: number, unmatched: number) =>
+    `${shown} rows are shown here. A further ${unmatched} could not be matched to exactly one seat - a name printed short, or a constituency spelled differently from the roster - and are left out rather than attached to the nearest plausible member. They are listed in the repository's identity review.`,
+  vipRankedHeading: "Members by movements",
+  vipRankedNote:
+    "Across every parliament a member appears in. A member who sat in two shows the sum of both, which is not comparable with someone who sat in one.",
+  colMovements: "Movements",
+  colCost: "Cost",
+  colTerm: "Parliament",
+  colPerMovement: "Per movement",
+  vipPassportHeading: "Diplomatic passports",
+  vipPassportBody: (holders: number, members: number) =>
+    `${holders} of the ${members} members of the 20th Majlis hold a diplomatic passport, named in the same disclosure. It records who holds one, not what it cost.`,
+  vipNoneLabel: "No movements recorded",
+
+  profileVipHeading: "Airport VIP",
+  profileVipNote:
+    "Paid by the Majlis for the member's use of the airport VIP terminal, counted in movements and charged at a flat rate. A parliament with no row is one the disclosures do not cover for this member, not one with nothing to report.",
+  profileVipChip: "Diplomatic passport",
 
   termLabel: (n: number) => `${ordinal(n)} Majlis`,
   sourceHeading: "Source",

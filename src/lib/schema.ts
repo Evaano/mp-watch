@@ -342,6 +342,19 @@ export interface PoliticalPost {
   sources: Cited;
 }
 
+/**
+ * A member who holds a diplomatic passport.
+ *
+ * Not a Claim: no money, no period of its own beyond the term, and no status
+ * to track. It is a fact about a person with a source, which is the shape
+ * everything here takes, so it carries its own citation rather than relying
+ * on the page to remember one.
+ */
+export interface DiplomaticPassport {
+  personId: PersonId;
+  sources: Cited;
+}
+
 /** What each body actually answered, published so the gaps are as visible as
  *  the figures. */
 export interface PostCoverage {
@@ -370,6 +383,7 @@ export interface Graph {
   claims: Claim[];
   politicalPosts: PoliticalPost[];
   politicalPostCoverage: PostCoverage[];
+  diplomaticPassports: DiplomaticPassport[];
   /** Anything the ingest could not parse cleanly. Should stay empty. */
   warnings: string[];
 }

@@ -27,6 +27,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               { href: "/members", label: dict.navMembers },
               { href: "/parties", label: dict.navParties },
               { href: "/appointees", label: dict.navAppointees },
+              { href: "/vip", label: dict.navVip },
             ]}
             menuLabel={dict.navMenu}
           />

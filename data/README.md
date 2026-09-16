@@ -28,6 +28,14 @@ and how you know.
 | `political-posts-education.csv` | 46 posts, transcribed by eye from a scan. | by hand |
 | `political-posts-aggregate.csv` | Bodies that gave counts and rates rather than rows. | by hand |
 | `political-posts-coverage.csv` | What each body actually answered, and what it left out. | by hand |
+| `vip-18th-majlis.csv` | 86 rows for 85 seats: airport VIP over the 18th Majlis. | `vip_majlis.py` |
+| `vip-19th-majlis.csv` | 89 rows: the same for the 19th. | `vip_majlis.py` |
+| `vip-20th-majlis.csv` | 76 rows, 28 May 2024 to 31 July 2025. Thaana. | `vip_majlis.py` |
+| `diplomatic-passports-20th-majlis.csv` | 87 members of the 20th Majlis holding one. | `vip_majlis.py` |
+
+The 18th and 19th price a movement at USD 60 and convert at 15.42; the 20th
+prints a rufiyaa charge and no dollar figure. **Do not reconcile them** — each
+document's own figures are published as it prints them.
 
 The political-post tables record pay **entitlements**, not payments. Two rules
 follow. A `-` in a source becomes `0`, a printed nil, and a blank cell stays

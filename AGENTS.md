@@ -33,6 +33,7 @@ python scripts/ingest/extract_allowances.py     # -> data/premium-payments.csv
 python scripts/ingest/majlis_members.py         # -> data/majlis-roster.csv + majlis-speakers.csv
 python scripts/ingest/rti_20th_majlis.py        # -> data/rti-20th-majlis.csv
 python scripts/ingest/political_posts.py        # -> data/political-posts-*.csv
+python scripts/ingest/vip_majlis.py             # -> data/vip-*.csv + diplomatic-passports-*.csv
 python scripts/ingest/build_graph.py            # -> src/data/graph.json + docs/identity-review.md
 python scripts/ingest/mirror_photos.py          # -> public/members/*.webp + src/data/photo-manifest.json
 ```
@@ -89,7 +90,12 @@ The premium is priced **per covered head** and the policy covers the member
    No remembered figures, no round numbers chosen because they read well.
 4. **Party belongs to a Position, never to a Person.** Six independents crossed
    to PNC within four days of the 2024 election; an undated party label is wrong.
-5. **A political post's pay is an entitlement, never a payment.** `PoliticalPost`
+5. **Spending accessors narrow on `subtype`, never on `type`.**
+   `registry.premium()` is health-insurance premiums and `vip()` is airport
+   VIP. "expenditure" is a family: matching on type alone folds every new
+   dataset into the home page headline, each member's lead figure and
+   `partyTotals()` at once, and no figure on the site looks wrong.
+6. **A political post's pay is an entitlement, never a payment.** `PoliticalPost`
    carries `measure: "entitlement"`, sits in its own top-level array, and has no
    `amount` or `currency`. It never passes through `claims()`, `expenditure()`
    or `totals()`. Do not multiply `posts` by a rate anywhere: that produces an
@@ -143,6 +149,13 @@ Each of these cost real debugging. Do not rediscover them.
   silently classified plain-decimal amounts as name text and lost MVR 216,000.
 - **The disclosure's own row numbers are unreliable** — 11 repeat, 5 are
   skipped. Never use them as identity.
+- **The 20th Majlis VIP PDF reverses its Thaana but not its ASCII.** Running
+  `repair_visual_order` over every token turns MVR 3,491.70 into 07.1943 and
+  row 78 into row 87, and both still look like numbers. Repair a token only
+  when it contains Thaana.
+- **A constituency is not unique within a term.** The 18th Majlis VIP table
+  lists Dhiggaru twice, for Ahmed Nazim and then Ahmed Faris Maumoon — a
+  mid-term replacement. 86 rows for 85 seats.
 
 ### Portraits
 
