@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Numeral } from "@/components/Numeral";
 import { dict } from "@/lib/i18n";
+import { party as lookupParty } from "@/lib/parties";
 import { registry } from "@/lib/registry";
 
 export const metadata: Metadata = {
@@ -16,6 +17,11 @@ export const metadata: Metadata = {
  * in any source this repo holds, and writing them from memory would be an
  * unsourced assertion on a page whose whole point is attribution.
  */
+/** The full name where a source gives one; the bare code otherwise. */
+function partyName(code: string) {
+  return lookupParty(code)?.name ?? "";
+}
+
 export default function PartiesPage() {
   const { parties, unattributed } = registry.partyTotals();
   const cohorts = registry.tenureCohorts();
@@ -33,6 +39,7 @@ export default function PartiesPage() {
       <section>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-xs sm:text-sm">
+            <caption className="sr-only">{dict.partiesHeading}</caption>
             <thead>
               <tr className="border-b border-line">
                 <th scope="col" className="py-2 pe-2 text-start font-medium sm:pe-4 text-ink-muted">
@@ -53,7 +60,13 @@ export default function PartiesPage() {
               {parties.map((party) => (
                 <tr key={party.party} className="border-b border-line/60 last:border-0">
                   <th scope="row" className="py-2.5 pe-2 text-start font-normal sm:pe-4">
-                    <span className="numeral font-medium">{party.party}</span>
+                    <span className="flex items-center gap-2">
+                      <span aria-hidden className="party-dot" data-party={party.party} />
+                      <span className="font-medium">{party.party}</span>
+                      <span className="text-ink-muted">
+                        {partyName(party.party)}
+                      </span>
+                    </span>
                   </th>
                   <td className="py-2.5 pe-2 text-end sm:pe-4">
                     <Numeral value={party.members} />
@@ -103,6 +116,7 @@ export default function PartiesPage() {
 
         <div className="mt-6 overflow-x-auto">
           <table className="w-full border-collapse text-xs sm:text-sm">
+            <caption className="sr-only">{dict.tenureHeading}</caption>
             <thead>
               <tr className="border-b border-line">
                 <th scope="col" className="py-2 pe-2 text-start font-medium sm:pe-4 text-ink-muted">

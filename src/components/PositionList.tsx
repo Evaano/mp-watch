@@ -1,3 +1,4 @@
+import { PartyMark } from "./PartyMark";
 import type { Dict } from "@/lib/i18n";
 import type { Position } from "@/lib/schema";
 
@@ -22,7 +23,10 @@ export function PositionList({
         <li key={position.id} className="relative pb-5 last:pb-0">
           <span
             aria-hidden
-            className="absolute -start-[21px] top-1.5 size-2.5 rounded-full border-2 border-surface bg-accent"
+            // Not the accent: a party mark sits a line below this, and PNC's
+            // turquoise and the accent teal are near neighbours. This is
+            // decoration, so it gives up the hue rather than the party doing so.
+            className="absolute -start-[21px] top-1.5 size-2.5 rounded-full border-2 border-surface bg-line-strong"
           />
           <p className="font-medium">
             {position.kind === "speaker"
@@ -36,8 +40,8 @@ export function PositionList({
                   (position.organisation ?? "")}
           </p>
           {position.party ? (
-            <span className="mt-1 inline-block rounded-card bg-surface-sunken px-1.5 py-0.5 label-eyebrow text-ink-muted">
-              {position.party}
+            <span className="label-eyebrow mt-1 inline-flex rounded-card bg-surface-sunken px-1.5 py-0.5 text-ink-muted">
+              <PartyMark code={position.party} />
             </span>
           ) : null}
           <p className="numeral mt-0.5 text-sm text-ink-muted">

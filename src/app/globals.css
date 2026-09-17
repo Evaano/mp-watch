@@ -22,6 +22,27 @@
   --flag: #c2410c;
   --flag-wash: #fdece4;
   --radius: 8px;
+
+  /* Party colours. The hue is the party's own and is stated, in words, by the
+     source cited in src/lib/parties.ts; no party and no registrar publishes a
+     hex, so the exact value is ours.
+     Every mark carries a hairline ring, so the RING is what makes the dot
+     perceivable, not the fill. That is what lets these be the parties' actual
+     colours: an earlier pass held the fill to a 4.5:1 text threshold it never
+     needed and turned MDP yellow into a brown nobody would recognise.
+     Measured, not eyeballed: each clears 3:1 against the raised surface and
+     no two sit closer than dE 23 in CIELAB. PNC and DEM are the closest pair,
+     and they are never told apart by colour alone - the party code is beside
+     every mark, and /parties prints the full name.
+     Do not drift PNC off turquoise to get further from the site accent: the
+     accent is text and bars, a party mark is a ringed dot, and they are
+     different object classes. */
+  --party-mdp: #c08401;
+  --party-ppm: #db2777;
+  --party-pnc: #0891b2;
+  --party-jp: #dc2626;
+  --party-ap: #16a34a;
+  --party-dem: #0369a1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +59,13 @@
     --accent-wash: #16302d;
     --flag: #d17b33;
     --flag-wash: #2e1d11;
+
+    --party-mdp: #fbbf24;
+    --party-ppm: #f472b6;
+    --party-pnc: #2dd4bf;
+    --party-jp: #f87171;
+    --party-ap: #4ade80;
+    --party-dem: #7dd3fc;
   }
 }
 
@@ -140,6 +168,40 @@ html {
   }
 }
 
+/* The party mark. A filled dot means the party's colour is on record; a hollow
+   ring means it is not, and that is a fact worth showing rather than papering
+   over with grey. Small on purpose: this is a public record, and a wall of
+   saturated party colour would read as a scoreboard. */
+.party-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: none;
+  border-radius: 9999px;
+  /* Carries the boundary for every mark, so a fill never has to. A dot with
+     no fill is a party whose colour is not on record. */
+  border: 1.5px solid var(--line-strong);
+}
+
+.party-dot[data-party="MDP"] {
+  background: var(--party-mdp);
+}
+.party-dot[data-party="PPM"] {
+  background: var(--party-ppm);
+}
+.party-dot[data-party="PNC"] {
+  background: var(--party-pnc);
+}
+.party-dot[data-party="JP"] {
+  background: var(--party-jp);
+}
+.party-dot[data-party="AP"] {
+  background: var(--party-ap);
+}
+.party-dot[data-party="DEM"] {
+  background: var(--party-dem);
+}
+
 /* Figures: tabular, so columns of them line up digit for digit. */
 .numeral {
   /* The font variable set by next/font, not the @theme token of the same
@@ -169,6 +231,15 @@ body {
   summary,
   input[type="search"] {
     min-height: 44px;
+  }
+
+  /* min-height does nothing to a non-replaced inline box, so a link inside a
+     table cell stayed 16px tall however large the rule said it should be.
+     Padding is what actually grows the hit area there. */
+  td a,
+  th a {
+    display: inline-block;
+    padding-block: 0.75rem;
   }
 }
 

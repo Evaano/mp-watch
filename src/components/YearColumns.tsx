@@ -110,7 +110,7 @@ export function YearColumns({
             {data.map((d, i) => (
               <li
                 key={d.year}
-                className={`numeral min-w-0 flex-1 text-center text-[10px] sm:text-[11px] ${
+                className={`numeral min-w-0 flex-1 text-center text-[11px] ${
                   active === i ? "font-semibold text-ink" : "text-ink-muted"
                 }`}
               >

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { BackToTop } from "./BackToTop";
 import { NavMenu } from "./NavMenu";
 import type { ReactNode } from "react";
-import { registry } from "@/lib/registry";
 import { dict } from "@/lib/i18n";
 
 /** Header, footer and page frame. Every route renders inside this. */
@@ -43,13 +42,6 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <h2 className="font-medium text-ink">{dict.sourceHeading}</h2>
           <p className="mt-2 max-w-[65ch]">{dict.sourceNote}</p>
           <p className="mt-2">{dict.currencyNote}</p>
-          <a
-            href={registry.primarySource().url}
-            className="mt-3 inline-block text-accent-ink underline underline-offset-4"
-            rel="noreferrer"
-          >
-            {dict.viewSource}
-          </a>
         </div>
       </footer>
 
