@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ConstituencyName, MemberName } from "@/components/MemberName";
 import { Numeral } from "@/components/Numeral";
+import { PartyMark } from "@/components/PartyMark";
 import { PositionList } from "@/components/PositionList";
 import { StatRow, StatTile } from "@/components/StatTile";
 import { YearColumns } from "@/components/YearColumns";
@@ -168,8 +169,8 @@ export default async function MemberPage({
                   : dict.profileAppointee}
               </li>
               {party ? (
-                <li className="label-eyebrow rounded-card bg-surface-sunken px-2.5 py-1 text-ink-muted">
-                  {party}
+                <li className="label-eyebrow inline-flex rounded-card bg-surface-sunken px-2.5 py-1 text-ink-muted">
+                  <PartyMark code={party} />
                 </li>
               ) : null}
               {terms.map((term) => (
@@ -264,6 +265,7 @@ export default async function MemberPage({
           </p>
           <div className="mt-5 overflow-x-auto">
             <table className="w-full border-collapse text-xs sm:text-sm">
+              <caption className="sr-only">{dict.profileVipHeading}</caption>
               <thead>
                 <tr className="border-b border-line">
                   <th

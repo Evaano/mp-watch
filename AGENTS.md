@@ -88,7 +88,10 @@ The premium is priced **per covered head** and the policy covers the member
    attaches one person's spending, votes or allegations to another and nothing
    downstream reveals it.
 3. **Every external comparator carries its source** (`src/lib/comparators.ts`).
-   No remembered figures, no round numbers chosen because they read well.
+   No remembered figures, no round numbers chosen because they read well. The
+   same applies to party names and colours (`src/lib/parties.ts`): the colour
+   *name* is what a source states, the hex is ours, and two parties publish no
+   colour at all — they get a hollow mark, never an invented one.
 4. **Party belongs to a Position, never to a Person.** Six independents crossed
    to PNC within four days of the 2024 election; an undated party label is wrong.
 5. **Spending accessors narrow on `subtype`, never on `type`.**
@@ -158,6 +161,19 @@ Each of these cost real debugging. Do not rediscover them.
   lists Dhiggaru twice, for Ahmed Nazim and then Ahmed Faris Maumoon — a
   mid-term replacement. 86 rows for 85 seats.
 
+### Party colour
+
+- **The mark is a ringed dot, never coloured text.** The ring carries the
+  boundary, which is what lets the fill be the party's actual colour instead of
+  a value dragged dark enough to pass a text-contrast threshold it never needed.
+  An earlier pass made MDP yellow into a brown nobody would recognise.
+- **The code is always beside the mark**, so colour never carries identity on
+  its own. That is what makes PNC and DEM tolerable at dE 23, and PNC tolerable
+  next to the teal site accent.
+- **The `PositionList` timeline bullet is `--line-strong`, not `--accent`.** A
+  party mark renders a line below it, and PNC's turquoise against the accent
+  teal was two different meanings in near-identical colours.
+
 ### Portraits
 
 `person.photoUrl` points at `majlis.gov.mv`. Do **not** render it. Their
@@ -181,8 +197,13 @@ Re-run the mirror after any roster ingest, or new members render as initials.
   *allowed*: a `Disallow: /` would stop crawlers reading the noindex, leaving a
   shared URL indexable with no content. One constant, `ALLOW_INDEXING` in
   `src/lib/site.ts`, drives the meta tag, the header and robots.txt together.
-- `registry.primarySource()` looks the disclosure up **by kind**, not by index.
-  It was `sources[0]`, which broke silently when a second ingest was added.
+- `registry.primarySource()` looks the disclosure up **by id**, not by index or
+  kind. It was `sources[0]`, which broke when a second ingest was added, then
+  the first `official-disclosure`, which broke when a second one was registered.
+- **The footer states no per-page source.** It used to say every figure traced
+  to the Majlis premium PDF and link it — untrue on `/appointees` and `/vip`,
+  which is an unsourced provenance claim in the site's own chrome. Each page
+  carries its own sources block instead.
 
 ## Known gaps
 

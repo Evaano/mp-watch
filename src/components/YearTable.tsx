@@ -18,6 +18,7 @@ export function YearTable({
   return (
     <div className="overflow-x-auto">
       <table className="w-full border-collapse text-sm">
+        <caption className="sr-only">{dict.profileBreakdown}</caption>
         <thead>
           <tr className="border-b border-line text-start">
             <th scope="col" className="py-2 pe-4 text-start font-medium text-ink-muted">

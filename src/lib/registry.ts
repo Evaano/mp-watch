@@ -604,7 +604,9 @@ export const registry = {
     for (const post of graph.politicalPosts) {
       if (!post.rank) continue;
       const living = post.components.find((c) => LIVING_LABELS.includes(c.label));
-      if (post.basic === undefined && living === undefined) continue;
+      // A post the document prints nothing against is a vacancy, not evidence
+      // about the rate for its rank.
+      if (!post.basic) continue;
       const bodies = byRank.get(post.rank) ?? new Map();
       const readings = bodies.get(post.bodyId) ?? new Map<string, number>();
       const key = `${post.basic ?? ""}|${living?.amount ?? ""}`;

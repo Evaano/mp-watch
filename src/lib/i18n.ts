@@ -29,6 +29,7 @@ export const dict = {
   scaleUsd: "The same total in dollars",
   scaleUsdNote: (rate: number) =>
     `At the official pegged rate of MVR ${rate} to the US dollar.`,
+  vipCostNote: "Three disclosures, two different rates.",
 
   aasandhaNote:
     "Every Maldivian citizen has been covered by Husnuvaa Aasandha with no annual ceiling since February 2014, which is the whole period this disclosure covers. These premiums were paid over the same years. Source:",
@@ -63,9 +64,9 @@ export const dict = {
 
   partiesHeading: "What each party's seats cost",
   partiesIntro:
-    "Premiums grouped by the party of the seat held when each payment was made, not by where the member sits now. A member who crossed the floor appears under both parties, each year against the seat in force.",
+    "Premiums grouped by the party of the seat held when each payment was made, not by where the member sits now.",
   partiesAttributionNote:
-    "Party is recorded against a seat, never against a person: six independents crossed to PNC within four days of the 2024 election. Nothing here is apportioned. A payment that cannot be placed against exactly one party is left out of the party figures and reported in full below.",
+    "Party belongs to the seat, not the person: six independents crossed to PNC within four days of the 2024 election. Nothing here is apportioned.",
   partiesUnattributed: "Not attributed to any party",
   partiesUnattributedBody: (
     payments: number,
@@ -84,7 +85,7 @@ export const dict = {
   tenureIntro:
     "Members grouped by how many Majlis terms they have served. One term is five years.",
   tenureWindowCaveat:
-    "The totals are not a like-for-like comparison: the disclosure covers a fixed window, 2014 to 2025, so a one-term member could only be covered for part of it. The per member-year figure is the one that compares - and even that carries the price rise, because the per-head premium was MVR 12,500 until 2016-2017, so a cohort weighted toward the early years reads lower per year.",
+    "Not a like-for-like comparison: the window is fixed at 2014-2025, so a one-term member could only be covered for part of it. Per member-year is the figure that compares, and even that carries the 2016-2017 price rise.",
   tenureCohortLabel: (terms: number) =>
     terms === 1 ? "1 term" : `${terms} terms`,
 
@@ -130,12 +131,10 @@ export const dict = {
   speakerLabel: "Speaker of the Majlis",
   appointeesHeading: "What a political appointment pays",
   appointeesIntro:
-    "These are the terms attached to a post, not money anyone was paid. Six ministries were asked what their political appointees earn; this is what they answered, and what they left out. Every figure is a rate a document states, so nothing here can be read as a sum received - one of these sheets records no-pay leave, another lists posts that are vacant.",
+    "What a post pays, as six ministries stated it. These are entitlements attached to posts, never money anyone received.",
   appointeesLadderHeading: "The same four rates, in ministry after ministry",
   appointeesLadderNote:
-    "Each rate here is stated by a document. Reading them as standing rates rather than one ministry's arrangement is our inference, and it rests on separate ministries printing the same figures without reference to each other.",
-  appointeesLadderAgreement: (ranks: number, bodies: number) =>
-    `${ranks} ranks, each stated identically by up to ${bodies} ministries answering separately.`,
+    "Every rate here is stated by a document. Reading them as standing rates rather than one ministry's arrangement is ours.",
   appointeesLadderExceptions: "Where a ministry pays something else",
   appointeesLadderException: (
     body: string,
@@ -143,13 +142,10 @@ export const dict = {
     readings: string,
   ) => `${rank}: ${body} lists ${readings}.`,
   appointeesMinWageNote: (living: number, wage: number) =>
-    `The lowest rank on the ladder draws a living allowance of MVR ${living.toLocaleString("en-US")} a month on top of basic pay. The monthly minimum wage for large employers is MVR ${wage.toLocaleString("en-US")}.`,
+    `The lowest rank draws MVR ${living.toLocaleString("en-US")} a month in living allowance on top of basic pay. The minimum wage for large employers is MVR ${wage.toLocaleString("en-US")} a month.`,
   appointeesNoTotalNote:
-    "There is no total on this page, and that is deliberate. Multiplying posts by a rate would produce a spending figure no document states: it would ignore vacant posts, part-months, the deduction Finance applies, and the ministries that never answered post by post. The count and the rate are shown separately so nothing here has to be taken on trust.",
-
+    "No total, deliberately. Posts multiplied by a rate would state a figure no document gives: it would ignore vacant posts, part-months, the Finance deduction, and the ministries that never answered post by post.",
   appointeesCoverageHeading: "Who answered, and how",
-  appointeesCoverageIntro:
-    "The honest answer to what political appointments pay begins with who told us. Two ministries gave a row per post; two gave counts and rates; one answered in a scanned table that no machine can read; one is a narrative letter. The gaps are listed here rather than left to be inferred from a short table.",
   colBody: "Ministry",
   colAsOf: "As at",
   colAnswer: "Answer",
@@ -163,46 +159,48 @@ export const dict = {
   appointeesBodiesHeading: "What each ministry disclosed",
   colDesignation: "Designation",
   colPosts: "Posts",
-  colBasic: "Basic salary",
-  colStatedTotal: "Stated total",
+  colBasic: "Basic salary (monthly)",
+  colStatedTotal: "Stated total (monthly)",
   appointeesNilNote:
-    "A dash is a nil the document prints, and is not the same as a blank, which is a component the document does not mention.",
-  colRange: "Stated range",
+    "A dash is a nil the document prints. A blank is a component it does not mention.",
+  colRange: "Stated range (monthly)",
   colHolder: "Named holder",
   colFrom: "From",
   colUntil: "Until",
   appointeesForeignNote:
-    "This table covers the whole ministry. Only the 125 rows marked Political are political appointments; the rest are the career Foreign Service, shown here because the same document sets both and the contrast is the point.",
+    "The whole ministry, 268 posts. Only the 125 marked Political are political appointments; the rest are the career Foreign Service.",
   appointeesForeignTotalNote:
-    "The stated total is monthly and excludes the yearly dress allowance. It is printed as the document prints it and is never recomputed: the components are rounded to whole rufiyaa while the total carries the cents, so a recalculated figure would disagree with the source by up to a rufiyaa.",
+    "Totals are monthly and exclude the yearly dress allowance, printed as the document prints them and never recomputed.",
   appointeesHealthOfficeNote:
-    "Every row is labelled Ministry of Social and Family Development, the pre-merger name, although the responding body is Health, Family and Welfare. Printed as the document prints it.",
+    "Rows carry the pre-merger office name, Ministry of Social and Family Development.",
   appointeesFinanceNote:
-    "The only one of the six documents that names anybody. A 10 per cent deduction applies to basic salary until 31 December 2026, and is shown where the sheet applies it.",
+    "The only document that names anyone. Basic pay carries a 10 per cent deduction until 31 December 2026.",
   appointeesEducationNote:
-    "A rotated Thaana scan with no text layer. The pay figures and dates are transcribed by hand; the names, designations and job scopes are not, so each row is labelled by the rank its pay corresponds to rather than by the words on the page.",
+    "A Thaana scan with no text layer. Figures and dates are transcribed by hand; each row is labelled by the rank its pay matches, not by the words on the page.",
   appointeesAggregateHeading: "Ministries that answered with counts",
   appointeesRangeNote:
-    "Where a ministry gave a range rather than components, the range is the whole monthly package and is not comparable with a basic salary on its own.",
+    "A stated range is a whole monthly package, not a basic salary.",
   appointeesSourcesHeading: "The documents behind this page",
   appointeesReference: "Reference",
   appointeesViewDocument: "Open the document",
 
   vipHeading: "Airport VIP, member by member",
   vipIntro:
-    "The Majlis pays for members to use the VIP terminal at Velana International Airport. Three disclosures cover the 18th and 19th parliaments in full and the 20th to 31 July 2025, and each one counts movements first and prices them at a flat rate, so the count is the fact and the money follows from it.",
+    "What the Majlis paid for members to use the airport VIP terminal. Three disclosures: the 18th and 19th parliaments in full, the 20th to 31 July 2025.",
   vipTermsHeading: "What each parliament used",
   vipTermsNote:
-    "The rate is shown per parliament and never carried across them. The 18th and 19th price a movement at USD 60 and convert at MVR 15.42 to the dollar; the 20th prints a rufiyaa charge and no dollar figure at all. Averaging the two would state a rate no document gives.",
+    "Rates are per parliament and never averaged. The 18th and 19th price a movement at USD 60 converted at 15.42; the 20th prints a rufiyaa charge and no dollar figure.",
   vipPartialNote: (shown: number, unmatched: number) =>
-    `${shown} rows are shown here. A further ${unmatched} could not be matched to exactly one seat - a name printed short, or a constituency spelled differently from the roster - and are left out rather than attached to the nearest plausible member. They are listed in the repository's identity review.`,
+    `${shown} rows shown. ${unmatched} could not be matched to exactly one seat and are left out rather than attached to the nearest plausible member.`,
   vipRankedHeading: "Members by movements",
   vipRankedNote:
-    "Across every parliament a member appears in. A member who sat in two shows the sum of both, which is not comparable with someone who sat in one.",
+    "A member who sat in two parliaments shows the sum of both, which is not comparable with one who sat in a single term.",
   colMovements: "Movements",
   colCost: "Cost",
+  perMonth: "a month",
   colTerm: "Parliament",
   colPerMovement: "Per movement",
+  vipSourcesHeading: "The documents behind this page",
   vipPassportHeading: "Diplomatic passports",
   vipPassportBody: (holders: number, members: number) =>
     `${holders} of the ${members} members of the 20th Majlis hold a diplomatic passport, named in the same disclosure. It records who holds one, not what it cost.`,
@@ -214,7 +212,7 @@ export const dict = {
   termLabel: (n: number) => `${ordinal(n)} Majlis`,
   sourceHeading: "Source",
   sourceNote:
-    "Extracted directly from the Majlis PDF by a script in this repository. Every figure on this page traces to a cell in that document.",
+    "Every figure on this site is extracted from a published document by a script in this repository. Each page lists the documents behind it.",
   viewSource: "View the original PDF",
   currencyNote: "All figures in Maldivian rufiyaa (MVR).",
 } as const;

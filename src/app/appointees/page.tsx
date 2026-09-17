@@ -127,19 +127,18 @@ export default function AppointeesPage() {
                 key={rung.rank}
                 label={RANK_LABEL[rung.rank]}
                 value={<Numeral value={rung.basic} currency />}
-                note={`plus ${rung.livingLabels.join(" / ")} of MVR ${rung.living.toLocaleString("en-US")} a month`}
+                note={`${dict.perMonth}, plus ${rung.livingLabels.join(" / ")} of MVR ${rung.living.toLocaleString("en-US")}`}
               />
             ))}
           </StatRow>
         </div>
-        <p className="mt-5 max-w-[62ch] text-sm text-ink-muted">
-          {dict.appointeesLadderNote}{" "}
-          {dict.appointeesLadderAgreement(
-            ladder.length,
-            Math.max(...ladder.map((r) => r.agreeing.length)),
-          )}
+        <p className="label-note mt-4 max-w-[62ch] text-ink-muted">
+          <span className="rounded-card bg-surface-sunken px-1.5 py-0.5">
+            {dict.inferredLabel}
+          </span>{" "}
+          {dict.appointeesLadderNote}
         </p>
-        <p className="mt-3 max-w-[62ch] text-sm text-ink-muted">
+        <p className="mt-4 max-w-[62ch] text-sm text-ink-muted">
           {dict.appointeesMinWageNote(lowest.living, MINIMUM_WAGE_MONTHLY.value)}
         </p>
 
@@ -173,11 +172,14 @@ export default function AppointeesPage() {
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
           {dict.appointeesCoverageHeading}
         </h2>
-        <p className="mt-3 max-w-[62ch] text-ink-muted">
-          {dict.appointeesCoverageIntro}
-        </p>
-        <div className="mt-5 overflow-x-auto">
+        <div
+          className="mt-5 overflow-x-auto"
+          role="region"
+          tabIndex={0}
+          aria-label={dict.colBody}
+        >
           <table className="w-full border-collapse text-xs sm:text-sm">
+            <caption className="sr-only">{dict.appointeesCoverageHeading}</caption>
             <thead>
               <tr className="border-b border-line">
                 <th scope="col" className={TH}>
@@ -242,6 +244,9 @@ export default function AppointeesPage() {
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
           {dict.appointeesBodiesHeading}
         </h2>
+        <p className="label-note max-w-[62ch] text-ink-muted">
+          {dict.appointeesNilNote}
+        </p>
 
         {perPost.map((body) => {
           const posts = registry.postsByBody(body.bodyId);
@@ -260,8 +265,14 @@ export default function AppointeesPage() {
                   {noteFor[body.bodyId]}
                 </p>
               ) : null}
-              <div className="mt-4 overflow-x-auto">
+              <div
+                className="mt-4 overflow-x-auto"
+                role="region"
+                tabIndex={0}
+                aria-label={body.bodyName}
+              >
                 <table className="w-full border-collapse text-xs sm:text-sm">
+                  <caption className="sr-only">{body.bodyName}</caption>
                   <thead>
                     <tr className="border-b border-line">
                       {named ? (
@@ -358,10 +369,11 @@ export default function AppointeesPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="label-note mt-3 max-w-[62ch] text-ink-muted">
-                {dict.appointeesNilNote}
-                {showTotal ? ` ${dict.appointeesForeignTotalNote}` : ""}
-              </p>
+              {showTotal ? (
+                <p className="label-note mt-3 max-w-[62ch] text-ink-muted">
+                  {dict.appointeesForeignTotalNote}
+                </p>
+              ) : null}
             </div>
           );
         })}
@@ -372,8 +384,14 @@ export default function AppointeesPage() {
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
           {dict.appointeesAggregateHeading}
         </h2>
-        <div className="mt-5 overflow-x-auto">
+        <div
+          className="mt-5 overflow-x-auto"
+          role="region"
+          tabIndex={0}
+          aria-label={dict.colBody}
+        >
           <table className="w-full border-collapse text-xs sm:text-sm">
+            <caption className="sr-only">{dict.appointeesAggregateHeading}</caption>
             <thead>
               <tr className="border-b border-line">
                 <th scope="col" className={TH}>

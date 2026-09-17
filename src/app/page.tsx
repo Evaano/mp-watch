@@ -51,9 +51,12 @@ export default function HomePage() {
       {/* Act 1 - the total */}
       <section className="pt-4">
         <div className="reveal">
-          <p className="text-lg text-ink-muted sm:text-xl">
+          {/* The page's only heading. It was a <p>, which left the home page
+              with no h1 at all - the figure beneath carries the visual weight,
+              but a document still needs a title. */}
+          <h1 className="text-lg font-normal text-ink-muted sm:text-xl">
             {dict.actTotalKicker}
-          </p>
+          </h1>
           <p className="figure-hero mt-3">
             <Numeral value={totals.amount} currency />
           </p>

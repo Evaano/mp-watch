@@ -51,15 +51,14 @@ export default function VipPage() {
           <StatTile
             label={dict.colMovements}
             value={<Numeral value={movements} />}
-            note={dict.vipRankedNote}
           />
           <StatTile
             label={dict.colCost}
             value={<Numeral value={amount} currency />}
             note={
               <>
-                <span className="numeral">${money(toUsd(amount))}</span>{" "}
-                {dict.scaleUsdNote(USD_RATE.value)}
+                <span className="numeral">${money(toUsd(amount))}</span>.{" "}
+                {dict.scaleUsdNote(USD_RATE.value)} {dict.vipCostNote}
               </>
             }
           />
@@ -70,8 +69,14 @@ export default function VipPage() {
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
           {dict.vipTermsHeading}
         </h2>
-        <div className="mt-5 overflow-x-auto">
+        <div
+          className="mt-5 overflow-x-auto"
+          role="region"
+          tabIndex={0}
+          aria-label={dict.colTerm}
+        >
           <table className="w-full border-collapse text-xs sm:text-sm">
+            <caption className="sr-only">{dict.vipTermsHeading}</caption>
             <thead>
               <tr className="border-b border-line">
                 <th scope="col" className={TH}>
@@ -119,10 +124,7 @@ export default function VipPage() {
           {dict.vipTermsNote}
         </p>
         <p className="mt-3 max-w-[62ch] text-sm text-ink-muted">
-          {dict.vipPartialNote(
-            terms.reduce((sum, t) => sum + t.members, 0),
-            registry.vipRowsUnmatched(),
-          )}
+          {dict.vipPartialNote(ranked.length, registry.vipRowsUnmatched())}
         </p>
       </section>
 
@@ -130,8 +132,12 @@ export default function VipPage() {
         <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
           {dict.vipRankedHeading}
         </h2>
+        <p className="label-note max-w-[62ch] text-ink-muted">
+          {dict.vipRankedNote}
+        </p>
         <div className="mt-5 overflow-x-auto">
           <table className="w-full border-collapse text-xs sm:text-sm">
+            <caption className="sr-only">{dict.vipRankedHeading}</caption>
             <thead>
               <tr className="border-b border-line">
                 <th scope="col" className={TH}>
@@ -158,6 +164,12 @@ export default function VipPage() {
                     >
                       {row.person.name}
                     </Link>
+                    {/* Nine names appear twice in these disclosures. The seat
+                        is what tells them apart, so it travels with the name
+                        rather than living on another page. */}
+                    <span className="label-note block text-ink-muted">
+                      {registry.seat(row.person.id)?.constituency ?? ""}
+                    </span>
                   </td>
                   <td className={TD_END}>
                     <Numeral value={row.movements} />
@@ -170,6 +182,31 @@ export default function VipPage() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
+          {dict.vipSourcesHeading}
+        </h2>
+        <ul className="mt-4 flex flex-col gap-3 text-sm">
+          {terms.map((term) => {
+            const source = registry.source(term.sourceId);
+            if (!source) return null;
+            return (
+              <li key={term.sourceId}>
+                <span className="font-medium">{source.title}</span>
+                <span className="block text-ink-muted">{source.publisher}</span>
+                <a
+                  href={source.url}
+                  className="mt-1 inline-block text-accent-ink underline underline-offset-4"
+                  rel="noreferrer"
+                >
+                  {dict.appointeesViewDocument}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       <section className="border-s-2 border-line-strong ps-4">

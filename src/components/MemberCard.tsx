@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ConstituencyName, MemberName } from "./MemberName";
 import { Numeral } from "./Numeral";
+import { PartyMark } from "./PartyMark";
 import type { PersonSummary } from "@/lib/registry";
 
 /**
@@ -48,7 +49,9 @@ export function MemberCard({
           <ConstituencyName member={member} />
         </p>
         {member.party ? (
-          <p className="label-eyebrow mt-1.5 text-ink-muted">{member.party}</p>
+          <p className="label-eyebrow mt-1.5 flex justify-center text-ink-muted">
+            <PartyMark code={member.party} />
+          </p>
         ) : null}
       </div>
 
